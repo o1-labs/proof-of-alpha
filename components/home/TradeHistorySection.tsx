@@ -3,9 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
-import ZKLogo from '../../public/assets/zk-logo.png';
-import ProofOfTradeStatement from '../../public/assets/proof-of-trade-home.png';
-import TwitterCard from '../../public/assets/twitter-card-home.png';
+import ZKLogo from '../../public/assets/common/zk-logo.png';
 
 const TradeHistorySection: NextPage = () => {
   return (

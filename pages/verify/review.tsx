@@ -8,7 +8,7 @@ import Input from '../../components/common/Input';
 import Header from '../../components/verify/Header';
 import LightButton from '../../components/common/LightButton';
 import Dropdown from '../../components/common/Dropdown';
-import BinanaceTransactions from '../../public/assets/binance-transactions.png';
+import BinanaceTransactions from '../../public/assets/verify/review/binance-transactions.png';
 
 import React, { useState, useEffect } from 'react';
 

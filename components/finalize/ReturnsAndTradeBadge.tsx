@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import ProofOfTradeStatement from '../../public/assets/proof-of-trade-statement.png';
-import TwitterCard from '../../public/assets/twitter-card.png';
+import ProofOfTradeStatement from '../../public/assets/verify/finalize/proof-of-trade-statement.png';
+import TwitterCard from '../../public/assets/verify/finalize/twitter-card-finalize.png';
 
 const ReturnsAndTradeBadge = () => {
   return (

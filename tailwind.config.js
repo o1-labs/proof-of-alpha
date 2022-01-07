@@ -26,10 +26,10 @@ module.exports = {
         sans: ['RobotoRegular', 'RobotoThin', ...defaultTheme.fontFamily.sans]
       },
       backgroundImage: {
-        background: "url('/assets/background.png')",
-        'blue-background': "url('/assets/blue-background.png')",
-        'red-background': "url('/assets/red-background.png')",
-        'start-background': "url('/assets/start-background.png')"
+        background: "url('/assets/common/background.png')",
+        'blue-background': "url('/assets/common/blue-background.png')",
+        'red-background': "url('/assets/common/red-background.png')",
+        'start-background': "url('/assets/common/start-background.png')"
       },
       borderWidth: {
         '1/2': '.5px',

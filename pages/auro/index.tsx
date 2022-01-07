@@ -5,8 +5,8 @@ import Image from 'next/image';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/auro/Header';
-import AuroChrome from '../../public/assets/auro-home.png';
-import ZKLogo from '../../public/assets/zk-logo.png';
+import AuroChrome from '../../public/assets/auro/auro-home.png';
+import ZKLogo from '../../public/assets/common/zk-logo.png';
 
 const Auro: NextPage = () => {
   return (

@@ -8,7 +8,7 @@ import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/verify/Header';
 import Dropdown from '../../components/common/Dropdown';
 import ButtonGroup from '../../components/verify/ButtonGroup';
-import InfoIcon from '../../public/assets/info-icon.png';
+import InfoIcon from '../../public/assets/common/info-icon.png';
 
 import React, { useState } from 'react';
 

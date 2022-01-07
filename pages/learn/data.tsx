@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../../components/common/Button';
-import LeftArrow from '../../public/assets/left-arrow.png';
+import LeftArrow from '../../public/assets/common/left-arrow.png';
 
 const DataSection = () => {
   return (

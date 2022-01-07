@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ZKLogo from '../../public/assets/zk-logo.png';
+import ZKLogo from '../../public/assets/common/zk-logo.png';
 
 const Header = () => {
   return (

@@ -5,7 +5,7 @@ import Header from '../../components/auro/Header';
 
 import React from 'react';
 import Image from 'next/image';
-import AuroTestnet from '../../public/assets/auro-testnet.png';
+import AuroTestnet from '../../public/assets/auro/install/auro-testnet.png';
 
 const Auro: NextPage = () => {
   return (

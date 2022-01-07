@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import SpinnerPlaceHolder from '../../public/assets/spinner-placeholder.png';
+import SpinnerPlaceHolder from '../../public/assets/common/spinner-placeholder.png';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import React from 'react';
 

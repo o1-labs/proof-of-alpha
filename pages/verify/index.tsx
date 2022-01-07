@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import InfoIcon from '../../public/assets/info-icon.png';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Input from '../../components/common/Input';
 import Header from '../../components/verify/Header';
+import InfoIcon from '../../public/assets/common/info-icon.png';
 
 import React, { useState, useEffect } from 'react';
 

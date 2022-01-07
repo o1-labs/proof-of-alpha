@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
-import Checkmark from '../../public/assets/checkmark.png';
-import ZKBorderLogo from '../../public/assets/zk-border-logo.png';
+import Checkmark from '../../public/assets/common/checkmark.png';
+import ZKBorderLogo from '../../public/assets/home/zk-border-logo.png';
 
 const ProofSection = () => {
   return (

@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
-import TwitterCardStart from '../../public/assets/twitter-card-start.png';
-import RightArrow from '../../public/assets/right-arrow.png';
+import TwitterCardLeft from '../../public/assets/home/twitter-card-left.png';
+import RightArrow from '../../public/assets/common/right-arrow.png';
 
 const ExchangeTradeSection: NextPage = () => {
   return (
@@ -13,7 +13,7 @@ const ExchangeTradeSection: NextPage = () => {
     >
       <div className="flex mt-56 space-x-48">
         <div className="h-108 relative">
-          <Image src={TwitterCardStart} alt="Twitter Card" />
+          <Image src={TwitterCardLeft} alt="Twitter Card" />
         </div>
         <div className="flex-col w-115 space-y-5">
           <p className="text-6xl   text-white">Your Exchange Trades,</p>

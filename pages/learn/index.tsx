@@ -2,9 +2,8 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../../components/common/Button';
-import TwitterCardStart from '../../public/assets/twitter-card-start.png';
-import RightArrow from '../../public/assets/right-arrow.png';
-import LeftArrow from '../../public/assets/left-arrow.png';
+import RightArrow from '../../public/assets/common/right-arrow.png';
+import LeftArrow from '../../public/assets/common/left-arrow.png';
 
 function ChoiceSection() {
   return (

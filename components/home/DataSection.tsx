@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
-import TwitterCardStart from '../../public/assets/twitter-card-start.png';
+import TwitterCardStart from '../../public/assets/twitter-card-left.png';
 import RightArrow from '../../public/assets/right-arrow.png';
 import LeftArrow from '../public/assets/left-arrow.png';
 
