@@ -8,7 +8,8 @@ import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/verify/Header';
 import Dropdown from '../../components/common/Dropdown';
 import ButtonGroup from '../../components/verify/ButtonGroup';
-import InfoIcon from '../../public/assets/common/info-icon.png';
+import ToolTip from '../../components/verify/ToolTip';
+// import InfoIcon from '../../public/assets/common/info-icon.png';
 
 import React, { useState } from 'react';
 
@@ -46,16 +47,16 @@ const Configure: NextPage = () => {
           {/* tooltip */}
           <div className="flex items-center justify-center my-8 ">
             <span className="text-2xl leading-loose mr-2 ">
-              Maximum of 500 trade fills.
+              Maximum of 500 trade fills
             </span>
 
-            <Image src={InfoIcon} alt="info" />
+            <ToolTip />
           </div>
           {/* end tooltip */}
-
           {/* nav buttons */}
           <div className="flex justify-between ">
-            <Link href="/verify">
+            <Link href="/test">
+              {/* <Link href="/verify"> */}
               <TransparentButton
                 buttonStyle="w-3/12 items-start justify-start mt-20"
                 label="<< BACK"

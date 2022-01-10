@@ -55,9 +55,7 @@ module.exports = {
         120: '45.0625rem',
         121: '46.0625rem',
         122: '47.25rem',
-
         124: '52.0625rem',
-
         125: '57rem',
         127: '60.5625rem',
         130: '65rem',
@@ -78,7 +76,9 @@ module.exports = {
     backgroundColor: ['active', 'focus'],
     textColor: ['active', 'focus'],
     animation: ['motion-safe'],
-    extend: {}
+    extend: {
+      display: ['hover', 'focus', 'group-hover']
+    }
   }
   // plugins: [require('@tailwindcss/forms')]
 };
