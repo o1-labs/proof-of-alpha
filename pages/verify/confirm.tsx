@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { NextPage } from 'next';
-import Header from '../../components/verify/Header';
+import Header from '../../components/common/Header';
 import Button from '../../components/common/Button';
 import AuroConfirm from '../../public/assets/verify/confirm/auro-confirm.png';
 

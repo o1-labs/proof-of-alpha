@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-import Header from '../../components/verify/Header';
+import Header from '../../components/common/Header';
 import LightButton from '../../components/common/LightButton';
 import ReturnsAndTradeBadge from '../../components/finalize/ReturnsAndTradeBadge';
 import SocialBadge from '../../components/finalize/SocialBadge';

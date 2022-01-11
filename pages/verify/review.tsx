@@ -4,7 +4,7 @@ import Image from 'next/image';
 import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-import Header from '../../components/verify/Header';
+import Header from '../../components/common/Header';
 import BinanaceTransactions from '../../public/assets/verify/review/binance-transactions.png';
 
 const Review: NextPage = () => {

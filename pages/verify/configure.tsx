@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-import Header from '../../components/verify/Header';
+import Header from '../../components/common/Header';
 import Dropdown from '../../components/common/Dropdown';
 import ButtonGroup from '../../components/verify/ButtonGroup';
 import ToolTip from '../../components/verify/ToolTip';

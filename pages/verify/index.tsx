@@ -1,11 +1,10 @@
-import React from 'react';
 import Link from 'next/link';
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Input from '../../components/common/Input';
-import Header from '../../components/verify/Header';
+import Header from '../../components/common/Header';
 import InfoIcon from '../../public/assets/common/info-icon.png';
 
 const Verify: NextPage = () => {
