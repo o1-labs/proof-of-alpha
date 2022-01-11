@@ -1,19 +1,19 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-// import SpinnerPlaceHolder from '../../public/assets/common/spinner-placeholder.png';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import React from 'react';
 
 const Generate: NextPage = () => {
   return (
-    <div className="min-h-screen bg-background bg-cover bg-no-repeat">
-      <div className="container w-130 h-screen ml-80">
-        <div className="flex flex-col space-y-14 text-white">
-          <div className="items-center justify-center">
-            {/* <Image src={SpinnerPlaceHolder} /> */}
+    <div className="flex min-h-screen bg-background bg-cover bg-no-repeat justify-center">
+      <div className="flex container w-130 h-screen justify-center">
+        <div className="flex flex-col space-y-14 text-white mt-36">
+          <div className="flex justify-center">
             <LoadingSpinner />
           </div>
-          <p className=" text-5xl">#ZeroKnowledge</p>
+          <div className="flex text-5xl justify-center my-11">
+            #ZeroKnowledge
+          </div>
           <div>
             <p className="text-3.5xl leading-11 font-light">
               You're generating a zero-knowledge proof revealing
