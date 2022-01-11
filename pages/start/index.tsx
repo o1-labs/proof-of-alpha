@@ -5,8 +5,6 @@ import tradeTwitter from '../../public/assets/start/trade-history-with-twitter.p
 import Button from '../../components/common/Button';
 import Header from '../../components/start/Header';
 
-import React, { useState, useEffect } from 'react';
-
 const Start: NextPage = () => {
   return (
     <div className="min-h-screen bg-background bg-cover bg-no-repeat">
