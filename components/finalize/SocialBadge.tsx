@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import TwitterCard from '../../public/assets/verify/finalize/twitter-card-finalize.png';
 
 const ReturnsAndTradeBadge = () => {
