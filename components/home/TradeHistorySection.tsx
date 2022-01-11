@@ -1,11 +1,10 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
 
-const TradeHistorySection: NextPage = () => {
+const TradeHistorySection = () => {
   return (
     <div className="flex min-h-screen bg-background bg-cover bg-no-repeat">
       <header className="">
@@ -28,11 +27,7 @@ const TradeHistorySection: NextPage = () => {
 
           <div className="flex justify-between w-2/5">
             <Link href={'/start'} passHref>
-              <Button
-                buttonStyle="px-8"
-                label="Launch App"
-                onClick={() => console.log('click')}
-              />
+              <Button buttonStyle="px-8" label="Launch App" />
             </Link>
 
             <Link href={'#proof'}>

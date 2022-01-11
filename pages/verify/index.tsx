@@ -1,13 +1,12 @@
-import type { NextPage } from 'next';
+import React from 'react';
 import Link from 'next/link';
+import type { NextPage } from 'next';
 import Image from 'next/image';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Input from '../../components/common/Input';
 import Header from '../../components/verify/Header';
 import InfoIcon from '../../public/assets/common/info-icon.png';
-
-import React, { useState, useEffect } from 'react';
 
 const Verify: NextPage = () => {
   return (
@@ -47,8 +46,7 @@ const Verify: NextPage = () => {
             </span>
           </div>
         </div>
-        {/* <Input />
-        <Input /> */}
+
         <div className="w-1/2 flex flex-col space-y-6">
           <p className="text-white">BINANCE KEY</p>
           <Input />

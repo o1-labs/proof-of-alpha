@@ -1,17 +1,12 @@
-import type { NextPage } from 'next';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-
+import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-
 import Header from '../../components/verify/Header';
 import Dropdown from '../../components/common/Dropdown';
 import ButtonGroup from '../../components/verify/ButtonGroup';
 import ToolTip from '../../components/verify/ToolTip';
-// import InfoIcon from '../../public/assets/common/info-icon.png';
-
-import React, { useState } from 'react';
 
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState();

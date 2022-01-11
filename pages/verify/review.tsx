@@ -1,16 +1,11 @@
-import type { NextPage } from 'next';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import tradeTwitter from '../../public/assets/trade-history-with-twitter.png';
+import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-import Input from '../../components/common/Input';
 import Header from '../../components/verify/Header';
-import LightButton from '../../components/common/LightButton';
-import Dropdown from '../../components/common/Dropdown';
 import BinanaceTransactions from '../../public/assets/verify/review/binance-transactions.png';
-
-import React, { useState, useEffect } from 'react';
 
 const Review: NextPage = () => {
   const [activeButton, setActiveButton] = useState();

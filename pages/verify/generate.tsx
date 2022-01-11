@@ -1,7 +1,6 @@
-import type { NextPage } from 'next';
-import Image from 'next/image';
-import LoadingSpinner from '../../components/common/LoadingSpinner';
 import React from 'react';
+import type { NextPage } from 'next';
+import LoadingSpinner from '../../components/common/LoadingSpinner';
 
 const Generate: NextPage = () => {
   return (

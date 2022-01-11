@@ -1,11 +1,10 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
 import TwitterCardLeft from '../../public/assets/home/twitter-card-left.png';
 import RightArrow from '../../public/assets/common/right-arrow.png';
 
-const ExchangeTradeSection: NextPage = () => {
+const ExchangeTradeSection = () => {
   return (
     <div
       className="flex min-h-screen bg-red-background bg-cover bg-no-repeat "

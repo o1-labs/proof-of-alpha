@@ -1,6 +1,6 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { NextPage } from 'next';
 import tradeTwitter from '../../public/assets/start/trade-history-with-twitter.png';
 import Button from '../../components/common/Button';
 import Header from '../../components/start/Header';

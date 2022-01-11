@@ -1,7 +1,6 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
-import React from 'react';
 import Image from 'next/image';
+import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/auro/Header';

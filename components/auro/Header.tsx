@@ -1,4 +1,3 @@
-// import Link from 'next/link';
 import Image from 'next/image';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
 

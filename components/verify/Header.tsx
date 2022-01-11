@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
 
-import React from 'react';
-
 const Header = () => {
   return (
     <header className="py-18 text-white">

@@ -1,11 +1,11 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import RightArrow from '../../public/assets/common/right-arrow.png';
 import LeftArrow from '../../public/assets/common/left-arrow.png';
 
-function ChoiceSection() {
+const Learn: NextPage = () => {
   return (
     <div
       className="flex min-h-screen bg-red-background bg-cover bg-no-repeat "
@@ -58,6 +58,6 @@ function ChoiceSection() {
       </div>
     </div>
   );
-}
+};
 
-export default ChoiceSection;
+export default Learn;

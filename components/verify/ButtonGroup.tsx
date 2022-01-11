@@ -1,5 +1,4 @@
 import LightButton from '../common/LightButton';
-import React from 'react';
 
 const ButtonGroup = () => {
   return (

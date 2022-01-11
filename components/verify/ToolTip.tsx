@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import InfoIcon from '../../public/assets/common/info-icon.png';
 

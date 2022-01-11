@@ -1,9 +1,7 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
-import TransparentButton from '../../components/common/TransparentButton';
+import type { NextPage } from 'next';
 import Header from '../../components/auro/Header';
-
-import React from 'react';
+import TransparentButton from '../../components/common/TransparentButton';
 import Image from 'next/image';
 import AuroTestnet from '../../public/assets/auro/install/auro-testnet.png';
 

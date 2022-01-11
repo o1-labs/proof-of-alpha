@@ -1,10 +1,10 @@
-import type { NextPage } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import LeftArrow from '../../public/assets/common/left-arrow.png';
 
-const DataSection = () => {
+const Data: NextPage = () => {
   return (
     <div
       className="flex min-h-screen bg-red-background bg-cover bg-no-repeat "
@@ -49,12 +49,9 @@ const DataSection = () => {
             </div>
           </div>
         </div>
-        {/* <div className="w-30 h-30 ml-42 relative">
-          <Image src={RightArrow} alt="Right Arrow" />
-        </div> */}
       </div>
     </div>
   );
 };
 
-export default DataSection;
+export default Data;
