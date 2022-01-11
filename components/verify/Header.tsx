@@ -1,10 +1,9 @@
-// import Link from 'next/link';
 import Image from 'next/image';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
 
 import React from 'react';
 
-function Header() {
+const Header = () => {
   return (
     <header className="py-18 text-white">
       {/* container to hold logo and 0x address */}
@@ -21,6 +20,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
