@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { NextPage } from 'next';
-import Header from '../../components/auro/Header';
+import Header from '../../components/common/Header';
 import TransparentButton from '../../components/common/TransparentButton';
 import Image from 'next/image';
 import AuroTestnet from '../../public/assets/auro/install/auro-testnet.png';

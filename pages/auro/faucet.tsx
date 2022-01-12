@@ -3,7 +3,7 @@ import Image from 'next/image';
 import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-import Header from '../../components/auro/Header';
+import Header from '../../components/common/Header';
 import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet.png';
 
 const Faucet: NextPage = () => {
