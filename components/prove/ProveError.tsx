@@ -1,12 +1,30 @@
+import Image from 'next/image';
+import ZKOutlineLogo from '../../public/assets/prove/zk-outline-logo.png';
 const ProveError = () => {
   return (
-    <div>
-      <p>Sorry, The link that was shared with you is invalid.</p>
-      <p>
-        The zero-knowledge proof for this data was not accepted into the Mina
-        blockchain.
-      </p>
-    </div>
+    <>
+      <div className="flex flex-col space-y-10 items-center ">
+        <div className="mt-36 ">
+          <Image src={ZKOutlineLogo} alt=" zk logo" />
+        </div>
+        <div className="flex flex-col items-center  ">
+          <p className="text-3.5xl leading-11 font-medium">
+            Sorry, The link that was
+          </p>
+          <p className="text-3.5xl leading-11 font-medium">
+            shared with you is invalid.
+          </p>
+        </div>
+        <div className="flex flex-col items-center">
+          <p className="text-2xl font-light">
+            The zero-knowledge proof for this data was
+          </p>
+          <p className="text-2xl font-light">
+            not accepted into the Mina blockchain.
+          </p>
+        </div>
+      </div>
+    </>
   );
 };
 
