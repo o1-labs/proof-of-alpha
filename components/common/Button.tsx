@@ -16,7 +16,7 @@ const Button = (props: buttonPropTypes) => {
   return (
     <button
       className={`flex
-       justify-center line text-white  text-1.5xl font-normal leading-loose tracking-xlwidest items-center px-3 py-2  bg-light-black hover:bg-opacity-75 active:text-custom-gray-button-border border border-white space-x-4 ${buttonStyle}`}
+       justify-center line text-white font-normal leading-loose tracking-xlwidest items-center px-3 py-2  bg-light-black hover:bg-opacity-75 active:text-custom-gray-button-border border border-white space-x-4 ${buttonStyle}`}
       {...otherProps}
     >
       {label}
