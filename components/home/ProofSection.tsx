@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
 import Checkmark from '../../public/assets/common/checkmark.png';
@@ -12,35 +13,35 @@ const ProofSection = () => {
       id="proof"
     >
       <div className="flex mt-48 ml-64 ">
-        <div className="container h-full flex flex-col space-y-8 w-124  text-white ">
-          <p className="text-6xl leading-snug font-normal mb-10 ">
+        <div className="container h-full flex flex-col space-y-8 w-110  md:w-124  text-white ">
+          <p className=" text-4.5xl md:text-6xl leading-snug font-normal mb-10 ">
             Your Proof of Trade Statement:
           </p>
-          <div className="flex space-x-4 text-4xl ">
+          <div className="flex space-x-4 text-3xl md:text-4xl ">
             <div className="w-10 h-10 relative">
               <Image src={Checkmark} alt="Blue checkmark" />
             </div>
             <p>Verifies your trades, over any time peroid</p>
           </div>
-          <div className="flex space-x-4 text-4xl ">
+          <div className="flex space-x-4 text-3xl md:text-4xl ">
             <div className="w-10 h-10 relative">
               <Image src={Checkmark} alt="Blue checkmark" />
             </div>
             <p>Showcases your gains</p>
           </div>
-          <div className="flex space-x-4 text-4xl ">
+          <div className="flex space-x-4 text-3xl md:text-4xl ">
             <div className="w-10 h-10 relative">
               <Image src={Checkmark} alt="Blue checkmark" />
             </div>
             <p>Preserves your privacy</p>
           </div>
-          <div className="flex space-x-4 text-4xl">
+          <div className="flex space-x-4 text-3xl md:text-4xl">
             <div className="w-10 h-10 relative">
               <Image src={Checkmark} alt="Blue checkmark" />
             </div>
             <p>Keeps you in control of what you share</p>
           </div>
-          <div className="flex space-x-4 text-4xl mb-24 ">
+          <div className="flex space-x-4 text-3xl md:text-4xl mb-24 ">
             <div className="w-10 h-10 relative">
               <Image src={Checkmark} alt="Blue checkmark" />
             </div>
@@ -48,7 +49,7 @@ const ProofSection = () => {
           </div>
 
           <div className="">
-            <div className="flex justify-between w-2/3 mt-30">
+            <div className="flex flex-col md:flex-row justify-between w-2/3 mt-30">
               <Link href={'/start'} passHref>
                 <Button buttonStyle="px-8" label="Launch App" />
               </Link>
