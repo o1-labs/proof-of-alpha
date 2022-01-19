@@ -15,7 +15,7 @@ const TransparentButton = (props: transparentButtonPropTypes) => {
   return (
     <button
       className={`flex 
-       text-white font-normal text-2xl items-center leding-loose tracking-xlwidest px-3 py-2 space-y-1 hover:bg-opacity-75 active:text-custom-gray-button-border space-x-4 ${buttonStyle}`}
+       text-white font-normal items-center leading-loose tracking-xlwidest px-3 py-2 space-y-1 hover:bg-opacity-75 active:text-custom-gray-button-border space-x-4 ${buttonStyle}`}
       {...otherProps}
     >
       {label}
