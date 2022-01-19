@@ -6,59 +6,40 @@ import TransparentButton from '../common/TransparentButton';
 import Checkmark from '../../public/assets/common/checkmark.png';
 import ZKBorderLogo from '../../public/assets/home/zk-border-logo.png';
 
+import CheckmarkItem from './CheckmarkItem';
+
 const ProofSection = () => {
   return (
     <div
-      className="flex min-h-screen bg-blue-background bg-cover bg-no-repeat mt-0 "
+      className="flex min-h-screen bg-blue-background bg-cover bg-no-repeat "
       id="proof"
     >
-      <div className="flex mt-48 ml-64 ">
-        <div className="container h-full flex flex-col space-y-8 w-110  md:w-124  text-white ">
-          <p className=" text-4.5xl md:text-6xl leading-snug font-normal mb-10 ">
+      <div className="flex flex-col items-center justify-center h-screen mt-48 ml-64">
+        <div className="container h-screen flex flex-col  space-y-8 w-124  text-white ">
+          <p className="text-6xl leading-snug font-normal mb-10 ">
             Your Proof of Trade Statement:
           </p>
-          <div className="flex space-x-4 text-3xl md:text-4xl ">
-            <div className="w-10 h-10 relative">
-              <Image src={Checkmark} alt="Blue checkmark" />
-            </div>
-            <p>Verifies your trades, over any time peroid</p>
-          </div>
-          <div className="flex space-x-4 text-3xl md:text-4xl ">
-            <div className="w-10 h-10 relative">
-              <Image src={Checkmark} alt="Blue checkmark" />
-            </div>
-            <p>Showcases your gains</p>
-          </div>
-          <div className="flex space-x-4 text-3xl md:text-4xl ">
-            <div className="w-10 h-10 relative">
-              <Image src={Checkmark} alt="Blue checkmark" />
-            </div>
-            <p>Preserves your privacy</p>
-          </div>
-          <div className="flex space-x-4 text-3xl md:text-4xl">
-            <div className="w-10 h-10 relative">
-              <Image src={Checkmark} alt="Blue checkmark" />
-            </div>
-            <p>Keeps you in control of what you share</p>
-          </div>
-          <div className="flex space-x-4 text-3xl md:text-4xl mb-24 ">
-            <div className="w-10 h-10 relative">
-              <Image src={Checkmark} alt="Blue checkmark" />
-            </div>
-            <p>100% open source & on-chain</p>
-          </div>
+          <CheckmarkItem copy="Verifies your trades, over any time peroid" />
+          <CheckmarkItem copy="Showcases your gains" />
+          <CheckmarkItem copy="Preserves your privacy" />
+          <CheckmarkItem copy="Keeps you in control of what you share" />
+          <CheckmarkItem copy="100% open source & on-chain" />
 
           <div className="">
-            <div className="flex flex-col md:flex-row justify-between w-2/3 mt-30">
+            <div className="flex flex-row items-center h-auto justify-between  mt-30">
               <Link href={'/start'} passHref>
-                <Button buttonStyle="px-8" label="Launch App" />
+                <Button
+                  buttonStyle="px-12  md:w-auto  text-xl md:text-2xl"
+                  label="LAUNCH APP"
+                />
               </Link>
 
               <Link href={'#exchange'}>
-                <TransparentButton buttonStyle="-ml-3" label="Learn More" />
+                <TransparentButton
+                  buttonStyle="-ml-3 text-2xl"
+                  label="LEARN MORE"
+                />
               </Link>
-
-              {/* <a>Learn More</a> */}
             </div>
           </div>
         </div>
