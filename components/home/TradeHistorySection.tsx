@@ -3,6 +3,9 @@ import Image from 'next/image';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
+import TopStamp from '../../public/assets/home/stamp-top.png';
+import ProofOfAlpha from '../../public/assets/home/proof-of-alpha-home.png';
+import TwitterCard from '../../public/assets/common/twitter-card.png';
 
 const TradeHistorySection = () => {
   return (
@@ -12,6 +15,11 @@ const TradeHistorySection = () => {
           <Image src={ZKLogo} alt="zk logo" />
         </div>
       </header>
+
+      <div className="hidden  md:block  absolute  right-0">
+        <Image src={TopStamp} alt="Stamp" />
+      </div>
+
       <div className="relative">
         <div className="flex flex-col space-y-10 container  mt-57 w-140 h-screen">
           <p className="text-7xl text-white">
@@ -37,20 +45,14 @@ const TradeHistorySection = () => {
             {/* <a>Learn More</a> */}
           </div>
         </div>
-        {/* <div className="flex">
-          <div className="w-108 ">
-            <Image src={TwitterCard} alt="twitter card" />
-          </div>
 
-          <div>
-            <div className="w-115 -mb-24 -mr-52">
-              <Image
-                src={ProofOfTradeStatement}
-                alt="proof of trade statement"
-              />
-            </div>
-          </div>
-        </div> */}
+        <div className="hidden  md:block    right-0">
+          <Image src={ProofOfAlpha} alt="Proof of Alpha Stament" />
+        </div>
+
+        <div className="hidden  md:block  absolute  bottom-0">
+          <Image src={TwitterCard} alt="TwitterCard" />
+        </div>
       </div>
     </div>
   );

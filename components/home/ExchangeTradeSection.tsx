@@ -7,10 +7,9 @@ import RightArrow from '../../public/assets/common/right-arrow.png';
 
 const ExchangeTradeSection = () => {
   return (
-    <div
-      className="flex justify-center md:justify-start min-h-screen min-w-screen bg-red-background bg-cover bg-no-repeat "
-      id="exchange"
-    >
+    <div className="flex justify-center md:justify-start min-h-screen min-w-screen bg-red-background bg-cover bg-no-repeat -mt-1.5 ">
+      {/* Used to navigate user to this section from previous and fix section alignment mismatch */}
+      <div className="mt-1.5" id="exchange"></div>
       <div className="flex w-[290px] justify-center md:space-x-44 md:w-auto h-screen md:mt-56 ">
         <div className="hidden  md:block w-[1013px] -ml-[560px] mt-10 relative">
           <Image src={TwitterCard} alt="Twitter Card" />
