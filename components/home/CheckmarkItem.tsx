@@ -1,4 +1,3 @@
-import React, { ButtonHTMLAttributes } from 'react';
 import Image from 'next/image';
 import Checkmark from '../../public/assets/common/checkmark.png';
 

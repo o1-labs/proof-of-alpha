@@ -1,24 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import Button from '../common/Button';
-import TwitterCardLeft from '../../public/assets/home/twitter-card-left.png';
+import Indicator from './Indicator';
+import TwitterCardLeft from '../../public/assets/common/twitter-card.png';
 import RightArrow from '../../public/assets/common/right-arrow.png';
 
 const ExchangeTradeSection = () => {
   return (
     <div
-      className="flex min-h-screen bg-red-background bg-cover bg-no-repeat "
+      className="flex justify-center md:justify-start min-h-screen min-w-screen bg-red-background bg-cover bg-no-repeat "
       id="exchange"
     >
-      <div className="flex md:mt-56 md:space-x-48">
-        <div className="hidden  md:block h-108 relative">
+      <div className="flex w-[285px] justify-center md:space-x-44 md:w-auto h-screen md:mt-56 ">
+        <div className="hidden  md:block w-[1013px] -ml-[560px] mt-10 relative">
           <Image src={TwitterCardLeft} alt="Twitter Card" />
         </div>
-        <div className="flex"></div>
         {/* container */}
-
-        <div className="flex justify-center md:items-center h-screen w-screen mt-16 md:mt-0  md:w-115  md:space-y-5">
-          <div className="flex flex-col h-screen w-[280px] md:w-auto">
+        <div className="flex justify-center md:items-center h-screen w-screen mt-16 md:mt-0 md:w-[690px] md:space-y-5 ">
+          <div className="flex flex-col h-screen  ">
             {/* copy section */}
             <p className="text-xl md:text-6xl text-center md:text-left text-white mt-6 md:mt-0">
               Your Exchange Trades,
@@ -34,43 +33,29 @@ const ExchangeTradeSection = () => {
             <p className="text-base md:text-4xl leading-loose md:leading-11  text-white">
               Absolutely free, a service to our community.
             </p>
-            <p className="text-base md:text-4xl leading-loose md:leading-11 my-4 text-white mb">
+            <p className="text-base md:text-4xl leading-loose md:leading-11 my-4 text-white">
               Dropping a Proof of Trade Statement is a strong statement, in any
               community.
             </p>
             {/* end copy section */}
-            {/* button */}
-            <div className="flex flex-col md:flex-row items-center space-y-9 mt-14">
-              {/* <div className="w-1/2"> */}
+
+            {/* indicator button group  */}
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-9 md:space-y-0 mt-10 md:mt-32">
               <Link href={'/start'} passHref>
                 <Button
-                  buttonStyle="px-20 w-4/5 text-base md:text-2xl "
+                  buttonStyle="px-20 w-4/5 md:w-1/3 text-base md:text-2xl "
                   label="NEXT"
                 />
               </Link>
-              {/* </div> */}
-              {/* button end */}
-              {/* indicator section */}
-              <div className="flex md:w-1/2">
-                <div className="mx-3 md:mx-6">
-                  <div className=" bg-white w-3 h-3 md:w-4 md:h-4 rounded-full"></div>
-                </div>
-                <div className="mx-3 md:mx-6">
-                  <div className=" bg-custom-gray-indicator-dot w-3 h-3 md:w-4 md:h-4 rounded-full"></div>
-                </div>
-                <div className="mx-3 md:mx-6">
-                  <div className=" bg-custom-gray-indicator-dot w-3 h-3 md:w-4 md:h-4 rounded-full"></div>
-                </div>
-              </div>
-              {/* end indicator section */}
+              <Indicator page="first" />
             </div>
+            {/* end indicator button group */}
           </div>
-
-          <div className="w-18 mt-52 -mr-12 md:w-20 md:h-52 md:ml-42 md:mt-42 md:mt-40 relative">
-            <Link href={'/learn'}>
-              <Image src={RightArrow} alt="Right Arrow" />
-            </Link>
-          </div>
+        </div>
+        <div className="w-18 md:w-40 md:h-40 mt-64 md:mt-52 -mr-12 md:mr-0   relative">
+          <Link href={'/learn'}>
+            <Image src={RightArrow} alt="Right Arrow" />
+          </Link>
         </div>
         {/* end container */}
       </div>
