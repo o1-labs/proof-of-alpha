@@ -8,6 +8,10 @@ import LightButton from '../../components/common/LightButton';
 import ReturnsAndTradeBadge from '../../components/finalize/ReturnsAndTradeBadge';
 import SocialBadge from '../../components/finalize/SocialBadge';
 
+import AuroError from '../../components/verify/AuroError';
+import AuroNoTestnetError from '../../components/verify/AuroNoTestnetError';
+import AuroNoTokensError from '../../components/verify/AuroNoTokensError';
+
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState('returnsAndHistory');
 
@@ -64,6 +68,7 @@ const Finalize: NextPage = () => {
 
           {/* end social badges */}
           {/* nav buttons */}
+          <AuroNoTokensError />
           <div className="flex justify-between ">
             <Link href="/verify/review" passHref>
               <TransparentButton
