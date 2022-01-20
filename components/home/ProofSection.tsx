@@ -22,11 +22,11 @@ const ProofSection = () => {
           <CheckmarkItem copy="Keeps you in control of what you share" />
           <CheckmarkItem copy="100% open source & on-chain" />
 
-          <div className="ml-8 md:ml-0">
-            <div className="flex flex-col  md:flex-row items-center justify-center h-auto md:justify-between  md:w-2/3 mt-12 md:mt-30">
+          <div className="ml-12 md:ml-0">
+            <div className="flex flex-col space-y-4 md:flex-row items-center justify-center h-auto md:justify-between  md:w-2/3 mt-10 md:mt-30">
               <Link href={'/start'} passHref>
                 <Button
-                  buttonStyle="px-7 text-sm md:text-2xl"
+                  buttonStyle="px-8 text-sm md:text-2xl"
                   label="LAUNCH APP"
                 />
               </Link>

@@ -10,49 +10,69 @@ const ExchangeTradeSection = () => {
       className="flex min-h-screen bg-red-background bg-cover bg-no-repeat "
       id="exchange"
     >
-      <div className="flex mt-56 space-x-48">
-        <div className="h-108 relative">
+      <div className="flex md:mt-56 md:space-x-48">
+        <div className="hidden  md:block h-108 relative">
           <Image src={TwitterCardLeft} alt="Twitter Card" />
         </div>
-        <div className="flex-col w-115 space-y-5">
-          <p className="text-6xl   text-white">Your Exchange Trades,</p>
-          <p className="text-6xl   text-white">Certified On-chain</p>
+        <div className="flex"></div>
+        {/* container */}
 
-          <p className="text-4xl leading-11  text-white">
-            It’s your
-            <span className="font-bold"> Proof of Trade Statement</span>
-          </p>
-          <p className="text-4xl leading-11  text-white">
-            Absolutely free, a service to our community.
-          </p>
-          <p className="text-4xl leading-11  text-white mb">
-            Dropping a Proof of Trade Statement is a strong statement, in any
-            community.
-          </p>
-          <div className="flex items-center ">
-            <div className="w-1/2">
+        <div className="flex justify-center md:items-center h-screen w-screen mt-16 md:mt-0  md:w-115  md:space-y-5">
+          <div className="flex flex-col h-screen w-[280px] md:w-auto">
+            {/* copy section */}
+            <p className="text-xl md:text-6xl text-center md:text-left text-white mt-6 md:mt-0">
+              Your Exchange Trades,
+            </p>
+            <p className="text-xl md:text-6xl text-center md:text-left mb-8 text-white">
+              Certified On-chain
+            </p>
+
+            <p className="text-base md:text-4xl leading-loose md:leading-11 mb-5 text-white ">
+              It’s your
+              <span className="font-bold"> Proof of Trade Statement</span>
+            </p>
+            <p className="text-base md:text-4xl leading-loose md:leading-11  text-white">
+              Absolutely free, a service to our community.
+            </p>
+            <p className="text-base md:text-4xl leading-loose md:leading-11 my-4 text-white mb">
+              Dropping a Proof of Trade Statement is a strong statement, in any
+              community.
+            </p>
+            {/* end copy section */}
+            {/* button */}
+            <div className="flex flex-col md:flex-row items-center space-y-9 mt-14">
+              {/* <div className="w-1/2"> */}
               <Link href={'/start'} passHref>
-                <Button buttonStyle="px-20" label="NEXT" />
+                <Button
+                  buttonStyle="px-20 w-4/5 text-base md:text-2xl "
+                  label="NEXT"
+                />
               </Link>
-            </div>
-            <div className="flex w-1/2">
-              <div className="mx-6">
-                <div className=" bg-white w-4 h-4 rounded-full"></div>
+              {/* </div> */}
+              {/* button end */}
+              {/* indicator section */}
+              <div className="flex md:w-1/2">
+                <div className="mx-3 md:mx-6">
+                  <div className=" bg-white w-3 h-3 md:w-4 md:h-4 rounded-full"></div>
+                </div>
+                <div className="mx-3 md:mx-6">
+                  <div className=" bg-custom-gray-indicator-dot w-3 h-3 md:w-4 md:h-4 rounded-full"></div>
+                </div>
+                <div className="mx-3 md:mx-6">
+                  <div className=" bg-custom-gray-indicator-dot w-3 h-3 md:w-4 md:h-4 rounded-full"></div>
+                </div>
               </div>
-              <div className="mx-6">
-                <div className=" bg-custom-gray-indicator-dot w-4 h-4 rounded-full"></div>
-              </div>
-              <div className="mx-6">
-                <div className=" bg-custom-gray-indicator-dot w-4 h-4 rounded-full"></div>
-              </div>
+              {/* end indicator section */}
             </div>
           </div>
+
+          <div className="w-18 mt-52 -mr-12 md:w-20 md:h-52 md:ml-42 md:mt-42 md:mt-40 relative">
+            <Link href={'/learn'}>
+              <Image src={RightArrow} alt="Right Arrow" />
+            </Link>
+          </div>
         </div>
-        <div className="w-52 h-52 ml-42 mt-42 mt-40 relative">
-          <Link href={'/learn'}>
-            <Image src={RightArrow} alt="Right Arrow" />
-          </Link>
-        </div>
+        {/* end container */}
       </div>
     </div>
   );
