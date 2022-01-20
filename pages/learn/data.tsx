@@ -4,6 +4,7 @@ import type { NextPage } from 'next';
 import Indicator from '../../components/home/Indicator';
 import Button from '../../components/common/Button';
 import LeftArrow from '../../public/assets/common/left-arrow.png';
+import Stamp from '../../public/assets/common/stamp.png';
 
 const Data: NextPage = () => {
   return (
@@ -38,13 +39,16 @@ const Data: NextPage = () => {
               <Link href={'/start'} passHref>
                 <Button
                   buttonStyle="px-20 w-4/5 md:w-1/3 text-base md:text-2xl "
-                  label="NEXT"
+                  label="GET STARTED"
                 />
               </Link>
 
               <Indicator page="third" />
             </div>
           </div>
+        </div>
+        <div className="hidden  md:block  absolute  right-0">
+          <Image src={Stamp} alt="Stamp" />
         </div>
       </div>
     </div>
