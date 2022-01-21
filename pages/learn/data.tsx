@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import Indicator from '../../components/home/Indicator';
 import Button from '../../components/common/Button';
 import LeftArrow from '../../public/assets/common/left-arrow.png';
-import Stamp from '../../public/assets/common/stamp.png';
+import RightStamp from '../../public/assets/home/stamp-right.png';
 
 const Data: NextPage = () => {
   return (
@@ -48,7 +48,7 @@ const Data: NextPage = () => {
           </div>
         </div>
         <div className="hidden  md:block  absolute  right-0">
-          <Image src={Stamp} alt="Stamp" />
+          <Image src={RightStamp} alt="Stamp" />
         </div>
       </div>
     </div>

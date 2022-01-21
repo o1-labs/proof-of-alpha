@@ -27,7 +27,9 @@ const Prove: NextPage = () => {
         <div>MADE ON MINA</div>
       </div>
       <p>zero-knowledge proof-powered dApps</p>
-      <Button label="LEARN MORE" />
+      <a target="_blank" href="https://docs.minaprotocol.com/en/snapps">
+        <Button label="LEARN MORE" />
+      </a>
       <div>
         <Image src={ProofOfTradeStatment} alt="proof of trade statement" />
         <Button label="SHARE IT" />
