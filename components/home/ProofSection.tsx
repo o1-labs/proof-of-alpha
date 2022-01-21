@@ -7,7 +7,7 @@ import ZKBorderLogo from '../../public/assets/home/zk-logo-home.png';
 
 const ProofSection = () => {
   return (
-    <div className="flex min-h-screen  bg-blue-background bg-cover bg-no-repeat -mt-1.5">
+    <div className="flex h-screen  bg-blue-background bg-cover bg-no-repeat -mt-1.5">
       {/* Used to navigate user to this section from previous and fix section alignment mismatch */}
       <div className="mt-1.5" id="proof"></div>
       <div className="flex flex-col md:flex-row items-center justify-center h-screen mt-24 md:mt-48 md:ml-64">
