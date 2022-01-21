@@ -72,6 +72,9 @@ module.exports = {
         12: '3rem',
         13: '3.438rem',
         14: '4rem'
+      },
+      screens: {
+        '3xl': '1800px'
       }
     }
   },
