@@ -15,9 +15,5 @@ const Header = () => {
     </header>
   );
 };
-<header className="">
-  <div className="ml-36 mt-5 items-center w-20 md:w-24 md:ml-7  xl:ml-10 md:mt-5 xl:mt-12  xl:h-32 xl:w-auto absolute">
-    <Image src={ZKLogo} alt="zk logo" />
-  </div>
-</header>;
+
 export default Header;
