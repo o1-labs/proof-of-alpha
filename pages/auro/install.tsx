@@ -31,17 +31,17 @@ const Auro: NextPage = () => {
             <div className="h-auto">
               <Image src={AuroTestnet} alt="auro testnet" layout="responsive" />
             </div>
-            <div className="flex justify-between pt-8">
+            <div className="flex justify-between md:pt-8 2xl:pt-11">
               <Link href={'/auro'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base xl:text-xl"
+                  buttonStyle="px-20 md:text-base 2xl:text-xl"
                   label="<< BACK"
                 />
               </Link>
 
               <Link href={'/auro/faucet'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base xl:text-xl"
+                  buttonStyle="px-20 md:text-base 2xl:text-xl"
                   label="CONTINUE >>"
                 />
               </Link>

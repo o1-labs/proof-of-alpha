@@ -60,7 +60,7 @@ const Auro: NextPage = () => {
 
               <Link href={'/auro/install'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base xl:text-xl"
+                  buttonStyle="px-20 md:text-base 2xl:text-xl"
                   label="CONTINUE >>"
                 />
               </Link>
