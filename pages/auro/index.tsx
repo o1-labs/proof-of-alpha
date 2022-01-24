@@ -1,11 +1,9 @@
 import Link from 'next/link';
-
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import AuroChrome from '../../public/assets/auro/auro-home.png';
-import ZKLogo from '../../public/assets/common/zk-logo.png';
 import Header from '../../components/common/Header';
 
 const Auro: NextPage = () => {
@@ -17,8 +15,6 @@ const Auro: NextPage = () => {
       <div className="flex flex-col items-center">
         <div className="flex flex-col  md:w-6/12 2xl:w-7/12 3xl:w-6/12 container  h-screen">
           <div className="flex">
-            {/* <span className="border-t-6  border-white w-14 "></span>
-          <span className="border-t-6  border-custom-gray-header-border w-127"></span> */}
             <span className="border-t-6  border-white w-1/12 "></span>
             <span className="border-t-6  border-custom-gray-header-border w-11/12"></span>
           </div>

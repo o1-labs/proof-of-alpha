@@ -13,7 +13,7 @@ const Input = (props: inputPropTypes) => {
   return (
     <input
       className={`w-full 
-       justify-center text-black text-xl leading-normal items-center  px-1 py-4 space-y-1 bg-custom-pink  hover:bg-opacity-75 active:bg-black-500  focus:bg-blue-600  focus:text-white ${inputStyle}`}
+       justify-center text-white items-center bg-custom-pink  hover:bg-opacity-75 active:bg-black-500  focus:bg-custom-gray-spinner-background  focus:text-white ${inputStyle}`}
       {...otherProps}
     />
   );
