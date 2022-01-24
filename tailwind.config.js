@@ -74,7 +74,7 @@ module.exports = {
         14: '4rem'
       },
       screens: {
-        '3xl': '1800px'
+        '3xl': '2000px'
       }
     }
   },
