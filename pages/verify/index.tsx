@@ -19,26 +19,26 @@ const Verify: NextPage = () => {
             <span className="border-t-6  border-custom-gray-header-border w-6/12"></span>
           </div>
 
-          <div className="flex flex-col space-y-2 2xl:space-y-6">
-            <p className=" text-sm 2xl:text-lg tracking-wider mt-2">
+          <div className="flex flex-col space-y-2 2xl:space-y-6 3xl:space-y-8">
+            <p className=" text-sm 2xl:text-lg 3xl:text-xl tracking-wider mt-2">
               CONNECT TO BINANCE
             </p>
-            <p className="md:text-xl 2xl:text-3.5xl font-medium">
+            <p className="md:text-xl 2xl:text-3.5xl 3xl:text-4xl font-medium">
               Let's Gather Your Trading Data
             </p>
 
-            <p className="md:text-sm  2xl:text-1.5xl font-light ">
+            <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl font-light ">
               We use Binance API keys to fetch your trades.
             </p>
-            <p className="md:text-sm  2xl:text-1.5xl font-light">
+            <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl font-light">
               <span className="font-bold">Read only</span> access is all we need
             </p>
             <div>
-              <p className="-ml-8 2xl:-ml-16 3xl:-ml-11 flex justify-center  items-center text-center bg-[#90909040] border-[#A8A8A8] border-1/2 h-9 w-7/12 2xl:h-14 2xl:w-6/12  font-bold md:text-sm  2xl:text-1.5xl   ">
+              <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl -ml-8 2xl:-ml-14  flex justify-center  items-center text-center bg-[#90909040] border-[#A8A8A8] border-1/2 h-9 w-7/12 2xl:h-14 2xl:w-6/12 3xl:h-14 3xl:w-5/12 font-bold   ">
                 No Record of your API keys will ever be saved.
               </p>
             </div>
-            <p className="md:text-sm  2xl:text-1.5xl">
+            <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl">
               If you don't have a Binance account, you can use
               <span className="underline"> our API Keys</span>
             </p>
@@ -46,16 +46,20 @@ const Verify: NextPage = () => {
               <div className="flex w-4 2xl:w-5 justify-center">
                 <Image src={InfoIcon} alt="info" />
               </div>
-              <span className="md:text-xs 2xl:text-base pl-2 underline ">
+              <span className="md:text-xs 2xl:text-base 3xl:text-lg pl-2 underline ">
                 How do I find my Binance API keys?
               </span>
             </div>
           </div>
           <div className="flex ">
             <div className="w-1/2 md:mt-3 2xl:mt-10 flex flex-col space-y-2 2xl:space-y-5">
-              <p className="md:text-[.6rem] 2xl:text-base">BINANCE API KEY</p>
+              <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
+                BINANCE API KEY
+              </p>
               <Input inputStyle="" />
-              <p className="md:text-[.6rem] 2xl:text-base md:">API SECRET</p>
+              <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
+                API SECRET
+              </p>
               <Input inputStyle="md:text-base 2xl:text-xl " />
 
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
