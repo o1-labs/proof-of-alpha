@@ -14,7 +14,7 @@ const Dropdown = () => {
     >
       <div className="justify-between">
         <Menu.Button
-          className="inline-flex justify-between w-full text-black text-xl leading-normal items-center  px-6 py-4 space-y-1 bg-custom-pink hover:bg-opacity-75 
+          className="inline-flex justify-between w-full text-black text-xs 2xl:text-xl leading-normal items-center px-4 py-2 2xl:px-6 2xl:py-4  bg-custom-pink hover:bg-opacity-75 
         rounded  focus:outline-none focus:shadow-outline "
         >
           BTCUSDT

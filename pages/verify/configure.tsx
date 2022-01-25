@@ -5,7 +5,8 @@ import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/common/Header';
 import Dropdown from '../../components/common/Dropdown';
-import ButtonGroup from '../../components/verify/ButtonGroup';
+import DateRangeGroup from '../../components/verify/DateRangeGroup';
+import TokenPairGroup from '../../components/verify/TokenPairGroup';
 import ToolTip from '../../components/verify/ToolTip';
 
 const Configure: NextPage = () => {
@@ -14,52 +15,53 @@ const Configure: NextPage = () => {
     <div className="min-h-screen bg-background bg-cover bg-no-repeat">
       <Header />
       {/* progress bar */}
-      <div className="container w-130 h-screen ml-80">
-        <div className="flex">
-          <span className="border-t-6  border-white w-115 "></span>
-          <span className="border-t-6  border-custom-gray-header-border w-86"></span>
-        </div>
-        {/* progress bar end */}
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col  w-7/12 md:w-6/12 3xl:w-6/12 2xl:w-7/12  container  h-screen">
+          <div className="flex">
+            <span className="border-t-6  border-white w-7/12 "></span>
+            <span className="border-t-6  border-custom-gray-header-border w-6/12"></span>
+          </div>
+          {/* progress bar end */}
 
-        <div className="flex flex-col h-screen pr-14 space-y-10 text-white">
-          <p className=" text-1.5xl   tracking-wider leading-9 mt-2">
-            CONFIGURE SETTINGS
-          </p>
+          <div className="flex flex-col h-screen space-y-5 2xl:space-y-10 text-white">
+            <p className="text-sm 2xl:text-lg tracking-wider mt-2">
+              CONFIGURE SETTINGS
+            </p>
 
-          <p className="text-5xl leading-snug font-medium ">
-            Configure Proof of Trade Performance output
-          </p>
-          {/* Token pair dropdown */}
-          <div className="flex items-center">
-            <span className="text-4xl leading-loose  w-1/3">Token Pair</span>
-            <div className="flex w-2/3">
-              <Dropdown />
+            <p className="text-1.5xl 2xl:text-3.5xl">
+              Configure <span className="font-medium">Proof of Alpha</span>{' '}
+              output
+            </p>
+            {/* Token pair dropdown */}
+
+            <TokenPairGroup />
+            <DateRangeGroup />
+
+            {/* tooltip */}
+            <div className="flex items-center justify-center mr-2 2xl:mr-20 my-8 ">
+              <span className="text-sm 2xl:text-1.5xl leading-loose mr-2 ">
+                Maximum of 500 trade fills
+              </span>
+
+              <ToolTip />
             </div>
-          </div>
-
-          <ButtonGroup />
-
-          {/* tooltip */}
-          <div className="flex items-center justify-center my-8 ">
-            <span className="text-2xl leading-loose mr-2 ">
-              Maximum of 500 trade fills
-            </span>
-
-            <ToolTip />
-          </div>
-          {/* end tooltip */}
-          {/* nav buttons */}
-          <div className="flex justify-between ">
-            <Link href="/test">
-              {/* <Link href="/verify"> */}
-              <TransparentButton
-                buttonStyle="w-3/12 items-start justify-start mt-20"
-                label="<< BACK"
-              />
-            </Link>
-            <Link href="/verify/review">
-              <Button buttonStyle="w-3/12 mt-20" label="CONTINUE  >>" />
-            </Link>
+            {/* end tooltip */}
+            {/* nav buttons */}
+            <div className="flex justify-between pt-20">
+              <Link href="/verify">
+                {/* <Link href="/verify"> */}
+                <TransparentButton
+                  buttonStyle="w-3/12 text-sm 2xl:text-xl"
+                  label="<< BACK"
+                />
+              </Link>
+              <Link href="/verify/review">
+                <Button
+                  buttonStyle="w-3/12 text-sm 2xl:text-xl"
+                  label="CONTINUE  >>"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
