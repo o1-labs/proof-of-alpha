@@ -8,7 +8,7 @@ const Generate: NextPage = () => {
       <div className="flex container w-130 h-screen justify-center">
         <div className="flex flex-col space-y-14 text-white mt-36">
           <div className="flex justify-center">
-            <LoadingSpinner />
+            <LoadingSpinner label="GENERATING ZERO-KNOWLEDGE PROOF" />
           </div>
           <div className="flex text-5xl justify-center my-11">
             #ZeroKnowledge

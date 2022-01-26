@@ -13,7 +13,7 @@ const Review: NextPage = () => {
       <Header />
       {/* progress bar */}
       <div className="flex flex-col items-center">
-        <div className="flex flex-col  w-7/12 md:w-6/12 3xl:w-6/12 2xl:w-7/12  container  h-screen">
+        <div className="flex flex-col  w-7/12 md:w-7/12 3xl:w-6/12 2xl:w-7/12  container  h-screen">
           <div className="flex">
             <span className="border-t-6  border-white w-11/12 "></span>
             <span className="border-t-6  border-custom-gray-header-border w-1/12"></span>
