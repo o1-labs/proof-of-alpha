@@ -15,7 +15,7 @@ import AuroNoTokensError from '../../components/verify/AuroNoTokensError';
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
 
-  const renderBadges = (): React.ReactElement => {
+  const renderSocialBadges = (): React.ReactElement => {
     return activeButton === 'returnsAndHistory' ? (
       <ReturnsAndTradeBadge />
     ) : (
@@ -37,16 +37,16 @@ const Finalize: NextPage = () => {
           </div>
           {/* progress bar end */}
 
-          <div className="flex flex-col h-screen space-y-3 2xl:space-y-10 3xl:space-y-14 text-white">
+          <div className="flex flex-col h-screen space-y-3 2xl:space-y-7 3xl:space-y-14 text-white">
             <p className="text-sm 2xl:text-lg 3xl:text-xl tracking-wider mt-2">
               FINALIZE SETTINGS
             </p>
 
-            <p className="text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font-medium ">
+            <p className="text-1.5xl 2xl:text-4xl 3xl:text-4xl font-medium ">
               How much do you want to disclose?
             </p>
             {/* button selection */}
-            <div className="flex justify-center">
+            <div className="flex justify-center 2xl:justify-start 2xl:ml-28">
               <div className="flex w-8/12">
                 <LightButton
                   label="RETURNS & TRADE HISTORY"
@@ -61,24 +61,26 @@ const Finalize: NextPage = () => {
               </div>
             </div>
             {/* button selection */}
-            <p className=" flex text-base 2xl:text-xl leading-8 2xl:leading-12 tracking-xlwidest 2xl:tracking-2xlwidest justify-center">
-              YOU'LL RECIEVE
-            </p>
-            {/* social badges */}
-            {renderBadges()}
+
+            <div className="flex items-center 2xl:items-left justify-center 2xl:justify-start mb-5">
+              {renderSocialBadges()}
+            </div>
 
             {/* end social badges */}
             {/* nav buttons */}
-            <AuroNoTokensError />
-            <div className="flex justify-between ">
+            {/* <AuroNoTokensError /> */}
+            <div className="flex justify-between mt-10">
               <Link href="/verify/review" passHref>
                 <TransparentButton
-                  buttonStyle="w-3/12 items-start justify-start mt-18"
+                  buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl "
                   label="<< BACK"
                 />
               </Link>
               <Link href="/verify/generate">
-                <Button buttonStyle="w-3/12 mt-18 " label="CONTINUE  >>" />
+                <Button
+                  buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl"
+                  label="CONTINUE  >>"
+                />
               </Link>
             </div>
           </div>
