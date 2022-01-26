@@ -8,7 +8,7 @@ import TwitterCard from '../../public/assets/prove/twitter-card-prove.png';
 import TwitterLogo from '../../public/assets/prove/twitter-logo.png';
 import MinaLogo from '../../public/assets/prove/mina-icon-primary.png';
 import ProofOfTradeStatment from '../../public/assets/prove/proof-of-trade-statement.png';
-
+// mina orange FF603B
 const Prove: NextPage = () => {
   return (
     <div className="min-h-screen bg-background bg-cover bg-no-repeat text-white">

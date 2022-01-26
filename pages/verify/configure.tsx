@@ -23,7 +23,7 @@ const Configure: NextPage = () => {
           </div>
           {/* progress bar end */}
 
-          <div className="flex flex-col h-screen space-y-5 2xl:space-y-10 text-white">
+          <div className="flex flex-col h-screen space-y-5 2xl:space-y-10 3xl:space-y-14 text-white">
             <p className="text-sm 2xl:text-lg tracking-wider mt-2">
               CONFIGURE SETTINGS
             </p>
@@ -38,8 +38,8 @@ const Configure: NextPage = () => {
             <DateRangeGroup />
 
             {/* tooltip */}
-            <div className="flex items-center justify-center mr-2 2xl:mr-20 my-8 ">
-              <span className="text-sm 2xl:text-1.5xl leading-loose mr-2 ">
+            <div className="flex items-center justify-center mr-2 2xl:mr-20 3xl:mr-40 my-8 ">
+              <span className="text-sm 2xl:text-1.5xl leading-loose mr-2">
                 Maximum of 500 trade fills
               </span>
 
@@ -51,13 +51,13 @@ const Configure: NextPage = () => {
               <Link href="/verify">
                 {/* <Link href="/verify"> */}
                 <TransparentButton
-                  buttonStyle="w-3/12 text-sm 2xl:text-xl"
+                  buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl"
                   label="<< BACK"
                 />
               </Link>
               <Link href="/verify/review">
                 <Button
-                  buttonStyle="w-3/12 text-sm 2xl:text-xl"
+                  buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl"
                   label="CONTINUE  >>"
                 />
               </Link>
