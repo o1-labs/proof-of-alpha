@@ -7,7 +7,7 @@ import Input from '../../components/common/Input';
 import Header from '../../components/common/Header';
 import InfoIcon from '../../public/assets/common/info-icon.png';
 import APIsettings from '../../public/assets/verify/api-key-settings.png';
-import Modal from '../../components/auro/Modal';
+import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
 
 const Verify: NextPage = () => {
