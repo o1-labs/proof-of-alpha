@@ -7,8 +7,12 @@ import Input from '../../components/common/Input';
 import Header from '../../components/common/Header';
 import InfoIcon from '../../public/assets/common/info-icon.png';
 import APIsettings from '../../public/assets/verify/api-key-settings.png';
+import Modal from '../../components/auro/Modal';
+import { useState } from 'react';
 
 const Verify: NextPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   return (
     <div className="min-h-screen bg-background bg-cover bg-no-repeat text-white">
       <Header />
@@ -42,21 +46,24 @@ const Verify: NextPage = () => {
               If you don't have a Binance account, you can use
               <span className="underline"> our API Keys</span>
             </p>
-            <div className="flex pt-3 items-center  ">
-              <div className="flex w-4 2xl:w-5 justify-center">
-                <Image src={InfoIcon} alt="info" />
+            <button onClick={() => setIsModalOpen(true)}>
+              <div className="flex pt-3 items-center  ">
+                <div className="flex w-4 2xl:w-5 justify-center">
+                  <Image src={InfoIcon} alt="info" />
+                </div>
+                <span className="md:text-xs 2xl:text-base 3xl:text-lg pl-2 underline ">
+                  How do I find my Binance API keys?
+                </span>
               </div>
-              <span className="md:text-xs 2xl:text-base 3xl:text-lg pl-2 underline ">
-                How do I find my Binance API keys?
-              </span>
-            </div>
+            </button>
+            <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
           </div>
           <div className="flex ">
             <div className="w-1/2 md:mt-3 2xl:mt-10 flex flex-col space-y-2 2xl:space-y-5">
               <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
                 BINANCE API KEY
               </p>
-              <Input inputStyle="" />
+              <Input inputStyle="md:text-base 2xl:text-xl " />
               <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
                 API SECRET
               </p>
