@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from '../../components/common/Header';
 import Button from '../../components/common/Button';
 import NavButtonGroup from '../../components/prove/NavButtonGroup';
@@ -14,7 +15,7 @@ import TopStamp from '../../public/assets/prove/prove-stamp.png';
 const SocialBadgeSection = () => {
   return (
     <div className="min-h-screen bg-prove-background bg-cover bg-no-repeat text-white">
-      <div className="-mt-4" id="social"></div>
+      <div className="" id="social"></div>
       <Header />
       <div className=" absolute top-0 right-0  w-6/12 2xl:w-7/12 3xl:w-7/12">
         <Image src={TopStamp} alt="Stamp" />
@@ -46,8 +47,9 @@ const SocialBadgeSection = () => {
               <TweetButton label="TWEET IT" buttonStyle="w-full " />
             </a>
           </div>
-
-          <p className="text-[#00FF19] text-sm">PROVE MORE PROFITS</p>
+          <Link href={'/start'}>
+            <p className="text-[#00FF19] text-sm">PROVE MORE PROFITS</p>
+          </Link>
         </div>
       </div>
 
@@ -63,14 +65,13 @@ const SocialBadgeSection = () => {
             <a target="_blank" href="https://docs.minaprotocol.com/en/snapps">
               <Button
                 label="LEARN MORE"
-                buttonStyle="bg-[#FFFFFF1A] w-[160px] 2xl:w-[210px] 3xl:w-[210px] text-xs 2xl:text-base 3xl:text-base"
+                buttonStyle="w-[160px] 2xl:w-[210px] 3xl:w-[210px] text-xs 2xl:text-base 3xl:text-base"
+                primary={false}
               />
             </a>
           </div>
         </div>
       </div>
-
-      <div className="-mb-10"></div>
     </div>
   );
 };
