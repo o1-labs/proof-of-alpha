@@ -1,4 +1,3 @@
-import { render } from '@headlessui/react/dist/utils/render';
 import React from 'react';
 
 interface loadingSpinnerPropTypes {
@@ -18,7 +17,7 @@ const LoadingSpinner = ({ label }: loadingSpinnerPropTypes) => {
   };
 
   return (
-    <div className="relative flex flex-col bg-custom-gray-spinner-background  w-[220px] h-[220px] 2xl:w-[270px] 2xl:h-[270px] items-center justify-center">
+    <div className="relative flex flex-col bg-custom-gray-spinner-background rounded-md  w-[220px] h-[220px] 2xl:w-[270px] 2xl:h-[270px] items-center justify-center">
       <div className="absolute  text-[#05ff00] text-center text-xs top-5/12 left-4/12 space-y-[.5px] 2xl:space-y-1 ">
         {renderLabel()}
       </div>

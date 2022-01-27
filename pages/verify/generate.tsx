@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
+import ProofGeneratedConfirmation from '../../components/verify/ProofGeneratedConfirmation';
+import Button from '../../components/common/Button';
 
 const Generate: NextPage = () => {
+  const [isVisable, setIsVisable] = useState<boolean>(false);
+
   return (
     <div className="flex min-h-screen bg-background bg-cover bg-no-repeat justify-center">
       <div className="flex container  h-screen justify-center">
         <div className="flex flex-col space-y-6 2xl:space-y-14 text-white mt-10 2xl:mt-20 3xl:mt-36">
           <div className="flex justify-center">
-            <LoadingSpinner label="GENERATING ZERO-KNOWLEDGE PROOF" />
+            {/* <LoadingSpinner label="GENERATING ZERO-KNOWLEDGE PROOF" /> */}
+            <ProofGeneratedConfirmation />
           </div>
           <div className="flex text-2xl 2xl:text-3xl 3xl:text-5xl justify-center 2xl:my-11">
             #ZeroKnowledge
@@ -40,6 +45,13 @@ const Generate: NextPage = () => {
             <p className="text-base 2xl:text-2xl 3xl:text-3.5xl 3xl:leading-11  font-light">
               will be able to verify your returns.
             </p>
+          </div>
+          <div className="flex justify-center">
+            <Button
+              label="SEND TO MINA >>"
+              buttonStyle="w-1/2 text-xs 2xl:text-xl 3xl:text-2xl"
+              visable={false}
+            />
           </div>
         </div>
       </div>
