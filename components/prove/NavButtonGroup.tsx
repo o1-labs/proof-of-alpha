@@ -6,7 +6,7 @@ const NavButtonGroup = () => {
           SOCIAL BADGE
         </div>
       </a>
-      <a href="#proof">
+      <a href="#trade">
         <div className="bg-[#FFFFFF1A] w-[180px] 2xl:w-[280px] 3xl:w-[280px] h-[38px] 2xl:h-[48px] 3xl:h-[48px] text-white text-xs font-extralight py-3 pl-5 mb-1 active:border-l-2 hover:border-l-2">
           TRADE STATEMENT
         </div>
