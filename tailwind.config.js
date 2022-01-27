@@ -31,7 +31,8 @@ module.exports = {
         background: "url('/assets/common/background.png')",
         'blue-background': "url('/assets/common/blue-background.png')",
         'red-background': "url('/assets/common/red-background.png')",
-        'start-background': "url('/assets/common/start-background.png')"
+        'start-background': "url('/assets/common/start-background.png')",
+        'prove-background': "url('/assets/prove/prover-results.png')"
       },
       borderWidth: {
         '1/2': '.5px',

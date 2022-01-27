@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ProofGeneratedConfirmation from '../../components/verify/ProofGeneratedConfirmation';
 import Button from '../../components/common/Button';
@@ -62,11 +63,13 @@ const Generate: NextPage = () => {
           </div>
           <div className="flex justify-center">
             {/* Buttton is only visable after a proof is generated */}
-            <Button
-              label="SEND TO MINA >>"
-              buttonStyle="w-1/2 text-xs 2xl:text-xl 3xl:text-2xl"
-              visable={proofConfirmed}
-            />
+            <Link href={'/verify/confirm'}>
+              <Button
+                label="SEND TO MINA >>"
+                buttonStyle="w-1/2 text-xs 2xl:text-xl 3xl:text-2xl"
+                visable={proofConfirmed}
+              />
+            </Link>
           </div>
         </div>
       </div>
