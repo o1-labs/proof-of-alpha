@@ -11,7 +11,7 @@ interface transparentButtonPropTypes
  * @param {string} label Button label
  */
 const TransparentButton = (props: transparentButtonPropTypes) => {
-  const { label, buttonStyle, ...otherProps } = props;
+  const { label, buttonStyle, children, ...otherProps } = props;
   return (
     <button
       className={`flex 
@@ -19,6 +19,7 @@ const TransparentButton = (props: transparentButtonPropTypes) => {
       {...otherProps}
     >
       {label}
+      {children}
     </button>
   );
 };
