@@ -22,7 +22,7 @@ const Auro: NextPage = () => {
 
           <div className="flex flex-col h-screen  space-y-3 ">
             <p className="text-sm 2xl:text-lg tracking-wider mt-2">
-              CHOOSE A NETWORK
+              CHOOSE NETWORK
             </p>
             <p className="md:text-1.5xl 2xl:text-3.5xl font-medium md:pb-9 2xl:pb-12 2xl:pt-5">
               Make sure you’re connected to Snapps Testnet
