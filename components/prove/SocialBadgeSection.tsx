@@ -23,15 +23,15 @@ const SocialBadgeSection = () => {
 
       <div className="flex flex-col items-center  3xl:space-y-4 3xl:mt-10">
         <div className="relative flex flex-col items-center 3xl:w-4/12 justify-center">
-          <p className="text-1.5xl 2xl:text-3.5xl 3xl:text-4xl mb-3 2xl:mb-5 3xl:mb-8">
+          <p className="text-1.5xl 2xl:text-3.5xl  3xl:text-4xl mb-3 2xl:mb-5 3xl:mb-8">
             Your zk-proof has been submitted to Mina’s chain.
           </p>
           <a target="_blank" href={'https://minaexplorer.com/'}>
             <div className="flex items-center">
               <Image src={ArrowIcon} alt="arrow icon" />
               <TransparentButton
-                label="VIEW PROOF IN MINA EXPLORER"
-                buttonStyle="text-xs 3xl:text-xl"
+                label="VIEW PROOF ON MINA EXPLORER"
+                buttonStyle="text-xs 2xl:tracking-normal 3xl:text-xl"
               />
             </div>
           </a>
@@ -66,7 +66,7 @@ const SocialBadgeSection = () => {
               <Button
                 label="LEARN MORE"
                 buttonStyle="w-[160px] 2xl:w-[210px] 3xl:w-[210px] text-xs 2xl:text-base 3xl:text-base"
-                primary={false}
+                secondary={true}
               />
             </a>
           </div>
