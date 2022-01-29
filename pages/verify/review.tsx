@@ -1,13 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Button from '../../components/common/Button';
+import LoadingSpinner from '../../components/common/LoadingSpinner';
 import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/common/Header';
 import BinanaceTransactions from '../../public/assets/verify/review/binance-transactions.png';
+import FetchingTrades from '../../components/verify/FetchingTrades';
 
 const Review: NextPage = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    async function fetchTrades() {
+      // fetch Trades from Binance
+      // setLoading isLoading to false once payload is recieved
+    }
+    return () => {
+      // cleanup
+    };
+  }, []);
+  if (isLoading) {
+    return <FetchingTrades />;
+  }
+
   return (
     <div className="min-h-screen bg-background bg-cover bg-no-repeat">
       <Header />
