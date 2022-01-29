@@ -13,11 +13,11 @@ const Confirm: NextPage = () => {
         <div className="flex w-full 2xl:w-11/12 3xl:w-11/12">
           <div className="flex flex-col justify-center w-4/12 2xl:w-4/12 3xl:w-3/12 ml-48 2xl:ml-72 3xl:ml-100">
             <p className="text-2xl 2xl:text-4xl 3xl:text-5xl 3xl:leading-14 mb-5">
-              Confirm to Continue
+              Submit Proof To Mina
             </p>
             <p className="text-xl 2xl:text-3xl 3xl:text-4xl 3xl:leading-13 mb-10 2xl:mb-16">
-              You’ll need to click 'Confirm' in the Auro Wallet browser
-              extension to continue.
+              Click on 'confirm' within Auro Wallet to submit the proof to the
+              Mina chain.
             </p>
             <Link href={'/prove'} passHref>
               <Button

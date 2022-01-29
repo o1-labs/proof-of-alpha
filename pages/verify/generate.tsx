@@ -46,7 +46,7 @@ const Generate: NextPage = () => {
               The proof is generated locally in your web browser
             </p>
             <p className="text-base 2xl:text-2xl 3xl:text-3.5xl 3xl:leading-11 font-light">
-              and wont reveal your private data (trade size,
+              and won't reveal your private data (trade size,
             </p>
 
             <p className="text-base 2xl:text-2xl 3xl:text-3.5xl 3xl:leading-11  font-light">
