@@ -20,11 +20,11 @@ const Auro: NextPage = () => {
           </div>
           {/* progress bar end */}
 
-          <div className="flex flex-col h-screen md:space-y-2 2xl:space-y-5 ">
+          <div className="flex flex-col h-screen md:space-y-2 2xl:space-y-10 ">
             <p className="text-sm 2xl:text-lg tracking-wider mt-2">
               INSTALL BROWSER WALLET
             </p>
-            <p className="md:text-1.5xl 2xl:text-3.5xl  font-medium">
+            <p className="md:text-1.5xl 2xl:text-3.5xl  font-medium mt-12">
               Install Auro Wallet for Chrome
             </p>
             <p className="md:text-base  2xl:text-1.5xl font-light pb-3">
