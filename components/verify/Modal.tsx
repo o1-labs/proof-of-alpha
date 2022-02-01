@@ -74,12 +74,12 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                   <div className="hidden sm:block ">
                     <button
                       type="button"
-                      className=" hover:text-gray-500 focus:outline-none "
+                      className=""
                       onClick={() => setIsModalOpen(false)}
                     >
                       <span className="sr-only">Close</span>
                       <XIcon
-                        className="w-8 h-8 2xl:h-10 2xl:w-10 3xl:h-12 3xl:w-12"
+                        className="absolute w-8 h-8  2xl:h-10 2xl:w-10  3xl:w-12 hover:bg-gray-500 rounded-full "
                         aria-hidden="true"
                       />
                     </button>
