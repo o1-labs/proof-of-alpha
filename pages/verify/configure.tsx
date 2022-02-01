@@ -39,7 +39,7 @@ const Configure: NextPage = () => {
 
             {/* tooltip */}
             <div className="flex items-center justify-center mr-2 2xl:mr-20 3xl:mr-40 my-8 ">
-              <span className="text-sm 2xl:text-1.5xl leading-loose mr-2">
+              <span className="text-sm 2xl:text-1.5xl leading-loose mr-2 hover:underline">
                 Maximum of 500 trade fills
               </span>
 
