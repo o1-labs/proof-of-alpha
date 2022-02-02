@@ -8,16 +8,10 @@
 
 @layer base {
   @font-face {
-    font-family: RobotoRegular;
-    font-weight: 400;
-    src: url(/fonts/roboto-regular-webfont.woff2) format('woff2'),
-      url(/fonts/roboto-regular-webfont.woff1) format('woff1');
-  }
-  @font-face {
-    font-family: RobotoThin;
-    font-weight: 400;
-    src: url(/fonts/roboto-thin-webfont.woff2) format('woff2'),
-      url(/fonts/roboto-thin-webfont.woff) format('woff');
+    font-family: 'Roboto';
+
+    src: url('/fonts/roboto-regular.woff2') format('woff2'),
+      url('/fonts/roboto-regular.woff') format('woff');
   }
 }
 
@@ -64,7 +58,7 @@
   left: 92.5px;
   background: #05ff00;
   border-radius: 50%;
-  box-shadow: 0 200px 0 0 #05ff00;
+  box-shadow: 200 px 0 0 #05ff00;
 }
 .ldio-ir0f41fxdl > div:nth-child(2) div:after {
   left: -7.5px;
