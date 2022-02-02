@@ -12,7 +12,15 @@ import { useState } from 'react';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [binanaceAPIsecret, setBinanceAPIsecret] = useState<string>('');
+  const [binanaceAPIkey, setBinanceAPIkey] = useState<string>('');
 
+  const handleOurAPIkeysClick = () => {
+    setBinanceAPIkey('ggHi367Faq67blldRuI1vvadvTdVaFeQ32P9sXHms1auhsdf3K4Msw');
+    setBinanceAPIsecret(
+      'a4ttT8g4dEafafp025JK34nm31c2xUn1ZxPLHDfn09Pa54Tt6Lft3j4'
+    );
+  };
   return (
     <div className="min-h-screen bg-background bg-cover bg-no-repeat text-white">
       <Header />
@@ -44,8 +52,10 @@ const Verify: NextPage = () => {
               </p>
             </div>
             <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl">
-              If you don't have a Binance account, you can use
-              <span className="underline"> our API Keys</span>
+              If you don't have a Binance account, you can use&nbsp;
+              <button onClick={handleOurAPIkeysClick}>
+                <span className="underline">our API Keys</span>
+              </button>
             </p>
             <button onClick={() => setIsModalOpen(true)}>
               <div className="flex pt-3 items-center  ">
@@ -64,11 +74,17 @@ const Verify: NextPage = () => {
               <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
                 BINANCE API KEY
               </p>
-              <Input inputStyle="md:text-base 2xl:text-xl pl-4" />
+              <Input
+                inputStyle="md:text-base 2xl:text-xl "
+                value={binanaceAPIkey}
+              />
               <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
                 API SECRET
               </p>
-              <Input inputStyle="md:text-base 2xl:text-xl " />
+              <Input
+                inputStyle="md:text-base 2xl:text-xl  "
+                value={binanaceAPIsecret}
+              />
 
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
                 <Link href={'/verify/configure'}>
