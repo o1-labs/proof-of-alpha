@@ -5,6 +5,7 @@ import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import AuroChrome from '../../public/assets/auro/auro-home.png';
 import Header from '../../components/common/Header';
+import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 
 const Auro: NextPage = () => {
   return (
@@ -20,11 +21,11 @@ const Auro: NextPage = () => {
           </div>
           {/* progress bar end */}
 
-          <div className="flex flex-col h-screen md:space-y-2 2xl:space-y-10 ">
+          <div className="flex flex-col h-screen md:space-y-2 2xl:space-y-10 w-full ">
             <p className="text-sm 2xl:text-lg tracking-wider mt-2">
               INSTALL BROWSER WALLET
             </p>
-            <p className="md:text-1.5xl 2xl:text-3.5xl  font-medium mt-12">
+            <p className="md:text-1.5xl 2xl:text-3.5xl  mt-12 font-extrabold">
               Install Auro Wallet for Chrome
             </p>
             <p className="md:text-base  2xl:text-1.5xl font-light pb-3">
@@ -33,7 +34,7 @@ const Auro: NextPage = () => {
             <div className="h-auto">
               <Image src={AuroChrome} alt="auro chrome" layout="responsive" />
             </div>
-            <div className="flex justify-between pt-8">
+            <div className="flex justify-between pt-8 w-full">
               <Link href={'/start'} passHref>
                 <TransparentButton
                   buttonStyle="md:text-base 2xl:text-xl"
@@ -47,11 +48,12 @@ const Auro: NextPage = () => {
                   'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
                 }
               >
-                {/* Add open icon */}
-                <Button
-                  buttonStyle="md:text-base 2xl:text-xl"
-                  label="GET AURO"
-                />
+                <div className="w-1/2">
+                  <Button buttonStyle="md:text-base 2xl:text-xl">
+                    <Image src={ExternalLinkIcon} />
+                    <div className="px-4">GET AURO </div>
+                  </Button>
+                </div>
               </a>
 
               <Link href={'/auro/install'} passHref>
