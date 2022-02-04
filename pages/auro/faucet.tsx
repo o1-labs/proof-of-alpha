@@ -5,6 +5,7 @@ import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/common/Header';
 import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet.png';
+import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 
 const Faucet: NextPage = () => {
   return (
@@ -40,10 +41,10 @@ const Faucet: NextPage = () => {
 
               <a target="_blank" href={'https://faucet.minaprotocol.com'}>
                 {/* Add open icon */}
-                <Button
-                  buttonStyle="md:text-base 2xl:text-xl"
-                  label="VISIT FAUCET"
-                />
+                <Button buttonStyle="md:text-base 2xl:text-xl">
+                  <Image src={ExternalLinkIcon} />
+                  <div className="px-4">VISIT FAUCET</div>
+                </Button>
               </a>
 
               <Link href={'/verify'} passHref>
