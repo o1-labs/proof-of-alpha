@@ -11,6 +11,7 @@
     "@binance/connector": "^1.7.0",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
+    "moment": "^2.29.1",
     "next": "^12.0.7",
     "prettier-plugin-tailwindcss": "^0.1.5",
     "react": "17.0.2",
