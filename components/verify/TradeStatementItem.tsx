@@ -21,7 +21,7 @@ const TradStatementItem = ({ trade }: tradeStatementItemProps) => {
   };
 
   const renderDate = (timestamp: string) => {
-    return moment.unix(parseFloat(timestamp)).format('YYYY-MM-DD h:mm:ss ');
+    return moment.unix(parseFloat(timestamp)).format('YYYY MMM DD h:mm:ss ');
   };
   return (
     <div className="px-18 flex w-full items-center justify-between py-10 odd:border-2 odd:border-[#676767] odd:bg-[#33333380]">
