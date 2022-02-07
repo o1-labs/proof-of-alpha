@@ -1,5 +1,6 @@
 import moment from 'moment';
 import { Trade } from '../../types';
+import { calculateTradeProfitLoss } from '../../utils';
 
 interface tradeStatementItemProps {
   trade: Trade;
@@ -15,15 +16,15 @@ const TradStatementItem = ({
   proofStatement
 }: tradeStatementItemProps) => {
   const { buy, sell } = trade;
-  const calculateTradeProfitLoss = (trade: Trade) => {
-    const tradeProfitLoss = (
-      ((parseFloat(trade.sell.price) - parseFloat(trade.buy.price)) /
-        parseFloat(trade.buy.price)) *
-      100
-    ).toFixed(1);
+  // const calculateTradeProfitLoss = (trade: Trade) => {
+  //   const tradeProfitLoss = (
+  //     ((parseFloat(trade.sell.price) - parseFloat(trade.buy.price)) /
+  //       parseFloat(trade.buy.price)) *
+  //     100
+  //   ).toFixed(1);
 
-    return tradeProfitLoss;
-  };
+  //   return tradeProfitLoss;
+  // };
 
   const renderDate = (timestamp: string) => {
     return moment.unix(parseFloat(timestamp)).format('YYYY MMM DD h:mm:ss ');

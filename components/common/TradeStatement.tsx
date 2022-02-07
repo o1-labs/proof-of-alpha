@@ -2,6 +2,7 @@ import Image from 'next/image';
 import moment from 'moment';
 import TradeStatementItem from './TradeStatementItem';
 import BinanceLogo from '../../public/assets/common/binance-logo.png';
+import { calculateCumulativeProfitLoss } from '../../utils';
 import { Trade } from '../../types';
 
 interface tradeStatementPropTypes {
@@ -17,19 +18,6 @@ const TradeStatement = ({
   trades,
   proofStatement
 }: tradeStatementPropTypes) => {
-  const calculateCumulativeProfitLoss = (trades: Trade[]) => {
-    const cummulativeProfitLoss = trades
-      .reduce((trades, trade) => {
-        const tradeProfitLoss =
-          ((parseFloat(trade.sell.price) - parseFloat(trade.buy.price)) /
-            parseFloat(trade.buy.price)) *
-          100;
-        return trades + tradeProfitLoss;
-      }, 0)
-      .toFixed(1);
-    return cummulativeProfitLoss;
-  };
-
   const renderDates = () => {
     const startDate = new Date();
     const endDate = new Date();
