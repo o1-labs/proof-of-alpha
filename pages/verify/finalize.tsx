@@ -50,47 +50,49 @@ const Finalize: NextPage = () => {
     }
   };
   return (
-    <div className="min-h-screen bg-background bg-cover bg-no-repeat">
+    <div className="bg-background min-h-screen bg-cover bg-no-repeat">
       <Header />
       {/* progress bar */}
       <div className="flex flex-col items-center">
-        <div className="flex flex-col  w-7/12 md:w-6/12 3xl:w-6/12 2xl:w-7/12  container  h-screen">
+        <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
           <div className="flex">
-            <span className="border-t-6  border-white w-full "></span>
+            <span className="border-t-6  w-full border-white "></span>
           </div>
           {/* progress bar end */}
 
-          <div className="flex flex-col h-screen space-y-3 2xl:space-y-7 3xl:space-y-14 text-white">
-            <p className="text-sm 2xl:text-lg 3xl:text-xl tracking-wider mt-2">
+          <div className="3xl:space-y-14 flex h-screen flex-col space-y-3 text-white 2xl:space-y-7">
+            <p className="3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg">
               FINALIZE SETTINGS
             </p>
-            <p className="text-1.5xl 2xl:text-4xl 3xl:text-4xl font-medium ">
+            <p className="text-1.5xl 3xl:text-4xl font-medium 2xl:text-4xl ">
               How much do you want to disclose?
             </p>
             {/* button selection */}
-            <div className="flex justify-center 2xl:justify-start 2xl:ml-28">
+            <div className="flex justify-center 2xl:ml-28 2xl:justify-start">
               <div className="flex w-8/12">
                 <LightButton
                   label="RETURNS & TRADE HISTORY"
                   value="returnsAndHistory"
                   onClick={handleButtonSelection}
+                  selected={activeButton === 'returnsAndHistory'}
                 />
                 <LightButton
                   label="PERCENTAGE & RETURNS ONLY"
                   value="returns"
                   onClick={handleButtonSelection}
+                  buttonStyle="text-black"
                 />
               </div>
             </div>
             {/* button selection */}
-            <div className="flex items-center 2xl:items-left justify-center 2xl:justify-start mb-5">
+            <div className="2xl:items-left mb-5 flex items-center justify-center 2xl:justify-start">
               {renderSocialBadges()}
             </div>
             {/* end social badges */}
             {/* nav buttons */}
             {/* "wallet " "testnet" 'tokens' */}
             {renderErrors()}
-            <div className="flex justify-between mt-10">
+            <div className="mt-10 flex justify-between">
               <Link href="/verify/review" passHref>
                 <TransparentButton
                   buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl "

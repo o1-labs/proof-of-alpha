@@ -3,19 +3,23 @@ import React, { ButtonHTMLAttributes } from 'react';
 interface lightButtonPropTypes extends ButtonHTMLAttributes<HTMLButtonElement> {
   buttonStyle?: string;
   label: string;
+  selected?: boolean;
 }
 /**
  * @param {string} buttonStyle Additional TailwindCSS classes (optional).
  * @param {string} label Button label
+ * @param {boolean} selected Boolean if button is selected or active
  */
 
 // Add icon logo prop
 const LightButton = (props: lightButtonPropTypes) => {
-  const { buttonStyle, label, ...otherProps } = props;
+  const { buttonStyle, label, selected, ...otherProps } = props;
   return (
     <button
-      className={`w-full 
-       justify-center text-black text-xs 2xl:text-xl  py-2 2xl:py-4 leading-normal items-center  bg-custom-pink  hover:bg-opacity-75 active:bg-black-500  border-custom-gray-button-border focus:bg-blue-600 border-1/2 focus:text-white ${buttonStyle}`}
+      className={`${
+        selected ? 'bg-blue-600 text-white' : 'bg-custom-pink text-black'
+      } 
+       active:bg-black-500  border-custom-gray-button-border border-1/2  w-full items-center justify-center py-2  text-xs  leading-normal hover:bg-opacity-75  focus:bg-blue-600 focus:text-white 2xl:py-4 2xl:text-xl ${buttonStyle}`}
       {...otherProps}
     >
       {label}
