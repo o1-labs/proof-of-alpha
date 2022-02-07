@@ -9,33 +9,37 @@ import RightStamp from '../../public/assets/home/stamp-right.png';
 const Data: NextPage = () => {
   return (
     <div
-      className="flex min-h-screen bg-red-background bg-cover bg-no-repeat text-white "
+      className="bg-red-background flex min-h-screen bg-cover bg-no-repeat text-white "
       id="exchange"
     >
-      <div className="flex  items-center  mt-[88px] h-4/5 md:w-auto md:h-2/3 md:mt-64 md:ml-44  md:space-x-24 ">
-        <div className="flex items-center  w-14 md:w-40 md:h-40  mb-12 md:mb-28 relative">
+      <div className="mt-[88px]  flex  h-4/5 items-center md:mt-64 md:ml-44 md:h-2/3 md:w-auto  md:space-x-24 ">
+        <div className="relative mb-12  flex w-14 items-center  md:mb-28 md:h-40 md:w-40">
           <Link href={'/learn'}>
-            <Image src={LeftArrow} alt="Right Arrow" />
+            <Image
+              className="fliter hover:invert-[.35]"
+              src={LeftArrow}
+              alt="Right Arrow"
+            />
           </Link>
         </div>
 
-        <div className="flex-col w-[275px] md:w-115 md:space-y-11">
+        <div className="md:w-115 w-[275px] flex-col md:space-y-11">
           <div className="md:mb-32">
-            <p className="text-xl md:text-6xl text-center md:text-left mb-8">
+            <p className="mb-8 text-center text-xl md:text-left md:text-6xl">
               Your Data Stays Private
             </p>
 
-            <p className="text-base md:text-4xl leading-loose md:leading-11 mb-5">
-              We area a team of engineers, cryptographers and crypto traders
+            <p className="md:leading-11 mb-5 text-base leading-loose md:text-4xl">
+              We are a team of engineers, cryptographers, and crypto traders.
             </p>
-            <p className="text-base md:text-4xl leading-loose md:leading-11">
-              We use zero-knowledge proofs to ensure the privacy of your data
+            <p className="md:leading-11 text-base leading-loose md:text-4xl">
+              We use zero-knowledge proofs to ensure the privacy of your data.
             </p>
-            <p className="text-base md:text-4xl leading-loose md:leading-11 my-4">
-              Wether your account is anon or KYC'ed, your data will stay
+            <p className="md:leading-11 my-4 text-base leading-loose md:text-4xl">
+              Whether your account is anon or KYC'ed, your data will stay
               private.
             </p>
-            <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-9 md:space-y-0 mt-24 md:mt-24">
+            <div className="mt-24 flex flex-col items-center justify-center space-y-9 md:mt-24 md:flex-row md:justify-between md:space-y-0">
               <Link href={'/start'} passHref>
                 <Button
                   buttonStyle="px-20 w-4/5 md:w-1/3 text-base md:text-2xl "
@@ -47,7 +51,7 @@ const Data: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="hidden  md:block  absolute  right-0">
+        <div className="absolute  right-0  hidden  md:block">
           <Image src={RightStamp} alt="Stamp" />
         </div>
       </div>

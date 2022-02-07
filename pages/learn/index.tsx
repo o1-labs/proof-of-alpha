@@ -9,33 +9,37 @@ import LeftArrow from '../../public/assets/common/left-arrow.png';
 const Learn: NextPage = () => {
   return (
     <div
-      className="flex min-h-screen bg-red-background bg-cover bg-no-repeat text-white"
+      className="bg-red-background flex min-h-screen bg-cover bg-no-repeat text-white"
       id="exchange"
     >
-      <div className="flex  items-center  mt-[88px] h-4/5 md:w-auto md:h-2/3 md:mt-64 md:ml-44  md:space-x-24 ">
-        <div className="flex items-center  w-14 md:w-40 md:h-40  mb-12 md:mb-0 relative">
+      <div className="mt-[88px]  flex  h-4/5 items-center md:mt-64 md:ml-44 md:h-2/3 md:w-auto  md:space-x-24 ">
+        <div className="relative mb-12  flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
           <Link href={'/#exchange'}>
-            <Image src={LeftArrow} alt="Right Arrow" />
+            <Image
+              className="fliter hover:invert-[.35]"
+              src={LeftArrow}
+              alt="Right Arrow"
+            />
           </Link>
         </div>
-        <div className="flex-col w-[275px] md:w-115 md:space-y-11">
+        <div className="md:w-115 w-[275px] flex-col md:space-y-11">
           <div className="md:mb-32">
-            <p className="text-xl md:text-6xl text-center md:text-left mb-8">
+            <p className="mb-8 text-center text-xl md:text-left md:text-6xl">
               The Choice is Yours
             </p>
 
-            <p className="text-base md:text-4xl leading-loose md:leading-11 mb-5 ">
+            <p className="md:leading-11 mb-5 text-base leading-loose md:text-4xl ">
               Certify your entire account history, or a recent time period.
             </p>
-            <p className="text-base md:text-4xl leading-loose md:leading-11">
+            <p className="md:leading-11 text-base leading-loose md:text-4xl">
               Focus only on your sick gains, or share fully transparent
               transaction data.
             </p>
-            <p className="text-base md:text-4xl leading-loose md:leading-11 my-4 ">
+            <p className="md:leading-11 my-4 text-base leading-loose md:text-4xl ">
               It's up to you.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-9 md:space-y-0 mt-24 md:mt-40">
+          <div className="mt-24 flex flex-col items-center justify-center space-y-9 md:mt-40 md:flex-row md:justify-between md:space-y-0">
             <Link href={'/start'} passHref>
               <Button
                 buttonStyle="px-20 w-4/5 md:w-1/3 text-base md:text-2xl "
@@ -45,9 +49,13 @@ const Learn: NextPage = () => {
             <Indicator page="second" />
           </div>
         </div>
-        <div className="flex items-center w-14 md:w-40 md:h-40 mb-12 md:mb-0 relative">
+        <div className="relative mb-12 flex w-14 items-center md:mb-0 md:h-40 md:w-40">
           <Link href={'/learn/data'} passHref>
-            <Image src={RightArrow} alt="Right Arrow" />
+            <Image
+              className="fliter hover:invert-[.35]"
+              src={RightArrow}
+              alt="Right Arrow"
+            />
           </Link>
         </div>
       </div>
