@@ -9,32 +9,32 @@ import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png'
 
 const Auro: NextPage = () => {
   return (
-    <div className="min-h-screen bg-background bg-cover bg-no-repeat text-white">
+    <div className="bg-background min-h-screen bg-cover bg-no-repeat text-white">
       <Header />
 
       {/* progress bar */}
       <div className="flex flex-col items-center">
-        <div className="flex flex-col  md:w-6/12 2xl:w-7/12 3xl:w-6/12 container  h-screen">
+        <div className="3xl:w-6/12 container  flex h-screen flex-col md:w-6/12  2xl:w-7/12">
           <div className="flex">
-            <span className="border-t-6  border-white w-1/12 "></span>
+            <span className="border-t-6  w-1/12 border-white "></span>
             <span className="border-t-6  border-custom-gray-header-border w-11/12"></span>
           </div>
           {/* progress bar end */}
 
-          <div className="flex flex-col h-screen md:space-y-2 2xl:space-y-10 w-full ">
-            <p className="text-sm 2xl:text-lg tracking-wider mt-2">
+          <div className="flex h-screen w-full flex-col md:space-y-2 2xl:space-y-10 ">
+            <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
               INSTALL BROWSER WALLET
             </p>
-            <p className="md:text-1.5xl 2xl:text-3.5xl  mt-12 font-extrabold">
+            <p className="md:text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font  mt-12 font-extrabold tracking-widest">
               Install Auro Wallet for Chrome
             </p>
-            <p className="md:text-base  2xl:text-1.5xl font-light pb-3">
+            <p className="2xl:text-1.5xl  pb-3 font-light md:text-base">
               You'll need Mina's browser wallet to use this app.
             </p>
             <div className="h-auto">
               <Image src={AuroChrome} alt="auro chrome" layout="responsive" />
             </div>
-            <div className="flex justify-between pt-8 w-full">
+            <div className="flex w-full justify-between pt-8">
               <Link href={'/start'} passHref>
                 <TransparentButton
                   buttonStyle="md:text-base 2xl:text-xl"
@@ -48,7 +48,7 @@ const Auro: NextPage = () => {
                   'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
                 }
               >
-                <div className="w-1/2">
+                <div className="w-full">
                   <Button buttonStyle="md:text-base 2xl:text-xl">
                     <Image src={ExternalLinkIcon} />
                     <div className="px-4">GET AURO </div>
@@ -58,7 +58,7 @@ const Auro: NextPage = () => {
 
               <Link href={'/auro/install'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base 2xl:text-xl"
+                  buttonStyle="px-20 md:text-base 2xl:text-lg 3xl:text-xl"
                   label="CONTINUE >>"
                 />
               </Link>
