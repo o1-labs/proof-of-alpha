@@ -12,7 +12,7 @@ const SubHeadLine = (props: subHeadLineProps) => {
   const { text, subHeadLineStyle, ...otherProps } = props;
   return (
     <h2
-      className={`mt-2 text-sm tracking-wider 2xl:text-lg ${subHeadLineStyle}`}
+      className={`3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg ${subHeadLineStyle}`}
       {...otherProps}
     >
       {text}
