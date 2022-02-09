@@ -92,7 +92,7 @@ const Verify: NextPage = () => {
                   />
                 </Link>
 
-                <Link href={'/start'}>
+                <Link href={'/auro/faucet'}>
                   <TransparentButton
                     buttonStyle="text-center md:text-xs 2xl:text-xl"
                     label="<< BACK"
