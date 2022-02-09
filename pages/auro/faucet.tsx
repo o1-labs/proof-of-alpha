@@ -7,6 +7,7 @@ import Header from '../../components/common/Header';
 import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet.png';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 import ProgressBar from '../../components/common/ProgressBar';
+import HeadLine from '../../components/auro/HeadLine';
 
 const Faucet: NextPage = () => {
   return (
@@ -21,9 +22,8 @@ const Faucet: NextPage = () => {
             <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
               GET TESTNET TOKENS
             </p>
-            <p className="md:text-1.5xl 2xl:text-3.5xl font-normal md:pb-9 2xl:pb-12 2xl:pt-5">
-              Get free testnet MINA (tMINA) from Mina's faucet
-            </p>
+
+            <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet " />
 
             <div className="h-auto">
               <Image src={MinaFaucet} alt="mina faucet" layout="responsive" />

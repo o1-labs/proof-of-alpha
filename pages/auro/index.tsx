@@ -6,7 +6,7 @@ import TransparentButton from '../../components/common/TransparentButton';
 import AuroChrome from '../../public/assets/auro/auro-home.png';
 import Header from '../../components/common/Header';
 import ProgressBar from '../../components/common/ProgressBar';
-import TitleItem from '../../components/auro/TitleItem';
+import HeadLine from '../../components/auro/HeadLine';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 
 const Auro: NextPage = () => {
@@ -23,7 +23,7 @@ const Auro: NextPage = () => {
               INSTALL BROWSER WALLET
             </p>
 
-            <TitleItem text="Install Auro Wallet for Chrome" />
+            <HeadLine text="Install Auro Wallet for Chrome" />
             <p className="2xl:text-1.5xl  pb-3 font-light md:text-base">
               You'll need Mina's browser wallet to use this app.
             </p>

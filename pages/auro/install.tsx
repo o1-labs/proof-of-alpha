@@ -5,6 +5,7 @@ import TransparentButton from '../../components/common/TransparentButton';
 import Image from 'next/image';
 import AuroTestnet from '../../public/assets/auro/install/auro-testnet.png';
 import ProgressBar from '../../components/common/ProgressBar';
+import HeadLine from '../../components/auro/HeadLine';
 
 const Auro: NextPage = () => {
   return (
@@ -20,9 +21,7 @@ const Auro: NextPage = () => {
               CHOOSE NETWORK
             </p>
 
-            <p className="md:text-1.5xl 2xl:text-3.5xl font-medium md:pb-9 2xl:pb-12 2xl:pt-5">
-              Make sure you’re connected to Snapps Testnet
-            </p>
+            <HeadLine text="Make sure you’re connected to Snapps Testnet" />
 
             <div className="h-auto">
               <Image src={AuroTestnet} alt="auro testnet" layout="responsive" />
