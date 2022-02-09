@@ -24,9 +24,10 @@ const Auro: NextPage = () => {
             <SubHeadLine text="INSTALL BROWSER WALLET" />
 
             <HeadLine text="Install Auro Wallet for Chrome" />
-            <p className="2xl:text-1.5xl  pb-3 font-light md:text-base">
+            <p className="3xl:text-2xl 2xl:text-1.5xl  pb-3 font-light md:text-base">
               You'll need Mina's browser wallet to use this app.
             </p>
+
             <div className="h-auto">
               <Image src={AuroChrome} alt="auro chrome" layout="responsive" />
             </div>

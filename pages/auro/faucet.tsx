@@ -24,7 +24,9 @@ const Faucet: NextPage = () => {
             <SubHeadLine text="GET TESTNET TOKENS" />
 
             <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet " />
-
+            <p className="3xl:text-2xl 2xl:text-1.5xl  pb-3 font-light md:text-base">
+              Select the Berkeley network
+            </p>
             <div className="h-auto">
               <Image src={MinaFaucet} alt="mina faucet" layout="responsive" />
             </div>
