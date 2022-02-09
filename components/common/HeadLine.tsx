@@ -7,12 +7,12 @@ interface headLineProps {
  * @param {string} text Header large text
  * @param {string} headLineStyle Additional TailwindCSS classes (optional).
  **/
-
+// 'text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font-medium';
 const HeadLine = (props: headLineProps) => {
   const { text, headLineStyle, ...otherProps } = props;
   return (
     <h1
-      className={`md:text-1.5xl 2xl:text-3.5xl font-medium md:pb-9 2xl:pb-12 2xl:pt-5 ${headLineStyle} `}
+      className={`md:text-1.5xl 3xl:text-4.5xl tracking-wider 2xl:text-4xl ${headLineStyle} `}
       {...otherProps}
     >
       {text}
