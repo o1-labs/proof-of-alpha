@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import type { NextPage } from 'next';
+import Layout from '../../components/common/Layout';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/common/Header';
@@ -14,7 +15,7 @@ import SubHeadLine from '../../components/common/SubHeadLine';
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState();
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat">
+    <Layout backGroundColor="gradient">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -60,7 +61,7 @@ const Configure: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

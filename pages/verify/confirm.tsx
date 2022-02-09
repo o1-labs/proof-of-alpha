@@ -5,13 +5,16 @@ import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
 import Button from '../../components/common/Button';
 import AuroConfirm from '../../public/assets/verify/confirm/auro-confirm.png';
+import Container from '../../components/common/Container';
 
 const Confirm: NextPage = () => {
   return (
-    <Layout backGroundColor="gradient" layoutStyle="mx-auto">
+    <Layout backGroundColor="gradient">
       <Header />
+
       <div className="mt-10 flex justify-around 2xl:mt-20">
         <div className="3xl:w-11/12 flex w-full 2xl:w-11/12">
+          =
           <div className="3xl:w-3/12 3xl:ml-100 ml-48 flex w-4/12 flex-col justify-center 2xl:ml-72 2xl:w-4/12">
             <p className="3xl:text-5xl 3xl:leading-14 mb-5 text-2xl 2xl:text-4xl">
               Submit Proof To Mina
@@ -27,7 +30,7 @@ const Confirm: NextPage = () => {
               />
             </Link>
           </div>
-          <div className="3xl:w-2/12 3xl:ml-80 ml-24 w-2/12 2xl:ml-56 2xl:w-2/12">
+          <div className="3xl:w-2/12 3xl:ml-80 ml-24 w-2/12  2xl:ml-56 2xl:w-2/12">
             {/* Using the priority prop to preload this image that was detected as
         the Largest Contentful Paint (LCP).
         https://nextjs.org/docs/api-reference/next/image#priority */}

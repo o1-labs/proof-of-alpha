@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import Layout from '../../components/common/Layout';
+import ProgressBar from '../../components/common/ProgressBar';
+import SubHeadLine from '../../components/common/SubHeadLine';
+import HeadLine from '../../components/common/HeadLine';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Input from '../../components/common/Input';
@@ -9,9 +13,6 @@ import InfoIcon from '../../public/assets/common/info-icon.png';
 import APIsettings from '../../public/assets/verify/api-key-settings.png';
 import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
-import ProgressBar from '../../components/common/ProgressBar';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import HeadLine from '../../components/common/HeadLine';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Verify: NextPage = () => {
     );
   };
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat text-white">
+    <Layout backGroundColor="gradient">
       <Header />
       <div className="flex flex-col items-center">
         <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
@@ -105,7 +106,7 @@ const Verify: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

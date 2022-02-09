@@ -9,10 +9,11 @@ import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png'
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
+import Layout from '../../components/common/Layout';
 
 const Faucet: NextPage = () => {
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat">
+    <Layout backGroundColor="gradient">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -53,7 +54,7 @@ const Faucet: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

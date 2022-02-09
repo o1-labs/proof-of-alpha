@@ -22,13 +22,15 @@ const Layout = (props: layoutPropTypes) => {
     gray: 'bg-prove-share-background',
     grayGradient: 'bg-prove-background'
   };
-  console.log('layoutStyle', layoutStyle);
+
   return (
     <div
-      className={` ${backGroundColorClassName[backGroundColor]}   h-screen*2 w-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
+      className={` ${backGroundColorClassName[backGroundColor]}  h-screen*2 w-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
       {...otherProps}
     >
+      {/* <div className="3xl:max-w-screen-2xl mx-auto w-9/12 min-w-min items-center sm:max-w-screen-sm  2xl:max-w-screen-2xl"> */}
       {children}
+      {/* </div> */}
     </div>
   );
 };

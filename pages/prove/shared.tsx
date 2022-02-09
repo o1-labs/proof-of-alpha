@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import { NextPage } from 'next';
 import Link from 'next/link';
+import Layout from '../../components/common/Layout';
 import Button from '../../components/common/Button';
 
 import ZKLogo from '../../public/assets/common/zk-logo.png';
@@ -14,9 +16,9 @@ import MinaPrimary from '../../public/assets/prove/mina-icon-primary.png';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
 import ProofOfAlphaStatement from '../../components/prove/ProofOfAlphaStatement';
 
-const SocialBadgeSection = () => {
+const Shared: NextPage = () => {
   return (
-    <div className="bg-prove-share-background min-h-screen bg-cover bg-no-repeat text-white">
+    <Layout backGroundColor="gray">
       <div className=" 3xl:-top-56 3xl:w-5/12 absolute -top-36 right-0  w-7/12 2xl:-top-52 2xl:w-6/12">
         <Image src={TopStamp} alt="Stamp" />
       </div>
@@ -26,7 +28,7 @@ const SocialBadgeSection = () => {
           <div className="pt-4 md:w-20 2xl:w-20">
             <Image src={ZKLogo} alt="zk logo" />
           </div>
-          <div className="3xl:w-8/12 flex w-5/12 flex-col items-center justify-center 2xl:-mt-8 2xl:w-[570px]">
+          <div className="3xl:w-7/12 flex w-5/12 flex-col items-center justify-center 2xl:-mt-8 2xl:w-[570px]">
             <ProofOfAlphaStatement />
           </div>
         </div>
@@ -74,7 +76,7 @@ const SocialBadgeSection = () => {
         </div>
       </div>
 
-      <div className="3xl:h-[400px] absolute bottom-0 h-[170px] w-full  bg-[#79797940] 2xl:h-[300px]">
+      <div className="3xl:h-[350px] absolute bottom-0 h-[170px] w-full  bg-[#79797940] 2xl:h-[300px]">
         <div className="flex flex-col  items-center  ">
           <div className="3xl:w-3/12 3xl:space-y-10  flex w-4/12 flex-col items-center justify-center space-y-4 2xl:w-3/12 2xl:space-y-6 ">
             <div className=" 3xl:w-auto 3xl:mt-18 mt-5  w-14 2xl:mt-12 2xl:w-14">
@@ -96,8 +98,8 @@ const SocialBadgeSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
-export default SocialBadgeSection;
+export default Shared;

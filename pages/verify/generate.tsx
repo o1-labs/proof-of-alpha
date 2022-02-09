@@ -10,6 +10,7 @@ import LinkIcon from '../../public/assets/common/link-icon.png';
 import TradeData from '../../trades.json';
 import { Trade } from '../../types';
 import { calculateCumulativeProfitLoss } from '../../utils';
+import Layout from '../../components/common/Layout';
 
 const Generate: NextPage = () => {
   const [proofConfirmed, setProofConfirmed] = useState<boolean>(true);
@@ -39,7 +40,7 @@ const Generate: NextPage = () => {
   };
 
   return (
-    <div className="bg-background flex min-h-screen justify-center bg-cover bg-no-repeat">
+    <Layout backGroundColor="gradient">
       <div className="container flex  h-screen justify-center">
         <div className="3xl:mt-24 mt-10 flex flex-col space-y-6 text-white 2xl:mt-20 2xl:space-y-10">
           <div className="flex justify-center">{renderProofStatus()}</div>
@@ -90,7 +91,7 @@ const Generate: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

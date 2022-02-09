@@ -9,10 +9,11 @@ import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 import SubHeadLine from '../../components/common/SubHeadLine';
+import Layout from '../../components/common/Layout';
 
 const Auro: NextPage = () => {
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat text-white">
+    <Layout backGroundColor="gradient">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -61,7 +62,7 @@ const Auro: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -14,6 +14,7 @@ import AuroNoTokensError from '../../components/verify/AuroNoTokensError';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';
+import Layout from '../../components/common/Layout';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
@@ -59,7 +60,7 @@ const Finalize: NextPage = () => {
     }
   };
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat">
+    <Layout backGroundColor="gradient">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -118,7 +119,7 @@ const Finalize: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { NextPage } from 'next';
+import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
 import TransparentButton from '../../components/common/TransparentButton';
 import Image from 'next/image';
@@ -10,7 +11,7 @@ import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Auro: NextPage = () => {
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat text-white">
+    <Layout backGroundColor="gradient">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -43,7 +44,7 @@ const Auro: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

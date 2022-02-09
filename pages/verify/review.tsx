@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NextPage } from 'next';
+
 import Button from '../../components/common/Button';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import TransparentButton from '../../components/common/TransparentButton';
@@ -14,6 +15,7 @@ import { Trade } from '../../types';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';
+import Layout from '../../components/common/Layout';
 
 const Review: NextPage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -52,7 +54,7 @@ const Review: NextPage = () => {
   }
 
   return (
-    <div className="bg-background min-h-screen bg-cover bg-no-repeat">
+    <Layout backGroundColor="gradient">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -89,7 +91,7 @@ const Review: NextPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
