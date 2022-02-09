@@ -1,28 +1,31 @@
 import React, { ReactNode } from 'react';
 
 interface layoutPropTypes {
-  backGroundColor: 'gradient' | 'blue' | 'red';
+  backGroundColor: 'gradient' | 'blue' | 'red' | 'gray' | 'grayGradient';
   layoutStyle?: string;
   children: React.ReactNode;
 }
 
 /**
- * @param {string} backGroundColor Background color 'gradient' | 'blue' | 'red'
+ * @param {string} backGroundColor Background color 'gradient' | 'blue' | 'red' | 'gray-gradient' | 'gray'
  * @param {string} layoutStyle Additional TailwindCSS classes (optional).
  *
  **/
 
 const Layout = (props: layoutPropTypes) => {
   const { backGroundColor, layoutStyle, children, ...otherProps } = props;
+
   const backGroundColorClassName = {
     gradient: 'bg-background',
     blue: 'bg-blue-background',
-    red: 'bg-red-background'
+    red: 'bg-red-background',
+    gray: 'bg-prove-share-background',
+    grayGradient: 'bg-prove-background'
   };
 
   return (
     <div
-      className={` ${backGroundColorClassName[backGroundColor]} flex h-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
+      className={` ${backGroundColorClassName[backGroundColor]}  flex h-screen w-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
       {...otherProps}
     >
       {children}
