@@ -19,7 +19,7 @@ const Faucet: NextPage = () => {
         <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
           <ProgressBar stage="3rd" />
 
-          <div className="flex h-screen flex-col  space-y-3 text-white">
+          <div className="flex h-screen flex-col  text-white md:space-y-2 2xl:space-y-10">
             <SubHeadLine text="GET TESTNET TOKENS" />
 
             <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet " />

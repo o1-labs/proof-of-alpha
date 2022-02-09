@@ -13,6 +13,7 @@ import AuroNoTestnetError from '../../components/verify/AuroNoTestnetError';
 import AuroNoTokensError from '../../components/verify/AuroNoTokensError';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
+import HeadLine from '../../components/common/HeadLine';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
@@ -67,9 +68,8 @@ const Finalize: NextPage = () => {
 
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-3 text-white 2xl:space-y-7">
             <SubHeadLine text="FINALIZE SETTINGS" />
-            <p className="text-1.5xl 3xl:text-4xl font-medium 2xl:text-4xl ">
-              How much do you want to disclose?
-            </p>
+
+            <HeadLine text="How much do you want to disclose?" />
             {/* button selection */}
             <div className="mx-40 w-10/12">
               <div></div>

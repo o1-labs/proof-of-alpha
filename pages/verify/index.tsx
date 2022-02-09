@@ -11,6 +11,7 @@ import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
+import HeadLine from '../../components/common/HeadLine';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -32,9 +33,8 @@ const Verify: NextPage = () => {
 
           <div className="3xl:space-y-8 flex flex-col space-y-2 2xl:space-y-6">
             <SubHeadLine text="CONNECT TO BINANCE" />
-            <p className="2xl:text-3.5xl 3xl:text-4xl font-medium md:text-xl">
-              Let's Gather Your Trading Data
-            </p>
+
+            <HeadLine text="Let's Gather Your Trading Data" />
 
             <p className="2xl:text-1.5xl  3xl:text-2xl font-light md:text-sm ">
               We use Binance API keys to fetch your trades.

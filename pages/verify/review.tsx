@@ -13,6 +13,7 @@ import TradeData from '../../trades.json';
 import { Trade } from '../../types';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
+import HeadLine from '../../components/common/HeadLine';
 
 const Review: NextPage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -21,20 +22,20 @@ const Review: NextPage = () => {
   useEffect(() => {
     async function fetchTrades() {
       // fetch Trades from Binance
-      // const trades = Array(500).fill({
-      //   id: 6,
-      //   pairId: 'BTC/UDST',
-      //   buy: {
-      //     timestamp: '1695928190',
-      //     quantity: '2.780000000',
-      //     price: '45343'
-      //   },
-      //   sell: {
-      //     timestamp: '1709534876',
-      //     quantity: '2.650000000',
-      //     price: '57123'
-      //   }
-      // });
+      const trades = Array(500).fill({
+        id: 6,
+        pairId: 'BTC/UDST',
+        buy: {
+          timestamp: '1695928190',
+          quantity: '2.780000000',
+          price: '45343'
+        },
+        sell: {
+          timestamp: '1709534876',
+          quantity: '2.650000000',
+          price: '57123'
+        }
+      });
       setTrades(trades as Trade[]);
       setTimeout(() => {
         setIsLoading(false);
@@ -60,14 +61,13 @@ const Review: NextPage = () => {
 
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-5 text-white 2xl:space-y-10">
             <SubHeadLine text="REVIEW" />
-            <p className="text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font-medium">
-              Review your performance
-            </p>
-            <div className="h-2/5 max-h-screen overflow-auto 2xl:h-1/2">
+
+            <HeadLine text="Review your performance" />
+            <div className="md:max-h-90 2xl:max-h-115 3xl:max-h-120 h-4/5 overflow-auto 2xl:h-1/2">
               <div className="flex justify-center">
-                <div className="w-10/12 2xl:w-auto">
-                  <TradeStatement trades={trades} />
-                </div>
+                {/* <div className="w-10/12 2xl:w-auto"> */}
+                <TradeStatement trades={trades} />
+                {/* </div> */}
               </div>
             </div>
             {/* nav buttons */}

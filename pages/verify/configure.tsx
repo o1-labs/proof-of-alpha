@@ -24,9 +24,8 @@ const Configure: NextPage = () => {
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-5 text-white 2xl:space-y-10">
             <SubHeadLine text="CONFIGURE SETTINGS" />
 
-            <p className="text-1.5xl 2xl:text-3.5xl">
-              Configure <span className="font-medium">Proof of Alpha</span>{' '}
-              output
+            <p className="md:text-1.5xl 2xl:text-3.5xl">
+              Configure <span className="font-bold">Proof of Alpha</span> output
             </p>
             {/* Token pair dropdown */}
 

@@ -17,7 +17,7 @@ const Auro: NextPage = () => {
         <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
           <ProgressBar stage="2nd" />
 
-          <div className="flex h-screen flex-col  space-y-3 ">
+          <div className="flex h-screen flex-col  md:space-y-2 2xl:space-y-10 ">
             <SubHeadLine text="CHOOSE NETWORK" />
 
             <HeadLine text="Make sure you’re connected to Snapps Testnet" />
