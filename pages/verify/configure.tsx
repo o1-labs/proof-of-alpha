@@ -9,6 +9,7 @@ import DateRangeGroup from '../../components/verify/DateRangeGroup';
 import TokenPairGroup from '../../components/verify/TokenPairGroup';
 import ToolTip from '../../components/verify/ToolTip';
 import ProgressBar from '../../components/common/ProgressBar';
+import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState();
@@ -21,9 +22,7 @@ const Configure: NextPage = () => {
           <ProgressBar stage="5th" />
 
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-5 text-white 2xl:space-y-10">
-            <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
-              CONFIGURE SETTINGS
-            </p>
+            <SubHeadLine text="CONFIGURE SETTINGS" />
 
             <p className="text-1.5xl 2xl:text-3.5xl">
               Configure <span className="font-medium">Proof of Alpha</span>{' '}

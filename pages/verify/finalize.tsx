@@ -12,6 +12,7 @@ import AuroNoWalletError from '../../components/verify/AuroNoWalletError';
 import AuroNoTestnetError from '../../components/verify/AuroNoTestnetError';
 import AuroNoTokensError from '../../components/verify/AuroNoTokensError';
 import ProgressBar from '../../components/common/ProgressBar';
+import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
@@ -65,9 +66,7 @@ const Finalize: NextPage = () => {
           <ProgressBar stage="7th" />
 
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-3 text-white 2xl:space-y-7">
-            <p className="3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg">
-              FINALIZE SETTINGS
-            </p>
+            <SubHeadLine text="FINALIZE SETTINGS" />
             <p className="text-1.5xl 3xl:text-4xl font-medium 2xl:text-4xl ">
               How much do you want to disclose?
             </p>

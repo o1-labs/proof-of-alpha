@@ -12,6 +12,7 @@ import TradeStatement from '../../components/common/TradeStatement';
 import TradeData from '../../trades.json';
 import { Trade } from '../../types';
 import ProgressBar from '../../components/common/ProgressBar';
+import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Review: NextPage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -58,22 +59,19 @@ const Review: NextPage = () => {
           <ProgressBar stage="6th" />
 
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-5 text-white 2xl:space-y-10">
-            <p className="3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg">
-              REVIEW
-            </p>
+            <SubHeadLine text="REVIEW" />
             <p className="text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font-medium">
               Review your performance
             </p>
             <div className="h-2/5 max-h-screen overflow-auto 2xl:h-1/2">
               <div className="flex justify-center">
                 <div className="w-10/12 2xl:w-auto">
-                  {/* <Image src={BinanaceTransactions}></Image> */}
                   <TradeStatement trades={trades} />
                 </div>
               </div>
             </div>
             {/* nav buttons */}
-            {/* mr-18 3xl:mr-86 flex justify-between pt-10 2xl:mr-52 2xl:pt-0 */}
+
             <div className="flex justify-around pt-10">
               <Link href="/verify/configure">
                 <TransparentButton

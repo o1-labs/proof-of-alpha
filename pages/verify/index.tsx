@@ -10,6 +10,7 @@ import APIsettings from '../../public/assets/verify/api-key-settings.png';
 import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
 import ProgressBar from '../../components/common/ProgressBar';
+import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -30,9 +31,7 @@ const Verify: NextPage = () => {
           <ProgressBar stage="4th" />
 
           <div className="3xl:space-y-8 flex flex-col space-y-2 2xl:space-y-6">
-            <p className=" 3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg">
-              CONNECT TO BINANCE
-            </p>
+            <SubHeadLine text="CONNECT TO BINANCE" />
             <p className="2xl:text-3.5xl 3xl:text-4xl font-medium md:text-xl">
               Let's Gather Your Trading Data
             </p>

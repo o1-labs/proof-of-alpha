@@ -7,7 +7,8 @@ import Header from '../../components/common/Header';
 import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet.png';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 import ProgressBar from '../../components/common/ProgressBar';
-import HeadLine from '../../components/auro/HeadLine';
+import HeadLine from '../../components/common/HeadLine';
+import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Faucet: NextPage = () => {
   return (
@@ -19,9 +20,7 @@ const Faucet: NextPage = () => {
           <ProgressBar stage="3rd" />
 
           <div className="flex h-screen flex-col  space-y-3 text-white">
-            <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
-              GET TESTNET TOKENS
-            </p>
+            <SubHeadLine text="GET TESTNET TOKENS" />
 
             <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet " />
 

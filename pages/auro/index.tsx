@@ -6,8 +6,9 @@ import TransparentButton from '../../components/common/TransparentButton';
 import AuroChrome from '../../public/assets/auro/auro-home.png';
 import Header from '../../components/common/Header';
 import ProgressBar from '../../components/common/ProgressBar';
-import HeadLine from '../../components/auro/HeadLine';
+import HeadLine from '../../components/common/HeadLine';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
+import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Auro: NextPage = () => {
   return (
@@ -19,9 +20,7 @@ const Auro: NextPage = () => {
           <ProgressBar stage="1st" />
 
           <div className="flex h-screen w-full flex-col md:space-y-2 2xl:space-y-10 ">
-            <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
-              INSTALL BROWSER WALLET
-            </p>
+            <SubHeadLine text="INSTALL BROWSER WALLET" />
 
             <HeadLine text="Install Auro Wallet for Chrome" />
             <p className="2xl:text-1.5xl  pb-3 font-light md:text-base">
