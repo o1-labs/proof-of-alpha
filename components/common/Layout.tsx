@@ -22,10 +22,10 @@ const Layout = (props: layoutPropTypes) => {
     gray: 'bg-prove-share-background',
     grayGradient: 'bg-prove-background'
   };
-
+  console.log('layoutStyle', layoutStyle);
   return (
     <div
-      className={` ${backGroundColorClassName[backGroundColor]}  flex h-screen w-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
+      className={` ${backGroundColorClassName[backGroundColor]}   h-screen*2 w-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
       {...otherProps}
     >
       {children}
