@@ -8,23 +8,20 @@ import Dropdown from '../../components/common/Dropdown';
 import DateRangeGroup from '../../components/verify/DateRangeGroup';
 import TokenPairGroup from '../../components/verify/TokenPairGroup';
 import ToolTip from '../../components/verify/ToolTip';
+import ProgressBar from '../../components/common/ProgressBar';
 
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState();
   return (
-    <div className="min-h-screen bg-background bg-cover bg-no-repeat">
+    <div className="bg-background min-h-screen bg-cover bg-no-repeat">
       <Header />
-      {/* progress bar */}
-      <div className="flex flex-col items-center">
-        <div className="flex flex-col  w-7/12 md:w-6/12 3xl:w-6/12 2xl:w-7/12  container  h-screen">
-          <div className="flex">
-            <span className="border-t-6  border-white w-7/12 "></span>
-            <span className="border-t-6  border-custom-gray-header-border w-6/12"></span>
-          </div>
-          {/* progress bar end */}
 
-          <div className="flex flex-col h-screen space-y-5 2xl:space-y-10 3xl:space-y-14 text-white">
-            <p className="text-sm 2xl:text-lg tracking-wider mt-2">
+      <div className="flex flex-col items-center">
+        <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
+          <ProgressBar stage="5th" />
+
+          <div className="3xl:space-y-14 flex h-screen flex-col space-y-5 text-white 2xl:space-y-10">
+            <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
               CONFIGURE SETTINGS
             </p>
 
@@ -38,8 +35,8 @@ const Configure: NextPage = () => {
             <DateRangeGroup />
 
             {/* tooltip */}
-            <div className="flex items-center justify-center mr-2 2xl:mr-20 3xl:mr-40 my-8 ">
-              <span className="text-sm 2xl:text-1.5xl leading-loose mr-2 hover:underline">
+            <div className="3xl:mr-40 my-8 mr-2 flex items-center justify-center 2xl:mr-20 ">
+              <span className="2xl:text-1.5xl mr-2 text-sm leading-loose hover:underline">
                 Maximum of 500 trade fills
               </span>
 

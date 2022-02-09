@@ -11,10 +11,12 @@ import SocialBadge from '../../components/finalize/SocialBadge';
 import AuroNoWalletError from '../../components/verify/AuroNoWalletError';
 import AuroNoTestnetError from '../../components/verify/AuroNoTestnetError';
 import AuroNoTokensError from '../../components/verify/AuroNoTokensError';
+import ProgressBar from '../../components/common/ProgressBar';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
   const [isDisabled, setIsdisabled] = useState<boolean>(false);
+  const [errorType, setErrorType] = useState<string>('');
   useEffect(() => {
     // if (
     //   errorType === 'wallet' ||
@@ -22,7 +24,12 @@ const Finalize: NextPage = () => {
     //   errorType === 'tokens'
     // ) {
     //   setIsdisabled(true);
-  }, []);
+    // console.log(window.mina);
+    // if (!window?.mina) {
+    //   setErrorType('wallet');
+    //   setIsdisabled(true);
+    // }
+  }, [errorType]);
 
   const renderSocialBadges = (): React.ReactElement => {
     return activeButton === 'returnsAndHistory' ? (
@@ -52,13 +59,10 @@ const Finalize: NextPage = () => {
   return (
     <div className="bg-background min-h-screen bg-cover bg-no-repeat">
       <Header />
-      {/* progress bar */}
+
       <div className="flex flex-col items-center">
         <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
-          <div className="flex">
-            <span className="border-t-6  w-full border-white "></span>
-          </div>
-          {/* progress bar end */}
+          <ProgressBar stage="7th" />
 
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-3 text-white 2xl:space-y-7">
             <p className="3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg">
@@ -68,30 +72,33 @@ const Finalize: NextPage = () => {
               How much do you want to disclose?
             </p>
             {/* button selection */}
-            <div className="flex justify-center 2xl:ml-28 2xl:justify-start">
-              <div className="flex w-8/12">
-                <LightButton
-                  label="RETURNS & TRADE HISTORY"
-                  value="returnsAndHistory"
-                  onClick={handleButtonSelection}
-                  selected={activeButton === 'returnsAndHistory'}
-                />
-                <LightButton
-                  label="PERCENTAGE & RETURNS ONLY"
-                  value="returns"
-                  onClick={handleButtonSelection}
-                  buttonStyle="text-black"
-                />
+            <div className="mx-40 w-10/12">
+              <div></div>
+              <div className="flex justify-center 2xl:ml-28 2xl:justify-start">
+                <div className="flex w-9/12">
+                  <LightButton
+                    label="RETURNS & TRADE HISTORY"
+                    value="returnsAndHistory"
+                    onClick={handleButtonSelection}
+                    selected={activeButton === 'returnsAndHistory'}
+                  />
+                  <LightButton
+                    label="PERCENTAGE & RETURNS ONLY"
+                    value="returns"
+                    onClick={handleButtonSelection}
+                    buttonStyle="text-black"
+                  />
+                </div>
               </div>
+              {/* button selection */}
+              <div className="2xl:items-left mb-5 flex items-center justify-center 2xl:justify-start">
+                {renderSocialBadges()}
+              </div>
+              {/* end social badges */}
+              {/* nav buttons */}
+              {/* "wallet " "testnet" 'tokens' */}
+              {renderErrors(errorType)}
             </div>
-            {/* button selection */}
-            <div className="2xl:items-left mb-5 flex items-center justify-center 2xl:justify-start">
-              {renderSocialBadges()}
-            </div>
-            {/* end social badges */}
-            {/* nav buttons */}
-            {/* "wallet " "testnet" 'tokens' */}
-            {renderErrors()}
             <div className="mt-10 flex justify-between">
               <Link href="/verify/review" passHref>
                 <TransparentButton
@@ -101,7 +108,9 @@ const Finalize: NextPage = () => {
               </Link>
               <Link href="/verify/generate">
                 <Button
-                  buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl"
+                  buttonStyle={`w-3/12  2xl:w-3/12 text-sm 2xl:text-base 3xl:text-base ${
+                    isDisabled ? 'bg-gray-400 bg-opacity-30' : ''
+                  }`}
                   label="CONTINUE  >>"
                   disabled={isDisabled}
                 />

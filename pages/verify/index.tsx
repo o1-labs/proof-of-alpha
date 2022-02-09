@@ -9,6 +9,7 @@ import InfoIcon from '../../public/assets/common/info-icon.png';
 import APIsettings from '../../public/assets/verify/api-key-settings.png';
 import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
+import ProgressBar from '../../components/common/ProgressBar';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -22,47 +23,44 @@ const Verify: NextPage = () => {
     );
   };
   return (
-    <div className="min-h-screen bg-background bg-cover bg-no-repeat text-white">
+    <div className="bg-background min-h-screen bg-cover bg-no-repeat text-white">
       <Header />
       <div className="flex flex-col items-center">
-        <div className="flex flex-col  w-7/12 md:w-6/12 3xl:w-6/12 2xl:w-7/12  container  h-screen">
-          <div className="flex">
-            <span className="border-t-6  border-white w-6/12 "></span>
-            <span className="border-t-6  border-custom-gray-header-border w-6/12"></span>
-          </div>
+        <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
+          <ProgressBar stage="4th" />
 
-          <div className="flex flex-col space-y-2 2xl:space-y-6 3xl:space-y-8">
-            <p className=" text-sm 2xl:text-lg 3xl:text-xl tracking-wider mt-2">
+          <div className="3xl:space-y-8 flex flex-col space-y-2 2xl:space-y-6">
+            <p className=" 3xl:text-xl mt-2 text-sm tracking-wider 2xl:text-lg">
               CONNECT TO BINANCE
             </p>
-            <p className="md:text-xl 2xl:text-3.5xl 3xl:text-4xl font-medium">
+            <p className="2xl:text-3.5xl 3xl:text-4xl font-medium md:text-xl">
               Let's Gather Your Trading Data
             </p>
 
-            <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl font-light ">
+            <p className="2xl:text-1.5xl  3xl:text-2xl font-light md:text-sm ">
               We use Binance API keys to fetch your trades.
             </p>
-            <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl font-light">
+            <p className="2xl:text-1.5xl  3xl:text-2xl font-light md:text-sm">
               <span className="font-bold">Read-only</span> access is all we
               need.
             </p>
             <div>
-              <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl -ml-8 2xl:ml-0  flex justify-center  items-center text-center bg-[#90909040] border-[#A8A8A8] border-1/2 h-9 w-7/12 2xl:h-14 2xl:w-6/12 3xl:h-14 3xl:w-5/12 font-bold   ">
+              <p className="2xl:text-1.5xl  3xl:text-2xl border-1/2 3xl:h-16 3xl:w-6/12  -ml-8 flex  h-9 w-7/12 items-center justify-center border-[#A8A8A8] bg-[#90909040] text-center font-bold md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12   ">
                 No record of your API keys will ever be saved.
               </p>
             </div>
-            <p className="md:text-sm  2xl:text-1.5xl 3xl:text-2xl">
+            <p className="2xl:text-1.5xl  3xl:text-2xl md:text-sm">
               If you don't have a Binance account, you can use&nbsp;
               <button onClick={handleOurAPIkeysClick}>
                 <span className="underline">our API Keys</span>
               </button>
             </p>
             <button onClick={() => setIsModalOpen(true)}>
-              <div className="flex pt-3 items-center  ">
-                <div className="flex w-4 2xl:w-5 justify-center">
+              <div className="flex items-center pt-3  ">
+                <div className="flex w-4 justify-center 2xl:w-5">
                   <Image src={InfoIcon} alt="info" />
                 </div>
-                <span className="md:text-xs 2xl:text-base 3xl:text-lg pl-2 underline ">
+                <span className="3xl:text-lg pl-2 underline md:text-xs 2xl:text-base ">
                   How do I find my Binance API keys?
                 </span>
               </div>
@@ -70,15 +68,15 @@ const Verify: NextPage = () => {
             <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
           </div>
           <div className="flex ">
-            <div className="w-1/2 md:mt-3 2xl:mt-10 flex flex-col space-y-2 2xl:space-y-5">
-              <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
+            <div className="flex w-1/2 flex-col space-y-2 md:mt-3 2xl:mt-10 2xl:space-y-5">
+              <p className="3xl:text-lg md:text-[.6rem] 2xl:text-base">
                 BINANCE API KEY
               </p>
               <Input
                 inputStyle="md:text-base 2xl:text-xl "
                 value={binanaceAPIkey}
               />
-              <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
+              <p className="3xl:text-lg md:text-[.6rem] 2xl:text-base">
                 API SECRET
               </p>
               <Input
@@ -102,7 +100,7 @@ const Verify: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="absolute w-4/12 2xl:w-5/12  right-36  mt-8 2xl:right-20 2xl:mt-20">
+            <div className="absolute right-36 mt-8  w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12">
               <Image src={APIsettings} alt="API key settings" />
             </div>
           </div>

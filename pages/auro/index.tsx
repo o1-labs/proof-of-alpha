@@ -5,6 +5,8 @@ import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import AuroChrome from '../../public/assets/auro/auro-home.png';
 import Header from '../../components/common/Header';
+import ProgressBar from '../../components/common/ProgressBar';
+import TitleItem from '../../components/auro/TitleItem';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
 
 const Auro: NextPage = () => {
@@ -12,22 +14,16 @@ const Auro: NextPage = () => {
     <div className="bg-background min-h-screen bg-cover bg-no-repeat text-white">
       <Header />
 
-      {/* progress bar */}
       <div className="flex flex-col items-center">
         <div className="3xl:w-6/12 container  flex h-screen flex-col md:w-6/12  2xl:w-7/12">
-          <div className="flex">
-            <span className="border-t-6  w-1/12 border-white "></span>
-            <span className="border-t-6  border-custom-gray-header-border w-11/12"></span>
-          </div>
-          {/* progress bar end */}
+          <ProgressBar stage="1st" />
 
           <div className="flex h-screen w-full flex-col md:space-y-2 2xl:space-y-10 ">
             <p className="mt-2 text-sm tracking-wider 2xl:text-lg">
               INSTALL BROWSER WALLET
             </p>
-            <p className="md:text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font  mt-12 font-extrabold tracking-widest">
-              Install Auro Wallet for Chrome
-            </p>
+
+            <TitleItem text="Install Auro Wallet for Chrome" />
             <p className="2xl:text-1.5xl  pb-3 font-light md:text-base">
               You'll need Mina's browser wallet to use this app.
             </p>
