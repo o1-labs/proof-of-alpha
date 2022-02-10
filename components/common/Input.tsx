@@ -12,8 +12,8 @@ const Input = (props: inputPropTypes) => {
   const { inputStyle, ...otherProps } = props;
   return (
     <input
-      className={`w-full 
-       justify-center text-white items-center md:text-base 2xl:text-xl px-4  2xl:py-3 bg-custom-pink  hover:bg-opacity-75 active:bg-black-500  focus:bg-[#a7a5a540]  focus:text-white ${inputStyle}`}
+      className={`bg-custom-pink 
+       active:bg-black-500 w-full items-center justify-center px-4 text-white  hover:bg-opacity-75 focus:bg-[#a7a5a540] focus:text-white focus:outline-blue-400 active:outline-blue-400 md:text-base  2xl:py-3  2xl:text-xl ${inputStyle}`}
       {...otherProps}
     />
   );
