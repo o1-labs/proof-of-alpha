@@ -34,8 +34,8 @@ const Configure: NextPage = () => {
             <DateRangeGroup />
 
             {/* tooltip */}
-            <div className="3xl:mr-40 my-8 mr-2 flex items-center justify-center 2xl:mr-20 ">
-              <span className="2xl:text-1.5xl mr-2 text-sm leading-loose hover:underline">
+            <div className="3xl:mr-40 my-8 mr-2 flex  items-center justify-center 2xl:mr-20 ">
+              <span className="2xl:text-1.5xl mr-2  cursor-default text-sm leading-loose hover:underline">
                 Maximum of 500 trade fills
               </span>
 
