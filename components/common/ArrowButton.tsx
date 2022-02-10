@@ -29,9 +29,9 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
         {...otherProps}
       >
         <path
-          stroke-linecap="line"
-          stroke-linejoin="line"
-          stroke-width=".6"
+          strokeLinecap="square"
+          strokeLinejoin="inherit"
+          strokeWidth=".6"
           d={`${arrowPath[arrowDirection]}`}
         />
       </svg>
