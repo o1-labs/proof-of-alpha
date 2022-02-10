@@ -11,8 +11,8 @@ interface checkMarkItemPropTypes {
 const CheckmarkItem = (props: checkMarkItemPropTypes) => {
   const { copy } = props;
   return (
-    <div className="flex space-x-2 md:space-x-4 w-[285px] md:w-auto items-center text-sm md:text-4xl">
-      <div className="w-6 h-6 md:w-10 md:h-10 relative">
+    <div className="3xl:text-4xl flex w-[285px] items-center space-x-2 text-sm md:w-auto md:space-x-4 md:text-2xl 2xl:text-3xl">
+      <div className="relative h-6 w-6 md:h-10 md:w-10">
         <Image src={Checkmark} alt="Blue checkmark" />
       </div>
       <p>{copy}</p>

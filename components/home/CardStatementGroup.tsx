@@ -5,11 +5,15 @@ import TwitterCard from '../../public/assets/common/twitter-card.png';
 const CardStatmentGroup = () => {
   return (
     <>
-      <div className="absolute z-3  bottom-0 w-11/12 md:w-[640px] xl:w-[840px] 3xl:w-6/12 max-h-[300px] md:max-h-[375px] xl:max-h-[665px] 3xl:max-h-[630px]  right-0 md:right-1 xl:right-0 3xl:right-0 overflow-hidden">
-        <Image src={ProofOfAlpha} alt="Proof of Alpha Stament" />
+      <div className="z-3 3xl:w-8/12  3xl:max-h-[800px] 3xl:right-0 3xl:bottom-60 absolute bottom-36 right-0 max-h-[230px] w-11/12 overflow-hidden md:right-1 md:max-h-[375px] md:w-[640px]  xl:right-0 xl:w-[840px] 2xl:bottom-44 2xl:right-0 2xl:max-h-[580px] 2xl:w-7/12">
+        <Image
+          layout="responsive"
+          src={ProofOfAlpha}
+          alt="Proof of Alpha Statement"
+        />
       </div>
-      <div className="absolute z-5 bottom-0 xl:bottom-0 md:bottom-0 w-11/12 md:w-[670px] xl:w-130 -left-11 md:left-20 xl:left-32 max-h-[165px] md:max-h-[240px] xl:max-h-[420px] overflow-hidden">
-        <Image src={TwitterCard} alt="Twitter Card" />
+      <div className="z-5 xl:w-130 3xl:w-10/12 3xl:-left-24 3xl:max-h-[520px] 3xl:bottom-60 absolute bottom-36 -left-11 max-h-[165px] w-11/12 overflow-hidden md:bottom-0 md:left-20 md:max-h-[240px] md:w-[670px] xl:bottom-0 xl:left-32 xl:max-h-[420px] 2xl:bottom-44 2xl:-left-14 2xl:max-h-[400px] 2xl:w-9/12">
+        <Image layout="responsive" src={TwitterCard} alt="Twitter Card" />
       </div>
     </>
   );

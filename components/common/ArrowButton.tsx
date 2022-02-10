@@ -22,7 +22,7 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
   return (
     <Link href={navLink} passHref>
       <svg
-        className={`w-14 hover:stroke-white md:w-40 ${arrowButtonStyle}`}
+        className={`w-14 hover:stroke-white md:w-40  ${arrowButtonStyle}`}
         fill="none"
         viewBox="0 0 24 24"
         stroke="#b8b5b5"
