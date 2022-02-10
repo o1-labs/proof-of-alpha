@@ -21,26 +21,26 @@ const DateRangeGroup = ({
       </span>
       <div className="flex w-2/3">
         <LightButton
-          buttonStyle="rounded-l w-1/4 "
+          lightButtonStyle="rounded-l w-1/4 "
           label="LAST 30 DAYS"
           value="30"
           selected={activeButton === '30'}
           onClick={handleButtonSelection}
         />
         <LightButton
-          buttonStyle="w-1/4"
+          lightButtonStyle="w-1/4"
           label="LAST 90 DAYS"
           value="90"
           onClick={handleButtonSelection}
         />
         <LightButton
-          buttonStyle="w-1/4 "
+          lightButtonStyle="w-1/4 "
           label="LAST YEAR"
           value="year"
           onClick={handleButtonSelection}
         />
         <LightButton
-          buttonStyle="rounded-r w-1/4 "
+          lightButtonStyle="rounded-r w-1/4 "
           label="FULL HISTORY"
           value="full"
           onClick={handleButtonSelection}

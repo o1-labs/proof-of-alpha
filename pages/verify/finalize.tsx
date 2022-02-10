@@ -18,7 +18,7 @@ import Layout from '../../components/common/Layout';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
-  const [isDisabled, setIsdisabled] = useState<boolean>(true);
+  const [isDisabled, setIsdisabled] = useState<boolean>(false);
   const [errorType, setErrorType] = useState<string>('');
   useEffect(() => {
     // if (
@@ -42,8 +42,10 @@ const Finalize: NextPage = () => {
     );
   };
 
-  const handleButtonSelection = (event: any): void => {
-    setActiveButton(event.target.value);
+  const handleButtonSelection = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ): void => {
+    setActiveButton(event.currentTarget.value);
   };
 
   const renderErrors = (errorType?: string) => {
@@ -78,12 +80,14 @@ const Finalize: NextPage = () => {
                 <div className="flex w-9/12">
                   <LightButton
                     label="RETURNS & TRADE HISTORY"
+                    lightButtonStyle="rounded-l-sm "
                     value="returnsAndHistory"
                     onClick={handleButtonSelection}
                     selected={activeButton === 'returnsAndHistory'}
                   />
                   <LightButton
                     label="PERCENTAGE & RETURNS ONLY"
+                    lightButtonStyle="rounded-r-sm"
                     value="returns"
                     onClick={handleButtonSelection}
                     buttonStyle="text-black"
