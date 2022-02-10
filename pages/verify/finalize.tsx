@@ -18,7 +18,7 @@ import Layout from '../../components/common/Layout';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
-  const [isDisabled, setIsdisabled] = useState<boolean>(false);
+  const [isDisabled, setIsdisabled] = useState<boolean>(true);
   const [errorType, setErrorType] = useState<string>('');
   useEffect(() => {
     // if (
@@ -94,7 +94,7 @@ const Finalize: NextPage = () => {
               <div className="2xl:items-left mb-5 flex items-center justify-center 2xl:justify-start">
                 {renderSocialBadges()}
               </div>
-              {/* end social badges */}
+
               {/* nav buttons */}
               {/* "wallet " "testnet" 'tokens' */}
               {renderErrors(errorType)}
@@ -106,11 +106,10 @@ const Finalize: NextPage = () => {
                   label="<< BACK"
                 />
               </Link>
-              <Link href="/verify/generate">
+              <Link href="/verify/generate" passHref>
                 <Button
-                  buttonStyle={`w-3/12  2xl:w-3/12 text-sm 2xl:text-base 3xl:text-base ${
-                    isDisabled ? 'bg-gray-400 bg-opacity-30' : ''
-                  }`}
+                  buttonStyle={`w-3/12  2xl:w-3/12 text-sm 2xl:text-xl 3xl:text-2xl
+                  `}
                   label="CONTINUE  >>"
                   disabled={isDisabled}
                 />
