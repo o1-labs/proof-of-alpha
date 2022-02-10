@@ -25,6 +25,18 @@ const Verify: NextPage = () => {
       'a4ttT8g4dEafafp025JK34nm31c2xUn1ZxPLHDfn09Pa54Tt6Lft3j4'
     );
   };
+
+  const handleBinanceAPIkeyChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setBinanceAPIkey(event.target.value);
+  };
+  const handleBinanceAPIsecretChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    setBinanceAPIsecret(event.target.value);
+  };
+
   return (
     <Layout backGroundColor="gradient">
       <Header />
@@ -75,6 +87,7 @@ const Verify: NextPage = () => {
               <Input
                 inputStyle="md:text-base 2xl:text-xl "
                 value={binanaceAPIkey}
+                onChange={handleBinanceAPIkeyChange}
               />
               <p className="3xl:text-lg md:text-[.6rem] 2xl:text-base">
                 API SECRET
@@ -82,6 +95,7 @@ const Verify: NextPage = () => {
               <Input
                 inputStyle="md:text-base 2xl:text-xl  "
                 value={binanaceAPIsecret}
+                onChange={handleBinanceAPIsecretChange}
               />
 
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
