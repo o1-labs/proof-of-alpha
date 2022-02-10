@@ -1,16 +1,50 @@
 import LightButton from '../common/LightButton';
 
-const DateRangeGroup = () => {
+interface dateRangeGroupProps {
+  activeButton: string;
+  setActiveButton: (value: string) => void;
+}
+
+const DateRangeGroup = ({
+  activeButton,
+  setActiveButton
+}: dateRangeGroupProps) => {
+  const handleButtonSelection = (
+    event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    setActiveButton(event.currentTarget.value);
+  };
   return (
     <div className="flex items-center">
-      <span className="text-lg 2xl:text-4xl leading-loose  w-1/3">
+      <span className="w-1/3 text-lg leading-loose  2xl:text-4xl">
         Date range
       </span>
       <div className="flex w-2/3">
-        <LightButton buttonStyle="rounded-l w-1/4 " label="LAST 30 DAYS" />
-        <LightButton buttonStyle="w-1/4" label="LAST 90 DAYS" />
-        <LightButton buttonStyle="w-1/4 " label="LAST YEAR" />
-        <LightButton buttonStyle="rounded-r w-1/4 " label="FULL HISTORY" />
+        <LightButton
+          buttonStyle="rounded-l w-1/4 "
+          label="LAST 30 DAYS"
+          value="30"
+          selected={activeButton === '30'}
+          onClick={handleButtonSelection}
+        />
+        <LightButton
+          buttonStyle="w-1/4"
+          label="LAST 90 DAYS"
+          value="90"
+          onClick={handleButtonSelection}
+        />
+        <LightButton
+          buttonStyle="w-1/4 "
+          label="LAST YEAR"
+          value="year"
+          onClick={handleButtonSelection}
+        />
+        <LightButton
+          buttonStyle="rounded-r w-1/4 "
+          label="FULL HISTORY"
+          value="full"
+          onClick={handleButtonSelection}
+        />
       </div>
     </div>
   );

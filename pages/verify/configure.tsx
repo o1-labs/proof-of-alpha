@@ -13,7 +13,7 @@ import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 
 const Configure: NextPage = () => {
-  const [activeButton, setActiveButton] = useState();
+  const [activeButton, setActiveButton] = useState<string>('30');
   return (
     <Layout backGroundColor="gradient">
       <Header />
@@ -31,7 +31,10 @@ const Configure: NextPage = () => {
             {/* Token pair dropdown */}
 
             <TokenPairGroup />
-            <DateRangeGroup />
+            <DateRangeGroup
+              activeButton={activeButton}
+              setActiveButton={setActiveButton}
+            />
 
             {/* tooltip */}
             <div className="3xl:mr-40 my-8 mr-2 flex  items-center justify-center 2xl:mr-20 ">
