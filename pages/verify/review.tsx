@@ -1,13 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import type { NextPage } from 'next';
-
-import Button from '../../components/common/Button';
-import LoadingSpinner from '../../components/common/LoadingSpinner';
-import TransparentButton from '../../components/common/TransparentButton';
 import Header from '../../components/common/Header';
-import BinanaceTransactions from '../../public/assets/verify/review/binance-transactions.png';
 import FetchingTrades from '../../components/verify/FetchingTrades';
 import TradeStatement from '../../components/common/TradeStatement';
 import TradeData from '../../trades.json';
@@ -16,6 +9,7 @@ import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';
 import Layout from '../../components/common/Layout';
+import BottomNavButtons from '../../components/verify/BottomNavButtons';
 
 const Review: NextPage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -72,22 +66,11 @@ const Review: NextPage = () => {
                 {/* </div> */}
               </div>
             </div>
-            {/* nav buttons */}
 
-            <div className="flex justify-around pt-10">
-              <Link href="/verify/configure">
-                <TransparentButton
-                  buttonStyle="w-4/12 2xl:w-3/12 text-sm 2xl:text-base 3xl:text-base"
-                  label="<< BACK"
-                />
-              </Link>
-              <Link href="/verify/finalize">
-                <Button
-                  buttonStyle="w-4/12 2xl:w-3/12 text-sm 2xl:text-base 3xl:text-base"
-                  label="CONTINUE  >>"
-                />
-              </Link>
-            </div>
+            <BottomNavButtons
+              backNavLink="/verify/configure"
+              continueNavLink="/verify/finalize"
+            />
           </div>
         </div>
       </div>
