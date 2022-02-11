@@ -19,16 +19,16 @@ const Button = (props: buttonPropTypes) => {
   return (
     <button
       className={`
-        relative justify-center  text-white bg-light-black font-normal rounded leading-loose text-xs w-60 3xl:text-base tracking-xlwidest items-center   px-0 py-1 2xl:px-3 2xl:py-2 3xl:py-2  pr-6  3xl:px-2 2xl:pr-7 3xl:pr-7   hover:bg-opacity-75 active:text-custom-gray-button-border border border-white space-x-4  ${buttonStyle}`}
+        bg-light-black 3xl:text-base  tracking-xlwidest 3xl:py-2 3xl:px-2 3xl:pr-7 active:text-custom-gray-button-border relative w-60 items-center justify-center space-x-4   rounded border border-white px-0 py-1  pr-6  text-xs font-normal leading-loose   text-white hover:bg-opacity-75 2xl:px-3 2xl:py-2 2xl:pr-7  ${buttonStyle}`}
       {...otherProps}
     >
       <div className="flex flex-col">
         <p className="text-left text-sm">SHARE IT</p>
 
-        <p className="text-left text-[8px] -pl-2">http://urlz.here/3dfdGs</p>
+        <p className="-pl-2 text-left text-[8px]">http://urlz.here/3dfdGs</p>
       </div>
       <div
-        className="absolute right-7 2xl:right-4 3xl:right-11 top-2 2xl:top-3  3xl:top-3 w-5 2xl:w-7 3xl:w-7"
+        className="3xl:right-11 3xl:top-3 3xl:w-7 absolute right-7 top-2  w-5 2xl:right-4 2xl:top-3 2xl:w-7"
         aria-hidden="true"
       >
         <Image src={ShareIcon} />
