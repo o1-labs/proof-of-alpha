@@ -1,60 +1,71 @@
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import TradeTwitter from '../../public/assets/start/trade-history-with-twitter.png';
+import Layout from '../../components/common/Layout';
+import Container from '../../components/common/Container';
 import Button from '../../components/common/Button';
 import Header from '../../components/start/Header';
-import ProofOfAlpha from '../../public/assets/home/proof-of-alpha-home.png';
-import TwitterCard from '../../public/assets/common/twitter-card.png';
-import CardStatmentGroup from '../../components/home/CardStatementGroup';
+import Modal from '../../components/start/Modal';
+
+import CardGroupStart from '../../components/start/CardGroupStart';
 
 const Start: NextPage = () => {
-  return (
-    <div className="h-screen*4 min-h-screen bg-background bg-cover bg-no-repeat">
-      <Header />
-      <div className="flex">
-        <div className="flex flex-col space-y-5 md:space-y-4 xl:space-y-9  text-white  ml-14 xl:ml-36 md:ml-28 mt-30 md:mt-36 xl:mt-56  w-[300px] md:w-[410px] xl:w-[620px]">
-          <p className="text-xl text-center md:text-left md:text-2xl xl:text-5xl   font-bold pr-8">
-            Your Free Proof of Alpha Statement and Share Badge
-          </p>
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
-          <p className="text-base md:text-xl xl:text-3xl font-light mt-4 md:mt-0 ">
-            Proof of Alpha offers third-party verification of your trade
-            history.
-          </p>
-          <p className="text-base md:text-xl xl:text-3xl  font-light ">
-            You control what you share, and your personal data stays private.
-          </p>
-          <p className="text-base md:text-xl xl:text-3xl font-light ">
-            Your track record, certified on-chain, free of charge.
-          </p>
-          <p className="text-base md:text-xl xl:text-3xl  font-light ">
-            Available for Binance. Other exchanges coming soon!
-          </p>
-          <div className="flex items-center justify-center md:justify-start pt-8 md-pt-0">
-            <Link href="/auro" passHref>
+  const handleButtonClick = (): void => {
+    setIsModalOpen(true);
+  };
+  return (
+    <Layout backGroundColor="gradient" layoutStyle="">
+      <Container>
+        <Header />
+        <div className="relative flex">
+          <div className="mt-30 3xl:mt-72 3xl:w-[640px] ml-14 flex w-[300px] flex-col  space-y-5  text-white md:ml-28 md:mt-36 md:w-[410px] md:space-y-4 xl:ml-36 xl:mt-56 xl:w-[620px] xl:space-y-7 2xl:mt-60 2xl:w-[620px]">
+            <p className="3xl:text-5xl 3xl:mb-5 3xl:leading-12 pr-8 text-center text-xl font-light md:text-left  xl:text-3xl 2xl:text-4xl">
+              Your Free Proof of Alpha Statement and Share Badge
+            </p>
+
+            <p className="3xl:mb-5 3xl:text-3xl xl:text-1.5xl mt-4 text-base font-extralight md:mt-0 md:text-xl  ">
+              Proof of Alpha offers third-party verification of your trade
+              history.
+            </p>
+            <p className="3xl:mb-8 3xl:text-3xl text-base font-extralight  md:text-xl xl:text-2xl ">
+              You control what you share, and your personal data stays private.
+            </p>
+            <p className="3xl:mb-8 3xl:text-3xl text-base font-extralight md:text-xl xl:text-2xl ">
+              Your track record, certified on-chain, free of charge.
+            </p>
+            <p className="3xl:mb-8 3xl:text-3xl text-base font-extralight  md:text-xl xl:text-2xl ">
+              Available for Binance. Other exchanges coming soon!
+            </p>
+            <div className="md-pt-0 flex items-center justify-center pt-8 md:justify-start">
+              {/* <Link href="/auro" passHref> */}
               <Button
-                buttonStyle=" w-1/2 text-sm md:text-base xl:text-2xl"
+                buttonStyle=" w-7/12 h-10 xl:w-4/12 xl:h-10 3xl:w-1/2 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl"
                 label="GET STARTED"
+                onClick={handleButtonClick}
               />
-            </Link>
+              {/* </Link> */}
+            </div>
+          </div>
+          <div className="invisable: 3xl:w-4/12 2xl:-right-100 3xl:-right-0 3xl:-bottom-24 xl:-bottom-18 absolute right-0 -bottom-20 overflow-hidden md:visible md:right-0 md:bottom-0 md:w-[310px] xl:w-[400px] 2xl:-bottom-24 2xl:w-[500px]">
+            <Image
+              src={TradeTwitter}
+              alt="trade history and twitter"
+              layout="responsive"
+            />
           </div>
         </div>
-      </div>
-      <div className="invisable: md:visible absolute  md:w-[310px] xl:w-[620px] right-0 -bottom-20 xl:bottom-18 md:right-0 md:bottom-0 overflow-hidden">
-        <Image
-          src={TradeTwitter}
-          alt="trade history and twitter"
-          layout="responsive"
-        />
-      </div>
+        <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        <div className="md:invisible">
+          <CardGroupStart />
+        </div>
 
-      <div className="md:invisible">
-        <CardStatmentGroup />
-      </div>
-
-      <div />
-    </div>
+        <div />
+      </Container>
+    </Layout>
   );
 };
 
