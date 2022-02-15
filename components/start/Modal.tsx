@@ -50,34 +50,28 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="inline-block h-screen  w-full transform flex-col overflow-hidden bg-[#0F3887] text-left text-white shadow-xl transition-all ">
-              <div className="mt-18 2xl:mt-30 3xl:mt-40 flex flex-col items-center">
-                <div className="3xl:w-7/12 flex w-7/12 justify-around 2xl:w-auto">
-                  <div className="3xl:w-7/12 w-9/12 2xl:w-9/12">
-                    <Dialog.Title className="3xl:text-5xl text-2xl 2xl:text-4xl ">
-                      Please use a desktop browser.
-                    </Dialog.Title>
+            <div className="relative inline-block h-screen w-full transform flex-col overflow-hidden bg-[#0F3887] text-left text-white shadow-xl transition-all ">
+              <button
+                type="button"
+                className="right-18 absolute top-10"
+                onClick={handleModalClose}
+              >
+                <span className="sr-only">Close</span>
+                <XIcon
+                  className="3xl:w-12 absolute h-8  w-8 rounded-full  hover:bg-gray-500 2xl:h-10 2xl:w-10 "
+                  aria-hidden="true"
+                />
+              </button>
 
-                    <p className="3xl:text-3xl 3xl:mt-10 mt-6 text-base 2xl:mt-8 2xl:text-2xl ">
-                      Auro Wallet for Google Chrome on desktop is required to
-                      proceed.
-                    </p>
-                  </div>
+              <div className=" mx-auto  flex h-3/5 w-8/12 flex-col items-center justify-center space-y-14">
+                <Dialog.Title className=" text-center text-2xl font-medium ">
+                  Please use a desktop browser.
+                </Dialog.Title>
 
-                  <div className="hidden sm:block ">
-                    <button
-                      type="button"
-                      className=""
-                      onClick={handleModalClose}
-                    >
-                      <span className="sr-only">Close</span>
-                      <XIcon
-                        className="3xl:w-12 absolute h-8  w-8 rounded-full  hover:bg-gray-500 2xl:h-10 2xl:w-10 "
-                        aria-hidden="true"
-                      />
-                    </button>
-                  </div>
-                </div>
+                <p className=" text-center text-base  ">
+                  Auro Wallet for Google Chrome on desktop is required to
+                  proceed.
+                </p>
               </div>
             </div>
           </Transition.Child>
