@@ -33,11 +33,14 @@
   height: 153.55px;
   top: 15.725px;
   left: 15.725px;
-  border-radius: 50%;
-  border: 7.5px solid #000;
-  border-color: #05ff00 transparent #05ff00 transparent;
+  border-radius: 153.55px 153.55px 153.55px 153.55px;
+  border: 7.5px solid #05ff00;
+  border-top-color: transparent;
+  background: transparent;
+
   animation: ldio-ir0f41fxdl 1s linear infinite;
 }
+
 .ldio-ir0f41fxdl > div:nth-child(2) {
   border-color: transparent;
 }
@@ -58,12 +61,12 @@
   left: 92.5px;
   background: #05ff00;
   border-radius: 50%;
-  box-shadow: 200 px 0 0 #05ff00;
+  box-shadow: 0 0 0 0 #05ff00;
 }
 .ldio-ir0f41fxdl > div:nth-child(2) div:after {
-  left: -7.5px;
-  top: 92.5px;
-  box-shadow: 200px 0 0 0 #05ff00;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0 0 0 0 #05ff00;
 }
 .loadingio-spinner-dual-ring-fv3bcitu1qf {
   width: 185px;
