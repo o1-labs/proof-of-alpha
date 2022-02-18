@@ -21,7 +21,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
         className="fixed inset-0 z-10 overflow-y-auto"
         onClose={handleModalClose}
       >
-        <div className="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+        <div className="flex min-h-screen w-full items-end justify-center px-4 pt-4 pb-20 text-center ">
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-900"
@@ -33,8 +33,8 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
           >
             <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
-
           {/* This element is to trick the browser into centering the modal contents. */}
+          mit
           <span
             className="hidden sm:inline-block sm:h-screen sm:align-middle"
             aria-hidden="true"
@@ -50,7 +50,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
             leaveFrom="opacity-100 translate-y-0 sm:scale-100"
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
-            <div className="relative inline-block h-screen w-full transform flex-col overflow-hidden bg-[#0F3887] text-left text-white shadow-xl transition-all ">
+            <div className="relative inline-block h-screen w-full transform flex-col overflow-hidden bg-[#954562] text-left text-white shadow-xl transition-all ">
               <button
                 type="button"
                 className="right-18 absolute top-10"
@@ -64,13 +64,13 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
               </button>
 
               <div className=" mx-auto  flex h-3/5 w-8/12 flex-col items-center justify-center space-y-14">
-                <Dialog.Title className=" text-center text-2xl font-medium ">
+                <Dialog.Title className=" text-center text-3xl font-normal ">
                   Please use a desktop browser.
                 </Dialog.Title>
 
-                <p className=" text-center text-base  ">
+                <p className=" text-center text-3xl font-extralight  ">
                   Auro Wallet for Google Chrome on desktop is required to
-                  proceed.
+                  complete this experience.
                 </p>
               </div>
             </div>
