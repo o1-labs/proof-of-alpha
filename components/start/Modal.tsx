@@ -1,7 +1,9 @@
 import { Fragment, useState, Dispatch, SetStateAction } from 'react';
-import { useRouter } from 'next/router';
+
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
+import Button from '../../components/common/Button';
+import Link from 'next/link';
 
 interface modalPropTypes {
   isModalOpen: boolean;
@@ -9,10 +11,8 @@ interface modalPropTypes {
 }
 
 const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
-  const router = useRouter();
   const handleModalClose = () => {
     setIsModalOpen(false);
-    router.push('/auro');
   };
   return (
     <Transition.Root show={isModalOpen} as={Fragment}>
@@ -21,7 +21,11 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
         className="fixed inset-0 z-10 overflow-y-auto"
         onClose={handleModalClose}
       >
-        <div className="flex min-h-screen w-full items-end justify-center px-4 pt-4 pb-20 text-center ">
+        <div
+          className="
+         flex min-h-screen  items-end justify-center 
+          "
+        >
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-900"
@@ -34,9 +38,9 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
             <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
           {/* This element is to trick the browser into centering the modal contents. */}
-          mit
+
           <span
-            className="hidden sm:inline-block sm:h-screen sm:align-middle"
+            className=" inline-block h-screen align-middle"
             aria-hidden="true"
           >
             &#8203;
@@ -63,15 +67,23 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                 />
               </button>
 
-              <div className=" mx-auto  flex h-3/5 w-8/12 flex-col items-center justify-center space-y-14">
-                <Dialog.Title className=" text-center text-3xl font-normal ">
-                  Please use a desktop browser.
-                </Dialog.Title>
+              <div className="  flex h-screen  items-center justify-center align-middle">
+                <div className=" mx-auto w-8/12   space-y-14">
+                  <Dialog.Title className=" text-center text-3xl font-normal ">
+                    Please use a desktop browser.
+                  </Dialog.Title>
 
-                <p className=" text-center text-3xl font-extralight  ">
-                  Auro Wallet for Google Chrome on desktop is required to
-                  complete this experience.
-                </p>
+                  <p className=" text-center text-3xl font-extralight  ">
+                    Auro Wallet for Google Chrome on desktop is required to
+                    complete this experience.
+                  </p>
+                  <Link href={'/auro'} passHref>
+                    <Button
+                      buttonStyle="w-10/12 h-10 text-xs mx-auto"
+                      label="Proceed Anyways"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
           </Transition.Child>
