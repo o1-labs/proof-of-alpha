@@ -37,34 +37,48 @@ const TradeStatement = ({
     });
   };
   return (
-    <div className="w-115 max-w-screen-lg ">
-      <div className="flex justify-between">
-        {/* logo with date section */}
-        <div className="flex w-full flex-col items-start space-y-1 ">
-          <div className="flex w-full flex-row items-center space-x-4">
-            <Image src={BinanceLogo} alt="Binance logo" />
-            <h2 className="text-xl font-medium">BTCUSDT</h2>
+    <div
+      className="3xl:w-124
+     xl:w-108 w-full "
+    >
+      <div className="mx-auto flex flex-col items-center justify-center md:flex-row md:justify-between">
+        <div className="mx-auto w-10/12">
+          {/* logo with date section */}
+          <div className="3xl:space-x-4  flex w-auto justify-center space-x-2  md:w-10/12  md:justify-start xl:space-x-2">
+            <div className="3xl:h- 3xl:w-9 h-5 w-5 md:h-4 md:w-4">
+              <Image src={BinanceLogo} alt="Binance logo" />
+            </div>
+            <div className="flex flex-col items-start  ">
+              <h2 className="3xl:text-lg tracking-xlwidest text-xs font-medium md:text-sm">
+                BTCUSDT
+              </h2>
+              <span className="3xl:text-lg text-[.5rem] font-extralight md:text-xs  xl:text-sm">
+                {renderDates()}
+              </span>
+            </div>
           </div>
-
-          <div className="ml-2   flex items-center space-x-6">
-            <span className="pl-12 text-lg font-extralight">
-              {renderDates()}
-            </span>
-          </div>
+          {/* logo with date section */}
         </div>
-        {/* logo with date section */}
         {/* P & L header */}
-        <div className="flex w-full flex-col items-end ">
-          <span className="text-base">CUMULATIVE PROFIT & LOSS</span>
-          <span className="pt-3 text-6xl font-light text-[#14FF00]">
+        <div className="mt-6 flex w-full flex-col items-center md:mt-0 md:items-end">
+          <span className="3xl:text-base text-[.45rem] font-thin tracking-widest  md:text-sm">
+            TOTAL PROFIT & LOSS
+          </span>
+          <span className="text-3.5xl 3xl:text-6xl font-light leading-tight text-[#14FF00] md:pt-3">
             + {calculateCumulativeProfitLoss(trades)}%
           </span>
         </div>
       </div>
       {/* P & L header */}
-      <p className="tracking-xlwidest mb-5 mt-14 text-lg">MY TRANSACTIONS</p>
+      <p className="md:tracking-xlwidest 3xl:mt-14 3xl:text-lg 3xl:mb-5 mb-3 mt-8 text-left text-[.5rem] font-thin tracking-widest md:mt-6 md:mb-4 md:text-base ">
+        MY TRANSACTIONS
+      </p>
       {/* trades */}
-      <div className="flex flex-col ">{renderTrades(trades)}</div>
+      <div className="md:max-h-108 2xl:max-h-108 3xl:max-h-115 h-4/5 overflow-auto">
+        <div className="3xl:text-base flex flex-col text-sm ">
+          {renderTrades(trades)}
+        </div>
+      </div>
       {/* trades */}
     </div>
   );
