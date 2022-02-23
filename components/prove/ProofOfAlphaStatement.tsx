@@ -6,25 +6,36 @@ import { Trade } from '../../types';
 const ProofOfAlphaStatement = () => {
   const [trades, setTrades] = useState<Trade[]>([]);
   useEffect(() => {
-    setTrades(TradeData.trades as Trade[]);
+    // Used to test statement output with 500 transactions
+    const trades = Array(500).fill({
+      id: 6,
+      pairId: 'BTC/UDST',
+      buy: {
+        timestamp: '1615928190',
+        quantity: '2.780000000',
+        price: '45343'
+      },
+      sell: {
+        timestamp: '1639534876',
+        quantity: '2.650000000',
+        price: '57123'
+      }
+    });
+    setTrades(trades as Trade[]);
+
+    // setTrades(TradeData.trades as Trade[]);
   }, []);
   return (
-    <div className="px-30 bg-[#404040E5] py-24">
-      <p className="tracking-xlwidest mb-5 text-2xl">
-        <span className="font-medium">PROOF-OF-ALPHA</span>{' '}
-        <span className="font-extralight">STATMENT</span>
+    <div className="3xl:px-28 3xl:py-20 z-10 w-full bg-[#404040E5] px-6 py-8 text-center md:py-16 md:px-20 md:text-left">
+      <p className="tracking-xlwidest 3xl:text-2xl 3xl:mb-4 mb-2 text-center text-xl md:text-left md:text-base">
+        <span className="block  md:inline">PROOF-OF-ALPHA</span>{' '}
+        <span className="block font-extralight md:inline">STATEMENT</span>
       </p>
-      <p className="tracking-xlwidest mb-14 text-lg font-extralight">
+      <p className="3xl:text-lg 3xl:mb-12 mb-10 text-xs text-[.5rem] font-extralight tracking-wider md:tracking-wide">
         CERTIFIED AND VALIDATED ON-CHAIN
       </p>
-      <div className="max-h-99 h-2/5 overflow-auto 2xl:h-1/2">
-        {/* <div className="flex justify-center"> */}
-        <div className="z-10 w-2/12 2xl:w-auto">
-          <TradeStatement trades={trades} proofStatement />
-        </div>
-        {/* </div> */}
-      </div>
-      <p className="tracking-xlwidest mt-12 items-center text-center">
+      <TradeStatement trades={trades} proofStatement />
+      <p className="md:tracking-xlwidest 3xl:text-base mt-20 text-center text-[.5rem] font-thin tracking-widest md:text-sm md:font-normal">
         VALIDATED ON THE MINA BLOCKCHAIN
       </p>
     </div>
