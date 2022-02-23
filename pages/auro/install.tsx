@@ -18,10 +18,13 @@ const Auro: NextPage = () => {
         <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
           <ProgressBar stage="2nd" />
 
-          <div className="flex h-screen flex-col  md:space-y-2 2xl:space-y-10 ">
+          <div className="mb-2 flex h-screen  flex-col md:space-y-2 2xl:space-y-10 ">
             <SubHeadLine text="CHOOSE NETWORK" />
 
-            <HeadLine text="Make sure you’re connected to Snapps Testnet" />
+            <HeadLine
+              text="Make sure you’re connected to Berkeley Testnet"
+              headLineStyle="py-5"
+            />
 
             <div className="h-auto">
               <Image src={AuroTestnet} alt="auro testnet" layout="responsive" />
@@ -29,15 +32,15 @@ const Auro: NextPage = () => {
             <div className="flex justify-between md:pt-8 2xl:pt-11">
               <Link href={'/auro'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base 2xl:text-xl"
-                  label="<< BACK"
+                  buttonStyle="text-xs 2xl:text-base 3xl:text-xl"
+                  label="<< &nbsp;BACK"
                 />
               </Link>
 
               <Link href={'/auro/faucet'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base 2xl:text-xl"
-                  label="CONTINUE >>"
+                  buttonStyle="text-xs 2xl:text-base 3xl:text-xl"
+                  label="CONTINUE &nbsp;>>"
                 />
               </Link>
             </div>

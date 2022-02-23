@@ -24,7 +24,7 @@ const Faucet: NextPage = () => {
             <SubHeadLine text="GET TESTNET TOKENS" />
 
             <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet " />
-            <p className="3xl:text-2xl 2xl:text-1.5xl  pb-3 font-light md:text-base">
+            <p className="3xl:text-3xl 2xl:text-1.5xl  pb-3 font-light md:text-base">
               Select the Berkeley network
             </p>
             <div className="h-auto">
@@ -33,23 +33,27 @@ const Faucet: NextPage = () => {
             <div className="flex justify-between md:pt-8 2xl:pt-11">
               <Link href={'/auro/install'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base 2xl:text-lg 3xl:text-xl"
-                  label="<< BACK"
-                />
+                  buttonStyle="
+px-20 text-sm 2xl:text-base 3xl:text-xl"
+                  label="<< &nbsp;BACK"
+                ></TransparentButton>
               </Link>
 
-              <a target="_blank" href={'https://faucet.minaprotocol.com'}>
-                {/* Add open icon */}
-                <Button buttonStyle="md:text-base 2xl:text-xl">
-                  <Image src={ExternalLinkIcon} />
-                  <div className="px-4">VISIT FAUCET</div>
-                </Button>
-              </a>
+              <div className="flex justify-center  ">
+                <a target="_blank" href={'https://faucet.minaprotocol.com'}>
+                  <Button buttonStyle="  text-xs 2xl:text-base 3xl:text-xl py-3">
+                    <div className="flex  items-center   2xl:h-10 ">
+                      <Image src={ExternalLinkIcon} />
+                    </div>
+                    <div className="px-6">VISIT FAUCET</div>
+                  </Button>
+                </a>
+              </div>
 
               <Link href={'/verify'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base 2xl:text-xl"
-                  label="CONTINUE >>"
+                  buttonStyle="px-20 text-sm 2xl:text-base 3xl:text-xl"
+                  label="CONTINUE  &nbsp;>>"
                 />
               </Link>
             </div>

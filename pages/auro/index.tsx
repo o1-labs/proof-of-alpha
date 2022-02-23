@@ -24,7 +24,7 @@ const Auro: NextPage = () => {
             <SubHeadLine text="INSTALL BROWSER WALLET" />
 
             <HeadLine text="Install Auro Wallet for Chrome" />
-            <p className="3xl:text-2xl 2xl:text-1.5xl  pb-3 font-light md:text-base">
+            <p className="3xl:text-3xl 2xl:text-1.5xl  pb-3 font-light md:text-base">
               You'll need Mina's browser wallet to use this app.
             </p>
 
@@ -34,29 +34,31 @@ const Auro: NextPage = () => {
             <div className="flex w-full justify-between pt-8">
               <Link href={'/start'} passHref>
                 <TransparentButton
-                  buttonStyle="md:text-base 2xl:text-xl"
-                  label="<< BACK"
+                  buttonStyle="text-xs 2xl:text-base 3xl:text-xl"
+                  label="<<&nbsp; BACK"
                 />
               </Link>
 
-              <a
-                target="_blank"
-                href={
-                  'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
-                }
-              >
-                <div className="w-full">
-                  <Button buttonStyle="md:text-base 2xl:text-xl">
-                    <Image src={ExternalLinkIcon} />
-                    <div className="px-4">GET AURO </div>
+              <div className="flex justify-center  ">
+                <a
+                  target="_blank"
+                  href={
+                    'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
+                  }
+                >
+                  <Button buttonStyle="  text-xs 2xl:text-base 3xl:text-xl px-3 py-3">
+                    <div className="flex  items-center   2xl:h-10 ">
+                      <Image src={ExternalLinkIcon} />
+                    </div>
+                    <div className="pr-7">GET AURO </div>
                   </Button>
-                </div>
-              </a>
+                </a>
+              </div>
 
               <Link href={'/auro/install'} passHref>
                 <TransparentButton
-                  buttonStyle="px-20 md:text-base 2xl:text-lg 3xl:text-xl"
-                  label="CONTINUE >>"
+                  buttonStyle="text-xs 2xl:text-base 3xl:text-xl"
+                  label="CONTINUE&nbsp; >>"
                 />
               </Link>
             </div>
