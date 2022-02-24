@@ -74,7 +74,7 @@ const TradeStatement = ({
         MY TRANSACTIONS
       </p>
       {/* trades */}
-      <div className="md:max-h-108 2xl:max-h-108 3xl:max-h-115 h-4/5 overflow-auto">
+      <div className="md:max-h-108 2xl:max-h-108 3xl:max-h-115 h-4/5 max-h-[412px] overflow-auto">
         <div className="3xl:text-base flex flex-col text-sm ">
           {renderTrades(trades)}
         </div>
