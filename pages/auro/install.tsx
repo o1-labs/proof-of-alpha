@@ -8,6 +8,7 @@ import AuroTestnet from '../../public/assets/auro/install/auro-testnet.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
+import AuroBottomNavButtons from '../../components/auro/AuroBottomNavButtons';
 
 const Auro: NextPage = () => {
   return (
@@ -29,21 +30,11 @@ const Auro: NextPage = () => {
             <div className="h-auto">
               <Image src={AuroTestnet} alt="auro testnet" layout="responsive" />
             </div>
-            <div className="flex justify-between md:pt-8 2xl:pt-11">
-              <Link href={'/auro'} passHref>
-                <TransparentButton
-                  buttonStyle="text-xs 2xl:text-base 3xl:text-xl"
-                  label="<< &nbsp;BACK"
-                />
-              </Link>
-
-              <Link href={'/auro/faucet'} passHref>
-                <TransparentButton
-                  buttonStyle="text-xs 2xl:text-base 3xl:text-xl"
-                  label="CONTINUE &nbsp;>>"
-                />
-              </Link>
-            </div>
+            <AuroBottomNavButtons
+              backNavLink="/auro"
+              externalButton={false}
+              continueNavLink="/auro/faucet"
+            />
           </div>
         </div>
       </div>
