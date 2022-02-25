@@ -49,7 +49,10 @@ const Review: NextPage = () => {
   }
 
   return (
-    <Layout backGroundColor="gradient" layoutStyle="h-1.5*screen min-h-fit">
+    <Layout
+      backGroundColor="gradient"
+      layoutStyle="h-1.75*screen min-h-fit pb-30"
+    >
       <Header />
       <div className="flex min-h-fit flex-col items-center">
         <div className="3xl:w-6/12   flex h-screen w-7/12 flex-col  md:w-7/12  2xl:w-7/12">

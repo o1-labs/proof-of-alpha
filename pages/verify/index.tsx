@@ -38,7 +38,7 @@ const Verify: NextPage = () => {
   };
 
   return (
-    <Layout backGroundColor="gradient">
+    <Layout backGroundColor="gradient" layoutStyle="h-1.5*screen">
       <Header />
       <div className="flex flex-col items-center">
         <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
@@ -57,7 +57,7 @@ const Verify: NextPage = () => {
               need.
             </p>
             <div>
-              <p className="2xl:text-1.5xl  3xl:text-2xl border-1/2 3xl:h-16 3xl:w-6/12  -ml-8 flex  h-9 w-7/12 items-center justify-center border-[#A8A8A8] bg-[#90909040] text-center font-bold md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12   ">
+              <p className="2xl:text-1.5xl  3xl:text-1.5xl border-1/2 3xl:h-16 3xl:w-6/12  -ml-8 flex  h-9 w-7/12 items-center justify-center border-[#A8A8A8] bg-[#90909040] text-center font-medium md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12   ">
                 No record of your API keys will ever be saved.
               </p>
             </div>
@@ -101,15 +101,15 @@ const Verify: NextPage = () => {
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
                 <Link href={'/verify/configure'}>
                   <Button
-                    buttonStyle="w-full md:text-xs 2xl:text-xl"
-                    label="CONTINUE >>"
+                    buttonStyle="w-full text-xs 2xl:text-base 3xl:text-xl"
+                    label="CONTINUE&nbsp; >>"
                   />
                 </Link>
 
                 <Link href={'/auro/faucet'}>
                   <TransparentButton
-                    buttonStyle="text-center md:text-xs 2xl:text-xl"
-                    label="<< BACK"
+                    buttonStyle="text-center text-xs 2xl:text-base 3xl:text-xl"
+                    label="<< &nbsp;BACK"
                   />
                 </Link>
               </div>

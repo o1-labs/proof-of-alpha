@@ -11,21 +11,18 @@ interface AuroNoWalletErrorPropTypes {
 
 const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
   return (
-    <div
-      className={`${
-        visible ? 'visable' : 'invisible'
-      } 3xl:bottom-52 3xl:right-[640px] xl:bottom-15 absolute bottom-[105px] right-72 2xl:bottom-40 2xl:right-[400px]`}
-    >
+    // 3xl:-bottom-48 3xl:right-[640px]  xl-right-[640px] 3xl:pb-4 absolute bottom-[105px] right-72 2xl:-bottom-52 2xl:right-[400px]
+    <div className={`${visible ? 'visable' : 'invisible'} `}>
       <div
         className={`flex  items-center justify-end ${
           visible ? 'visable' : 'invisible'
         }  `}
       >
-        <div className="w-3">
+        <div className="3xl:w-6 flex w-3 items-center justify-center 2xl:w-4">
           <Image src={ExclamationIcon} alt="info" />
         </div>
 
-        <span className="3xl:text-3xl ml-2 text-sm leading-loose 2xl:text-2xl ">
+        <span className="3xl:text-3xl ml-2 text-sm leading-loose text-gray-300 2xl:text-xl ">
           Auro Wallet must be installed in your browser to continue.
         </span>
       </div>
@@ -37,12 +34,14 @@ const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
             'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
           }
         >
-          <div className="3xl:w-7 flex w-5 items-center justify-center 2xl:w-8">
-            <Image src={ExternalLinkIcon} alt="info" />
+          <div className="3xl:mt-3 2xl flex items-center">
+            <div className="3xl:w-10 flex w-5  items-center justify-center 2xl:w-5">
+              <Image src={ExternalLinkIcon} alt="info" />
+            </div>
+            <span className=" 3xl:text-2xl ml-2 text-xs  text-gray-300 underline 2xl:text-base">
+              GET AURO
+            </span>
           </div>
-          <span className="ml-2 text-xs leading-loose underline 2xl:text-xl ">
-            GET AURO
-          </span>
         </a>
       </div>
     </div>

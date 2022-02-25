@@ -4,11 +4,11 @@ import ProofCheckMark from '../../public/assets/verify/generate/proof-check.png'
 
 const ProofGeneratedConfirmation = () => {
   return (
-    <div className="relative flex flex-col bg-custom-gray-spinner-background rounded-md w-[220px] h-[220px] 2xl:w-[270px] 2xl:h-[270px] items-center justify-center">
+    <div className=" bg-custom-gray-spinner-background p relative flex h-[220px] w-[220px] flex-col items-center justify-center rounded-lg 2xl:h-[270px] 2xl:w-[270px] ">
       <div className="w-1/2">
         <Image src={ProofCheckMark} />
       </div>
-      <p className="absolute  text-[#05ff00] text-center text-xs 2xl:text-base tracking-xlwidest bottom-6 2xl:bottom-8 left-4/12 space-y-[.5px] 2xl:space-y-1 ">
+      <p className="tracking-xlwidest left-4/12  absolute bottom-6 space-y-[.5px]  text-center  text-xs text-[#05ff00] 2xl:bottom-8 2xl:space-y-1 2xl:text-sm ">
         PROOF GENERATED
       </p>
     </div>

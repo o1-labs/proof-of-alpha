@@ -5,6 +5,7 @@ import Button from '../common/Button';
 interface bottomNavButtonsPropTypes {
   backNavLink: string;
   continueNavLink: string;
+  disabled?: boolean;
   bottomNavButtonsStyle?: string;
 }
 /**
@@ -12,24 +13,31 @@ interface bottomNavButtonsPropTypes {
  * @param {string} backNavLink Routing link string specifying where to navigate to when back button is clicked is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
  * @param {string} continueNavLink Routing link string specifying where to navigate to when continue button is clicked is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
  * @param {string} arrowButtonStyle Additional Tailwind CSS styles (optional).
+ * @param {boolean} disabled Boolean to set button as disabled (optional).
  **/
 
 const BottomNavButtons = (props: bottomNavButtonsPropTypes) => {
-  const { backNavLink, continueNavLink, bottomNavButtonsStyle, ...otherProps } =
-    props;
+  const {
+    backNavLink,
+    continueNavLink,
+    bottomNavButtonsStyle,
+    disabled,
+    ...otherProps
+  } = props;
 
   return (
-    <div className={`flex justify-between pt-20 ${bottomNavButtonsStyle}`}>
+    <div className={`flex justify-between pt-20  ${bottomNavButtonsStyle}`}>
       <Link href={`${backNavLink}`} passHref>
         <TransparentButton
-          buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl"
-          label="<< BACK"
+          buttonStyle="w-3/12 text-xs 2xl:text-base 3xl:text-xl"
+          label="<< &nbsp;BACK"
         />
       </Link>
       <Link href={`${continueNavLink}`} passHref>
         <Button
-          buttonStyle="w-3/12 text-sm 2xl:text-xl 3xl:text-2xl"
-          label="CONTINUE  >>"
+          buttonStyle="w-3/12 text-xs 2xl:text-base 3xl:text-xl"
+          label="CONTINUE &nbsp;>>"
+          disabled={disabled}
         />
       </Link>
     </div>

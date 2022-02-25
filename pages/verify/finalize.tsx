@@ -59,7 +59,7 @@ const Finalize: NextPage = () => {
     }
   };
   return (
-    <Layout backGroundColor="gradient">
+    <Layout backGroundColor="gradient" layoutStyle="h-2*screen">
       <Header />
 
       <div className="flex flex-col items-center">
@@ -69,12 +69,14 @@ const Finalize: NextPage = () => {
           <div className="3xl:space-y-14 flex h-screen flex-col space-y-3 text-white 2xl:space-y-7">
             <SubHeadLine text="FINALIZE SETTINGS" />
 
-            <HeadLine text="How much do you want to disclose?" />
+            <HeadLine
+              text="How much do you want to disclose?"
+              headLineStyle="2xl:pb-10 3xl:pb-4"
+            />
             {/* button selection */}
-            <div className="mx-40 w-10/12">
-              <div></div>
-              <div className="flex justify-center 2xl:ml-28 2xl:justify-start">
-                <div className="flex w-9/12">
+            <div className=" mx-auto flex w-9/12  flex-col">
+              <div className="flex justify-center  2xl:justify-start">
+                <div className="flex w-full">
                   <LightButton
                     label="RETURNS & TRADE HISTORY"
                     lightButtonStyle="rounded-l-sm "
@@ -83,7 +85,7 @@ const Finalize: NextPage = () => {
                     selected={activeButton === 'returnsAndHistory'}
                   />
                   <LightButton
-                    label="PERCENTAGE & RETURNS ONLY"
+                    label="PERCENTAGE RETURNS ONLY"
                     lightButtonStyle="rounded-r-sm"
                     value="returns"
                     onClick={handleButtonSelection}
@@ -92,17 +94,21 @@ const Finalize: NextPage = () => {
                 </div>
               </div>
               {/* button selection */}
-              <div className="2xl:items-left mb-5 flex items-center justify-center 2xl:justify-start">
+              <div className="2xl:items-left mt-5 flex items-center justify-center  2xl:mt-5  ">
                 {renderSocialBadges()}
               </div>
 
               {/* "wallet " "testnet" 'tokens' */}
-              {renderErrors(errorType)}
+              {/* {renderErrors(errorType)} */}
             </div>
+          </div>
 
+          <div className="flex flex-col 3xl:space-y-7 2xl:space-y-4 2xl:mt-40 ">
+            {renderErrors(errorType)}
             <BottomNavButtons
               backNavLink="/verify/review"
               continueNavLink="/verify/generate"
+              disabled={isDisabled}
             />
           </div>
         </div>

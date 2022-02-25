@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
-
 import Header from '../../components/common/Header';
 
 import DateRangeGroup from '../../components/verify/DateRangeGroup';
@@ -26,7 +25,8 @@ const Configure: NextPage = () => {
             <SubHeadLine text="CONFIGURE SETTINGS" />
 
             <HeadLine>
-              Configure <span className="font-bold">Proof of Alpha</span> output
+              Configure <span className="font-medium">Proof of Alpha</span>{' '}
+              output
             </HeadLine>
 
             <TokenPairGroup />
