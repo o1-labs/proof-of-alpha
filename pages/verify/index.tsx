@@ -9,7 +9,7 @@ import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Input from '../../components/common/Input';
 import Header from '../../components/common/Header';
-import InfoIcon from '../../public/assets/common/info-icon.png';
+import InfoIcon from '/../../public/assets/common/info-icon.png';
 import APIsettings from '../../public/assets/verify/api-key-settings.png';
 import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
