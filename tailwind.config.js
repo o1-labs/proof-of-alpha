@@ -76,6 +76,15 @@ module.exports = {
         13: '3.438rem',
         14: '4rem'
       },
+      height: (_theme) => ({
+        '.75*screen': '75vh',
+        '.9*screen': '90vh',
+        '1.25*screen': '125vh',
+        '1.5*screen': '150vh',
+        '1.75*screen': '175vh',
+        '2*screen': '200vh',
+        '2.25*screen': '225vh'
+      }),
       screens: {
         '3xl': '2000px'
       }

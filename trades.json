@@ -41,6 +41,48 @@
         "quantity": "2.650000000",
         "price": "55123"
       }
-    }
+    },
+    {
+      "id": 4,
+      "pairId": "BTC/UDST",
+      "buy": {
+        "timestamp": "1655928190",
+        "quantity": "2.780000000",
+        "price": "54343"
+      },
+      "sell": {
+        "timestamp": "1660534876",
+        "quantity": "2.650000000",
+        "price": "57123"
+      }
+    },
+    {
+      "id": 5,
+      "pairId": "BTC/UDST",
+      "buy": {
+        "timestamp": "1667928190",
+        "quantity": "2.780000000",
+        "price": "53343"
+      },
+      "sell": {
+        "timestamp": "1689534876",
+        "quantity": "2.650000000",
+        "price": "60123"
+      }
+    },
+   {
+      "id": 6,
+      "pairId": "BTC/UDST",
+      "buy": {
+        "timestamp": "1695928190",
+        "quantity": "2.780000000",
+        "price": "45343"
+      },
+      "sell": {
+        "timestamp": "1709534876",
+        "quantity": "2.650000000",
+        "price": "57123"
+      }
+    } 
   ]
 }
