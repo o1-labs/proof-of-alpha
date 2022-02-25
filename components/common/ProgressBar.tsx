@@ -18,7 +18,7 @@ const ProgressBar = (props: progressBarPropTypes) => {
     '6th': ['w-9/12', 'w-3/12'],
     '7th': ['w-11/12', 'w-1/12']
   };
-  console.log('widths', barWidthClassName[stage][0]);
+
   return (
     <div className="flex" {...otherProps}>
       <span

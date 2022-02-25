@@ -2,8 +2,9 @@ import React, { ReactNode } from 'react';
 
 interface layoutPropTypes {
   backGroundColor: 'gradient' | 'blue' | 'red' | 'gray' | 'grayGradient';
-  layoutStyle?: string;
   children: React.ReactNode;
+  id?: string;
+  layoutStyle?: string;
 }
 
 /**
@@ -13,7 +14,7 @@ interface layoutPropTypes {
  **/
 
 const Layout = (props: layoutPropTypes) => {
-  const { backGroundColor, layoutStyle, children, ...otherProps } = props;
+  const { backGroundColor, layoutStyle, children, id, ...otherProps } = props;
 
   const backGroundColorClassName = {
     gradient: 'bg-background',
@@ -25,12 +26,11 @@ const Layout = (props: layoutPropTypes) => {
 
   return (
     <div
-      className={` ${backGroundColorClassName[backGroundColor]}  h-screen*2 w-screen bg-cover bg-no-repeat text-white ${layoutStyle}`}
+      className={` ${backGroundColorClassName[backGroundColor]}  w-screen overflow-x-hidden overflow-y-hidden bg-cover bg-no-repeat text-white ${layoutStyle}`}
+      id={id}
       {...otherProps}
     >
-      {/* <div className="3xl:max-w-screen-2xl mx-auto w-9/12 min-w-min items-center sm:max-w-screen-sm  2xl:max-w-screen-2xl"> */}
       {children}
-      {/* </div> */}
     </div>
   );
 };

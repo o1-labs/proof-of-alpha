@@ -17,8 +17,8 @@ const LoadingSpinner = ({ label }: loadingSpinnerPropTypes) => {
   };
 
   return (
-    <div className="relative flex flex-col bg-custom-gray-spinner-background rounded-md  w-[220px] h-[220px] 2xl:w-[270px] 2xl:h-[270px] items-center justify-center">
-      <div className="absolute  text-[#05ff00] text-center text-xs top-5/12 left-4/12 space-y-[.5px] 2xl:space-y-1 ">
+    <div className="bg-custom-gray-spinner-background relative flex h-[220px] w-[220px]  flex-col items-center justify-center rounded-md 2xl:h-[270px] 2xl:w-[270px]">
+      <div className="top-5/12  left-4/12 absolute space-y-[.5px] text-center text-[.6rem] text-[#05ff00] 2xl:space-y-1 ">
         {renderLabel()}
       </div>
       <div className="loadingio-spinner-dual-ring-fv3bcitu1qf">

@@ -1,6 +1,9 @@
+import React from 'react';
+
 interface headLineProps {
-  text: string;
+  text?: string;
   headLineStyle?: string;
+  children?: React.ReactNode;
 }
 
 /**
@@ -9,12 +12,13 @@ interface headLineProps {
  **/
 // 'text-1.5xl 2xl:text-3.5xl 3xl:text-4xl font-medium';
 const HeadLine = (props: headLineProps) => {
-  const { text, headLineStyle, ...otherProps } = props;
+  const { text, headLineStyle, children, ...otherProps } = props;
   return (
     <h1
-      className={`md:text-1.5xl 3xl:text-4.5xl tracking-wider 2xl:text-4xl ${headLineStyle} `}
+      className={`md:text-1.5xl 3xl:text-5xl font-light tracking-wider 2xl:text-4xl ${headLineStyle} `}
       {...otherProps}
     >
+      {children}
       {text}
     </h1>
   );
