@@ -18,7 +18,7 @@ const Shared: NextPage = () => {
   return (
     <Layout
       backGroundColor="gray"
-      layoutStyle="relative h-2.25*screen min-h-fit 2xl:h-1.75*screen"
+      layoutStyle="relative h-2.25*screen md:h-2*screen min-h-fit "
     >
       <div className=" 3xl:-top-56 3xl:w-5/12 -top-30 absolute -right-52  md:-top-36 md:right-0 md:w-7/12 2xl:-top-52 2xl:w-6/12">
         <Image src={TopStamp} alt="Stamp" />
@@ -34,7 +34,7 @@ const Shared: NextPage = () => {
             </div>
           </div>
 
-          <div className="3xl:mt-86  mt-14 md:mt-64">
+          <div className="3xl:mt-86  3xl:mx-0 mt-14 md:mt-64 2xl:mx-auto">
             <div className="3xl:mb-28 mb-20 flex flex-col items-center 2xl:mb-20">
               <p className="3xl:text-lg text-[.6em] leading-5 tracking-widest md:text-xs md:leading-none md:tracking-wide xl:text-sm">
                 GET YOUR FREE PROOF OF

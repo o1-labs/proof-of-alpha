@@ -32,7 +32,10 @@ const SocialBadgeSection = () => {
   }, []);
 
   return (
-    <Layout backGroundColor="grayGradient" layoutStyle="relative">
+    <Layout
+      backGroundColor="grayGradient"
+      layoutStyle="h-1.25*screen relative "
+    >
       <div ref={yPosition}>
         <div className="" id="social"></div>
         <Header />
@@ -40,17 +43,19 @@ const SocialBadgeSection = () => {
           <Image src={TopStamp} alt="Stamp" />
         </div>
 
-        <div className="3xl:space-y-4 3xl:mt-10 flex  flex-col items-center">
+        <div className="3xl:space-y-4 3xl:mt-10   flex flex-col items-center">
           <div className="3xl:w-4/12 relative flex flex-col items-center justify-center">
             <p className="text-1.5xl 2xl:text-3.5xl  3xl:text-4xl 3xl:mb-8 mb-3 2xl:mb-5">
               Your zk-proof has been submitted to Mina’s chain.
             </p>
             <a target="_blank" href={'https://minaexplorer.com/'}>
               <div className="flex items-center">
-                <Image src={ArrowIcon} alt="arrow icon" />
+                <div className="w-3">
+                  <Image src={ArrowIcon} alt="arrow icon" />
+                </div>
                 <TransparentButton
                   label="VIEW PROOF ON MINA EXPLORER"
-                  buttonStyle="text-xs 2xl:tracking-normal 3xl:text-xl"
+                  buttonStyle="text-xs 2xl:tracking-normal 3xl:text-xl text-[#C4C4C4]"
                 />
               </div>
             </a>
@@ -64,7 +69,7 @@ const SocialBadgeSection = () => {
                 setActiveButton={setActiveButton}
               />
             </div>
-            <div className="3xl:w-3/12 3xl:mb-14 mb-5 w-2/12 2xl:mb-14 2xl:w-3/12">
+            <div className="3xl:w-4/12 3xl:mb-14 mb-5 w-2/12 2xl:mb-14 2xl:w-3/12">
               <a target="_blank" href="https://www.twitter.com/">
                 <TweetButton label="TWEET IT" buttonStyle="w-full " />
               </a>
@@ -75,7 +80,7 @@ const SocialBadgeSection = () => {
           </div>
         </div>
 
-        <div className="3xl:h-1/4  absolute -bottom-0 h-2/6   w-full bg-[#79797940]  2xl:h-1/4">
+        <div className="3xl:h-1/4  absolute bottom-0 h-2/6   w-full bg-[#79797940]  2xl:h-1/4">
           <div className="3xl:space-y-10 flex h-full   flex-col items-center justify-center space-y-4  2xl:space-y-9 ">
             <div className=" 3xl:w-auto w-  w-20 xl:w-24 2xl:w-24">
               <Image src={MadeOnMinaLogo} alt="mina logo" />
