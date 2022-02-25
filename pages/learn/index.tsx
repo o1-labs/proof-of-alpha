@@ -6,45 +6,50 @@ import Button from '../../components/common/Button';
 import Indicator from '../../components/home/Indicator';
 
 import ArrowButton from '../../components/common/ArrowButton';
+import Container from '../../components/common/Container';
 
 const Learn: NextPage = () => {
   return (
-    <Layout backGroundColor="red" layoutStyle="flex">
-      <div className="mt-22 flex  h-4/5 items-center md:mt-64 md:ml-44 md:h-2/3 md:w-auto  md:space-x-24 ">
-        <div className="relative mb-12  flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
-          <ArrowButton arrowDirection="left" navLink="/#exchange" />
-        </div>
-        <div className="md:w-115 w-[275px] flex-col md:space-y-11">
-          <div className="md:mb-32">
-            <p className="mb-8 text-center text-xl md:text-left md:text-6xl 2xl:mb-14">
-              The Choice is Yours
-            </p>
+    <Layout backGroundColor="red" layoutStyle="flex -mt-3 h-screen">
+      <Container containerStyle="">
+        <div className="flex flex-col items-center justify-center h-screen ">
+          <div className="flex items-center  md:w-auto  md:space-x-24 ">
+            <div className="relative mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
+              <ArrowButton arrowDirection="left" navLink="/#exchange" />
+            </div>
+            <div className="3xl:w-115 w-[275px] flex-col md:space-y-11 xl:w-[400px] 2xl:w-[420px]">
+              <div className="md:mb-32">
+                <p className="3xl:text-6xl 3xl:mb-16  mb-14  text-center text-xl md:text-left lg:text-4xl 2xl:mb-14">
+                  The Choice is Yours
+                </p>
 
-            <p className="md:leading-11 mb-5 text-base leading-loose md:text-4xl 2xl:mb-10 ">
-              Certify your entire account history, or a recent time period.
-            </p>
-            <p className="md:leading-11 text-base leading-loose md:text-4xl 2xl:mb-10">
-              Focus only on your sick gains, or share fully transparent
-              transaction data.
-            </p>
-            <p className="md:leading-11 my-4 text-base leading-loose md:text-4xl ">
-              It's up to you.
-            </p>
-          </div>
-          <div className="mt-24 flex flex-col items-center justify-center space-y-9 pr-10 md:mt-40 md:flex-row md:justify-between md:space-y-0">
-            <Link href={'/start'} passHref>
-              <Button
-                buttonStyle="px-20 w-4/5 md:w-1/3 text-base md:text-2xl "
-                label="NEXT"
-              />
-            </Link>
-            <Indicator page="second" />
+                <p className="md:leading-11 3xl:text-4xl 3xl:mb-10 mb-5 text-base leading-loose xl:text-2xl 2xl:mb-8 ">
+                  Certify your entire account history, or a recent time period.
+                </p>
+                <p className="md:leading-11 3xl:text-4xl 3xl:mb-12 text-base leading-loose xl:text-2xl 2xl:mb-10">
+                  Focus only on your sick gains, or share fully transparent
+                  transaction data.
+                </p>
+                <p className="md:leading-11 3xl:text-4xl my-4 text-base leading-loose xl:text-2xl ">
+                  It's up to you.
+                </p>
+              </div>
+              <div className="mt-24 flex flex-col items-center justify-center space-y-9 pr-10 md:mt-40 md:flex-row md:justify-between md:space-y-0">
+                <Link href={'/start'} passHref>
+                  <Button
+                    buttonStyle="px-20 w-40 h-10 md:w-1/3 xl:h-12 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl 3xl:w-64 3xl:h-16 2xl:w-1/3 2xl:h-12 xl:1/3"
+                    label="NEXT"
+                  />
+                </Link>
+                <Indicator page="second" />
+              </div>
+            </div>
+            <div className="relative mb-12  flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
+              <ArrowButton arrowDirection="right" navLink="/learn/data" />
+            </div>
           </div>
         </div>
-        <div className="relative mb-12 flex  items-center md:mb-0 ">
-          <ArrowButton arrowDirection="right" navLink="/learn/data" />
-        </div>
-      </div>
+      </Container>
     </Layout>
   );
 };

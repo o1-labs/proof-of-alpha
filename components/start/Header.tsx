@@ -9,7 +9,7 @@ const Header = () => {
     //   </div>
     // </header>
     <header className="">
-      <div className="ml-36 mt-5 items-center w-20 md:w-24 md:ml-18  xl:ml-28 md:mt-5 xl:mt-12  xl:h-32 xl:w-auto absolute">
+      <div className="3xl:pr-10 md:ml-18 absolute ml-36 mt-5 w-20 items-center  md:mt-5 md:w-24 xl:ml-28  xl:mt-12 xl:h-32 xl:w-auto">
         <Image src={ZKLogo} alt="zk logo" />
       </div>
     </header>

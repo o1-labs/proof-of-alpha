@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NextPage } from 'next';
@@ -13,7 +14,6 @@ const Auro: NextPage = () => {
   return (
     <Layout backGroundColor="gradient">
       <Header />
-
       <div className="flex flex-col items-center">
         <div className="3xl:w-6/12 container  flex h-screen flex-col md:w-6/12  2xl:w-7/12">
           <ProgressBar stage="1st" />
