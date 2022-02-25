@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import Image from 'next/Image';
+import Image from 'next/image';
 import TwitterLogo from '../../public/assets/prove/twitter-logo.png';
 
 interface tweetButtonPropTypes {
