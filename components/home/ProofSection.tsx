@@ -43,7 +43,7 @@ const ProofSection = () => {
                   />
                 </Link>
 
-                <Link href={'#exchange'}>
+                <Link href={'#exchange'} passHref>
                   <TransparentButton
                     buttonStyle="md:-ml-3 md:w-auto px-10 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl"
                     label="LEARN MORE"

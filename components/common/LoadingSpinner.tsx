@@ -12,7 +12,7 @@ const LoadingSpinner = ({ label }: loadingSpinnerPropTypes) => {
   const renderLabel = () => {
     const labelWords = label.split(' ');
     return labelWords.map((word) => {
-      return <p>{word}</p>;
+      return <p key={word}>{word}</p>;
     });
   };
 

@@ -46,7 +46,7 @@ const TradeHistorySection = () => {
                   />
                 </Link>
 
-                <Link href={'#proof'}>
+                <Link href={'#proof'} passHref>
                   <TransparentButton
                     buttonStyle="md:ml-16 px-10 xl:px-4 text-xs 2xl:text-base 2xl:text-base 3xl:text-xl"
                     label="LEARN MORE"

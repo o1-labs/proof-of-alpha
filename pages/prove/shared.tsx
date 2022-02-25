@@ -42,7 +42,7 @@ const Shared: NextPage = () => {
               <p className="3xl:text-lg 3xl:mb-6 mb-4 text-[.6em] tracking-widest md:tracking-wide xl:text-sm 2xl:mb-5">
                 ALPHA STATMENT
               </p>
-              <Link href={'/prove/next'}>
+              <Link href={'/prove/next'} passHref>
                 <Button
                   label="GET IT NOW"
                   buttonStyle="text-[.6em] md:text-xs 3xl:text-sm w-4/12 md:w-7/12 2xl:8/12 3xl:w-8/12"

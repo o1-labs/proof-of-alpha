@@ -23,7 +23,7 @@ const StatementSection = () => {
             </div>
           </div>
           <div className=" flex flex-col items-center space-y-7 pl-28 ">
-            <Link href={'prove/shared'}>
+            <Link href={'prove/shared'} passHref>
               <ShareButton label="SHARE IT" />
             </Link>
 

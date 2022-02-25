@@ -50,7 +50,7 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
         <a target="_blank" href={externalButtonNavLink}>
           <Button buttonStyle="  text-xs 2xl:text-base 3xl:text-xl py-3">
             <div className="flex  h-6 items-center  2xl:h-10 ">
-              <Image src={ExternalLinkIcon} />
+              <Image src={ExternalLinkIcon} alt="external link icon" />
             </div>
             <div className="px-6">{externalButtonLabel}</div>
           </Button>

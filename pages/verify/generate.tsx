@@ -82,13 +82,13 @@ const Generate: NextPage = () => {
           </div>
           <div className="flex justify-center pt-10">
             {/* Buttton is only visable after a proof is generated */}
-            <Link href={'/verify/confirm'}>
+            <Link href={'/verify/confirm'} passHref>
               <Button
                 buttonStyle="w-10/12 2xl:w-7/12 py-2 3xl:w-6/12 text-sm 2xl:text-base 3xl:text-base"
                 visable={proofConfirmed}
               >
                 <div className="flex w-4 items-center">
-                  <Image src={LinkIcon} />
+                  <Image src={LinkIcon} alt="link icon" />
                 </div>
                 <div className="px-4">
                   SEND TO MINA &nbsp;

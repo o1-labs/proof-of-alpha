@@ -99,14 +99,14 @@ const Verify: NextPage = () => {
               />
 
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
-                <Link href={'/verify/configure'}>
+                <Link href={'/verify/configure'} passHref>
                   <Button
                     buttonStyle="w-full text-xs 2xl:text-base 3xl:text-xl"
                     label="CONTINUE&nbsp; >>"
                   />
                 </Link>
 
-                <Link href={'/auro/faucet'}>
+                <Link href={'/auro/faucet'} passHref>
                   <TransparentButton
                     buttonStyle="text-center text-xs 2xl:text-base 3xl:text-xl"
                     label="<< &nbsp;BACK"

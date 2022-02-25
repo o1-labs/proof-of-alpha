@@ -30,9 +30,13 @@ const TradeStatement = ({
   };
 
   const renderTrades = (trades: Trade[]) => {
-    return trades.map((trade) => {
+    return trades.map((trade, index) => {
       return (
-        <TradeStatementItem trade={trade} proofStatement={proofStatement} />
+        <TradeStatementItem
+          key={index}
+          trade={trade}
+          proofStatement={proofStatement}
+        />
       );
     });
   };

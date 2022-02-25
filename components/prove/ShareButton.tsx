@@ -31,7 +31,7 @@ const ShareButton = (props: shareButtonPropTypes) => {
         className="3xl:right-5 3xl:top-3 3xl:w-7 absolute right-7 top-2  w-5 xl:top-4 xl:right-5 2xl:right-4 2xl:top-3 2xl:w-7"
         aria-hidden="true"
       >
-        <Image src={ShareIcon} />
+        <Image src={ShareIcon} alt="share icon" />
       </div>
     </button>
   );
