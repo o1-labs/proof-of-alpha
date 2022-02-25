@@ -1,4 +1,12 @@
-const NavButtonGroup = ({ activeButton, setActiveButton }) => {
+interface navButtonGroupProps {
+  activeButton: string;
+  setActiveButton: (value: string) => void;
+}
+
+const NavButtonGroup = ({
+  activeButton,
+  setActiveButton
+}: navButtonGroupProps) => {
   return (
     <div className="3xl:top-52 3xl:-left-86 absolute top-24 left-14 2xl:top-36 2xl:-left-36">
       <a href="#social">
