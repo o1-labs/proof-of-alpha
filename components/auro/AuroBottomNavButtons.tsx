@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import TransparentButton from '../common/TransparentButton';
-import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
+import ExternalLinkIcon from '../../public/assets/auro/external-link-icon.png';
 import Button from '../common/Button';
 
 interface auroBottomNavButtonsPropTypes {
