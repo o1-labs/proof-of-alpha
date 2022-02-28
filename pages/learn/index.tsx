@@ -10,15 +10,15 @@ import Container from '../../components/common/Container';
 
 const Learn: NextPage = () => {
   return (
-    <Layout backGroundColor="red" layoutStyle="flex -mt-3 h-screen">
+    <Layout backGroundColor="red" layoutStyle="flex -mt-2 h-screen min-h-fit ">
       <Container containerStyle="">
-        <div className="flex flex-col items-center justify-center h-screen ">
+        <div className="flex h-screen flex-col items-center justify-center ">
           <div className="flex items-center  md:w-auto  md:space-x-24 ">
             <div className="relative mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
               <ArrowButton arrowDirection="left" navLink="/#exchange" />
             </div>
             <div className="3xl:w-115 w-[275px] flex-col md:space-y-11 xl:w-[400px] 2xl:w-[420px]">
-              <div className="md:mb-32">
+              <div className="mx-auto w-11/12 md:mx-0 md:mb-32 md:w-auto">
                 <p className="3xl:text-6xl 3xl:mb-16  mb-14  text-center text-xl md:text-left lg:text-4xl 2xl:mb-14">
                   The Choice is Yours
                 </p>
@@ -44,7 +44,7 @@ const Learn: NextPage = () => {
                 <Indicator page="second" />
               </div>
             </div>
-            <div className="relative mb-12  flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
+            <div className="relative mb-14  flex  items-center  md:mb-0 md:h-40 md:w-40">
               <ArrowButton arrowDirection="right" navLink="/learn/data" />
             </div>
           </div>

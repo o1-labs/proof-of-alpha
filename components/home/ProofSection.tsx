@@ -12,10 +12,12 @@ const ProofSection = () => {
     <Layout
       backGroundColor="blue"
       layoutStyle="h-.9*screen md:h-screen flex -mt-3 "
-      id="proof"
     >
       <Container containerStyle="">
-        <div className=" mx-auto  flex h-screen    flex-col items-center justify-center  md:flex-row">
+        <div
+          className=" mx-auto  flex h-screen    flex-col items-center justify-center  md:flex-row"
+          id="proof"
+        >
           <div className=" container  flex   flex-col items-center space-y-5 text-white  md:items-start  md:space-y-8 ">
             <p className="3xl:text-6xl lg:text-4.5xl mx-auto mb-4 w-[290px] text-xl font-normal leading-snug md:mx-0 md:mb-10 md:w-auto md:text-left md:text-3xl ">
               Your Proof of Alpha Statement:

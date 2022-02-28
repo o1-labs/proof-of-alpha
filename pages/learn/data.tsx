@@ -11,7 +11,7 @@ import Container from '../../components/common/Container';
 
 const Data: NextPage = () => {
   return (
-    <Layout backGroundColor="red" layoutStyle="flex h-screen">
+    <Layout backGroundColor="red" layoutStyle="flex h-screen -mt-1 ">
       <Container containerStyle="">
         <div className="flex h-screen flex-col items-center justify-center">
           <div className="mx-auto flex w-11/12 items-center justify-center    md:w-auto  md:space-x-24 ">

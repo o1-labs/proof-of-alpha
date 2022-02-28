@@ -10,15 +10,15 @@ import Container from '../common/Container';
 
 const TradeHistorySection = () => {
   return (
-    <Layout backGroundColor="gradient" layoutStyle="flex relative h-screen">
-      {/* <div className="flex h-screen bg-background bg-cover bg-no-repeat"> */}
-      {/* <div className="3xl:max-w-screen-xl mx-auto w-5/12 min-w-min items-center sm:max-w-screen-sm  2xl:max-w-screen-lg"> */}
-
+    <Layout
+      backGroundColor="gradient"
+      layoutStyle="flex relative min-h-fit md:h-screen"
+    >
       <header className=""></header>
       <div className="absolute  right-0  hidden  md:block">
         <Image loader={({ src }) => src} src={TopStamp} alt="Stamp" />
       </div>
-      <Container containerStyle="relative h-screen ">
+      <Container containerStyle="relative min-h-fit md:h-screen pb-[430px]  xl:pb-[750px]">
         <div className="absolute ml-36 mt-5 w-20 items-center md:ml-7  md:mt-5 md:w-24 xl:ml-10  xl:mt-12 xl:h-32 xl:w-auto">
           <Image loader={({ src }) => src} src={ZKLogo} alt="zk logo" />
         </div>
