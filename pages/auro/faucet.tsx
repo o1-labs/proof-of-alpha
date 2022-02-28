@@ -26,7 +26,12 @@ const Faucet: NextPage = () => {
               Select the Berkeley network
             </p>
             <div className="h-auto">
-              <Image src={MinaFaucet} alt="mina faucet" layout="responsive" />
+              <Image
+                loader={({ src }) => src}
+                src={MinaFaucet}
+                alt="mina faucet"
+                layout="responsive"
+              />
             </div>
 
             <AuroBottomNavButtons

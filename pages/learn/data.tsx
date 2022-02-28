@@ -13,13 +13,13 @@ const Data: NextPage = () => {
   return (
     <Layout backGroundColor="red" layoutStyle="flex h-screen">
       <Container containerStyle="">
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex h-screen flex-col items-center justify-center">
           <div className="mx-auto flex w-11/12 items-center justify-center    md:w-auto  md:space-x-24 ">
             <div className=" mb-12  flex  items-center  md:mb-28 ">
               <ArrowButton arrowDirection="left" navLink="/learn" />
             </div>
 
-            <div className="3xl:w-115 mx-auto  w-10/12 flex-col xl:w-99 2xl:w-99 md:w-auto md:space-y-11 ">
+            <div className="3xl:w-115 xl:w-99  2xl:w-99 mx-auto w-10/12 flex-col md:w-auto md:space-y-11 ">
               <div className="">
                 <p className="3xl:text-6xl 3xl:mb-16  mx-auto mb-14 w-11/12 text-xl  md:w-auto md:text-left lg:text-4xl xl:mb-9">
                   Your Data Stays Private
@@ -50,7 +50,7 @@ const Data: NextPage = () => {
               </div>
             </div>
             <div className="absolute right-0 hidden  md:block">
-              <Image src={RightStamp} alt="Stamp" />
+              <Image loader={({ src }) => src} src={RightStamp} alt="Stamp" />
             </div>
           </div>
         </div>

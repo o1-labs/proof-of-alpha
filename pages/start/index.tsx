@@ -57,6 +57,7 @@ const Start: NextPage = () => {
           </div>
           <div className="invisable: 3xl:w-[600px] 3xl:-right-0 3xl:-bottom-40 xl:-bottom-18 -bottom-20s absolute right-0 overflow-hidden md:visible md:right-0 md:bottom-0 md:w-[310px] xl:w-[400px] 2xl:-bottom-40 2xl:-right-80 2xl:w-[500px]">
             <Image
+              loader={({ src }) => src}
               src={TradeTwitter}
               alt="trade history and twitter"
               layout="responsive"

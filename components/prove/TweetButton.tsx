@@ -27,7 +27,7 @@ const TweetButton = (props: tweetButtonPropTypes) => {
         className="3xl:right-11 3xl:top-3 3xl:w-7 absolute right-7 top-2  w-5 2xl:right-11 2xl:top-3 2xl:w-7"
         aria-hidden="true"
       >
-        <Image src={TwitterLogo} alt="twitter logo" />
+        <Image loader={({ src }) => src} src={TwitterLogo} alt="twitter logo" />
       </div>
     </button>
   );

@@ -25,7 +25,12 @@ const Auro: NextPage = () => {
               You'll need Mina's browser wallet to use this app.
             </p>
             <div className="h-auto">
-              <Image src={AuroChrome} alt="auro chrome" layout="responsive" />
+              <Image
+                loader={({ src }) => src}
+                src={AuroChrome}
+                alt="auro chrome"
+                layout="responsive"
+              />
             </div>
             <AuroBottomNavButtons
               backNavLink="/start"

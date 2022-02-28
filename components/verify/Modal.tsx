@@ -63,12 +63,14 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                         <div className="3xl:left-9 3xl:w-36 3xl:h-36 absolute -top-3 left-4 z-10 h-20 w-20 rounded-full border-[6px] border-[#00B4BF] bg-transparent 2xl:-top-5 2xl:left-4 2xl:h-32 2xl:w-32  2xl:border-[10px] "></div>
 
                         <Image
+                          loader={({ src }) => src}
                           layout="responsive"
                           src={BinanceModal}
                           alt="binance"
                         />
                         <div className="3xl:top-10 3xl:left-20 absolute top-5 left-10 h-8  w-8 2xl:top-8 2xl:left-14 2xl:h-10 2xl:w-10">
                           <Image
+                            loader={({ src }) => src}
                             layout="responsive"
                             src={ExportCursor}
                             alt="export cursor"

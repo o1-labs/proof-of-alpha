@@ -16,17 +16,21 @@ const ExchangeTradeSection = () => {
       id="exchange"
     >
       <div className="flex flex-col items-center justify-center ">
-        <div className="mx-auto  flex  justify-center items-center space-x-3  md:w-auto md:space-x-20 relative">
+        <div className="relative  mx-auto  flex items-center justify-center  space-x-3 md:w-auto md:space-x-20">
           <div className="w-1/2">
             <div
               className="relative  -ml-[560px]  hidden w-[1013px]  md:block"
               // style={{ clipPath: `inset(0% 0% 0% 54%)` }}
             >
-              <Image src={TwitterCard} alt="Twitter Card" />
+              <Image
+                loader={({ src }) => src}
+                src={TwitterCard}
+                alt="Twitter Card"
+              />
             </div>
           </div>
           {/* container */}
-          <div className="2xl:w-99  3xl:w-6/12 h-screen w-8/12 flex flex-col mx-60  justify-center  md:items-center md:space-y-5 xl:w-[500px]">
+          <div className="2xl:w-99  3xl:w-6/12 mx-60 flex h-screen w-8/12 flex-col  justify-center  md:items-center md:space-y-5 xl:w-[500px]">
             <div className="flex  flex-col ">
               {/* copy section */}
               <p className="3xl:mb 3xl:text-6xl 3xl:mb-5 text-center text-xl text-white md:mt-0 md:text-left lg:text-4xl xl:mb-2">
@@ -65,8 +69,8 @@ const ExchangeTradeSection = () => {
           </div>
           {/* <div className="relative mt-60 -mr-8  md:mt-52 md:mr-0"> */}
           <div
-            className="relative flex 
-              -mr-8 md:mr-0 "
+            className="relative -mr-8 
+              flex md:mr-0 "
           >
             <ArrowButton arrowDirection="right" navLink="/learn" />
           </div>

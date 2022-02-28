@@ -40,7 +40,7 @@ const SocialBadgeSection = () => {
         <div className="" id="social"></div>
         <Header />
         <div className=" 3xl:w-7/12 absolute top-0  right-0 w-6/12 2xl:w-7/12">
-          <Image src={TopStamp} alt="Stamp" />
+          <Image loader={({ src }) => src} src={TopStamp} alt="Stamp" />
         </div>
 
         <div className="3xl:space-y-4 3xl:mt-10   flex flex-col items-center">
@@ -51,7 +51,11 @@ const SocialBadgeSection = () => {
             <a target="_blank" href={'https://minaexplorer.com/'}>
               <div className="flex items-center">
                 <div className="w-3">
-                  <Image src={ArrowIcon} alt="arrow icon" />
+                  <Image
+                    loader={({ src }) => src}
+                    src={ArrowIcon}
+                    alt="arrow icon"
+                  />
                 </div>
                 <TransparentButton
                   label="VIEW PROOF ON MINA EXPLORER"
@@ -62,7 +66,11 @@ const SocialBadgeSection = () => {
 
             <div className="">
               <div className="3xl:w-full ml-90 3xl:ml-0 flex w-3/12 2xl:ml-56 2xl:w-1/2 ">
-                <Image src={TwitterCard} alt="twitter card" />
+                <Image
+                  loader={({ src }) => src}
+                  src={TwitterCard}
+                  alt="twitter card"
+                />
               </div>
               <NavButtonGroup
                 activeButton={activeButton}
@@ -83,7 +91,11 @@ const SocialBadgeSection = () => {
         <div className="3xl:h-1/4  absolute bottom-0 h-2/6   w-full bg-[#79797940]  2xl:h-1/4">
           <div className="3xl:space-y-10 flex h-full   flex-col items-center justify-center space-y-4  2xl:space-y-9 ">
             <div className=" 3xl:w-auto w-  w-20 xl:w-24 2xl:w-24">
-              <Image src={MadeOnMinaLogo} alt="mina logo" />
+              <Image
+                loader={({ src }) => src}
+                src={MadeOnMinaLogo}
+                alt="mina logo"
+              />
             </div>
             <p className="2xl:text-1.5xl 3xl:text-3xl text-base tracking-wider">
               zero-knowledge proof-powered dApps

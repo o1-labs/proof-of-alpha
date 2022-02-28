@@ -21,13 +21,13 @@ const Shared: NextPage = () => {
       layoutStyle="relative h-2.25*screen md:h-2*screen min-h-fit"
     >
       <div className=" 3xl:-top-56 3xl:w-5/12 -top-30 absolute -right-52  md:-top-36 md:right-0 md:w-7/12 2xl:-top-52 2xl:w-6/12">
-        <Image src={TopStamp} alt="Stamp" />
+        <Image loader={({ src }) => src} src={TopStamp} alt="Stamp" />
       </div>
       <Container containerStyle="">
         <div className="mt-3 flex flex-col justify-between md:mt-0 md:flex-row">
           <div className="flex flex-col items-center space-y-4 md:space-y-8">
             <div className="3xl:w-28 w-18 pt-4 md:w-20">
-              <Image src={ZKLogo} alt="zk logo" />
+              <Image loader={({ src }) => src} src={ZKLogo} alt="zk logo" />
             </div>
             <div className="3xl:w-full mt-20 flex w-11/12 flex-col items-center justify-center md:mt-36 md:w-full  2xl:w-full">
               <ProofOfAlphaStatement />
@@ -51,7 +51,11 @@ const Shared: NextPage = () => {
             </div>
             <div className="3xl:space-y-3 flex flex-col items-center space-y-2 2xl:space-y-1 ">
               <div className="w-8 lg:w-8 2xl:w-10">
-                <Image src={ShieldIcon} alt="shield icon" />
+                <Image
+                  loader={({ src }) => src}
+                  src={ShieldIcon}
+                  alt="shield icon"
+                />
               </div>
               <p className="3xl:text-lg text-[.65em] font-medium md:text-xs  2xl:text-base">
                 How do you know this proof is valid?
@@ -65,7 +69,11 @@ const Shared: NextPage = () => {
               <a target="_blank" href={'https://minaexplorer.com/'}>
                 <div className="flex items-center">
                   <div className="3xl:w-3 w-2 2xl:w-2">
-                    <Image src={ArrowIcon} alt="arrow icon" />
+                    <Image
+                      loader={({ src }) => src}
+                      src={ArrowIcon}
+                      alt="arrow icon"
+                    />
                   </div>
                   <TransparentButton
                     label="VIEW PROOF ON MINA EXPLORER"
@@ -82,7 +90,11 @@ const Shared: NextPage = () => {
         <div className="3xl:space-y-8 flex h-full  flex-col items-center justify-center space-y-5  2xl:space-y-9 ">
           <div className=" flex   flex-col items-center ">
             <div className="3xl:w-auto flex w-10 items-center justify-center xl:w-12 2xl:w-16">
-              <Image src={MinaPrimary} alt="mina logo" />
+              <Image
+                loader={({ src }) => src}
+                src={MinaPrimary}
+                alt="mina logo"
+              />
             </div>
             <p className="3xl:text-base tracking-xlwidest 3xl:mt-1 mt-1 w-fit text-center text-[.4rem] text-[#FF603B] md:text-[.44rem] 2xl:text-[10px] ">
               MADE ON MINA

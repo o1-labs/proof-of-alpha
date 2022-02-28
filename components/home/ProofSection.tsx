@@ -30,7 +30,12 @@ const ProofSection = () => {
                 <CheckmarkItem copy="100% open source & on-chain" />
               </div>
               <div className="2xl:w-86 2xl:h-86 hidden h-80 w-80 justify-end  md:flex md:flex-col">
-                <Image layout="responsive" src={ZKBorderLogo} alt="ZK logo" />
+                <Image
+                  loader={({ src }) => src}
+                  layout="responsive"
+                  src={ZKBorderLogo}
+                  alt="ZK logo"
+                />
               </div>
             </div>
 
