@@ -88,11 +88,7 @@ const Generate: NextPage = () => {
                 visable={proofConfirmed}
               >
                 <div className="flex w-4 items-center">
-                  <Image
-                    loader={({ src }) => src}
-                    src={LinkIcon}
-                    alt="link icon"
-                  />
+                  <Image src={LinkIcon} alt="link icon" />
                 </div>
                 <div className="px-4">
                   SEND TO MINA &nbsp;

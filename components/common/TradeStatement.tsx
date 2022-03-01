@@ -50,11 +50,7 @@ const TradeStatement = ({
           {/* logo with date section */}
           <div className="3xl:space-x-4  flex w-auto justify-center space-x-2  md:w-10/12  md:justify-start xl:space-x-2">
             <div className="3xl:h- 3xl:w-9 h-5 w-5 md:h-4 md:w-4">
-              <Image
-                loader={({ src }) => src}
-                src={BinanceLogo}
-                alt="Binance logo"
-              />
+              <Image src={BinanceLogo} alt="Binance logo" />
             </div>
             <div className="flex flex-col items-start  ">
               <h2 className="3xl:text-lg tracking-xlwidest text-xs font-medium md:text-sm">

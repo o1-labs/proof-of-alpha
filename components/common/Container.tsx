@@ -15,7 +15,7 @@ const Container = (props: containerPropTypes) => {
 
   return (
     <div
-      className={` 3xl:max-w-[1450px] 3xl:w-7/12 max-width-[900px]  mx-auto flex w-full  min-w-min flex-col lg:w-10/12 xl:w-9/12 xl:max-w-[1100px] 2xl:w-8/12 2xl:max-w-[1200px] ${containerStyle}`}
+      className={` 3xl:max-w-[1450px] 3xl:w-7/12 max-width-[900px]  mx-auto flex w-full  min-w-min flex-col lg:w-10/12 xl:w-9/12 xl:max-w-[960px] 2xl:w-8/12 2xl:max-w-[990px] ${containerStyle}`}
       {...otherProps}
     >
       {children}

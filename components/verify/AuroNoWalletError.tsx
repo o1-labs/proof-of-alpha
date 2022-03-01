@@ -19,7 +19,7 @@ const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
         }  `}
       >
         <div className="3xl:w-6 flex w-3 items-center justify-center 2xl:w-4">
-          <Image loader={({ src }) => src} src={ExclamationIcon} alt="info" />
+          <Image src={ExclamationIcon} alt="info" />
         </div>
 
         <span className="3xl:text-3xl ml-2 text-sm leading-loose text-gray-300 2xl:text-xl ">
@@ -36,11 +36,7 @@ const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
         >
           <div className="3xl:mt-3 2xl flex items-center">
             <div className="3xl:w-10 flex w-5  items-center justify-center 2xl:w-5">
-              <Image
-                loader={({ src }) => src}
-                src={ExternalLinkIcon}
-                alt="info"
-              />
+              <Image src={ExternalLinkIcon} alt="info" />
             </div>
             <span className=" 3xl:text-2xl ml-2 text-xs  text-gray-300 underline 2xl:text-base">
               GET AURO

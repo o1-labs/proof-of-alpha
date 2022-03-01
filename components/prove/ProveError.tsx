@@ -6,11 +6,7 @@ const ProveError = () => {
       <div className="flex w-full flex-col items-center space-y-10 ">
         <div className="flex w-3/6 flex-col items-center justify-center">
           <div className="mt-36 ">
-            <Image
-              loader={({ src }) => src}
-              src={ZKOutlineLogo}
-              alt=" zk logo"
-            />
+            <Image src={ZKOutlineLogo} alt=" zk logo" />
           </div>
           <div className="mt-10 flex flex-col items-center ">
             <p className="text-3.5xl leading-11 font-bold">

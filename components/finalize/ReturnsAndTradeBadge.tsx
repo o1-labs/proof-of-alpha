@@ -17,11 +17,7 @@ const ReturnsAndTradeBadge = () => {
             PROOF OF ALPHA STATEMENT
           </div>
           <div className="3xl:w-[700px] 3xl:-mt-9 xl:-mt-4 xl:w-[500px] 2xl:-mt-4 2xl:w-[600px] ">
-            <Image
-              loader={({ src }) => src}
-              src={ProofOfTradeStatement}
-              alt="proof of trade statement"
-            />
+            <Image src={ProofOfTradeStatement} alt="proof of trade statement" />
           </div>
         </div>
 
@@ -30,11 +26,7 @@ const ReturnsAndTradeBadge = () => {
             SOCIAL BADGE
           </div>
           <div className="3xl:-mt-1 3xl:w-[530px] 3xl:-ml-20 mt-0 ml-7 w-1/2 xl:-ml-24 xl:w-[400px] 2xl:mt-0 2xl:-ml-16 2xl:w-[500px]">
-            <Image
-              loader={({ src }) => src}
-              src={TwitterCard}
-              alt="twitter card"
-            />
+            <Image src={TwitterCard} alt="twitter card" />
           </div>
         </div>
       </div>

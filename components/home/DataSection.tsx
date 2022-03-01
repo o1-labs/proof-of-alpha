@@ -11,7 +11,7 @@ const DataSection = () => {
     >
       <div className="flex items-center space-x-48">
         <div className="w-30 h-30 ml-42 relative">
-          <Image loader={({ src }) => src} src={LeftArrow} alt="Right Arrow" />
+          <Image src={LeftArrow} alt="Right Arrow" />
         </div>
         <div className="w-80 flex-col space-y-5">
           <p className="text-3xl   text-white">Your Data Stays Private</p>

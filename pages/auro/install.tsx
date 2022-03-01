@@ -28,12 +28,7 @@ const Auro: NextPage = () => {
             />
 
             <div className="h-auto">
-              <Image
-                loader={({ src }) => src}
-                src={AuroTestnet}
-                alt="auro testnet"
-                layout="responsive"
-              />
+              <Image src={AuroTestnet} alt="auro testnet" layout="responsive" />
             </div>
             <AuroBottomNavButtons
               backNavLink="/auro"

@@ -70,7 +70,7 @@ const Verify: NextPage = () => {
             <button onClick={() => setIsModalOpen(true)}>
               <div className="flex items-center pt-3  ">
                 <div className="flex w-4 justify-center 2xl:w-5">
-                  <Image loader={({ src }) => src} src={InfoIcon} alt="info" />
+                  <Image src={InfoIcon} alt="info" />
                 </div>
                 <span className="3xl:text-lg pl-2 underline md:text-xs 2xl:text-base ">
                   How do I find my Binance API keys?
@@ -115,11 +115,7 @@ const Verify: NextPage = () => {
               </div>
             </div>
             <div className="absolute right-36 mt-8  w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12">
-              <Image
-                loader={({ src }) => src}
-                src={APIsettings}
-                alt="API key settings"
-              />
+              <Image src={APIsettings} alt="API key settings" />
             </div>
           </div>
         </div>

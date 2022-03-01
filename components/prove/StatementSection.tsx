@@ -14,11 +14,7 @@ const StatementSection = () => {
 
       <Container containerStyle="pt-32">
         <div className=" 3xl:w-7/12 absolute top-0 right-0 w-6/12 2xl:w-7/12">
-          <Image
-            loader={({ src }) => src}
-            src={StatementTopStamp}
-            alt="Stamp"
-          />
+          <Image src={StatementTopStamp} alt="Stamp" />
         </div>
         <div className="flex justify-between  ">
           <div className="3xl:space-y-4  flex  flex-col items-center ">

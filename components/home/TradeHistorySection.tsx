@@ -16,13 +16,13 @@ const TradeHistorySection = () => {
     >
       <header className=""></header>
       <div className="absolute  right-0  hidden  md:block">
-        <Image loader={({ src }) => src} src={TopStamp} alt="Stamp" />
+        <Image src={TopStamp} alt="Stamp" />
       </div>
-      <Container containerStyle="relative min-h-fit md:h-screen pb-[430px]  xl:pb-[750px]">
+      <Container containerStyle="relative min-h-fit  pb-[320px] md:pb-[375px]  xl:pb-[800px] ">
         <div className="absolute ml-36 mt-5 w-20 items-center md:ml-7  md:mt-5 md:w-24 xl:ml-10  xl:mt-12 xl:h-32 xl:w-auto">
-          <Image loader={({ src }) => src} src={ZKLogo} alt="zk logo" />
+          <Image src={ZKLogo} alt="zk logo" />
         </div>
-        <div className="3xl:mt-60 mx-auto mt-36 flex flex-col items-center justify-center md:mt-24 md:ml-32 md:flex-row xl:mt-60 xl:ml-52">
+        <div className="3xl:mt-60 mx-auto mt-36 flex flex-col items-center justify-center md:mt-24 md:ml-32 md:flex-row xl:ml-44 xl:mt-60">
           <div className="3xl:space-y-10  flex   flex-col space-y-6 text-white  md:w-auto md:space-y-3 xl:space-y-4 2xl:space-y-8">
             <p className="3xl:text-7xl text-1.5xl mx-auto w-10/12 items-center text-white md:mx-0 md:w-full md:px-0 md:text-3xl 2xl:text-5xl">
               Your Trade History Sets You Apart

@@ -19,7 +19,7 @@ const AuroNoTestNetErrorPropTypes = ({
     >
       <div className="flex items-center justify-end  ">
         <div className="w-3 2xl:w-auto">
-          <Image loader={({ src }) => src} src={ExclamationIcon} alt="info" />
+          <Image src={ExclamationIcon} alt="info" />
         </div>
         <span className="3xl:text-3xl ml-2 text-sm leading-loose 2xl:text-2xl ">
           Auro Wallet must be connected to Snappsnet to continue.

@@ -15,7 +15,7 @@ const NavButtonGroup = ({
             event.preventDefault;
             setActiveButton('socialBadge');
           }}
-          className={` 3xl:w-[280px] 3xl:h-[48px] mb-1 h-[38px] w-[180px] bg-[#FFFFFF1A] py-4 pl-5 text-xs font-extralight text-white 2xl:h-[48px] 2xl:w-[280px] ${
+          className={` 3xl:w-[280px] 3xl:h-[48px] mb-1 flex h-[38px] w-[180px] items-center bg-[#FFFFFF1A] py-4 pl-5 text-xs font-extralight text-white 2xl:h-[48px] 2xl:w-[280px] ${
             activeButton === 'socialBadge' ? 'border-l-2 ' : ''
           }`}
         >
@@ -28,7 +28,7 @@ const NavButtonGroup = ({
             event.preventDefault;
             setActiveButton('tradeStatement');
           }}
-          className={`3xl:w-[280px] 3xl:h-[48px] mb-1 h-[38px] w-[180px] bg-[#FFFFFF1A] py-4 pl-5 text-xs font-extralight text-white   2xl:h-[48px] 2xl:w-[280px] ${
+          className={`3xl:w-[280px] 3xl:h-[48px] mb-1 flex h-[38px] w-[180px] items-center bg-[#FFFFFF1A] py-4 pl-5 text-xs font-extralight text-white   2xl:h-[48px] 2xl:w-[280px] ${
             activeButton == 'tradeStatement' ? 'border-l-2' : ''
           } `}
         >

@@ -34,7 +34,6 @@ const Confirm: NextPage = () => {
         the Largest Contentful Paint (LCP).
         https://nextjs.org/docs/api-reference/next/image#priority */}
             <Image
-              loader={({ src }) => src}
               layout="responsive"
               src={AuroConfirm}
               alt="auro confirm"

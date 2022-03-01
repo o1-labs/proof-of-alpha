@@ -20,18 +20,14 @@ const ExchangeTradeSection = () => {
               className="relative -ml-[560px]  hidden w-[1013px]  md:block"
               // style={{ clipPath: `inset(0% 0% 0% 54%)` }}
             >
-              <Image
-                loader={({ src }) => src}
-                src={TwitterCard}
-                alt="Twitter Card"
-              />
+              <Image src={TwitterCard} alt="Twitter Card" />
             </div>
           </div>
           <div className="invisible relative mb-14 flex   w-14 items-center md:mb-0  md:hidden md:h-40 md:w-40">
             <ArrowButton arrowDirection="left" navLink="/#exchange" />
           </div>
           {/* container */}
-          <div className="2xl:w-99  3xl:w-6/12 mx-auto flex h-screen w-full flex-col  justify-center  md:items-center md:space-y-5 xl:w-[500px]">
+          <div className="2xl:w-99  3xl:w-6/12 mx-auto flex h-screen  w-full flex-col  justify-center  md:items-center md:space-y-5 xl:w-[500px]">
             <div className=" flex  flex-col ">
               {/* copy section */}
               <p className="3xl:mb 3xl:text-6xl 3xl:mb-5 text-center text-xl text-white md:mt-0 md:text-left lg:text-4xl xl:mb-2">

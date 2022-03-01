@@ -9,7 +9,7 @@ const Header = () => {
 
       <div className="relative flex items-center justify-center md:py-5 2xl:py-9 ">
         <div className="md:w-20 2xl:w-28">
-          <Image loader={({ src }) => src} src={ZKLogo} alt="zk logo" />
+          <Image src={ZKLogo} alt="zk logo" />
         </div>
         {/* placeholder for users mina address */}
         <div className="flex flex-col justify-end">

@@ -50,7 +50,7 @@ const Data: NextPage = () => {
               </div>
             </div>
             <div className="absolute right-0 hidden  md:block">
-              <Image loader={({ src }) => src} src={RightStamp} alt="Stamp" />
+              <Image src={RightStamp} alt="Stamp" />
             </div>
           </div>
         </div>
