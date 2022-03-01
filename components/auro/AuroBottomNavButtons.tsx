@@ -48,8 +48,8 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
         className={`${externalButton ? ' flex justify-center' : 'invisible'} `}
       >
         <a target="_blank" href={externalButtonNavLink}>
-          <Button buttonStyle=" pl-6 text-xs 2xl:text-base 3xl:text-xl py-3">
-            <div className="flex w-3 items-center  2xl:h-10 ">
+          <Button buttonStyle="w-52 2xl:w-60 3xl:w-72 px-2 text-xs 2xl:text-base 3xl:text-xl py-3">
+            <div className="3xl:w-5 flex w-3  items-center 2xl:h-8 2xl:w-4 ">
               <Image src={ExternalLinkIcon} alt="external link icon" />
             </div>
             <div className="px-2">{externalButtonLabel}</div>

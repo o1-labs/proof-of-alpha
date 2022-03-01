@@ -25,7 +25,7 @@ const ReturnsAndTradeBadge = () => {
           <div className="tracking-xlwidest  mr-20 text-center text-xs 2xl:ml-28  2xl:text-left 2xl:text-xl  ">
             SOCIAL BADGE
           </div>
-          <div className="3xl:-mt-1 3xl:w-[530px] 3xl:-ml-20 mt-0 ml-7 w-1/2 xl:-ml-24 xl:w-[400px] 2xl:mt-0 2xl:-ml-16 2xl:w-[500px]">
+          <div className="3xl:-mt-3 3xl:w-[530px] 3xl:-ml-20 mt-0 ml-7 w-1/2 xl:-ml-24 xl:w-[400px] 2xl:mt-0 2xl:-ml-16 2xl:w-[500px]">
             <Image src={TwitterCard} alt="twitter card" />
           </div>
         </div>
