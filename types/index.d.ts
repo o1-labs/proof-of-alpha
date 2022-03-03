@@ -12,3 +12,10 @@ export interface Trade {
     price: string;
   };
 }
+declare global {
+  interface Window {
+    mina: any;
+  }
+}
+
+declare module '*.png';
