@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 export default () => {
   const [isAuro, setIsAuro] = useState(false);
   const [minaAccount, setMinaAccount] = useState('');
-  const [accountHeaderDisplay, setAccountHeaderDisplay] =
-    useState('0xABCD...1234');
+  const [accountHeaderDisplay, setAccountHeaderDisplay] = useState('');
   useEffect(() => {
     async function getAccount() {
       let minaAccounts;
