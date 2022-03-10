@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../common/Layout';
@@ -13,17 +12,17 @@ const StatementSection = () => {
       <div className="relative" id="trade"></div>
 
       <Container containerStyle="pt-32">
-        <div className=" 3xl:w-7/12 absolute top-0 right-0 w-6/12 2xl:w-7/12">
+        <div className=" absolute top-0 right-0 w-6/12 2xl:w-7/12 3xl:w-7/12">
           <Image src={StatementTopStamp} alt="Stamp" />
         </div>
         <div className="flex justify-between  ">
-          <div className="3xl:space-y-4  flex  flex-col items-center ">
-            <div className="3xl:w-full relative flex flex-col items-center justify-center">
+          <div className="flex  flex-col  items-center 3xl:space-y-4 ">
+            <div className="relative flex flex-col items-center justify-center 3xl:w-full">
               <ProofOfAlphaStatement />
             </div>
           </div>
           <div className=" flex flex-col items-center space-y-7 pl-28 ">
-            <Link href={'prove/shared'} passHref>
+            <Link href={'/prove/shared'} passHref>
               <ShareButton label="SHARE IT" />
             </Link>
 

@@ -1,28 +1,32 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
 import Layout from '../common/Layout';
 import Header from '../../components/common/Header';
-import Button from '../../components/common/Button';
 import NavButtonGroup from '../../components/prove/NavButtonGroup';
+import ProveFooter from './ProveFooter';
 import TweetButton from '../../components/prove/TweetButton';
 import TransparentButton from '../../components/common/TransparentButton';
 import ArrowIcon from '../../public/assets/prove/arrow-icon.png';
-import TwitterCard from '../../public/assets/prove/twitter-card.png';
-
-import MadeOnMinaLogo from '../../public/assets/prove/made-on-mina-logo.png';
-
+import TwitterCardProof from './TwitterCardProof';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
-import { useState, useLayoutEffect, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import {
+  addQueryParamsToURL,
+  BASE_URL,
+  calculateCumulativeProfitLoss,
+  renderDates,
+  trades
+} from '../../utils';
 
 const SocialBadgeSection = () => {
   const yPosition = useRef(null);
-
   const [activeButton, setActiveButton] = useState<string>('socialBadge');
-  useLayoutEffect(() => {
+
+  useEffect(() => {
     const onScroll = () => {
       if (!yPosition.current) return;
 
-      console.log('scroll position', window.scrollY);
       if (window.scrollY < 200) {
         setActiveButton('socialBadge');
       }
@@ -31,17 +35,28 @@ const SocialBadgeSection = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const getImageUrl = () => {
+    const path = addQueryParamsToURL('/api/og-image', [
+      {
+        label: 'percentage',
+        value: `+${calculateCumulativeProfitLoss(trades)}%`
+      },
+      { label: 'date', value: renderDates() }
+    ]);
+
+    return `${BASE_URL}${path}`;
+  };
+
   return (
     <Layout
       backGroundColor="grayGradient"
       layoutStyle="min-h-fit 3xl:pb-[450px] pb-[400px] relative "
     >
-      <head>
-        <meta
-          property="twitter:image"
-          content="https://og-image.vercel.app/**Hello**%20World.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fvercel-triangle-black.svg"
-        />
-      </head>
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={getImageUrl()} />
+        <meta name="twitter:title" content="Proof 0f Alpha" />
+      </Head>
       <div ref={yPosition}>
         <div className="" id="social"></div>
         <Header />
@@ -68,7 +83,7 @@ const SocialBadgeSection = () => {
 
             <div className="">
               <div className="ml-90 flex w-3/12 2xl:ml-56 2xl:w-1/2 3xl:ml-0 3xl:w-full ">
-                <Image src={TwitterCard} alt="twitter card" />
+                <TwitterCardProof />
               </div>
               <NavButtonGroup
                 activeButton={activeButton}
@@ -76,7 +91,10 @@ const SocialBadgeSection = () => {
               />
             </div>
             <div className="mb-5 w-2/12 2xl:mb-14 2xl:w-3/12 3xl:mb-14 3xl:w-4/12">
-              <a target="_blank" href="https://www.twitter.com/">
+              <a
+                target="_blank"
+                href={`https://twitter.com/intent/tweet?url=${BASE_URL}/prove`}
+              >
                 <TweetButton label="TWEET IT" buttonStyle="w-full " />
               </a>
             </div>
@@ -86,23 +104,7 @@ const SocialBadgeSection = () => {
           </div>
         </div>
 
-        <div className="absolute  bottom-0 h-2/6 w-full   bg-[#79797940] 2xl:h-1/4  3xl:h-1/4">
-          <div className="flex h-full flex-col   items-center justify-center space-y-4 2xl:space-y-9  3xl:space-y-10 ">
-            <div className=" w- w-20  xl:w-24 2xl:w-24 3xl:w-auto">
-              <Image src={MadeOnMinaLogo} alt="mina logo" />
-            </div>
-            <p className="text-base tracking-wider 2xl:text-1.5xl 3xl:text-3xl">
-              zero-knowledge proof-powered dApps
-            </p>
-            <a target="_blank" href="https://docs.minaprotocol.com/en/snapps">
-              <Button
-                label="LEARN MORE"
-                buttonStyle="w-36 w  2xl:w-48  3xl:w-52 text-xs 2xl:text-base 3xl:text-base"
-                secondary={true}
-              />
-            </a>
-          </div>
-        </div>
+        <ProveFooter />
       </div>
     </Layout>
   );
