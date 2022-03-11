@@ -39,10 +39,8 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 }
 
 function getDefaultImages(): string {
-  const imageDir = path.resolve(
-    'public/assets/common/twitter-card-template@2x.png'
-  );
+  const image =
+    'https://storage.googleapis.com/twitter-template/twitter-card-template%402x.png';
 
-  // console.log(`in img ${BASE_URL}/assets/common/twitter-card-template@2x.png`);
-  return imageDir;
+  return image;
 }
