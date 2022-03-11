@@ -63,9 +63,9 @@ export const addQueryParamsToURL = (path: string, params: any): string => {
     pathResult.append(params[i].label, params[i].value);
   }
 
-  return `${path}?pathResult`;
+  return `${path}?${pathResult}`;
 };
 
 export const BASE_URL = process.env.VERCEL_URL
-  ? `${process.env.VERCEL_URL}`
+  ? `https://${process.env.VERCEL_URL}`
   : 'http://localhost:3000';

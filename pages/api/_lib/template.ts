@@ -84,11 +84,6 @@ function getCss(theme: string, fontSize: string) {
       letter-spacing: 0.2em       
     }
 
-  
-
-
-
-    
     .heading {
         font-family: 'Roboto', sans-serif;
         font-size: ${sanitizeHtml(fontSize)};
@@ -100,30 +95,28 @@ function getCss(theme: string, fontSize: string) {
 
 export function getHtml(parsedReq) {
   const { text, theme, md, date, image, widths, heights } = parsedReq;
-
+  console.log('tets', image);
   return `<!DOCTYPE html>
-<html> 
-    <meta charset="utf-8">
-    <title>Generated Image</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        ${getCss(theme, date)}
-    </style>
-    <body>
-        <div class="generated-wrapper">
-            
-            
-            <div class="prove-text">${emojify(
-              md ? marked(text) : sanitizeHtml(text)
-            )}</div>
-             <div class="date-text">${emojify(
-               md ? marked(date) : sanitizeHtml(date)
-             )}</div>
-                ${getImage(image, widths, heights)}
-            </div>
-        
-    </body>
-</html>`;
+            <html> 
+                <meta charset="utf-8">
+                <title>Generated Image</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <style>
+                    ${getCss(theme, date)}
+                </style>
+                <body>
+                    <div class="generated-wrapper">   
+                        <div class="prove-text">${emojify(
+                          md ? marked(text) : sanitizeHtml(text)
+                        )}</div>
+                        <div class="date-text">${emojify(
+                          md ? marked(date) : sanitizeHtml(date)
+                        )}</div>
+                            ${getImage(image, widths, heights)}
+                        </div>
+                    
+                </body>
+            </html>`;
 }
 
 function getImage(src: string, width = '2300', height = 'auto') {

@@ -1,5 +1,7 @@
 import { IncomingMessage } from 'http';
 import { parse } from 'url';
+import { readFileSync } from 'fs';
+import path from 'path';
 import { ParsedRequest, Theme } from './types';
 import { BASE_URL } from '../../../utils';
 
@@ -37,6 +39,10 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 }
 
 function getDefaultImages(): string {
-  console.log(`in img ${BASE_URL}/assets/common/twitter-card-template@2x.png`);
-  return `${BASE_URL}/assets/common/twitter-card-template@2x.png`;
+  const imageDir = path.resolve(
+    'public/assets/common/twitter-card-template@2x.png'
+  );
+
+  // console.log(`in img ${BASE_URL}/assets/common/twitter-card-template@2x.png`);
+  return imageDir;
 }

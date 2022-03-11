@@ -53,8 +53,9 @@ const SocialBadgeSection = () => {
       layoutStyle="min-h-fit 3xl:pb-[450px] pb-[400px] relative "
     >
       <Head>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={getImageUrl()} />
+        <meta name="twitter:card" content="summary" />
+        {/* <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={getImageUrl()} /> */}
         <meta name="twitter:title" content="Proof 0f Alpha" />
       </Head>
       <div ref={yPosition}>
