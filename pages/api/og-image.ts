@@ -25,9 +25,9 @@ export default async function handler(
     res.setHeader('Content-Type', `image/png`);
     res.setHeader(
       'Cache-Control',
-      `public, immutable, no-transform, s-maxage=0, max-age=0`
+      `public, immutable, no-transform, s-maxage=31536000, max-age=31536000`
     );
-    // `public, immutable, no-transform, s-maxage=31536000, max-age=31536000`;
+
     console.log('file', file);
     res.end(file);
   } catch (e) {
