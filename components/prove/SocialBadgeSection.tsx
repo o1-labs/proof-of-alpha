@@ -11,13 +11,7 @@ import ArrowIcon from '../../public/assets/prove/arrow-icon.png';
 import TwitterCardProof from './TwitterCardProof';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
-import {
-  addQueryParamsToURL,
-  BASE_URL,
-  calculateCumulativeProfitLoss,
-  renderDates,
-  trades
-} from '../../utils';
+import { BASE_URL } from '../../utils';
 
 const SocialBadgeSection = () => {
   const yPosition = useRef(null);
@@ -35,28 +29,11 @@ const SocialBadgeSection = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const getImageUrl = () => {
-    const path = addQueryParamsToURL('/api/og-image', [
-      {
-        label: 'percentage',
-        value: `+${calculateCumulativeProfitLoss(trades)}%`
-      },
-      { label: 'date', value: renderDates() }
-    ]);
-
-    return `${BASE_URL}${path}`;
-  };
-
   return (
     <Layout
       backGroundColor="grayGradient"
       layoutStyle="min-h-fit 3xl:pb-[450px] pb-[400px] relative "
     >
-      <Head>
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={getImageUrl()} />
-        <meta name="twitter:title" content="Proof 0f Alpha" />
-      </Head>
       <div ref={yPosition}>
         <div className="" id="social"></div>
         <Header />
@@ -93,7 +70,7 @@ const SocialBadgeSection = () => {
             <div className="mb-5 w-2/12 2xl:mb-14 2xl:w-3/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"
-                href={`https://twitter.com/intent/tweet?url=${BASE_URL}/prove`}
+                href={`https://twitter.com/intent/tweet?url=${BASE_URL}/prove/shared`}
               >
                 <TweetButton label="TWEET IT" buttonStyle="w-full " />
               </a>

@@ -14,13 +14,36 @@ import MinaPrimary from '../../public/assets/prove/mina-icon-primary.png';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
 import ProofOfAlphaStatement from '../../components/prove/ProofOfAlphaStatement';
 import Container from '../../components/common/Container';
+import {
+  addQueryParamsToURL,
+  BASE_URL,
+  calculateCumulativeProfitLoss,
+  renderDates,
+  trades
+} from '../../utils';
 
 const Shared: NextPage = () => {
+  const getImageUrl = () => {
+    const path = addQueryParamsToURL('/api/og-image', [
+      {
+        label: 'percentage',
+        value: `+${calculateCumulativeProfitLoss(trades)}%`
+      },
+      { label: 'date', value: renderDates() }
+    ]);
+
+    return `${BASE_URL}${path}`;
+  };
   return (
     <Layout
       backGroundColor="gray"
       layoutStyle="relative   min-h-fit pb-99 md:pb-96 xl:pb-108 3xl:pb-115 "
     >
+      <Head>
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={getImageUrl()} />
+        <meta name="twitter:title" content="Proof 0f Alpha" />
+      </Head>
       <div className=" absolute -top-30 -right-52   md:-top-36  md:right-0  md:w-7/12 2xl:-top-52 2xl:w-6/12 3xl:-top-56 3xl:w-5/12">
         <Image src={TopStamp} alt="Stamp" />
       </div>

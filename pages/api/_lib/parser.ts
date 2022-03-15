@@ -1,9 +1,7 @@
 import { IncomingMessage } from 'http';
 import { parse } from 'url';
-import { readFileSync } from 'fs';
-import path from 'path';
+
 import { ParsedRequest, Theme } from './types';
-import { BASE_URL } from '../../../utils';
 
 export function parseRequest(req: IncomingMessage) {
   console.log('HTTP req' + req);
@@ -13,6 +11,7 @@ export function parseRequest(req: IncomingMessage) {
 
   if (Array.isArray(date)) {
     throw new Error('Expected a single date');
+    ``;
   }
   if (Array.isArray(theme)) {
     throw new Error('Expected a single theme');
