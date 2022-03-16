@@ -12,7 +12,7 @@ const ProveFooter = () => {
         <p className="text-base tracking-wider 2xl:text-1.5xl 3xl:text-3xl">
           zero-knowledge proof-powered dApps
         </p>
-        <a target="_blank" href="https://docs.minaprotocol.com/en/snapps">
+        <a target="_blank" href="https://docs.minaprotocol.com/en/zkapps">
           <Button
             label="LEARN MORE"
             buttonStyle="w-36 w  2xl:w-48  3xl:w-52 text-xs 2xl:text-base 3xl:text-base"
