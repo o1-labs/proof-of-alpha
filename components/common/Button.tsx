@@ -28,15 +28,17 @@ const Button = (props: buttonPropTypes) => {
   const visableStyle = visable === false ? 'hidden' : 'flex';
   const disabledStyle = disabled
     ? 'bg-gray-400 bg-opacity-30 active:none text-gray-500 cursor-not-allowed border-gray-500'
-    : 'hover:bg-opacity-75 active:text-custom-gray-button-border border-white text-white';
+    : 'active:text-custom-gray-button-border border-white text-white';
 
   const backGroundStyle =
-    secondary === true ? 'bg-[#FFFFFF1A]' : 'bg-light-black';
+    secondary === true
+      ? 'bg-[#FFFFFF1A] hover:bg-white hover:bg-opacity-20 '
+      : 'bg-light-black hover:bg-opacity-75';
 
   return (
     <button
       className={`${visableStyle} ${backGroundStyle} ${disabledStyle}
-       line tracking-xlwidest 3xl:py-3 3xl:px-4  z-10 items-center justify-center  space-x-4 border  px-1 py-1 font-normal  leading-loose  2xl:px-3 2xl:py-2  ${buttonStyle}`}
+       line z-10 items-center justify-center  space-x-4 border px-1  py-1 font-normal  leading-loose tracking-xlwidest 2xl:px-3  2xl:py-2  3xl:py-3 3xl:px-4  ${buttonStyle}`}
       disabled={disabled}
       {...otherProps}
     >
