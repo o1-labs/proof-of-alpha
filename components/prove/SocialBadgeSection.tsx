@@ -53,7 +53,7 @@ const SocialBadgeSection = () => {
                 </div>
                 <TransparentButton
                   label="VIEW PROOF ON MINA EXPLORER"
-                  buttonStyle="text-xs 2xl:tracking-normal 3xl:text-xl text-[#C4C4C4]"
+                  buttonStyle="text-xs 2xl:tracking-normal 3xl:text-xl text-[#C4C4C4] hover:underline"
                 />
               </div>
             </a>
@@ -76,7 +76,9 @@ const SocialBadgeSection = () => {
               </a>
             </div>
             <Link href={'/start'} passHref>
-              <p className="text-sm text-[#00FF19]">PROVE MORE PROFITS</p>
+              <p className="cursor-pointer  text-sm text-[#00FF19] hover:underline">
+                PROVE MORE PROFITS
+              </p>
             </Link>
           </div>
         </div>
