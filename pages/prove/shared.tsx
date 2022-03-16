@@ -69,8 +69,8 @@ const Shared: NextPage = () => {
               </p>
               <Link href={'/prove/next'} passHref>
                 <Button
-                  label="GET IT NOW"
-                  buttonStyle="text-[.6em] md:text-xs 3xl:text-sm w-4/12 md:w-7/12 2xl:8/12 3xl:w-8/12"
+                  label="GENERATE IT NOW"
+                  buttonStyle="text-[.6em] md:text-[.5em] 3xl:text-xs w-4/12 md:w-8/12  hover:bg-white hover:bg-opacity-10"
                 />
               </Link>
             </div>
@@ -94,7 +94,7 @@ const Shared: NextPage = () => {
                   </div>
                   <TransparentButton
                     label="VIEW PROOF ON MINA EXPLORER"
-                    buttonStyle="text-[.4rem] md:text-[8px] text-[#C4C4C4]  2xl:tracking-normal 2xl:text-[11px] 3xl:text-xs"
+                    buttonStyle="text-[.4rem] md:text-[8px] text-[#C4C4C4]  2xl:tracking-normal 2xl:text-[11px] 3xl:text-xs hover:underline"
                   />
                 </div>
               </a>
