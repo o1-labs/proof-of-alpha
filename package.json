@@ -10,15 +10,22 @@
     "@binance/connector": "^1.7.0",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
+    "chrome-aws-lambda": "^7.0.0",
+    "marked": "^4.0.10",
     "moment": "^2.29.1",
     "next": "^12.0.7",
     "prettier-plugin-tailwindcss": "^0.1.8",
+    "puppeteer-core": "^13.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sharp": "^0.30.1"
+    "sharp": "^0.30.1",
+    "twemoji": "^13.0.1"
   },
   "devDependencies": {
+    "@types/marked": "^4.0.2",
     "@types/node": "16.11.10",
+    "@types/puppeteer": "^5.4.5",
+    "@types/puppeteer-core": "^5.4.0",
     "@types/react": "17.0.37",
     "autoprefixer": "^10.4.2",
     "eslint": "7.32.0",

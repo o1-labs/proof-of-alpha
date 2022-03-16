@@ -2,17 +2,17 @@ import Image from 'next/image';
 import ZKOutlineLogo from '../../public/assets/prove/zk-outline-logo.png';
 const ProveError = () => {
   return (
-    <div className="bg-background flex h-screen bg-cover bg-no-repeat text-white">
+    <div className="flex h-screen bg-background bg-cover bg-no-repeat text-white">
       <div className="flex w-full flex-col items-center space-y-10 ">
         <div className="flex w-3/6 flex-col items-center justify-center">
           <div className="mt-36 ">
             <Image src={ZKOutlineLogo} alt=" zk logo" />
           </div>
           <div className="mt-10 flex flex-col items-center ">
-            <p className="text-3.5xl leading-11 font-bold">
+            <p className="text-3.5xl font-bold leading-11">
               Sorry, the link that was
             </p>
-            <p className="text-3.5xl leading-11 mb-10 font-bold">
+            <p className="mb-10 text-3.5xl font-bold leading-11">
               shared with you is invalid.
             </p>
           </div>
