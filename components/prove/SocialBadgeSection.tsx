@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Head from 'next/head';
 import Layout from '../common/Layout';
 import Header from '../../components/common/Header';
 import NavButtonGroup from '../../components/prove/NavButtonGroup';
