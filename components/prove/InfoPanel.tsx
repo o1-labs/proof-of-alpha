@@ -36,13 +36,13 @@ const InfoPanel = () => {
           blockchain are considered valid.
         </p>
         <a target="_blank" href={'https://minaexplorer.com/'}>
-          <div className="flex items-center">
+          <div className="flex items-center hover:underline">
             <div className="w-2 2xl:w-2 3xl:w-3">
               <Image src={ArrowIcon} alt="arrow icon" />
             </div>
             <TransparentButton
               label="VIEW PROOF ON MINA EXPLORER"
-              buttonStyle="text-[.4rem] md:text-[8px] text-[#C4C4C4]  2xl:tracking-normal 2xl:text-[11px] 3xl:text-xs hover:underline"
+              buttonStyle="text-[.4rem] md:text-[8px] text-[#C4C4C4]  2xl:tracking-normal 2xl:text-[11px] 3xl:text-xs hover:underline z-10 "
             />
           </div>
         </a>
