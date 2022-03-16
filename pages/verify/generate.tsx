@@ -6,19 +6,17 @@ import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ProofGeneratedConfirmation from '../../components/verify/ProofGeneratedConfirmation';
 import Button from '../../components/common/Button';
 import LinkIcon from '../../public/assets/common/link-icon.png';
-
-import TradeData from '../../trades.json';
+import { trades } from '../../utils';
 import { Trade } from '../../types';
 import { calculateCumulativeProfitLoss } from '../../utils';
 import Layout from '../../components/common/Layout';
-import Container from '../../components/common/Container';
 
 const Generate: NextPage = () => {
   const [proofConfirmed, setProofConfirmed] = useState<boolean>(false);
-  const [trades, setTrades] = useState<Trade[]>([]);
+  // const [trades, setTrades] = useState<Trade[]>([]);
   const [cumulativeProfits, setCumulativeProfits] = useState<string>('');
   useEffect(() => {
-    setTrades(TradeData.trades as Trade[]);
+    // setTrades(TradeData.trades as Trade[]);
     const profits = calculateCumulativeProfitLoss(trades);
     setCumulativeProfits(profits);
   }, [trades]);
@@ -47,36 +45,36 @@ const Generate: NextPage = () => {
   return (
     <Layout backGroundColor="gradient" layoutStyle="h-1.25*screen">
       <div className=" flex  h-screen justify-center">
-        <div className="3xl:mt-36 mt-10 flex flex-col space-y-6 text-white 2xl:mt-20 2xl:space-y-10">
+        <div className="mt-10 flex flex-col space-y-6 text-white 2xl:mt-20 2xl:space-y-10 3xl:mt-36">
           <div className="flex justify-center">{renderProofStatus()}</div>
-          <div className="3xl:text-4xl 3xl:pb-3 flex justify-center pt-4 text-2xl 2xl:my-11 2xl:text-3xl">
+          <div className="flex justify-center pt-4 text-2xl 2xl:my-11 2xl:text-3xl 3xl:pb-3 3xl:text-4xl">
             #ZeroKnowledge
           </div>
           <div>
-            <p className="3xl:text-3xl 3xl:leading-11 text-base font-extralight 2xl:text-2xl">
+            <p className="text-base font-extralight 2xl:text-2xl 3xl:text-3xl 3xl:leading-11">
               You're generating a zero-knowledge proof revealing
             </p>
-            <p className="3xl:text-3xl 3xl:leading-11 text-base font-normal 2xl:text-2xl">
-              {cumulativeProfits}% cumulative returns.
+            <p className="text-base font-normal 2xl:text-2xl 3xl:text-3xl 3xl:leading-11">
+              ${cumulativeProfits}% cumulative returns.
             </p>
           </div>
           <div>
-            <p className="3xl:text-3xl 3xl:leading-11 ffont-normal text-base 2xl:text-xl">
+            <p className="ffont-normal text-base 2xl:text-xl 3xl:text-3xl 3xl:leading-11">
               The proof is generated locally in your web browser
             </p>
-            <p className="3xl:text-3xl 3xl:leading-11 text-base font-extralight 2xl:text-2xl">
+            <p className="text-base font-extralight 2xl:text-2xl 3xl:text-3xl 3xl:leading-11">
               and won't reveal your private data (trade size,
             </p>
 
-            <p className="3xl:text-3xl 3xl:leading-11 text-base font-extralight  2xl:text-2xl">
+            <p className="text-base font-extralight 2xl:text-2xl 3xl:text-3xl  3xl:leading-11">
               account balance, personal information, etc).
             </p>
           </div>
           <div>
-            <p className="3xl:text-3xl 3xl:leading-11 text-base font-normal 2xl:text-2xl">
+            <p className="text-base font-normal 2xl:text-2xl 3xl:text-3xl 3xl:leading-11">
               Your proof will be added to Mina's chain, then anyone
             </p>
-            <p className="3xl:text-3xl 3xl:leading-11 text-base font-extralight  2xl:text-2xl">
+            <p className="text-base font-extralight 2xl:text-2xl 3xl:text-3xl  3xl:leading-11">
               will be able to verify your returns.
             </p>
           </div>
