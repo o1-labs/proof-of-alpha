@@ -22,7 +22,7 @@ const AuroNoTestNetErrorPropTypes = ({
           <Image src={ExclamationIcon} alt="info" />
         </div>
         <span className="ml-2 text-sm leading-loose 2xl:text-2xl 3xl:text-3xl ">
-          Auro Wallet must be connected to zKapps testnet to continue.
+          Auro Wallet must be connected to zkApps testnet to continue.
         </span>
       </div>
     </div>
