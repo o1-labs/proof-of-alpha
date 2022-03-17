@@ -25,7 +25,6 @@ const StatementSection = () => {
             <Link href={'/prove/shared'} passHref>
               <ShareButton label="SHARE IT" />
             </Link>
-
             <p className="tracking-widest">HOW WILL IT LOOK?</p>
           </div>
         </div>
