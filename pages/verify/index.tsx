@@ -13,11 +13,15 @@ import InfoIcon from '../../public/assets/verify/info-icon.png';
 import APIsettings from '../../public/assets/verify/api-key-settings.png';
 import Modal from '../../components/verify/Modal';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [binanaceAPIsecret, setBinanceAPIsecret] = useState<string>('');
   const [binanaceAPIkey, setBinanceAPIkey] = useState<string>('');
+  const [isError, setIsError] = useState<boolean>(false);
+
+  const router = useRouter();
 
   const handleOurAPIkeysClick = () => {
     setBinanceAPIkey('ggHi367Faq67blldRuI1vvadvTdVaFeQ32P9sXHms1auhsdf3K4Msw');
@@ -26,22 +30,39 @@ const Verify: NextPage = () => {
     );
   };
 
+  // TODO: Add more robust validation for API inputs
   const handleBinanceAPIkeyChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setBinanceAPIkey(event.target.value);
+    if (binanaceAPIkey.length > 0 && binanaceAPIsecret.length > 0) {
+      setIsError(false);
+    }
   };
   const handleBinanceAPIsecretChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     setBinanceAPIsecret(event.target.value);
+    if (binanaceAPIkey.length > 0 && binanaceAPIsecret.length > 0) {
+      setIsError(false);
+    }
+  };
+
+  const handleButtonClick = (): void => {
+    setIsError(false);
+    if (binanaceAPIkey.length === 0 || binanaceAPIsecret.length === 0) {
+      setIsError(true);
+    } else {
+      setIsError(false);
+      router.push('/verify/configure');
+    }
   };
 
   return (
-    <Layout backGroundColor="gradient" layoutStyle="h-1.5*screen">
+    <Layout backGroundColor="gradient" layoutStyle="h-1.5*screen ">
       <Header />
-      <div className="flex flex-col items-center">
-        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12">
+      <div className="flex   flex-col items-center">
+        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12 ">
           <ProgressBar stage="4th" />
 
           <div className="flex flex-col space-y-6 2xl:space-y-8 3xl:space-y-8">
@@ -84,6 +105,13 @@ const Verify: NextPage = () => {
           </div>
           <div className="mt-7 flex ">
             <div className="flex w-1/2 flex-col space-y-2 md:mt-3 2xl:mt-10 2xl:space-y-5">
+              <p
+                className={`${
+                  isError ? 'visible' : 'hidden'
+                } bg-gray-200 py-2 pl-4  text-red-700`}
+              >
+                API key & secret are required
+              </p>
               <p className="md:text-[.6rem] 2xl:text-base 3xl:text-lg">
                 BINANCE API KEY
               </p>
@@ -102,12 +130,14 @@ const Verify: NextPage = () => {
               />
 
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
-                <Link href={'/verify/configure'} passHref>
-                  <Button
-                    buttonStyle="w-full text-xs 2xl:text-base 3xl:text-xl"
-                    label="CONTINUE&nbsp; >>"
-                  />
-                </Link>
+                {/* <Link href={'/verify/configure'} passHref> */}
+                <Button
+                  buttonStyle="w-full text-xs 2xl:text-base 3xl:text-xl"
+                  label="CONTINUE&nbsp; >>"
+                  disabled={isError}
+                  onClick={handleButtonClick}
+                />
+                {/* </Link> */}
 
                 <Link href={'/auro/faucet'} passHref>
                   <TransparentButton
