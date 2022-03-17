@@ -9,7 +9,7 @@ const NavButtonGroup = ({
 }: navButtonGroupProps) => {
   console.log('button active', activeButton);
   return (
-    <div className="absolute top-30 left-10 lg:top-32 xl:top-30 xl:left-0 2xl:top-36 2xl:-left-36 3xl:top-52 3xl:-left-86">
+    <div className="absolute top-30 left-10 lg:top-32 xl:top-30 xl:left-0 2xl:top-40 2xl:-left-86 3xl:top-52 3xl:-left-86">
       <a href="#social">
         <div
           onClick={(event) => {

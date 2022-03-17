@@ -42,23 +42,23 @@ const SocialBadgeSection = () => {
 
         <div className="flex flex-col   items-center 3xl:mt-10 3xl:space-y-4">
           <div className="relative flex flex-col items-center justify-center 3xl:w-4/12">
-            <p className="mb-3 text-1.5xl  2xl:mb-5 2xl:text-3.5xl 3xl:mb-8 3xl:text-4xl">
+            <p className="mb-3 text-xl  2xl:mb-5 2xl:text-3.5xl 3xl:mb-8 3xl:text-4xl">
               Your zk-proof has been submitted to Mina’s chain.
             </p>
             <a target="_blank" href={'https://minaexplorer.com/'}>
-              <div className="flex items-center">
+              <div className="flex items-center space-x-1 2xl:space-x-0">
                 <div className="w-3">
                   <Image src={ArrowIcon} alt="arrow icon" />
                 </div>
                 <TransparentButton
                   label="VIEW PROOF ON MINA EXPLORER"
-                  buttonStyle="text-xs 2xl:tracking-normal 3xl:text-xl text-[#C4C4C4] hover:underline"
+                  buttonStyle="text-xs 2xl:tracking-normal 2xl:text-xl text-[#C4C4C4] hover:underline"
                 />
               </div>
             </a>
 
             <div className="">
-              <div className="ml-[185px] flex w-6/12 lg:ml-[225px] 2xl:ml-56 2xl:w-1/2 3xl:ml-0 3xl:w-full ">
+              <div className="ml-[185px] flex w-6/12 lg:ml-[225px] 2xl:ml-0 2xl:w-full  3xl:w-full ">
                 <TwitterCardProof />
               </div>
               <NavButtonGroup
@@ -66,7 +66,7 @@ const SocialBadgeSection = () => {
                 setActiveButton={setActiveButton}
               />
             </div>
-            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-3/12 3xl:mb-14 3xl:w-4/12">
+            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-4/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"
                 href={`https://twitter.com/intent/tweet?url=${BASE_URL}/prove/shared`}
