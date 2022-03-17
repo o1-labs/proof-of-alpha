@@ -6,7 +6,7 @@ import NavButtonGroup from '../../components/prove/NavButtonGroup';
 import ProveFooter from './ProveFooter';
 import TweetButton from '../../components/prove/TweetButton';
 import TransparentButton from '../../components/common/TransparentButton';
-import ArrowIcon from '../../public/assets/prove/arrow-icon.png';
+import ArrowIcon from '../../public/assets/prove/arrow-icon.svg';
 import TwitterCardProof from './TwitterCardProof';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';

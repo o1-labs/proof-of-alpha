@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
-import ShieldIcon from '../../public/assets/prove/shield-icon.png';
-import ArrowIcon from '../../public/assets/prove/arrow-icon.png';
+import ShieldIcon from '../../public/assets/prove/shield-icon.svg';
+import ArrowIcon from '../../public/assets/prove/arrow-icon.svg';
 
 const InfoPanel = () => {
   return (
