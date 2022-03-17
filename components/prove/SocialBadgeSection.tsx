@@ -31,7 +31,7 @@ const SocialBadgeSection = () => {
   return (
     <Layout
       backGroundColor="grayGradient"
-      layoutStyle="min-h-fit 3xl:pb-[450px] pb-[400px] relative "
+      layoutStyle="min-h-fit 3xl:pb-[450px] pb-[400px] relative  "
     >
       <div ref={yPosition}>
         <div className="" id="social"></div>
@@ -58,7 +58,7 @@ const SocialBadgeSection = () => {
             </a>
 
             <div className="">
-              <div className="ml-90 flex w-3/12 2xl:ml-56 2xl:w-1/2 3xl:ml-0 3xl:w-full ">
+              <div className="ml-[185px] flex w-6/12 lg:ml-[225px] 2xl:ml-56 2xl:w-1/2 3xl:ml-0 3xl:w-full ">
                 <TwitterCardProof />
               </div>
               <NavButtonGroup
@@ -66,7 +66,7 @@ const SocialBadgeSection = () => {
                 setActiveButton={setActiveButton}
               />
             </div>
-            <div className="mb-5 w-2/12 2xl:mb-14 2xl:w-3/12 3xl:mb-14 3xl:w-4/12">
+            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-3/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"
                 href={`https://twitter.com/intent/tweet?url=${BASE_URL}/prove/shared`}

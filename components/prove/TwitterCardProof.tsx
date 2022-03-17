@@ -25,10 +25,10 @@ const TwitterCardProof = () => {
         alt="Twitter Card Template"
       />
 
-      <div className="absolute bottom-[30%] left-[33.5%] text-lg font-thin tracking-wider text-[#14ff00] 2xl:text-4xl 3xl:text-6xl">
+      <div className="absolute bottom-[30%] left-[33.5%] text-2xl font-thin tracking-wider text-[#14ff00] lg:text-3xl 2xl:text-4xl 3xl:text-6xl">
         +{calculateCumulativeProfitLoss(trades)}%
       </div>
-      <div className="absolute bottom-[23.5%] left-[39%]  text-[.08em] font-thin tracking-widest xl:text-[.35rem] 2xl:text-[.6rem]">
+      <div className="absolute bottom-[23.5%] left-[39%]  text-[.5em] font-thin tracking-widest lg:text-[.6rem]  3xl:text-[.9rem]">
         {renderDates()}
       </div>
     </div>

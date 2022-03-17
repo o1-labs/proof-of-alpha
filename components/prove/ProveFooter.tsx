@@ -4,7 +4,7 @@ import Button from '../common/Button';
 
 const ProveFooter = () => {
   return (
-    <div className="absolute  bottom-0 h-2/6 w-full   bg-[#79797940] 2xl:h-1/4  3xl:h-1/4">
+    <div className="absolute  bottom-0 h-[220px] w-full bg-[#79797940]  xl:h-2/6 2xl:h-1/4  3xl:h-1/4">
       <div className="flex h-full flex-col   items-center justify-center space-y-4 2xl:space-y-9  3xl:space-y-10 ">
         <div className="xl:w-26  w-24 2xl:w-28 3xl:w-auto">
           <Image src={MadeOnMinaLogo} alt="mina logo" />

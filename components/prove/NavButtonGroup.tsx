@@ -9,14 +9,14 @@ const NavButtonGroup = ({
 }: navButtonGroupProps) => {
   console.log('button active', activeButton);
   return (
-    <div className="absolute top-24 left-14 2xl:top-36 2xl:-left-36 3xl:top-52 3xl:-left-86">
+    <div className="absolute top-30 left-10 lg:top-32 xl:top-30 xl:left-0 2xl:top-36 2xl:-left-36 3xl:top-52 3xl:-left-86">
       <a href="#social">
         <div
           onClick={(event) => {
             event.preventDefault;
             setActiveButton('socialBadge');
           }}
-          className={` mb-1 flex h-[38px] w-[180px] items-center bg-[#FFFFFF1A] py-4 pl-5 text-xs font-extralight text-white  hover:bg-white hover:bg-opacity-20 2xl:h-[48px] 2xl:w-[280px] 3xl:h-[48px] 3xl:w-[280px] ${
+          className={` mb-1 flex h-[36px] w-[130px] items-center bg-[#FFFFFF1A] py-4 pl-3 text-[.6rem] font-extralight text-white hover:bg-white hover:bg-opacity-20 xl:h-[38px] xl:w-[180px]  xl:pl-5 xl:text-xs 2xl:h-[48px] 2xl:w-[280px] 3xl:h-[48px] 3xl:w-[280px] ${
             activeButton === 'socialBadge' ? 'border-l-4 ' : 'border-l-0'
           }`}
         >
@@ -29,7 +29,7 @@ const NavButtonGroup = ({
             event.preventDefault;
             setActiveButton('tradeStatement');
           }}
-          className={`mb-1 flex h-[38px] w-[180px] items-center bg-[#FFFFFF1A] py-4 pl-5 text-xs font-extralight text-white  hover:bg-white hover:bg-opacity-20  2xl:h-[48px] 2xl:w-[280px]   3xl:h-[48px] 3xl:w-[280px] ${
+          className={` mb-1 flex h-[36px] w-[130px] items-center bg-[#FFFFFF1A] py-4 pl-3 text-[.6rem] font-extralight text-white hover:bg-white hover:bg-opacity-20 xl:h-[38px] xl:w-[180px]  xl:pl-5 xl:text-xs 2xl:h-[48px] 2xl:w-[280px] 3xl:h-[48px] 3xl:w-[280px] ${
             activeButton == 'tradeStatement' ? 'border-l-4' : 'border-l-0'
           } `}
         >
