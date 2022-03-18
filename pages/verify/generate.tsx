@@ -79,8 +79,10 @@ const Generate: NextPage = () => {
             </p>
           </div>
           <div className="flex justify-center pt-10">
-            {/* Buttton is only visable after a proof is generated */}
-            <Link href={'/verify/confirm'} passHref>
+            {/* Buttton is only visable after a proof is generated 
+                // TODO: Add Auro wallet ign tx & send tx flow
+            */}
+            <Link href={'/prove'} passHref>
               <Button
                 buttonStyle="w-10/12 2xl:w-7/12 py-2 3xl:w-6/12 text-sm 2xl:text-base 3xl:text-base"
                 visable={proofConfirmed}
