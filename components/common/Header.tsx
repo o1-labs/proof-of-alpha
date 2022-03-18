@@ -5,6 +5,15 @@ import ZKLogo from '../../public/assets/common/zk-logo.png';
 const Header = () => {
   const [isAuro, minaAccount, accountHeaderDisplay] = useMinaProvider();
   console.log(isAuro);
+
+  const renderAuroHeader = () => {
+    return (
+      <>
+        <div>{accountHeaderDisplay}</div>
+        <div className=" z-99 mt-1 ml-3 h-4 w-4 rounded-full bg-custom-green "></div>
+      </>
+    );
+  };
   return (
     <header className="">
       <div className="relative flex items-center justify-center md:py-5 2xl:py-9 ">
@@ -14,8 +23,7 @@ const Header = () => {
 
         <div className="flex flex-col justify-end">
           <div className="absolute  mt-8  flex leading-6 tracking-xlwidest text-custom-gray-light md:right-20 md:text-base 2xl:right-40 2xl:text-xl ">
-            <div>{accountHeaderDisplay}</div>
-            <div className=" mt-1 ml-3 h-4 w-4  rounded-full bg-custom-green"></div>
+            {renderAuroHeader()}
           </div>
         </div>
       </div>
