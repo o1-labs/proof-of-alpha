@@ -20,25 +20,26 @@ export default () => {
 
         setIsAuro(true);
 
+        // If Auro wallet is installed but not connected to an account this will through an exception
         minaAccounts = await window.mina.requestAccounts();
 
-        // If window.mina exists but no accounts are returned, Auro wallet is installed but not connected to an account
-        if (minaAccounts.length === 0) {
-          setAccountHeaderDisplay('Not Connected');
-          setStatus('yellow');
-        } else {
-          // Auro is installed and connected to an account
-          // String showing only first 6 and last 4 characters of account for the header display
-          // TODO: Handle case when user has multiple accounts.
-          setMinaAccount(minaAccounts[0]);
-          const display = `${minaAccounts[0].slice(
-            0,
-            6
-          )}...${minaAccounts[0].slice(-4)}`;
-          setAccountHeaderDisplay(display);
-          setStatus('green');
-        }
+        // Auro is installed and connected to an account
+        // TODO: Handle case when user has multiple accounts.
+        setMinaAccount(minaAccounts[0]);
+        setStatus('green');
+
+        // String showing only first 6 and last 4 characters of account for the header display
+        const display = `${minaAccounts[0].slice(
+          0,
+          6
+        )}...${minaAccounts[0].slice(-4)}`;
+        setAccountHeaderDisplay(display);
       } catch (error) {
+        // If Auro wallet is installed but not connected to an account set display as not connected
+        if (isAuro) {
+          setStatus('yellow');
+          setAccountHeaderDisplay('Not Connected');
+        }
         // if user reject, requestAccounts will throw an error with code and message filed
         console.log(error.message, error?.code);
       }
@@ -46,5 +47,5 @@ export default () => {
     getAccount();
   }, [isAuro, minaAccount, accountHeaderDisplay, status]);
 
-  return [isAuro, minaAccount, accountHeaderDisplay, status];
+  return { isAuro, minaAccount, accountHeaderDisplay, status };
 };

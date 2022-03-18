@@ -3,14 +3,23 @@ import useMinaProvider from '../../hooks/useMinaProvider';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
 
 const Header = () => {
-  const [isAuro, minaAccount, accountHeaderDisplay] = useMinaProvider();
-  console.log(isAuro);
+  const { isAuro, minaAccount, accountHeaderDisplay, status } =
+    useMinaProvider();
+  console.log('accountHeaderDisplay', accountHeaderDisplay, 'status', status);
 
   const renderAuroHeader = () => {
+    const statusDotClassName = {
+      green: 'bg-custom-green',
+      yellow: 'bg-yellow-400',
+      red: 'bg-red-500'
+    };
+
     return (
       <>
         <div>{accountHeaderDisplay}</div>
-        <div className=" z-99 mt-1 ml-3 h-4 w-4 rounded-full bg-custom-green "></div>
+        <div
+          className={`${statusDotClassName[status]} z-99 mt-1 ml-3 h-4 w-4 rounded-full`}
+        ></div>
       </>
     );
   };
