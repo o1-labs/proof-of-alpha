@@ -7,14 +7,14 @@ const ReturnsAndTradeBadge = () => {
       {/* <p className="tracking-2xlwidest mb-14 flex pt-5 text-xs  text-[#BCBCBC] 2xl:mt-6  2xl:text-xl 2xl:tracking-[10px]"> */}
       <p
         className="
- tracking-2xlwidest 2xl:tracking-2xlwidest 3xl:mr-8  mb-12 mt-6 flex text-xs text-[#BCBCBC]  2xl:mt-6 2xl:mr-8 2xl:text-xl"
+ mb-12 mt-6 flex  text-xs tracking-2xlwidest text-[#BCBCBC] 2xl:mt-6 2xl:mr-8  2xl:text-xl 2xl:tracking-2xlwidest 3xl:mr-8"
       >
         YOU'LL RECIEVE
       </p>
-      <div className="tracking-xlwidest  -mb-5 text-center text-xs 2xl:mt-4 2xl:text-xl">
+      <div className="text-center  text-xs tracking-xlwidest xl:-mb-5 2xl:mt-4 2xl:text-xl">
         SOCIAL BADGE
       </div>
-      <div className="3xl:w-10/12 3xl:mb-30  w-9/12 xl:w-full 2xl:mb-24 2xl:-mt-2 2xl:w-full ">
+      <div className="w-full xl:w-full  2xl:mb-24 2xl:-mt-2 2xl:w-full 3xl:mb-30 3xl:w-10/12 ">
         <Image src={TwitterCard} alt="twitter card" />
       </div>
     </div>

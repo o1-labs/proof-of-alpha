@@ -15,7 +15,7 @@ import BottomNavButtons from '../../components/verify/BottomNavButtons';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
-  const [isDisabled, setIsdisabled] = useState<boolean>(false);
+  const [isDisabled, setIsDisabled] = useState<boolean>(false);
   const [errorType, setErrorType] = useState<string>('');
   useEffect(() => {
     // if (
@@ -63,10 +63,10 @@ const Finalize: NextPage = () => {
       <Header />
 
       <div className="flex flex-col items-center">
-        <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
+        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12">
           <ProgressBar stage="7th" />
 
-          <div className="3xl:space-y-14 flex h-screen flex-col space-y-3 text-white 2xl:space-y-7">
+          <div className="flex h-4/6 flex-col space-y-3 text-white 2xl:space-y-7 3xl:space-y-14">
             <SubHeadLine text="FINALIZE SETTINGS" />
 
             <HeadLine
@@ -74,9 +74,9 @@ const Finalize: NextPage = () => {
               headLineStyle="2xl:pb-10 3xl:pb-4"
             />
             {/* button selection */}
-            <div className=" mx-auto flex w-9/12  flex-col">
+            <div className=" mx-auto flex w-11/12 flex-col lg:w-9/12">
               <div className="flex justify-center  2xl:justify-start">
-                <div className="flex w-full">
+                <div className="flex w-[1000px] lg:w-full">
                   <LightButton
                     label="RETURNS & TRADE HISTORY"
                     lightButtonStyle="rounded-l-sm "
@@ -103,7 +103,7 @@ const Finalize: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col 3xl:space-y-7 2xl:space-y-4 2xl:mt-40 ">
+          <div className="flex flex-col 2xl:mt-36 2xl:space-y-4 3xl:space-y-7 ">
             {renderErrors(errorType)}
             <BottomNavButtons
               backNavLink="/verify/review"
