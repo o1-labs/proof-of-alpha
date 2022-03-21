@@ -16,7 +16,16 @@ const Header = () => {
 
     return (
       <>
-        <div>{accountHeaderDisplay}</div>
+        {/* Allows the user to click the header display to navigate to Auro wallet on the chromestore when no wallet is installed */}
+        <a
+          className={`${
+            status !== 'red' ? 'pointer-events-none ' : 'hover:underline'
+          }`}
+          href="https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae"
+          target="_blank"
+        >
+          <div>{accountHeaderDisplay}</div>
+        </a>
         <div
           className={`${statusDotClassName[status]} z-99 mt-1 ml-3 h-4 w-4 rounded-full`}
         ></div>

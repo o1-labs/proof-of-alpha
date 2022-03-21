@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+
 type statusType = 'green' | 'yellow' | 'red' | '';
+
 export default () => {
   const [isAuro, setIsAuro] = useState(false);
   const [minaAccount, setMinaAccount] = useState('');
   const [status, setStatus] = useState<statusType>('');
   const [accountHeaderDisplay, setAccountHeaderDisplay] = useState('');
+
   useEffect(() => {
     async function getAccount() {
       let minaAccounts;
@@ -20,7 +23,7 @@ export default () => {
 
         setIsAuro(true);
 
-        // If Auro wallet is installed but not connected to an account this will through an exception
+        // If Auro wallet is installed but not connected to an account this will throw an exception
         minaAccounts = await window.mina.requestAccounts();
 
         // Auro is installed and connected to an account
