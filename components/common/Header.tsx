@@ -19,7 +19,7 @@ const Header = () => {
         {/* Allows the user to click the header display to navigate to Auro wallet on the chromestore when no wallet is installed */}
         <a
           className={`${
-            status !== 'red' ? 'pointer-events-none ' : 'hover:underline'
+            status === 'red' ? 'hover:underline' : 'pointer-events-none '
           }`}
           href="https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae"
           target="_blank"
@@ -39,7 +39,7 @@ const Header = () => {
           <Image src={ZKLogo} alt="zk logo" />
         </div>
 
-        <div className="flex flex-col justify-end">
+        <div className="z-50 flex flex-col justify-end">
           <div className="absolute  mt-8  flex leading-6 tracking-xlwidest text-custom-gray-light md:right-20 md:text-base 2xl:right-40 2xl:text-xl ">
             {renderAuroHeader()}
           </div>
