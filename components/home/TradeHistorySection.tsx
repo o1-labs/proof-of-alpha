@@ -22,16 +22,16 @@ const TradeHistorySection = () => {
         <div className="absolute ml-36 mt-5 w-20 items-center md:ml-7  md:mt-5 md:w-24 xl:ml-10  xl:mt-12 xl:h-32 xl:w-auto">
           <Image src={ZKLogo} alt="zk logo" />
         </div>
-        <div className="3xl:mt-60 mx-auto mt-36 flex flex-col items-center justify-center md:mt-24 md:ml-32 md:flex-row xl:ml-44 xl:mt-60">
-          <div className="3xl:space-y-10  flex   flex-col space-y-6 text-white  md:w-auto md:space-y-3 xl:space-y-4 2xl:space-y-8">
-            <p className="3xl:text-7xl text-1.5xl mx-auto w-10/12 items-center text-white md:mx-0 md:w-full md:px-0 md:text-3xl 2xl:text-5xl">
+        <div className="mx-auto mt-36 flex flex-col items-center justify-center md:mt-24 md:ml-32 md:flex-row xl:ml-44 xl:mt-60 3xl:mt-60">
+          <div className="flex  flex-col   space-y-6 text-white md:w-auto  md:space-y-3 xl:space-y-4 2xl:space-y-8 3xl:space-y-10">
+            <p className="mx-auto w-10/12 items-center text-1.5xl text-white md:mx-0 md:w-full md:px-0 md:text-3xl 2xl:text-5xl 3xl:text-7xl">
               Your Trade History Sets You Apart
             </p>
             <div className="mx-auto flex w-9/12 flex-col space-y-6 md:mx-0 md:w-auto md:space-y-4 md:px-0 xl:space-y-8 ">
-              <p className="3xl:text-4xl xl:text-1.5xl text-base font-extralight  text-white md:text-2xl 2xl:text-3xl">
+              <p className="text-base font-extralight text-white md:text-2xl  xl:text-1.5xl 2xl:text-3xl 3xl:text-4xl">
                 But faking gains on the socials is easy with bogus screenshots.
               </p>
-              <p className="3xl:text-4xl w-38 xl:text-1.5xl text-base font-extralight text-white md:text-2xl 2xl:text-3xl">
+              <p className="w-38 text-base font-extralight text-white md:text-2xl xl:text-1.5xl 2xl:text-3xl 3xl:text-4xl">
                 That’s why we built
                 <span className="md:font-medium"> Proof-of-Alpha </span>
                 using zero-knowledge proofs.
@@ -48,7 +48,7 @@ const TradeHistorySection = () => {
 
                 <Link href={'#proof'} passHref>
                   <TransparentButton
-                    buttonStyle="md:ml-16 px-10 xl:px-4 text-xs 2xl:text-base 2xl:text-base 3xl:text-xl"
+                    buttonStyle="md:ml-16 px-10 xl:px-4 text-xs 2xl:text-base 2xl:text-base 3xl:text-xl hover:underline"
                     label="LEARN MORE"
                   />
                 </Link>
