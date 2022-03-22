@@ -57,12 +57,12 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
             <div className="relative inline-block h-screen w-full transform flex-col overflow-hidden bg-[#954562] text-left text-white shadow-xl transition-all ">
               <button
                 type="button"
-                className="right-18 absolute top-10"
+                className="absolute right-18 top-10"
                 onClick={handleModalClose}
               >
                 <span className="sr-only">Close</span>
                 <XIcon
-                  className="3xl:w-12 absolute h-8  w-8 rounded-full  hover:bg-gray-500 2xl:h-10 2xl:w-10 "
+                  className="absolute h-8 w-8  rounded-full hover:bg-gray-500  2xl:h-10 2xl:w-10 3xl:w-12 "
                   aria-hidden="true"
                 />
               </button>
@@ -80,7 +80,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                   <Link href={'/auro'} passHref>
                     <Button
                       buttonStyle="w-10/12 h-10 text-xs mx-auto"
-                      label="Proceed Anyways"
+                      label="PROCEED ANYWAYS"
                     />
                   </Link>
                 </div>
