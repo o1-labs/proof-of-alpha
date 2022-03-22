@@ -24,7 +24,7 @@ const SharedOutFooter = () => {
         >
           <Button
             label="LEARN MORE"
-            buttonStyle="w-36  mb-10 md:mb-0 2xl:w-48  3xl:w-52 text-[.6em] md:text-[.8] 2xl:text-base "
+            buttonStyle="w-36  mb-10 md:mb-0 2xl:w-48  3xl:w-52 text-[.6rem] md:text-[.7rem] 2xl:text-base "
             secondary={true}
           />
         </a>

@@ -42,6 +42,19 @@ const Generate: NextPage = () => {
     );
   };
 
+  const handleSendToMinaButtonClick = async () => {
+    let accounts;
+    // data.result is an array that contains approve account`s address
+    try {
+      accounts = await window.mina.requestAccounts();
+    } catch (error) {
+      // if user reject, requestAccounts will throw an error with code and message filed
+      console.log(error.message, error.code);
+    }
+
+    //   router.push('/verify/configure');
+  };
+
   return (
     <Layout backGroundColor="gradient" layoutStyle="h-1.25*screen">
       <div className=" flex  h-screen justify-center">
@@ -59,7 +72,7 @@ const Generate: NextPage = () => {
             </p>
           </div>
           <div>
-            <p className="ffont-normal text-base 2xl:text-xl 3xl:text-3xl 3xl:leading-11">
+            <p className="text-base font-normal 2xl:text-xl 3xl:text-3xl 3xl:leading-11">
               The proof is generated locally in your web browser
             </p>
             <p className="text-base font-extralight 2xl:text-2xl 3xl:text-3xl 3xl:leading-11">
@@ -86,6 +99,7 @@ const Generate: NextPage = () => {
               <Button
                 buttonStyle="w-10/12 2xl:w-7/12 py-2 3xl:w-6/12 text-sm 2xl:text-base 3xl:text-base"
                 visable={proofConfirmed}
+                onClick={handleSendToMinaButtonClick}
               >
                 <div className="flex w-4 items-center">
                   <Image src={LinkIcon} alt="link icon" />

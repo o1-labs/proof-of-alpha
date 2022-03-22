@@ -21,6 +21,7 @@ import {
   trades
 } from '../../utils';
 import SharedOutFooter from '../../components/prove/SharedOutFooter';
+import SharedOutFooterMobile from '../../components/prove/SharedOutFooterMobile';
 
 const Shared: NextPage = () => {
   const getImageUrl = () => {
@@ -37,7 +38,7 @@ const Shared: NextPage = () => {
   return (
     <Layout
       backGroundColor="gray"
-      layoutStyle="relative   min-h-fit pb-99 md:pb-96 xl:pb-108 3xl:pb-115 "
+      layoutStyle="relative  min-h-fit pb-99 md:pb-96 xl:pb-108 3xl:pb-115 "
     >
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
@@ -60,7 +61,7 @@ const Shared: NextPage = () => {
           <InfoPanel />
         </div>
       </Container>
-
+      <SharedOutFooterMobile />
       <SharedOutFooter />
     </Layout>
   );

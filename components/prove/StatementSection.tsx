@@ -8,7 +8,7 @@ import Container from '../common/Container';
 
 const StatementSection = () => {
   return (
-    <Layout backGroundColor="grayGradient" layoutStyle="h-1.5*screen relative ">
+    <Layout backGroundColor="grayGradient" layoutStyle="h-1.5*screen relative">
       <div className="relative" id="trade"></div>
 
       <Container containerStyle="pt-32">

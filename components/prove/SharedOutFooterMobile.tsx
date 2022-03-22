@@ -4,13 +4,13 @@ import MinaPrimary from '../../public/assets/prove/mina-icon-primary.png';
 
 const SharedOutFooterMobile = () => {
   return (
-    <div className="fixed bottom-0  bg-[#79797940]">
+    <div className="fixed bottom-0 z-50 h-16 w-full bg-[#79797940]/75 md:hidden">
       <div className="flex h-full items-center justify-around">
-        <div className="flex w-10 ">
+        <div className="flex w-7 ">
           <Image src={MinaPrimary} alt="mina logo" />
         </div>
 
-        <p className="w-4/12  text-center text-xs tracking-widest  ">
+        <p className="w-3/12 text-center  text-[.5rem] tracking-widest  ">
           Zero-knowledge zkApps.
         </p>
         <a
@@ -20,7 +20,7 @@ const SharedOutFooterMobile = () => {
         >
           <Button
             label="LEARN MORE"
-            buttonStyle="w-30  mb-10 text-[.5rem]  "
+            buttonStyle="w-24  text-[.4rem]  "
             secondary={true}
           />
         </a>
