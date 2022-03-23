@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Header from '../../components/common/Header';
-import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet.png';
+import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet@2x.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
@@ -22,12 +22,17 @@ const Faucet: NextPage = () => {
           <div className="flex h-screen flex-col  text-white md:space-y-4 2xl:space-y-10">
             <SubHeadLine text="GET TESTNET TOKENS" />
 
-            <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet " />
+            <HeadLine text="Get free testnet MINA (tMINA) from Mina's faucet" />
             <p className="pb-3 font-light  md:text-sm 2xl:text-1.5xl 3xl:text-3xl">
               Select the Berkeley network
             </p>
             <div className="h-auto">
-              <Image src={MinaFaucet} alt="mina faucet" layout="responsive" />
+              <Image
+                src={MinaFaucet}
+                alt="mina faucet"
+                layout="responsive"
+                priority
+              />
             </div>
 
             <AuroBottomNavButtons

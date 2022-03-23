@@ -39,7 +39,7 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
     >
       <Link href={`${backNavLink}`} passHref>
         <TransparentButton
-          buttonStyle="px-20 text-sm 2xl:text-base 3xl:text-xl"
+          buttonStyle="px-20 text-xs lg:text-sm 2xl:text-base 3xl:text-xl"
           label="<< &nbsp;BACK"
         ></TransparentButton>
       </Link>
@@ -48,7 +48,7 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
         className={`${externalButton ? ' flex justify-center' : 'invisible'} `}
       >
         <a target="_blank" href={externalButtonNavLink}>
-          <Button buttonStyle="w-52 2xl:w-60 3xl:w-72 px-2 text-xs 2xl:text-base 3xl:text-xl py-3">
+          <Button buttonStyle="w-auto lg:w-52 2xl:w-60 3xl:w-72 px-2 text-xs 2xl:text-base 3xl:text-xl py-3">
             <div className="flex w-5 items-center  2xl:h-8 2xl:w-7   3xl:w-9 ">
               <Image src={ExternalLinkIcon} alt="external link icon" />
             </div>
@@ -59,7 +59,7 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
 
       <Link href={`${continueNavLink}`} passHref>
         <TransparentButton
-          buttonStyle="px-20 text-sm 2xl:text-base 3xl:text-xl"
+          buttonStyle="px-20 text-xs lg:text-sm 2xl:text-base 3xl:text-xl"
           label="CONTINUE  &nbsp;>>"
         />
       </Link>

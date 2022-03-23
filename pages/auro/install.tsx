@@ -4,7 +4,7 @@ import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
 import TransparentButton from '../../components/common/TransparentButton';
 import Image from 'next/image';
-import AuroTestnet from '../../public/assets/auro/install/auro-testnet.png';
+import AuroTestnet from '../../public/assets/auro/install/auro-testnet@2x.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
@@ -16,7 +16,7 @@ const Auro: NextPage = () => {
       <Header />
 
       <div className="flex flex-col items-center">
-        <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
+        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12">
           <ProgressBar stage="2nd" />
 
           <div className="mb-2 flex h-screen  flex-col md:space-y-2 2xl:space-y-10 ">
@@ -28,7 +28,12 @@ const Auro: NextPage = () => {
             />
 
             <div className="h-auto">
-              <Image src={AuroTestnet} alt="auro testnet" layout="responsive" />
+              <Image
+                src={AuroTestnet}
+                alt="auro testnet"
+                layout="responsive"
+                priority
+              />
             </div>
             <AuroBottomNavButtons
               backNavLink="/auro"
