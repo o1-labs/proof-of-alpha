@@ -4,7 +4,7 @@ import MinaPrimary from '../../public/assets/prove/mina-icon-primary.png';
 
 const SharedOutFooter = () => {
   return (
-    <div className="absolute bottom-0  mt-20 h-80 w-full  bg-[#79797940] md:h-1/6   lg:h-52 xl:h-72  2xl:h-1/4 3xl:h-1/4">
+    <div className="absolute bottom-0 mt-20  hidden h-80 w-full bg-[#79797940]  md:block md:h-1/6   lg:h-52 xl:h-72  2xl:h-1/4 3xl:h-1/4">
       <div className="flex h-full flex-col  items-center justify-center space-y-5 2xl:space-y-9  3xl:space-y-8 ">
         <div className=" flex   flex-col items-center ">
           <div className="flex w-10 items-center justify-center xl:w-12 2xl:w-16 3xl:w-auto">

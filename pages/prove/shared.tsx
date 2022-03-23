@@ -1,14 +1,8 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import { NextPage } from 'next';
-import Link from 'next/link';
 import Layout from '../../components/common/Layout';
-import Button from '../../components/common/Button';
 import ZKLogo from '../../public/assets/common/zk-logo.png';
-import ShieldIcon from '../../public/assets/prove/shield-icon.png';
-import ArrowIcon from '../../public/assets/prove/arrow-icon.png';
-import TransparentButton from '../../components/common/TransparentButton';
-
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
 import ProofOfAlphaStatement from '../../components/prove/ProofOfAlphaStatement';
 import InfoPanel from '../../components/prove/InfoPanel';

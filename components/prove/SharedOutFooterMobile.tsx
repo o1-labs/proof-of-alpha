@@ -6,8 +6,15 @@ const SharedOutFooterMobile = () => {
   return (
     <div className="fixed bottom-0 z-50 h-16 w-full bg-[#79797940]/75 md:hidden">
       <div className="flex h-full items-center justify-around">
-        <div className="flex w-7 ">
-          <Image src={MinaPrimary} alt="mina logo" />
+        <div className="flex space-x-1">
+          <div className="flex w-7">
+            <Image src={MinaPrimary} alt="mina logo" />
+          </div>
+          <div className="flex flex-col text-[.2rem] tracking-xlwidest text-[#FF603B]">
+            <p className="mt-1   text-center">MADE</p>
+            <p className="mt-1  text-center">ON</p>
+            <p className="mt-1  text-center">MINA</p>
+          </div>
         </div>
 
         <p className="w-3/12 text-center  text-[.5rem] tracking-widest  ">

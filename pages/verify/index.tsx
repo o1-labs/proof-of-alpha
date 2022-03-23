@@ -39,6 +39,7 @@ const Verify: NextPage = () => {
       setIsError(false);
     }
   };
+
   const handleBinanceAPIsecretChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
