@@ -1,12 +1,13 @@
 import Image from 'next/image';
-import ZKOutlineLogo from '../../public/assets/prove/zk-outline-logo.png';
+import ZKLogo from '../../public/assets/common/zk-logo.png';
+
 const ProveError = () => {
   return (
     <div className="flex h-screen bg-background bg-cover bg-no-repeat text-white">
       <div className="flex w-full flex-col items-center space-y-10 ">
         <div className="flex w-3/6 flex-col items-center justify-center">
           <div className="mt-36 ">
-            <Image src={ZKOutlineLogo} alt=" zk logo" />
+            <Image src={ZKLogo} alt=" zk logo" />
           </div>
           <div className="mt-10 flex flex-col items-center ">
             <p className="text-3.5xl font-bold leading-11">
