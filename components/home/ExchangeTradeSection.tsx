@@ -20,31 +20,31 @@ const ExchangeTradeSection = () => {
               className="relative -ml-[560px]  hidden w-[1013px]  md:block"
               // style={{ clipPath: `inset(0% 0% 0% 54%)` }}
             >
-              <Image src={TwitterCard} alt="Twitter Card" />
+              <Image src={TwitterCard} alt="Twitter Card" priority />
             </div>
           </div>
           <div className="invisible relative mb-14 flex   w-14 items-center md:mb-0  md:hidden md:h-40 md:w-40">
             <ArrowButton arrowDirection="left" navLink="/#exchange" />
           </div>
           {/* container */}
-          <div className="2xl:w-99  3xl:w-6/12 mx-auto flex h-screen  w-full flex-col  justify-center  md:items-center md:space-y-5 xl:w-[500px]">
+          <div className="mx-auto  flex h-screen w-full flex-col  justify-center md:items-center  md:space-y-5  xl:w-[500px] 2xl:w-99 3xl:w-6/12">
             <div className=" flex  flex-col ">
               {/* copy section */}
-              <p className="3xl:mb 3xl:text-6xl 3xl:mb-5 text-center text-xl text-white md:mt-0 md:text-left lg:text-4xl xl:mb-2">
+              <p className="3xl:mb text-center text-xl text-white md:mt-0 md:text-left lg:text-4xl xl:mb-2 3xl:mb-5 3xl:text-6xl">
                 Your Exchange Trades,
               </p>
-              <p className="xl:text- 3xl:text-6xl 3xl:mb-16 mb-8 text-center text-xl text-white md:text-left md:text-6xl  lg:text-4xl 2xl:mb-10">
+              <p className="xl:text- mb-8 text-center text-xl text-white md:text-left md:text-6xl lg:text-4xl 2xl:mb-10  3xl:mb-16 3xl:text-6xl">
                 Certified On-chain
               </p>
 
-              <p className="md:leading-11 3xl:mb-8 3xl:text-4xl 3xl:leading-loose mb-4 text-base font-extralight text-white xl:mb-6 xl:text-2xl 2xl:mb-6 ">
+              <p className="mb-4 text-base font-extralight text-white md:leading-11 xl:mb-6 xl:text-2xl 2xl:mb-6 3xl:mb-8 3xl:text-4xl 3xl:leading-loose ">
                 It’s your
                 <span className="font-normal"> Proof of Alpha Statement.</span>
               </p>
-              <p className="md:leading-11 3xl:mb-8 3xl:text-4xl text-base font-extralight leading-snug text-white  xl:mb-5 xl:text-2xl 2xl:mb-6">
+              <p className="text-base font-extralight leading-snug text-white md:leading-11 xl:mb-5 xl:text-2xl  2xl:mb-6 3xl:mb-8 3xl:text-4xl">
                 Absolutely free, a service to our community.
               </p>
-              <p className="md:leading-11 3xl:text-4xl mt-8 text-base font-extralight leading-snug  text-white md:my-4 md:mt-0 xl:text-2xl">
+              <p className="mt-8 text-base font-extralight leading-snug text-white md:my-4  md:mt-0 md:leading-11 xl:text-2xl 3xl:text-4xl">
                 Dropping a{' '}
                 <span className="font-normal">Proof of Alpha Statement</span> is
                 a strong statement, in any community.

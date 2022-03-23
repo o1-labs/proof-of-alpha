@@ -26,7 +26,7 @@ const Layout = (props: layoutPropTypes) => {
 
   return (
     <div
-      className={` ${backGroundColorClassName[backGroundColor]}  w-screen overflow-x-hidden overflow-y-hidden bg-cover bg-no-repeat text-white ${layoutStyle}`}
+      className={` ${backGroundColorClassName[backGroundColor]}  w-screen overflow-x-hidden overflow-y-hidden bg-cover bg-no-repeat object-cover text-white ${layoutStyle}`}
       id={id}
       {...otherProps}
     >

@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import AuroChrome from '../../public/assets/auro/auro-home@2x.png';
