@@ -4,7 +4,7 @@ import Layout from '../common/Layout';
 import Button from '../common/Button';
 import CheckmarkItem from './CheckmarkItem';
 import TransparentButton from '../common/TransparentButton';
-import ZKBorderLogo from '../../public/assets/home/zk-logo-home.png';
+import ZKBorderLogo from '../../public/assets/home/zk-logo-home@2x.png';
 import Container from '../common/Container';
 
 const ProofSection = () => {
