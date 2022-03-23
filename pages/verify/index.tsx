@@ -82,7 +82,7 @@ const Verify: NextPage = () => {
               need.
             </p>
             <div>
-              <p className="-ml-8  flex h-9 w-7/12 items-center  justify-center border-1/2  border-[#A8A8A8] bg-[#90909040] text-center font-medium md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12 2xl:text-1.5xl 3xl:h-16 3xl:w-6/12 3xl:text-1.5xl   ">
+              <p className="flex h-9 w-7/12 items-center  justify-center border-1/2  border-[#A8A8A8] bg-[#90909040] text-center font-medium md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12 2xl:text-1.5xl 3xl:h-16 3xl:w-6/12 3xl:text-1.5xl   ">
                 No record of your API keys will ever be saved.
               </p>
             </div>
