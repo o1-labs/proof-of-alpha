@@ -13,7 +13,7 @@ const StatementSection = () => {
 
       <Container containerStyle="pt-32">
         <div className=" absolute top-0 right-0 w-6/12 2xl:w-7/12 3xl:w-7/12">
-          <Image src={StatementTopStamp} alt="Stamp" />
+          <Image src={StatementTopStamp} alt="Stamp" priority />
         </div>
         <div className="flex justify-between  ">
           <div className="flex  flex-col  items-center 3xl:space-y-4 ">
