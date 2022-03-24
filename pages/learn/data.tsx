@@ -19,21 +19,21 @@ const Data: NextPage = () => {
               <ArrowButton arrowDirection="left" navLink="/learn" />
             </div>
 
-            <div className="3xl:w-115 xl:w-99  2xl:w-99 mx-auto w-10/12 flex-col md:w-auto md:space-y-11 ">
+            <div className="mx-auto w-10/12  flex-col md:w-auto md:space-y-11 xl:w-99 2xl:w-99 3xl:w-115 ">
               <div className="">
-                <p className="3xl:text-6xl 3xl:mb-16  mx-auto mb-14 w-11/12 text-xl  md:w-auto md:text-left lg:text-4xl xl:mb-9">
+                <p className="mx-auto mb-14  w-11/12 text-xl md:w-auto md:text-left  lg:text-4xl xl:mb-9 3xl:mb-16 3xl:text-6xl">
                   Your Data Stays Private
                 </p>
                 {/* 3xl:text-4xl xl:text-2xl */}
-                <p className="md:leading-11 3xl:text-4xl 3xl:mb-12 mb-5 text-base  leading-loose xl:text-2xl 2xl:mb-10">
+                <p className="mb-5 text-base leading-loose md:leading-11 xl:text-2xl  2xl:mb-10 3xl:mb-12 3xl:text-4xl">
                   We are a team of engineers, cryptographers, and crypto
                   traders.
                 </p>
-                <p className="md:leading-11 3xl:text-4xl 3xl:mb-12 text-base  leading-loose xl:text-2xl 2xl:mb-10">
+                <p className="text-base leading-loose md:leading-11 xl:text-2xl  2xl:mb-10 3xl:mb-12 3xl:text-4xl">
                   We use zero-knowledge proofs to ensure the privacy of your
                   data.
                 </p>
-                <p className="md:leading-11 3xl:text-4xl my-4 text-base  leading-loose xl:text-2xl">
+                <p className="my-4 text-base leading-loose md:leading-11  xl:text-2xl 3xl:text-4xl">
                   Whether your account is anon or KYC'ed, your data will stay
                   private.
                 </p>
@@ -50,7 +50,7 @@ const Data: NextPage = () => {
               </div>
             </div>
             <div className="absolute right-0 hidden  md:block">
-              <Image src={RightStamp} alt="Stamp" />
+              <Image src={RightStamp} alt="Stamp" priority />
             </div>
           </div>
         </div>

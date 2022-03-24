@@ -16,7 +16,7 @@ const TradeHistorySection = () => {
     >
       <header className=""></header>
       <div className="absolute  right-0  hidden  md:block">
-        <Image src={TopStamp} alt="Stamp" />
+        <Image src={TopStamp} alt="Stamp" priority />
       </div>
       <Container containerStyle="relative min-h-fit  pb-[320px] md:pb-[375px]  xl:pb-[800px] ">
         <div className="absolute ml-36 mt-5 w-20 items-center md:ml-7  md:mt-5 md:w-24 xl:ml-10  xl:mt-12 xl:h-32 xl:w-auto">

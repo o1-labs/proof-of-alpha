@@ -64,7 +64,7 @@ const ExchangeTradeSection = () => {
               {/* end indicator button group */}
             </div>
           </div>
-          {/* <div className="relative mt-60 -mr-8  md:mt-52 md:mr-0"> */}
+
           <div
             className=" relative mb-14 flex w-14  items-center md:mb-0 md:mr-0
               md:h-40 md:w-40 "
