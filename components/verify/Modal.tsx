@@ -2,7 +2,7 @@ import { Fragment, useState, Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
-import BinanceModal from '../../public/assets/verify/binance-modal.png';
+import BinanceModal from '../../public/assets/verify/binance-modal@2x.png';
 import ExportCursor from '../../public/assets/verify/export-cursor.png';
 
 interface modalPropTypes {
@@ -48,33 +48,34 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <div className="inline-block h-screen  w-full transform flex-col overflow-hidden bg-[#0F3887] text-left text-white shadow-xl transition-all ">
-              <div className="mt-18 2xl:mt-30 3xl:mt-40 flex flex-col items-center">
-                <div className="3xl:w-5/12 flex w-5/12 justify-around 2xl:w-auto">
-                  <div className="3xl:w-7/12 w-9/12 2xl:w-9/12">
-                    <Dialog.Title className="3xl:text-5xl text-2xl 2xl:text-4xl ">
+              <div className="mt-18 flex flex-col items-center 2xl:mt-30 3xl:mt-40">
+                <div className="flex w-5/12 justify-around 2xl:w-auto 3xl:w-5/12">
+                  <div className="w-9/12 2xl:w-9/12 3xl:w-7/12">
+                    <Dialog.Title className="text-2xl 2xl:text-4xl 3xl:text-5xl ">
                       Open Your Binance Account Profile Menu
                     </Dialog.Title>
 
-                    <p className="3xl:text-3xl 3xl:mt-10 mt-6 text-base 2xl:mt-8 2xl:text-2xl ">
+                    <p className="mt-6 text-base 2xl:mt-8 2xl:text-2xl 3xl:mt-10 3xl:text-3xl ">
                       Select 'API Management' and generate a new key.
                     </p>
-                    <div className="2xl:mt-18 3xl:mt-24 mt-6 flex items-center justify-center">
+                    <div className="mt-6 flex items-center justify-center 2xl:mt-18 3xl:mt-24">
                       <div className="relative w-7/12  items-center">
-                        <div className="3xl:left-9 3xl:w-36 3xl:h-36 absolute -top-3 left-4 z-10 h-20 w-20 rounded-full border-[6px] border-[#00B4BF] bg-transparent 2xl:-top-5 2xl:left-4 2xl:h-32 2xl:w-32  2xl:border-[10px] "></div>
+                        <div className="absolute -top-3 left-4 z-10 h-20 w-20 rounded-full border-[6px] border-[#00B4BF] bg-transparent 2xl:-top-5 2xl:left-4 2xl:h-32 2xl:w-32 2xl:border-[10px] 3xl:left-9 3xl:h-36  3xl:w-36 "></div>
 
                         <Image
                           layout="responsive"
                           src={BinanceModal}
                           alt="binance"
                         />
-                        <div className="3xl:top-10 3xl:left-20 absolute top-5 left-10 h-8  w-8 2xl:top-8 2xl:left-14 2xl:h-10 2xl:w-10">
+                        <div className="absolute top-5 left-10 h-8 w-8 2xl:top-8  2xl:left-14 2xl:h-10 2xl:w-10 3xl:top-10 3xl:left-20">
                           <Image
                             layout="responsive"
                             src={ExportCursor}
                             alt="export cursor"
+                            priority
                           />
                         </div>
-                        <div className="3xl:bottom-24 3xl:left-14 3xl:h-16 absolute bottom-14 left-6 z-10 h-8 w-9/12 border-[6px] border-[#00B4BF] bg-transparent 2xl:bottom-20 2xl:left-11 2xl:h-12 2xl:border-[10px] "></div>
+                        <div className="absolute bottom-14 left-6 z-10 h-8 w-9/12 border-[6px] border-[#00B4BF] bg-transparent 2xl:bottom-20 2xl:left-11 2xl:h-12 2xl:border-[10px] 3xl:bottom-24 3xl:left-14 3xl:h-16 "></div>
                       </div>
                     </div>
                   </div>
@@ -87,7 +88,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                     >
                       <span className="sr-only">Close</span>
                       <XIcon
-                        className="3xl:w-12 absolute h-8  w-8 rounded-full  hover:bg-gray-500 2xl:h-10 2xl:w-10 "
+                        className="absolute h-8 w-8  rounded-full hover:bg-gray-500  2xl:h-10 2xl:w-10 3xl:w-12 "
                         aria-hidden="true"
                       />
                     </button>
