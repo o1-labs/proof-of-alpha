@@ -103,8 +103,8 @@ const Finalize: NextPage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col 2xl:mt-36 2xl:space-y-4 3xl:space-y-7 ">
-            {renderErrors(errorType)}
+          <div className="flex flex-col  xl:pt-72  2xl:space-y-4 3xl:space-y-7 ">
+            {renderErrors('testnet')}
             <BottomNavButtons
               backNavLink="/verify/review"
               continueNavLink="/verify/generate"
