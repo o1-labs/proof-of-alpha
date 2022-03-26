@@ -11,7 +11,7 @@ interface AuroNoWalletErrorPropTypes {
 
 const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
   return (
-    <div className={`${visible ? 'display:block' : 'hidden'} `}>
+    <div className={`${visible ? 'block' : 'hidden'} `}>
       <div className="flex  items-center justify-end">
         <div className="flex w-3 items-center justify-center 2xl:w-4 3xl:w-6">
           <Image src={ExclamationIcon} alt="info" />
@@ -29,7 +29,7 @@ const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
             'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
           }
         >
-          <div className="2xl flex items-center 3xl:mt-3">
+          <div className="flex items-center 3xl:mt-3">
             <div className="flex w-5 items-center  justify-center 2xl:w-5 3xl:w-10">
               <Image src={ExternalLinkIcon} alt="info" />
             </div>
