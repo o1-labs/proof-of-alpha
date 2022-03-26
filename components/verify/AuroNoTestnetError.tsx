@@ -12,12 +12,8 @@ const AuroNoTestNetErrorPropTypes = ({
   visible
 }: AuroNoTestNetErrorPropTypes) => {
   return (
-    <div
-      className={`${
-        visible ? 'visable' : 'invisible'
-      } absolute bottom-[105px] right-72 2xl:bottom-32 2xl:right-[400px] 3xl:bottom-48 3xl:right-[700px]`}
-    >
-      <div className="flex items-center justify-end  ">
+    <div className={`${visible ? 'display:block' : 'hidden'} `}>
+      <div className="flex items-center justify-end">
         <div className="w-3 2xl:w-auto">
           <Image src={ExclamationIcon} alt="info" />
         </div>
