@@ -9,6 +9,8 @@ export default () => {
   const [accountHeaderDisplay, setAccountHeaderDisplay] = useState('');
 
   useEffect(() => {
+    let isMounted = true;
+
     async function getAccount() {
       let minaAccounts;
       try {
@@ -28,8 +30,10 @@ export default () => {
 
         // Auro is installed and connected to an account
         // TODO: Handle case when user has multiple accounts.
-        setMinaAccount(minaAccounts[0]);
-        setStatus('green');
+        if (isMounted) {
+          setMinaAccount(minaAccounts[0]);
+          setStatus('green');
+        }
 
         // String showing only first 6 and last 4 characters of account for the header display
         const display = `${minaAccounts[0].slice(
@@ -48,6 +52,9 @@ export default () => {
       }
     }
     getAccount();
+    return () => {
+      isMounted = false;
+    };
   }, [isAuro, minaAccount, accountHeaderDisplay, status]);
 
   return { isAuro, minaAccount, accountHeaderDisplay, status };
