@@ -4,7 +4,7 @@ import Layout from '../common/Layout';
 import Button from '../common/Button';
 import CheckmarkItem from './CheckmarkItem';
 import TransparentButton from '../common/TransparentButton';
-import ZKBorderLogo from '../../public/assets/home/zk-logo-home@2x.png';
+import ZKLogo from '../../public/assets/home/zk-logo-home@2x.png';
 import Container from '../common/Container';
 
 const ProofSection = () => {
@@ -32,7 +32,7 @@ const ProofSection = () => {
                 <CheckmarkItem copy="100% open source & on-chain" />
               </div>
               <div className="hidden h-80 w-80 justify-end md:flex md:flex-col  2xl:h-86 2xl:w-86">
-                <Image layout="responsive" src={ZKBorderLogo} alt="ZK logo" />
+                <Image layout="responsive" src={ZKLogo} alt="ZK logo" />
               </div>
             </div>
 

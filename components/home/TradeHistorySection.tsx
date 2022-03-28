@@ -4,7 +4,7 @@ import Layout from '../common/Layout';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
 import CardStatmentGroup from './CardStatementGroup';
-import ZKLogo from '../../public/assets/common/zk-logo.png';
+import ZKLogo from '../../public/assets/common/zk-logo.svg';
 import TopStamp from '../../public/assets/home/stamp-top.png';
 import Container from '../common/Container';
 

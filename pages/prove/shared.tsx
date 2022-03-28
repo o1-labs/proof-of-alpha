@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
-import ZKLogo from '../../public/assets/common/zk-logo.png';
+import ZKLogo from '../../public/assets/common/zk-logo.svg';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
 import ProofOfAlphaStatement from '../../components/prove/ProofOfAlphaStatement';
 import InfoPanel from '../../components/prove/InfoPanel';
