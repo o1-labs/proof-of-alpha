@@ -5,18 +5,16 @@ import Link from 'next/link';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ProofGeneratedConfirmation from '../../components/verify/ProofGeneratedConfirmation';
 import Button from '../../components/common/Button';
-import LinkIcon from '../../public/assets/common/link-icon.png';
+import LinkIcon from '../../public/assets/common/chain-icon.svg';
 import { trades } from '../../utils';
-import { Trade } from '../../types';
 import { calculateCumulativeProfitLoss } from '../../utils';
 import Layout from '../../components/common/Layout';
 
 const Generate: NextPage = () => {
   const [proofConfirmed, setProofConfirmed] = useState<boolean>(false);
-  // const [trades, setTrades] = useState<Trade[]>([]);
   const [cumulativeProfits, setCumulativeProfits] = useState<string>('');
+
   useEffect(() => {
-    // setTrades(TradeData.trades as Trade[]);
     const profits = calculateCumulativeProfitLoss(trades);
     setCumulativeProfits(profits);
   }, [trades]);
@@ -43,15 +41,6 @@ const Generate: NextPage = () => {
   };
 
   const handleSendToMinaButtonClick = async () => {
-    let accounts;
-    // data.result is an array that contains approve account`s address
-    try {
-      accounts = await window.mina.requestAccounts();
-    } catch (error) {
-      // if user reject, requestAccounts will throw an error with code and message filed
-      console.log(error.message, error.code);
-    }
-
     //   router.push('/verify/configure');
   };
 
@@ -93,7 +82,7 @@ const Generate: NextPage = () => {
           </div>
           <div className="flex justify-center pt-10">
             {/* Buttton is only visable after a proof is generated 
-                // TODO: Add Auro wallet ign tx & send tx flow
+                // TODO: Add Auro wallet sign tx & send tx flow
             */}
             <Link href={'/prove'} passHref>
               <Button
