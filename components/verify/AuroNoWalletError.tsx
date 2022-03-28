@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import ExclamationIcon from '../../public/assets/verify/finalize/exclamation-icon.png';
-import ExternalLinkIcon from '../../public/assets/common/external-link-icon.png';
+import ExclamationIcon from '../../public/assets/verify/finalize/exclamation-icon.svg';
+import ExternalLinkIcon from '../../public/assets/common/external-link-icon.svg';
 
 interface AuroNoWalletErrorPropTypes {
   visible?: boolean;

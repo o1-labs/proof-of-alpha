@@ -98,13 +98,13 @@ const Finalize: NextPage = () => {
                 {renderSocialBadges()}
               </div>
 
-              {/* "wallet " "testnet" 'tokens' */}
+              {/* "wallet" "testnet" 'tokens' */}
               {/* {renderErrors(errorType)} */}
             </div>
           </div>
 
           <div className="flex flex-col  xl:pt-72  2xl:space-y-4 3xl:space-y-7 ">
-            {renderErrors('testnet')}
+            {renderErrors(errorType)}
             <BottomNavButtons
               backNavLink="/verify/review"
               continueNavLink="/verify/generate"

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ExclamationIcon from '../../public/assets/verify/finalize/exclamation-icon.png';
+import ExclamationIcon from '../../public/assets/verify/finalize/exclamation-icon.svg';
 
 interface AuroNoTestNetErrorPropTypes {
   visible?: boolean;
