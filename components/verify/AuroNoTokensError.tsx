@@ -24,12 +24,14 @@ const AuroNoTokensError = ({ visible }: AuroNoTokensErrorPropTypes) => {
           target="_blank"
           href={'https://faucet.minaprotocol.com'}
         >
-          <div className="flex w-5 items-center  justify-center 2xl:w-5 3xl:w-10">
-            <Image src={ExternalLinkIcon} alt="info" />
+          <div className="flex items-center 2xl:mt-2 3xl:mt-3">
+            <div className="flex w-5 items-center  justify-center 2xl:w-5 3xl:w-10">
+              <Image src={ExternalLinkIcon} alt="info" />
+            </div>
+            <span className=" ml-2 text-xs text-gray-300  underline 2xl:text-base 3xl:text-2xl">
+              MINA FAUCET
+            </span>
           </div>
-          <span className=" ml-2 text-xs text-gray-300  underline 2xl:text-base 3xl:text-2xl">
-            MINA FAUCET
-          </span>
         </a>
       </div>
     </div>

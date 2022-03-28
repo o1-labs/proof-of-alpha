@@ -29,7 +29,7 @@ const AuroError = ({ visible }: AuroNoWalletErrorPropTypes) => {
             'https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae'
           }
         >
-          <div className="flex items-center 3xl:mt-3">
+          <div className="flex items-center 2xl:mt-2 3xl:mt-3">
             <div className="flex w-5 items-center  justify-center 2xl:w-5 3xl:w-10">
               <Image src={ExternalLinkIcon} alt="info" />
             </div>

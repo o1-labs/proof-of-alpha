@@ -104,7 +104,7 @@ const Finalize: NextPage = () => {
           </div>
 
           <div className="flex flex-col  xl:pt-72  2xl:space-y-4 3xl:space-y-7 ">
-            {renderErrors(errorType)}
+            {renderErrors('tokens')}
             <BottomNavButtons
               backNavLink="/verify/review"
               continueNavLink="/verify/generate"
