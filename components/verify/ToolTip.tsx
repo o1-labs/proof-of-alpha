@@ -1,6 +1,5 @@
 import Image from 'next/image';
-// import InfoIcon from '../../public/assets/common/info-icon.png';
-import InfoIcon from '../../public/assets/verify/info-icon.png';
+import InfoIcon from '../../public/assets/verify/info-icon.svg';
 
 const ToolTip = () => {
   return (
@@ -9,7 +8,7 @@ const ToolTip = () => {
         <Image src={InfoIcon} alt="info" />
       </div>
       <div className="absolute bottom-0 mb-7 flex hidden flex-col items-center group-hover:flex 2xl:mb-11">
-        <span className=" w-90 2xl:w-122 whitespace-no-wrap relative z-10 flex flex-col rounded-xl bg-black p-7 text-sm leading-snug text-white shadow-lg 2xl:p-10 2xl:text-2xl ">
+        <span className=" whitespace-no-wrap relative z-10 flex w-90 flex-col rounded-xl bg-black p-7 text-sm leading-snug text-white shadow-lg 2xl:w-122 2xl:p-10 2xl:text-2xl ">
           <p className="pb-3 2xl:pb-5">
             <span className="font-bold">Proof of Alpha </span>can process up to
             a maximum of 500 trade fills (total orders fulfilled by the
