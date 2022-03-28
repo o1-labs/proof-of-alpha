@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import useMinaProvider from '../../hooks/useMinaProvider';
-import ZKLogo from '../../public/assets/common/zk-logo.png';
+import ZKLogo from '../../public/assets/common/zk-logo.svg';
 
 const Header = () => {
   const { isAuro, minaAccount, accountHeaderDisplay, status } =
