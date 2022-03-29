@@ -99,12 +99,11 @@ const Finalize: NextPage = () => {
               </div>
 
               {/* "wallet" "testnet" 'tokens' */}
-              {/* {renderErrors(errorType)} */}
             </div>
           </div>
 
-          <div className="flex flex-col  xl:pt-72  2xl:space-y-4 3xl:space-y-7 ">
-            {renderErrors('tokens')}
+          <div className="flex flex-col  xl:pt-90  2xl:space-y-4 3xl:space-y-7 ">
+            {renderErrors(errorType)}
             <BottomNavButtons
               backNavLink="/verify/review"
               continueNavLink="/verify/generate"

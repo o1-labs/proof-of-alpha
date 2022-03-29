@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ProofOfTradeStatement from '../../public/assets/verify/finalize/proof-of-trade-statement.png';
+import ProofOfAlphaStatement from '../../public/assets/verify/finalize/proof-of-alpha-statement.png';
 import TwitterCard from '../../public/assets/verify/finalize/twitter-card-finalize.png';
 
 const ReturnsAndTradeBadge = () => {
@@ -17,7 +17,7 @@ const ReturnsAndTradeBadge = () => {
             PROOF OF ALPHA STATEMENT
           </div>
           <div className="w-[380px] xl:-mt-4 xl:w-[500px] 2xl:-mt-4 2xl:w-[600px] 3xl:-mt-9 3xl:w-[700px] ">
-            <Image src={ProofOfTradeStatement} alt="proof of trade statement" />
+            <Image src={ProofOfAlphaStatement} alt="proof of trade statement" />
           </div>
         </div>
 
