@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import TwitterCard from '../../public/assets/verify/finalize/twitter-card-finalize.png';
+import TwitterCard from '../../public/assets/verify/finalize/twitter-card-finalize@2x.png';
 
 const ReturnsAndTradeBadge = () => {
   return (
@@ -15,7 +15,7 @@ const ReturnsAndTradeBadge = () => {
         SOCIAL BADGE
       </div>
       <div className="w-full xl:w-full  2xl:mb-24 2xl:-mt-2 2xl:w-full 3xl:mb-30 3xl:w-10/12 ">
-        <Image src={TwitterCard} alt="twitter card" />
+        <Image src={TwitterCard} alt="twitter card" priority />
       </div>
     </div>
   );
