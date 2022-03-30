@@ -1,4 +1,4 @@
-import { Fragment, useState, Dispatch, SetStateAction } from 'react';
+import { Fragment, Dispatch, SetStateAction } from 'react';
 
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
