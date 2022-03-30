@@ -79,6 +79,7 @@ module.exports = {
       height: (_theme) => ({
         '.75*screen': '75vh',
         '.9*screen': '90vh',
+        '1.1*screen': '110vh',
         '1.25*screen': '125vh',
         '1.5*screen': '150vh',
         '1.75*screen': '175vh',

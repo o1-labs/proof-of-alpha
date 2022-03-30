@@ -23,14 +23,11 @@ const Start: NextPage = () => {
     }
   };
   return (
-    <Layout
-      backGroundColor="gradient"
-      layoutStyle="min-h-fit h-screen md:h-screen"
-    >
-      <Container containerStyle="min-h-fit h-screen md:h-screen relative  pb-[320px] md:pb-0">
+    <Layout backGroundColor="gradient" layoutStyle="h-1.1*screen min-h-fit ">
+      <Container containerStyle="h-1.1*screen min-h-fit pb-[320px] md:pb-0 relative">
         <Header />
-        <div className="relative ">
-          <div className="mx-auto mt-30 flex w-9/12 flex-col space-y-5 text-white md:mx-0  md:mt-36  md:w-[410px]  md:space-y-4 xl:mt-56 xl:w-[500px] xl:space-y-7 2xl:mt-60 2xl:w-[620px] 3xl:mt-72 3xl:w-[640px]">
+        <div className="relative  ">
+          <div className="mx-auto  flex w-9/12 flex-col space-y-5 text-white md:mx-0  md:mt-10  md:w-[410px]  md:space-y-4 xl:mt-10 xl:w-[500px] xl:space-y-7 2xl:mt-10 2xl:w-[620px] 3xl:mt-10 3xl:w-[640px]">
             <p className="pr-8 text-center text-xl font-light md:text-left xl:text-3xl 2xl:text-4xl 3xl:mb-5  3xl:text-5xl 3xl:leading-13">
               Your Free Proof of Alpha Statement and Share Badge
             </p>
@@ -48,7 +45,7 @@ const Start: NextPage = () => {
             <p className="text-base font-extralight md:text-xl xl:text-2xl  3xl:mb-8 3xl:text-3xl ">
               Available for Binance. Other exchanges coming soon!
             </p>
-            <div className="flex items-center justify-center pt-8 md:justify-start ">
+            <div className="flex items-center justify-center pt-8 pb-2 md:justify-start ">
               <Button
                 buttonStyle=" w-7/12 h-10 xl:w-4/12 xl:h-10 3xl:w-1/2 3xl:h-14 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl"
                 label="GET STARTED"

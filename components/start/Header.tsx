@@ -3,8 +3,8 @@ import ZKLogo from '../../public/assets/common/zk-logo.svg';
 
 const Header = () => {
   return (
-    <header className="">
-      <div className="absolute ml-36 mt-5 w-20 items-center md:ml-0 md:mt-5  md:w-24 xl:mt-12  xl:h-32 xl:w-auto 3xl:pr-10">
+    <header className="mt-3 flex items-center justify-center py-4 md:justify-start md:py-5 xl:mt-12 2xl:py-9">
+      <div className="w-20 md:ml-0  md:w-24    2xl:w-auto  ">
         <Image src={ZKLogo} alt="zk logo" />
       </div>
     </header>
