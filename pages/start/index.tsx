@@ -23,8 +23,11 @@ const Start: NextPage = () => {
     }
   };
   return (
-    <Layout backGroundColor="gradient" layoutStyle="min-h-fit md:h-screen">
-      <Container containerStyle="min-h-fit md:h-screen relative  pb-[320px] md:pb-0">
+    <Layout
+      backGroundColor="gradient"
+      layoutStyle="min-h-fit h-screen md:h-screen"
+    >
+      <Container containerStyle="min-h-fit h-screen md:h-screen relative  pb-[320px] md:pb-0">
         <Header />
         <div className="relative ">
           <div className="mx-auto mt-30 flex w-9/12 flex-col space-y-5 text-white md:mx-0  md:mt-36  md:w-[410px]  md:space-y-4 xl:mt-56 xl:w-[500px] xl:space-y-7 2xl:mt-60 2xl:w-[620px] 3xl:mt-72 3xl:w-[640px]">

@@ -1,5 +1,4 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
-
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
 import Button from '../../components/common/Button';
