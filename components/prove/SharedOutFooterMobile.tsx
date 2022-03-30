@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Button from '../common/Button';
-import MinaPrimary from '../../public/assets/prove/mina-icon-primary.png';
+import MinaPrimary from '../../public/assets/prove/mina-icon-primary.svg';
 
 const SharedOutFooterMobile = () => {
   return (
