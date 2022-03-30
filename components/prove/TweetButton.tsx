@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import Image from 'next/image';
-import TwitterLogo from '../../public/assets/prove/twitter-logo.png';
+import TwitterLogo from '../../public/assets/prove/twitter-logo.svg';
 
 interface tweetButtonPropTypes {
   buttonStyle?: string;
@@ -9,7 +9,6 @@ interface tweetButtonPropTypes {
 /**
  * @param {string} buttonStyle Additional TailwindCSS classes (optional).
  * @param {string} label Button label
- 
  */
 
 // Add icon logo prop
@@ -24,7 +23,7 @@ const TweetButton = (props: tweetButtonPropTypes) => {
     >
       {label}
       <div
-        className="absolute right-7 top-3 w-4  lg:w-5 2xl:right-11  2xl:w-6   3xl:w-7"
+        className="absolute right-7 top-3 w-4  lg:w-5 2xl:right-11 2xl:w-6 3xl:w-7"
         aria-hidden="true"
       >
         <Image src={TwitterLogo} alt="twitter logo" />
