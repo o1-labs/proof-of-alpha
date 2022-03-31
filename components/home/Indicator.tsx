@@ -1,33 +1,33 @@
 interface indicatorPropTypes {
-  page: 'first' | 'second' | 'third';
+  section: 'exchange' | 'choice' | 'data';
 }
 
 /**
- * @param {string} page  String to indicate which indicator point is highlighted either 'first' | 'second' | 'third'.
+ * @param {string} section  String to indicate which indicator point is highlighted either 'first' | 'second' | 'third'.
  */
 
-const Indicator = ({ page }: indicatorPropTypes) => {
+const Indicator = ({ section }: indicatorPropTypes) => {
   return (
     <div className="flex justify-end md:w-1/2">
-      <div className="3xl:mx-6 mx-3 xl:mx-4">
+      <div className="mx-3 xl:mx-4 3xl:mx-6">
         <div
           className={`${
-            page === 'first' ? 'bg-white' : 'bg-custom-gray-indicator-dot'
-          } 3xl:w-4 3xl:h-4 h-3 w-3 rounded-full`}
+            section === 'exchange' ? 'bg-white' : 'bg-custom-gray-indicator-dot'
+          } h-3 w-3 rounded-full 3xl:h-4 3xl:w-4`}
         ></div>
       </div>
       <div className="mx-3 md:mx-6">
         <div
           className={`${
-            page === 'second' ? 'bg-white' : 'bg-custom-gray-indicator-dot'
-          } 3xl:w-4 3xl:h-4 h-3 w-3 rounded-full`}
+            section === 'choice' ? 'bg-white' : 'bg-custom-gray-indicator-dot'
+          } h-3 w-3 rounded-full 3xl:h-4 3xl:w-4`}
         ></div>
       </div>
       <div className="mx-3 md:mx-6">
         <div
           className={`${
-            page === 'third' ? 'bg-white' : 'bg-custom-gray-indicator-dot'
-          } 3xl:w-4 3xl:h-4 h-3 w-3 rounded-full`}
+            section === 'data' ? 'bg-white' : 'bg-custom-gray-indicator-dot'
+          } h-3 w-3 rounded-full 3xl:h-4 3xl:w-4`}
         ></div>
       </div>
     </div>

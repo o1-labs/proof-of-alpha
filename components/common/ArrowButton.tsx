@@ -22,7 +22,7 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
   return (
     <button onClick={onClick}>
       <svg
-        className={`w-14 hover:stroke-white md:w-30 lg:w-40  ${arrowButtonStyle}`}
+        className={`z-50 w-14 hover:stroke-white md:w-30 2xl:w-40  ${arrowButtonStyle}`}
         fill="none"
         viewBox="0 0 24 24"
         stroke="#b8b5b5"

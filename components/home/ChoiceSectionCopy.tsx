@@ -12,7 +12,7 @@ const ChoiceSection = () => {
         Focus only on your sick gains, or share fully transparent transaction
         data.
       </p>
-      <p className="my-4 text-base leading-loose md:leading-11 xl:text-2xl 3xl:text-4xl ">
+      <p className="mt-4 text-base leading-loose md:leading-11 xl:text-2xl 3xl:text-4xl ">
         It's up to you.
       </p>
     </div>

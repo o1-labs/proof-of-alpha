@@ -8,8 +8,12 @@ import ArrowButton from '../common/ArrowButton';
 import ExchangeTradeSectionCopy from './ExchangeTradeSectionCopy';
 import ChoiceSectionCopy from './ChoiceSectionCopy';
 import DataSectionCopy from './DataSectionCopy';
+import RightStamp from '../../public/assets/home/stamp-right.png';
 
 import { useState } from 'react';
+interface indicatorPropTypes {
+  section: 'first' | 'second' | 'third';
+}
 
 type sectionCopyType = 'exchange' | 'choice' | 'data';
 
@@ -60,21 +64,21 @@ const ExchangeTradeSection = () => {
       id="exchange"
     >
       <div className="flex flex-col items-center justify-center">
-        <div className="relative  mx-auto  flex items-center justify-center  space-x-3 md:w-auto md:space-x-20">
+        <div className="mx-auto  flex items-center justify-center  space-x-3 md:w-auto md:space-x-5 2xl:space-x-12">
           <div
             className={`hidden w-1/2 lg:block ${
               copySection === 'exchange' ? '' : 'lg:invisible'
             }`}
           >
-            <div className="relative hidden md:-ml-[390px] md:block md:w-[700px] 2xl:-ml-[560px]  2xl:w-[1013px]">
+            <div className="hidden md:-ml-[200px] md:block md:w-[300px]  xl:-ml-[390px]  xl:w-[700px] 2xl:-ml-[560px]  2xl:w-[1013px]">
               <Image src={TwitterCard} alt="Twitter Card" priority />
             </div>
           </div>
           {/* old code location  */}
           <div className="flex h-screen flex-col items-center justify-center ">
-            <div className="flex items-center  md:w-auto  md:space-x-24 ">
+            <div className="flex items-center  md:w-auto md:space-x-12 xl:space-x-24 ">
               <div
-                className={`relative mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40 ${
+                className={` mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40 ${
                   copySection === 'exchange' ? 'invisible' : ''
                 }`}
               >
@@ -84,7 +88,9 @@ const ExchangeTradeSection = () => {
                 />
               </div>
               <div className="w-[275px] flex-col md:space-y-11 xl:w-[400px] 2xl:w-[420px] 3xl:w-115">
-                {renderSectionCopy(copySection)}
+                <div className="h-80 md:h-[420px] 3xl:h-108">
+                  {renderSectionCopy(copySection)}
+                </div>
 
                 <div className="mt-24 flex flex-col items-center justify-center space-y-9 pr-10 md:mt-40 md:flex-row md:justify-between md:space-y-0">
                   <Link href={'/start'} passHref>
@@ -93,7 +99,7 @@ const ExchangeTradeSection = () => {
                       label="NEXT"
                     />
                   </Link>
-                  <Indicator page="second" />
+                  <Indicator section={copySection} />
                 </div>
               </div>
               <div
@@ -108,7 +114,13 @@ const ExchangeTradeSection = () => {
               </div>
             </div>
           </div>
-
+          <div
+            className={`absolute right-0 hidden  xl:block ${
+              copySection === 'data' ? '' : 'xl:invisible'
+            }`}
+          >
+            <Image src={RightStamp} alt="Stamp" priority />
+          </div>
           {/* end container */}
         </div>
       </div>

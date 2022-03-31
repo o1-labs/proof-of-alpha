@@ -15,7 +15,7 @@ const ExchangeTradeSectionCopy = () => {
       <p className="text-base font-extralight leading-snug text-white md:leading-11 xl:mb-5 xl:text-2xl  2xl:mb-6 3xl:mb-8 3xl:text-4xl">
         Absolutely free, a service to our community.
       </p>
-      <p className="mt-8 text-base font-extralight leading-snug text-white md:my-4  md:mt-0 md:leading-11 xl:text-2xl 3xl:text-4xl">
+      <p className="mt-8 text-base font-extralight leading-snug text-white  md:mt-4 md:leading-11 xl:text-2xl 3xl:text-4xl">
         Dropping a <span className="font-normal">Proof of Alpha Statement</span>{' '}
         is a strong statement, in any community.
       </p>
