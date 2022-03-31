@@ -5,6 +5,7 @@ import Button from '../common/Button';
 import Indicator from './Indicator';
 import TwitterCard from '../../public/assets/common/twitter-card.png';
 import ArrowButton from '../common/ArrowButton';
+import ExchangeTradeSectionCopy from './ExchangeTradeSectionCopy';
 
 const ExchangeTradeSection = () => {
   return (
@@ -30,25 +31,7 @@ const ExchangeTradeSection = () => {
           <div className="mx-auto  flex h-screen w-full flex-col  justify-center md:items-center  md:space-y-5  xl:w-[500px] 2xl:w-99 3xl:w-6/12">
             <div className=" flex  flex-col ">
               {/* copy section */}
-              <p className="3xl:mb text-center text-xl text-white md:mt-0 md:text-left lg:text-4xl xl:mb-2 3xl:mb-5 3xl:text-6xl">
-                Your Exchange Trades,
-              </p>
-              <p className="xl:text- mb-8 text-center text-xl text-white md:text-left md:text-6xl lg:text-4xl 2xl:mb-10  3xl:mb-16 3xl:text-6xl">
-                Certified On-chain
-              </p>
-
-              <p className="mb-4 text-base font-extralight text-white md:leading-11 xl:mb-6 xl:text-2xl 2xl:mb-6 3xl:mb-8 3xl:text-4xl 3xl:leading-loose ">
-                It’s your
-                <span className="font-normal"> Proof of Alpha Statement.</span>
-              </p>
-              <p className="text-base font-extralight leading-snug text-white md:leading-11 xl:mb-5 xl:text-2xl  2xl:mb-6 3xl:mb-8 3xl:text-4xl">
-                Absolutely free, a service to our community.
-              </p>
-              <p className="mt-8 text-base font-extralight leading-snug text-white md:my-4  md:mt-0 md:leading-11 xl:text-2xl 3xl:text-4xl">
-                Dropping a{' '}
-                <span className="font-normal">Proof of Alpha Statement</span> is
-                a strong statement, in any community.
-              </p>
+              <ExchangeTradeSectionCopy />
               {/* end copy section */}
 
               {/* indicator button group  */}

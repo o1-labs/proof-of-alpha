@@ -8,7 +8,7 @@ import Button from '../../components/common/Button';
 import RightStamp from '../../public/assets/home/stamp-right.png';
 import ArrowButton from '../../components/common/ArrowButton';
 import Container from '../../components/common/Container';
-import DataSection from '../../components/home/DataSection';
+import DataSection from '../../components/home/DataSectionCopy';
 
 const Data: NextPage = () => {
   return (

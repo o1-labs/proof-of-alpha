@@ -3,9 +3,11 @@ import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Button from '../../components/common/Button';
 import Indicator from '../../components/home/Indicator';
-import ChoiceSection from '../../components/home/ChoiceSection';
+import ChoiceSection from '../../components/home/ChoiceSectionCopy';
+import DataSection from '../../components/home/DataSectionCopy';
 import ArrowButton from '../../components/common/ArrowButton';
 import Container from '../../components/common/Container';
+import ExchangeTradeSectionCopy from '../../components/home/ExchangeTradeSectionCopy';
 
 const Learn: NextPage = () => {
   return (
