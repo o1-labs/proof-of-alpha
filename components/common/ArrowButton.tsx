@@ -4,6 +4,7 @@ interface arrowButtonPropTypes {
   arrowDirection: 'left' | 'right';
   navLink: string;
   arrowButtonStyle?: string;
+  onClick?: () => void;
 }
 /**
  * @param {string} arrowDirection The direction the arrow icon points either "left" | "right".
@@ -12,7 +13,8 @@ interface arrowButtonPropTypes {
  **/
 
 const ArrowButton = (props: arrowButtonPropTypes) => {
-  const { arrowDirection, navLink, arrowButtonStyle, ...otherProps } = props;
+  const { arrowDirection, navLink, arrowButtonStyle, onClick, ...otherProps } =
+    props;
 
   const arrowPath = {
     left: 'M15 19l-7-7 7-7',
@@ -20,7 +22,8 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
   };
 
   return (
-    <Link href={navLink} passHref>
+    // <Link href={navLink} passHref>
+    <button onClick={onClick}>
       <svg
         className={`w-14 hover:stroke-white md:w-40  ${arrowButtonStyle}`}
         fill="none"
@@ -35,7 +38,8 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
           d={`${arrowPath[arrowDirection]}`}
         />
       </svg>
-    </Link>
+    </button>
+    // </Link>
   );
 };
 
