@@ -4,7 +4,7 @@ const ExchangeTradeSectionCopy = () => {
       <p className="3xl:mb text-center text-xl text-white md:mt-0 md:text-left lg:text-4xl xl:mb-2 3xl:mb-5 3xl:text-6xl">
         Your Exchange Trades,
       </p>
-      <p className="xl:text- mb-8 text-center text-xl text-white md:text-left md:text-6xl lg:text-4xl 2xl:mb-10  3xl:mb-16 3xl:text-6xl">
+      <p className=" mb-8 text-center text-xl text-white md:text-left  lg:text-4xl 2xl:mb-10  3xl:mb-16 3xl:text-6xl">
         Certified On-chain
       </p>
 

@@ -62,18 +62,22 @@ const ExchangeTradeSection = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="relative  mx-auto  flex items-center justify-center  space-x-3 md:w-auto md:space-x-20">
           <div
-            className={`hidden w-1/2 md:block ${
-              copySection === 'exchange' ? '' : 'md:invisible'
-            } `}
+            className={`hidden w-1/2 lg:block ${
+              copySection === 'exchange' ? '' : 'lg:invisible'
+            }`}
           >
-            <div className="relative -ml-[560px]  hidden w-[1013px]  md:block">
+            <div className="relative hidden md:-ml-[390px] md:block md:w-[700px] 2xl:-ml-[560px]  2xl:w-[1013px]">
               <Image src={TwitterCard} alt="Twitter Card" priority />
             </div>
           </div>
           {/* old code location  */}
           <div className="flex h-screen flex-col items-center justify-center ">
             <div className="flex items-center  md:w-auto  md:space-x-24 ">
-              <div className="relative mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
+              <div
+                className={`relative mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40 ${
+                  copySection === 'exchange' ? 'invisible' : ''
+                }`}
+              >
                 <ArrowButton
                   arrowDirection="left"
                   onClick={() => handleBackwardClick(copySection)}
@@ -92,7 +96,11 @@ const ExchangeTradeSection = () => {
                   <Indicator page="second" />
                 </div>
               </div>
-              <div className="relative mb-14  flex  items-center  md:mb-0 md:h-40 md:w-40">
+              <div
+                className={`relative mb-14 flex items-center  md:mb-0 md:h-40 md:w-40 ${
+                  copySection === 'data' ? 'invisible' : ''
+                }`}
+              >
                 <ArrowButton
                   arrowDirection="right"
                   onClick={() => handleForwardClick(copySection)}
@@ -101,7 +109,6 @@ const ExchangeTradeSection = () => {
             </div>
           </div>
 
-          {/* old code location */}
           {/* end container */}
         </div>
       </div>
@@ -110,34 +117,3 @@ const ExchangeTradeSection = () => {
 };
 
 export default ExchangeTradeSection;
-
-// <div className="invisible relative mb-14 flex   w-14 items-center md:mb-0  md:hidden md:h-40 md:w-40">
-//   <ArrowButton arrowDirection="left" navLink="/#exchange" />
-// </div>
-// {/* container */}
-// <div className="mx-auto  flex h-screen w-full flex-col  justify-center md:items-center  md:space-y-5  xl:w-[500px] 2xl:w-99 3xl:w-6/12">
-//   <div className=" flex  flex-col ">
-//     {/* copy section */}
-//     <ExchangeTradeSectionCopy />
-//     {/* end copy section */}
-
-//     {/* indicator button group  */}
-//     <div className="mt-20 flex flex-col items-center justify-center space-y-9 md:mt-32 md:flex-row md:justify-between md:space-y-0">
-//       <Link href={'/start'} passHref>
-//         <Button
-//           buttonStyle="px-20 w-40 h-10 md:w-1/3 xl:h-12 text-xs 2xl:text-base 3xl:text-xl 3xl:w-64 3xl:h-16 2xl:w-40 2xl:h-12 xl:w-38"
-//           label="NEXT"
-//         />
-//       </Link>
-//       <Indicator page="first" />
-//     </div>
-//     {/* end indicator button group */}
-//   </div>
-// </div>
-
-// <div
-//   className=" relative mb-14 flex w-14  items-center md:mb-0 md:mr-0
-//     md:h-40 md:w-40 "
-// >
-//   <ArrowButton arrowDirection="right" navLink="/learn" />
-// </div>
