@@ -9,10 +9,9 @@ interface bottomNavButtonsPropTypes {
   bottomNavButtonsStyle?: string;
 }
 /**
- * @param {string} arrowDirection The direction the arrow icon points either "left" | "right".
  * @param {string} backNavLink Routing link string specifying where to navigate to when back button is clicked is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
  * @param {string} continueNavLink Routing link string specifying where to navigate to when continue button is clicked is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
- * @param {string} arrowButtonStyle Additional Tailwind CSS styles (optional).
+ * @param {string} bottomNavButtonsStyle Additional Tailwind CSS styles (optional).
  * @param {boolean} disabled Boolean to set button as disabled (optional).
  **/
 
