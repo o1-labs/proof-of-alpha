@@ -2,19 +2,17 @@ import Link from 'next/link';
 
 interface arrowButtonPropTypes {
   arrowDirection: 'left' | 'right';
-  navLink: string;
   arrowButtonStyle?: string;
   onClick?: () => void;
 }
 /**
  * @param {string} arrowDirection The direction the arrow icon points either "left" | "right".
- * @param {string} navLink Routing link string specifying where to navigate to when arrow is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
+ 
  * @param {string} arrowButtonStyle Additional Tailwind CSS styles (optional).
  **/
 
 const ArrowButton = (props: arrowButtonPropTypes) => {
-  const { arrowDirection, navLink, arrowButtonStyle, onClick, ...otherProps } =
-    props;
+  const { arrowDirection, arrowButtonStyle, onClick, ...otherProps } = props;
 
   const arrowPath = {
     left: 'M15 19l-7-7 7-7',
@@ -22,7 +20,6 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
   };
 
   return (
-    // <Link href={navLink} passHref>
     <button onClick={onClick}>
       <svg
         className={`w-14 hover:stroke-white md:w-40  ${arrowButtonStyle}`}
@@ -39,7 +36,6 @@ const ArrowButton = (props: arrowButtonPropTypes) => {
         />
       </svg>
     </button>
-    // </Link>
   );
 };
 
