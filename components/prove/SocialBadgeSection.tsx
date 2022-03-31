@@ -31,7 +31,7 @@ const SocialBadgeSection = () => {
   return (
     <Layout
       backGroundColor="grayGradient"
-      layoutStyle="min-h-fit 3xl:pb-[450px] pb-[400px] relative  "
+      layoutStyle="min-container min-h-fit 3xl:pb-[450px] pb-[400px] relative"
     >
       <div ref={yPosition}>
         <div className="" id="social"></div>

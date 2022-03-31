@@ -18,7 +18,7 @@ const Header = () => {
       <>
         {/* Allows the user to click the header display to navigate to Auro wallet on the chromestore when no wallet is installed */}
         <a
-          className={`${
+          className={`text-xs md:text-base ${
             status === 'red' ? 'hover:underline' : 'pointer-events-none '
           }`}
           href="https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae"
@@ -27,7 +27,7 @@ const Header = () => {
           <div>{accountHeaderDisplay}</div>
         </a>
         <div
-          className={`${statusDotClassName[status]} z-99 mt-1 ml-3 h-4 w-4 rounded-full`}
+          className={`${statusDotClassName[status]} z-99 ml-2 h-3 w-3 rounded-full md:ml-3 md:mt-1 md:h-4 md:w-4 `}
         ></div>
       </>
     );
@@ -35,12 +35,12 @@ const Header = () => {
   return (
     <header className="">
       <div className="relative flex items-center justify-center md:py-5 2xl:py-9 ">
-        <div className="md:w-20 2xl:w-28">
+        <div className="w-18 md:w-20 2xl:w-28">
           <Image src={ZKLogo} alt="zk logo" />
         </div>
 
         <div className="z-50 flex flex-col justify-end">
-          <div className="absolute  mt-8  flex leading-6 tracking-xlwidest text-custom-gray-light md:right-20 md:text-base 2xl:right-40 2xl:text-xl ">
+          <div className="absolute  right-20  mt-8 flex leading-6 tracking-xlwidest text-custom-gray-light md:right-20 md:text-base 2xl:right-40 2xl:text-xl ">
             {renderAuroHeader()}
           </div>
         </div>

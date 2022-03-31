@@ -35,7 +35,7 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
 
   return (
     <div
-      className={`flex justify-between md:pt-10 2xl:pt-12 ${auroBottomNavButtonsStyle}`}
+      className={`flex justify-between pt-10 2xl:pt-12 ${auroBottomNavButtonsStyle}`}
     >
       <Link href={`${backNavLink}`} passHref>
         <TransparentButton

@@ -28,13 +28,13 @@ const BottomNavButtons = (props: bottomNavButtonsPropTypes) => {
     <div className={`flex justify-between pt-2  ${bottomNavButtonsStyle}`}>
       <Link href={`${backNavLink}`} passHref>
         <TransparentButton
-          buttonStyle="w-3/12 text-xs 2xl:text-base 3xl:text-xl"
+          buttonStyle="lg:w-3/12  w-4/12 text-[.65em] lg:text-sm 2xl:text-base 3xl:text-xl"
           label="<< &nbsp;BACK"
         />
       </Link>
       <Link href={`${continueNavLink}`} passHref>
         <Button
-          buttonStyle="w-3/12 text-xs 2xl:text-base 3xl:text-xl"
+          buttonStyle="lg:w-4/12 text-[.65em] lg:text-sm w-4/12 2xl:text-base 3xl:text-xl"
           label="CONTINUE &nbsp;>>"
           disabled={disabled}
         />

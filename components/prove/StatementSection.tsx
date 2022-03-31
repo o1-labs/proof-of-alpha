@@ -8,16 +8,19 @@ import Container from '../common/Container';
 
 const StatementSection = () => {
   return (
-    <Layout backGroundColor="grayGradient" layoutStyle="h-1.5*screen relative">
+    <Layout
+      backGroundColor="grayGradient"
+      layoutStyle="min-container h-1.5*screen relative"
+    >
       <div className="relative" id="trade"></div>
 
       <Container containerStyle="pt-32">
         <div className=" absolute top-0 right-0 w-6/12 2xl:w-7/12 3xl:w-7/12">
           <Image src={StatementTopStamp} alt="Stamp" priority />
         </div>
-        <div className="flex justify-between  ">
+        <div className="ml-20 flex justify-between md:ml-0 ">
           <div className="flex  flex-col  items-center 3xl:space-y-4 ">
-            <div className="relative flex flex-col items-center justify-center 3xl:w-full">
+            <div className="relative flex min-w-[320px] flex-col items-center justify-center 3xl:w-full">
               <ProofOfAlphaStatement />
             </div>
           </div>

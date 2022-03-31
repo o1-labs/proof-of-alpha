@@ -60,10 +60,13 @@ const Verify: NextPage = () => {
   };
 
   return (
-    <Layout backGroundColor="gradient" layoutStyle="h-1.5*screen ">
+    <Layout
+      backGroundColor="gradient"
+      layoutStyle="min-w-[1200px] h-1.5*screen relative"
+    >
       <Header />
       <div className="flex   flex-col items-center">
-        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12 ">
+        <div className="container flex  h-screen w-7/12  flex-col  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
           <ProgressBar stage="4th" />
 
           <div className="flex flex-col space-y-6 2xl:space-y-8 3xl:space-y-8">
@@ -131,14 +134,12 @@ const Verify: NextPage = () => {
               />
 
               <div className="flex flex-col items-center justify-center space-y-6 pt-6">
-                {/* <Link href={'/verify/configure'} passHref> */}
                 <Button
                   buttonStyle="w-full text-xs 2xl:text-base 3xl:text-xl"
                   label="CONTINUE&nbsp; >>"
                   disabled={isError}
                   onClick={handleButtonClick}
                 />
-                {/* </Link> */}
 
                 <Link href={'/auro/faucet'} passHref>
                   <TransparentButton
@@ -148,7 +149,7 @@ const Verify: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="absolute right-36 mt-8  w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12">
+            <div className="absolute right-36 mt-8 w-4/12 md:right-36  2xl:right-20 2xl:mt-20 2xl:w-5/12">
               <Image src={APIsettings} alt="API key settings" />
             </div>
           </div>

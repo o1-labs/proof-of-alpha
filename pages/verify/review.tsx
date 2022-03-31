@@ -36,7 +36,7 @@ const Review: NextPage = () => {
   return (
     <Layout
       backGroundColor="gradient"
-      layoutStyle="h-1.75*screen min-h-fit pb-30"
+      layoutStyle="min-container h-1.75*screen min-h-fit pb-30"
     >
       <Header />
       <div className="flex min-h-fit flex-col items-center">

@@ -12,11 +12,11 @@ import AuroBottomNavButtons from '../../components/auro/AuroBottomNavButtons';
 
 const Auro: NextPage = () => {
   return (
-    <Layout backGroundColor="gradient">
+    <Layout backGroundColor="gradient" layoutStyle="min-container">
       <Header />
 
       <div className="flex flex-col items-center">
-        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12">
+        <div className="container flex  h-screen w-7/12 flex-col md:w-7/12  2xl:w-7/12  3xl:w-6/12">
           <ProgressBar stage="2nd" />
 
           <div className="mb-2 flex h-screen  flex-col md:space-y-2 2xl:space-y-10 ">

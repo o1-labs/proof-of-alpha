@@ -10,13 +10,13 @@ import AuroBottomNavButtons from '../../components/auro/AuroBottomNavButtons';
 
 const Auro: NextPage = () => {
   return (
-    <Layout backGroundColor="gradient">
+    <Layout backGroundColor="gradient" layoutStyle="min-container">
       <Header />
-      <div className="flex  flex-col items-center">
-        <div className="container flex h-screen  flex-col md:w-6/12 2xl:w-7/12  3xl:w-6/12">
+      <div className="flex flex-col items-center">
+        <div className=" flex h-screen w-7/12 min-w-fit flex-col md:w-7/12 2xl:w-7/12  3xl:w-6/12">
           <ProgressBar stage="1st" />
 
-          <div className="flex h-screen w-full flex-col md:space-y-4 2xl:space-y-10 ">
+          <div className="flex h-screen w-full flex-col space-y-3 md:space-y-4 2xl:space-y-10 ">
             <SubHeadLine text="INSTALL BROWSER WALLET" />
             <HeadLine text="Install Auro Wallet for Chrome" />
             <p className="pb-3 font-light  md:text-sm 2xl:text-1.5xl 3xl:text-3xl">

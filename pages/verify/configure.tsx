@@ -14,14 +14,14 @@ import BottomNavButtons from '../../components/verify/BottomNavButtons';
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('30');
   return (
-    <Layout backGroundColor="gradient">
+    <Layout backGroundColor="gradient" layoutStyle="min-container">
       <Header />
 
       <div className="flex flex-col items-center">
-        <div className="3xl:w-6/12 container  flex h-screen w-7/12 flex-col  md:w-6/12  2xl:w-7/12">
+        <div className="container flex  h-screen w-7/12 flex-col md:w-6/12  2xl:w-7/12  3xl:w-6/12">
           <ProgressBar stage="5th" />
 
-          <div className="3xl:space-y-14 flex h-screen flex-col space-y-5 text-white 2xl:space-y-10">
+          <div className="flex h-screen flex-col space-y-5 text-white 2xl:space-y-10 3xl:space-y-14">
             <SubHeadLine text="CONFIGURE SETTINGS" />
 
             <HeadLine>
@@ -35,8 +35,8 @@ const Configure: NextPage = () => {
               setActiveButton={setActiveButton}
             />
 
-            <div className="3xl:mr-40 my-8 mr-2 flex  items-center justify-center 2xl:mr-20 ">
-              <span className="2xl:text-1.5xl mr-2  cursor-default text-sm leading-loose hover:underline">
+            <div className="my-8 mr-2 flex items-center  justify-center 2xl:mr-20 3xl:mr-40 ">
+              <span className="mr-2 cursor-default  text-sm leading-loose hover:underline 2xl:text-1.5xl">
                 Maximum of 500 trade fills
               </span>
 

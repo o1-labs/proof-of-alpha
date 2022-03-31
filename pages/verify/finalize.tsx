@@ -59,7 +59,7 @@ const Finalize: NextPage = () => {
     }
   };
   return (
-    <Layout backGroundColor="gradient" layoutStyle="h-2*screen">
+    <Layout backGroundColor="gradient" layoutStyle="min-container h-2*screen">
       <Header />
 
       <div className="flex flex-col items-center">
