@@ -61,7 +61,11 @@ const ExchangeTradeSection = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div className="relative  mx-auto  flex items-center justify-center  space-x-3 md:w-auto md:space-x-20">
-          <div className="hidden w-1/2 md:block">
+          <div
+            className={`hidden w-1/2 md:block ${
+              copySection === 'exchange' ? '' : 'md:invisible'
+            } `}
+          >
             <div className="relative -ml-[560px]  hidden w-[1013px]  md:block">
               <Image src={TwitterCard} alt="Twitter Card" priority />
             </div>
@@ -72,7 +76,6 @@ const ExchangeTradeSection = () => {
               <div className="relative mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40">
                 <ArrowButton
                   arrowDirection="left"
-                  navLink="/#exchange"
                   onClick={() => handleBackwardClick(copySection)}
                 />
               </div>
@@ -92,7 +95,6 @@ const ExchangeTradeSection = () => {
               <div className="relative mb-14  flex  items-center  md:mb-0 md:h-40 md:w-40">
                 <ArrowButton
                   arrowDirection="right"
-                  navLink="/learn/data"
                   onClick={() => handleForwardClick(copySection)}
                 />
               </div>
