@@ -70,13 +70,13 @@ const ExchangeTradeSection = () => {
               copySection === 'exchange' ? '' : 'lg:invisible'
             }`}
           >
-            <div className="hidden md:-ml-[200px] md:block md:w-[300px]  xl:-ml-[390px]  xl:w-[700px] 2xl:-ml-[560px]  2xl:w-[1013px]">
+            <div className="hidden md:-ml-[200px] md:block md:w-[300px]  xl:-ml-[365px]  xl:w-[650px] 3xl:-ml-[560px]  3xl:w-[1013px]">
               <Image src={TwitterCard} alt="Twitter Card" priority />
             </div>
           </div>
-          {/* old code location  */}
+
           <div className="flex h-screen flex-col items-center justify-center ">
-            <div className="flex items-center  md:w-auto md:space-x-12 xl:space-x-24 ">
+            <div className="flex items-center  md:w-auto md:space-x-12 2xl:space-x-24 ">
               <div
                 className={` mb-14   flex w-14 items-center  md:mb-0 md:h-40 md:w-40 ${
                   copySection === 'exchange' ? 'invisible' : ''
