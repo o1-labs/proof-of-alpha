@@ -79,7 +79,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                   <Link href={'/auro'} passHref>
                     <Button
                       buttonStyle="w-10/12 h-10 text-xs mx-auto"
-                      label="PROCEED ANYWAYS"
+                      label="PROCEED ANYWAY"
                     />
                   </Link>
                 </div>
