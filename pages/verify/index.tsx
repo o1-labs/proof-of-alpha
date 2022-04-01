@@ -112,7 +112,7 @@ const Verify: NextPage = () => {
               <p
                 className={`${
                   isError ? 'visible' : 'hidden'
-                } bg-gray-200 py-2 pl-4  text-red-700`}
+                } border-2 border-red-700 bg-gray-200 py-2  pl-4 text-[.6rem] text-red-700 2xl:text-base 3xl:text-lg`}
               >
                 API key & secret are required
               </p>
