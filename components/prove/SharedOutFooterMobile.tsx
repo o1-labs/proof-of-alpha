@@ -4,7 +4,7 @@ import MinaPrimary from '../../public/assets/prove/mina-icon-primary.svg';
 
 const SharedOutFooterMobile = () => {
   return (
-    <div className="fixed bottom-0 z-40 h-30 w-full bg-[#79797940]/[.9] md:hidden">
+    <div className="fixed bottom-0 z-40 h-18 w-full bg-[rgba(50,50,50,.6)] md:hidden">
       <div className="flex h-full items-center justify-around">
         <div className="flex space-x-1">
           <div className="flex w-9">
@@ -28,8 +28,7 @@ const SharedOutFooterMobile = () => {
         >
           <Button
             label="LEARN MORE"
-            buttonStyle="w-28  text-[.5rem]"
-            secondary={true}
+            buttonStyle="text-[.5em] w-28  hover:bg-white hover:bg-opacity-10"
           />
         </a>
       </div>
