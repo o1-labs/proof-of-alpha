@@ -12,13 +12,13 @@ const SharedOutFooterMobile = () => {
           </div>
           <div className="flex flex-col space-y-1  text-center text-[.25rem] tracking-xlwidest text-[#FF603B]">
             <p className="mt-[.3rem]">MADE</p>
-            <p>ON</p>
+            <p className="text-left">ON</p>
             <p>MINA</p>
           </div>
         </div>
 
         <p className="w-3/12 text-center  text-[.6rem] tracking-widest  ">
-          Zero-knowledge zkApps.
+          Zero-Knowledge zkApps
         </p>
         <a
           className="z-50"
