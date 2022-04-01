@@ -24,7 +24,6 @@ const ExchangeTradeSection = () => {
     switch (section) {
       case 'exchange':
         return <ExchangeTradeSectionCopy />;
-        break;
       case 'choice':
         return <ChoiceSectionCopy />;
       case 'data':
@@ -38,7 +37,6 @@ const ExchangeTradeSection = () => {
     switch (section) {
       case 'exchange':
         return setCopySection('choice');
-        break;
       case 'choice':
         return setCopySection('data');
       default:
@@ -65,11 +63,7 @@ const ExchangeTradeSection = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div className="mx-auto  flex items-center justify-center  space-x-3 md:w-auto md:space-x-5 2xl:space-x-12">
-          <div
-            className={`hidden w-1/2 lg:block ${
-              copySection === 'exchange' ? '' : 'lg:invisible'
-            }`}
-          >
+          <div className="hidden w-1/2 lg:block">
             <div className="hidden md:-ml-[200px] md:block md:w-[300px]  xl:-ml-[365px]  xl:w-[650px] 3xl:-ml-[560px]  3xl:w-[1013px]">
               <Image src={TwitterCard} alt="Twitter Card" priority />
             </div>

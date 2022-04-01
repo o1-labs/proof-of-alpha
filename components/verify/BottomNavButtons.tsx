@@ -34,7 +34,7 @@ const BottomNavButtons = (props: bottomNavButtonsPropTypes) => {
       </Link>
       <Link href={`${continueNavLink}`} passHref>
         <Button
-          buttonStyle="lg:w-4/12 text-[.65em] lg:text-sm w-4/12 2xl:text-base 3xl:text-xl"
+          buttonStyle="lg:w-4/12 text-[.65em] lg:text-sm w-4/12 2xl:w-3/12 2xl:text-base 3xl:text-xl"
           label="CONTINUE &nbsp;>>"
           disabled={disabled}
         />
