@@ -23,7 +23,7 @@ const ShareButton = (props: shareButtonPropTypes) => {
       {...otherProps}
     >
       <div className="flex flex-col">
-        <p className="text-left text-sm">SHARE IT</p>
+        <p className="text-left text-sm">{label}</p>
 
         <p className="-pl-2  text-left md:text-[6px] xl:text-[8px]">
           http://urlz.here/3dfdGs
