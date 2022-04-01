@@ -26,18 +26,24 @@ const ProofOfAlphaStatement = () => {
     // setTrades(TradeData.trades as Trade[]);
   }, []);
   return (
-    <div className="3xl:px-28 3xl:py-20 z-10 w-full bg-[#404040E5] px-6 py-8 text-center md:py-16 md:px-20 md:text-left">
-      <p className="tracking-xlwidest 3xl:text-2xl 3xl:mb-4 mb-2 text-center text-xl md:text-left md:text-base">
+    <div className="z-10 w-full bg-[#404040E5] px-6 py-8 text-center md:py-16 md:px-20 md:text-left 3xl:px-28 3xl:py-20">
+      <p className="mb-2 text-center text-xl tracking-xlwidest md:text-left md:text-base 3xl:mb-4 3xl:text-2xl">
         <span className="block  md:inline">PROOF-OF-ALPHA</span>{' '}
         <span className="block font-extralight md:inline">STATEMENT</span>
       </p>
-      <p className="3xl:text-lg 3xl:mb-12 mb-10 text-xs text-[.5rem] font-extralight tracking-wider md:tracking-wide">
+      <p className="mb-10 text-xs text-[.5rem] font-extralight tracking-wider md:tracking-wide 3xl:mb-12 3xl:text-lg">
         CERTIFIED AND VALIDATED ON-CHAIN
       </p>
       <TradeStatement trades={trades} proofStatement />
-      <p className="md:tracking-xlwidest 3xl:text-base mt-20 text-center text-[.5rem] font-thin tracking-widest md:text-sm md:font-normal">
-        VALIDATED ON THE MINA BLOCKCHAIN
-      </p>
+      <a
+        className="hover:underline"
+        target="_blank"
+        href={'https://minaprotocol.com/'}
+      >
+        <p className="mt-20 text-center text-[.5rem] font-thin tracking-widest md:text-sm md:font-normal md:tracking-xlwidest 3xl:text-base">
+          VALIDATED ON THE MINA BLOCKCHAIN
+        </p>
+      </a>
     </div>
   );
 };
