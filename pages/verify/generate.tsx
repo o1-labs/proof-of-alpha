@@ -57,7 +57,7 @@ const Generate: NextPage = () => {
               You're generating a zero-knowledge proof revealing
             </p>
             <p className="text-base font-normal 2xl:text-2xl 3xl:text-3xl 3xl:leading-11">
-              ${cumulativeProfits}% cumulative returns.
+              {cumulativeProfits}% cumulative returns.
             </p>
           </div>
           <div>
