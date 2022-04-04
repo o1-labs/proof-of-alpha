@@ -58,7 +58,7 @@ const SocialBadgeSection = () => {
             </a>
 
             <div className="">
-              <div className="ml-[185px] flex w-6/12 lg:ml-[225px] 2xl:ml-0 2xl:w-full  3xl:w-full ">
+              <div className="ml-[195px] flex w-6/12 md:ml-[210px] lg:ml-[225px] 2xl:ml-0 2xl:w-full  3xl:w-full ">
                 <TwitterCardProof />
               </div>
               <NavButtonGroup
