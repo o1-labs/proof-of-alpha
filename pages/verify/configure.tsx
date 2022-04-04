@@ -14,7 +14,7 @@ import BottomNavButtons from '../../components/verify/BottomNavButtons';
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('30');
   return (
-    <Layout backGroundColor="gradient" layoutStyle="min-container">
+    <Layout backGroundColor="gradient" layoutStyle="min-container h-screen">
       <Header />
 
       <div className="flex flex-col items-center">
