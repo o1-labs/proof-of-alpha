@@ -11,7 +11,7 @@ const ProofSection = () => {
   return (
     <Layout
       backGroundColor="blue"
-      layoutStyle="h-.9*screen md:h-screen flex -mt-3 "
+      layoutStyle="h-.85*screen md:h-screen flex -mt-3 "
     >
       <Container containerStyle="">
         <div

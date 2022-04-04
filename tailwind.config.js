@@ -77,7 +77,7 @@ module.exports = {
         14: '4rem'
       },
       height: (_theme) => ({
-        '.75*screen': '75vh',
+        '.85*screen': '85vh',
         '.9*screen': '90vh',
         '1.1*screen': '110vh',
         '1.25*screen': '125vh',
