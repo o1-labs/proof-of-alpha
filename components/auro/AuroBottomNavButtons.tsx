@@ -14,8 +14,8 @@ interface auroBottomNavButtonsPropTypes {
 }
 /**
  * @param {string} arrowDirection The direction the arrow icon points either "left" | "right".
- * @param {string} backNavLink Routing link string specifying where to navigate to when back button is clicked is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
- * @param {string} continueNavLink Routing link string specifying where to navigate to when continue button is clicked is clicked ie '/start' https://nextjs.org/docs/api-reference/next/link .
+ * @param {string} backNavLink Routing link string specifying where to navigate to when back button is clicked is clicked ie '/get-started' https://nextjs.org/docs/api-reference/next/link .
+ * @param {string} continueNavLink Routing link string specifying where to navigate to when continue button is clicked is clicked ie '/get-started' https://nextjs.org/docs/api-reference/next/link .
  * @param {boolean} externalButton Boolean specifing if there is an externalLink middle button.
  * @param {string} externalButtonNavLink Link url string specifying where to navigate externally when middle button is clicked ie 'https://faucet.minaprotocol.com'.
  * @param {string} externalButtonLabel String label for middle external link button.

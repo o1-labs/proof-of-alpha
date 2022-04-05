@@ -39,7 +39,7 @@ const TradeHistorySection = () => {
             </div>
             <div className=" z-10">
               <div className="mx-auto flex h-auto w-64 flex-col items-center  justify-center space-y-4 pt-6 md:mx-0 md:mt-4 md:w-3/4  md:flex-row md:justify-start xl:w-2/3">
-                <Link href={'/start'} passHref>
+                <Link href={'/get-started'} passHref>
                   <Button
                     buttonStyle="px-12 xl:px-4 3xl:w-64 3xl:h-16 2xl:w-40 2xl:h-12 xl:w-44 w-38 h-10 xl:h-12 text-xs 2xl:text-base 3xl:text-xl"
                     label="LAUNCH APP"

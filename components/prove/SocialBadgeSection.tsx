@@ -74,7 +74,7 @@ const SocialBadgeSection = () => {
                 <TweetButton label="TWEET IT" buttonStyle="w-full " />
               </a>
             </div>
-            <Link href={'/start'} passHref>
+            <Link href={'/get-started'} passHref>
               <p className="cursor-pointer  text-sm text-[#00FF19] hover:underline">
                 PROVE MORE PROFITS
               </p>

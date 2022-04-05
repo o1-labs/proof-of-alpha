@@ -31,7 +31,7 @@ const Auro: NextPage = () => {
               />
             </div>
             <AuroBottomNavButtons
-              backNavLink="/start"
+              backNavLink="/get-started"
               externalButton
               externalButtonNavLink="https://chrome.google.com/webstore/detail/auro-walletmina-protocol/cnmamaachppnkjgnildpdmkaakejnhae"
               externalButtonLabel="GET AURO"
