@@ -6,9 +6,9 @@ import TradeTwitter from '../../public/assets/start/trade-history-with-twitter@2
 import Layout from '../../components/common/Layout';
 import Container from '../../components/common/Container';
 import Button from '../../components/common/Button';
-import Header from '../../components/start/Header';
-import Modal from '../../components/start/Modal';
-import CardGroupStart from '../../components/start/CardGroupStart';
+import Header from '../../components/get-started/Header';
+import Modal from '../../components/get-started/Modal';
+import CardGroupStart from '../../components/get-started/CardGroupStart';
 import { useRouter } from 'next/router';
 
 const Start: NextPage = () => {

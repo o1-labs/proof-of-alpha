@@ -1,7 +1,7 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
-import Button from '../../components/common/Button';
+import Button from '../common/Button';
 import Link from 'next/link';
 
 interface modalPropTypes {
