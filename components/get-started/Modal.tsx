@@ -76,7 +76,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                     Auro Wallet for Google Chrome on desktop is required to
                     complete this experience.
                   </p>
-                  <Link href={'/auro'} passHref>
+                  <Link href={'/step/install-auro'} passHref>
                     <Button
                       buttonStyle="w-10/12 h-10 text-xs mx-auto"
                       label="PROCEED ANYWAY"

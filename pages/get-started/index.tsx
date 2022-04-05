@@ -19,7 +19,7 @@ const Start: NextPage = () => {
     if (window.innerWidth < 800) {
       setIsModalOpen(true);
     } else {
-      router.push('/auro');
+      router.push('/step/install-auro');
     }
   };
   return (

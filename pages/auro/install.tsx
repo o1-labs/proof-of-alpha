@@ -36,7 +36,7 @@ const Auro: NextPage = () => {
               />
             </div>
             <AuroBottomNavButtons
-              backNavLink="/auro"
+              backNavLink="/step/install-auro"
               externalButton={false}
               continueNavLink="/auro/faucet"
             />
