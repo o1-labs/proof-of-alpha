@@ -48,10 +48,7 @@ const Review: NextPage = () => {
             <div className="flex justify-center">
               <TradeStatement trades={trades} />
             </div>
-            <BottomNavButtons
-              backNavLink="/step/4"
-              continueNavLink="/verify/finalize"
-            />
+            <BottomNavButtons backNavLink="/step/4" continueNavLink="/step/6" />
           </div>
         </div>
       </div>
