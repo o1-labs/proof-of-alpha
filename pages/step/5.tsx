@@ -9,7 +9,7 @@ import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';
 import Layout from '../../components/common/Layout';
-import BottomNavButtons from '../../components/verify/BottomNavButtons';
+import VerifyBottomNavButtons from '../../components/common/VerifyBottomNavButtons';
 
 const Review: NextPage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -48,7 +48,10 @@ const Review: NextPage = () => {
             <div className="flex justify-center">
               <TradeStatement trades={trades} />
             </div>
-            <BottomNavButtons backNavLink="/step/4" continueNavLink="/step/6" />
+            <VerifyBottomNavButtons
+              backNavLink="/step/4"
+              continueNavLink="/step/6"
+            />
           </div>
         </div>
       </div>

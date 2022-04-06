@@ -1,4 +1,4 @@
-import ProveError from '../../components/prove/ProveError';
+import ProveError from '../../components/statement/ProveError';
 const ProveNext = () => {
   return <ProveError />;
 };

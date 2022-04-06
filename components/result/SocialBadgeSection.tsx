@@ -13,12 +13,9 @@ import TopStamp from '../../public/assets/common/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
 import { BASE_URL } from '../../utils';
 
-const SocialBadgeSection = () => {
+const SocialBadgeSection = ({ txid }) => {
   const yPosition = useRef(null);
   const [activeButton, setActiveButton] = useState<string>('socialBadge');
-
-  const router = useRouter();
-  const { txid } = router.query;
 
   useEffect(() => {
     const onScroll = () => {

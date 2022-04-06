@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import TransparentButton from '../common/TransparentButton';
-import Button from '../common/Button';
+import TransparentButton from './TransparentButton';
+import Button from './Button';
 
 interface bottomNavButtonsPropTypes {
   backNavLink: string;

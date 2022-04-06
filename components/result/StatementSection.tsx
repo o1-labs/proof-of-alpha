@@ -6,7 +6,7 @@ import ShareButton from './ShareButton';
 import ProofOfAlphaStatement from './ProofOfAlphaStatement';
 import Container from '../common/Container';
 
-const StatementSection = () => {
+const StatementSection = ({ txid }) => {
   return (
     <Layout
       backGroundColor="grayGradient"
@@ -26,10 +26,7 @@ const StatementSection = () => {
           </div>
           <div className=" flex flex-col items-center space-y-7 pl-28 ">
             <p className="tracking-widest">SHARE YOUR STATEMENT</p>
-            <Link
-              href={'/statement/2mzdZn7fSGfnJFQXHhamoCyqs56BS5GJKj'}
-              passHref
-            >
+            <Link href={`/statement/${txid}`} passHref>
               <ShareButton label="COPY LINK" />
             </Link>
           </div>

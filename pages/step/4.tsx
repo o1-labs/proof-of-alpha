@@ -9,7 +9,7 @@ import ToolTip from '../../components/step/4/ToolTip';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';
-import BottomNavButtons from '../../components/verify/BottomNavButtons';
+import VerifyBottomNavButtons from '../../components/common/VerifyBottomNavButtons';
 
 const Configure: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('30');
@@ -43,7 +43,10 @@ const Configure: NextPage = () => {
               <ToolTip />
             </div>
 
-            <BottomNavButtons backNavLink="/step/3" continueNavLink="/step/5" />
+            <VerifyBottomNavButtons
+              backNavLink="/step/3"
+              continueNavLink="/step/5"
+            />
           </div>
         </div>
       </div>

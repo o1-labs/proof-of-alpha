@@ -11,7 +11,7 @@ import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';
 import Layout from '../../components/common/Layout';
-import BottomNavButtons from '../../components/verify/BottomNavButtons';
+import VerifyBottomNavButtons from '../../components/common/VerifyBottomNavButtons';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');
@@ -104,7 +104,7 @@ const Finalize: NextPage = () => {
 
           <div className="flex flex-col  xl:pt-90  2xl:space-y-4 3xl:space-y-7 ">
             {renderErrors(errorType)}
-            <BottomNavButtons
+            <VerifyBottomNavButtons
               backNavLink="/step/5"
               continueNavLink="/step/send-transaction"
               disabled={isDisabled}

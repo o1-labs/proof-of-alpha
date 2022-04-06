@@ -5,7 +5,7 @@ import Layout from '../../components/common/Layout';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 import TopStamp from '../../public/assets/common/prove-stamp.png';
 import ProofOfAlphaStatement from '../../components/result/ProofOfAlphaStatement';
-import InfoPanel from '../../components/prove/InfoPanel';
+import InfoPanel from '../../components/statement/InfoPanel';
 import Container from '../../components/common/Container';
 import {
   addQueryParamsToURL,
@@ -14,8 +14,8 @@ import {
   renderDates,
   trades
 } from '../../utils';
-import SharedOutFooter from '../../components/prove/SharedOutFooter';
-import SharedOutFooterMobile from '../../components/prove/SharedOutFooterMobile';
+import SharedOutFooter from '../../components/statement/SharedOutFooter';
+import SharedOutFooterMobile from '../../components/statement/SharedOutFooterMobile';
 
 const Shared: NextPage = () => {
   const getImageUrl = () => {
