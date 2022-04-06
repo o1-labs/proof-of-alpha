@@ -49,7 +49,7 @@ const Review: NextPage = () => {
               <TradeStatement trades={trades} />
             </div>
             <BottomNavButtons
-              backNavLink="/verify/configure"
+              backNavLink="/step/4"
               continueNavLink="/verify/finalize"
             />
           </div>

@@ -1,4 +1,4 @@
-import LightButton from '../common/LightButton';
+import LightButton from '../../common/LightButton';
 
 interface dateRangeGroupProps {
   activeButton: string;

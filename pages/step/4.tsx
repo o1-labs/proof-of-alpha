@@ -3,9 +3,9 @@ import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
 
-import DateRangeGroup from '../../components/verify/DateRangeGroup';
-import TokenPairGroup from '../../components/verify/TokenPairGroup';
-import ToolTip from '../../components/verify/ToolTip';
+import DateRangeGroup from '../../components/step/4/DateRangeGroup';
+import TokenPairGroup from '../../components/step/4/TokenPairGroup';
+import ToolTip from '../../components/step/4/ToolTip';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';

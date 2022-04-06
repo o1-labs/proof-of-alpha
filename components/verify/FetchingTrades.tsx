@@ -7,9 +7,9 @@ import Button from '../../components/common/Button';
 
 const FetchingTrades = () => {
   return (
-    <div className="flex min-h-screen bg-background bg-cover bg-no-repeat justify-center">
-      <div className="flex container  h-screen justify-center">
-        <div className="flex flex-col space-y-6 2xl:space-y-14 text-white mt-10 2xl:mt-20 3xl:mt-36">
+    <div className="flex min-h-screen justify-center bg-background bg-cover bg-no-repeat">
+      <div className="container flex  h-screen justify-center">
+        <div className="mt-10 flex flex-col space-y-6 text-white 2xl:mt-20 2xl:space-y-14 3xl:mt-36">
           <div className="flex justify-center">
             <LoadingSpinner label="FETCHING TRADES" />
           </div>
