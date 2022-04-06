@@ -1,9 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import type { NextPage } from 'next';
-import Link from 'next/link';
-import LoadingSpinner from '../../components/common/LoadingSpinner';
-import ProofGeneratedConfirmation from '../../components/verify/ProofGeneratedConfirmation';
-import Button from '../../components/common/Button';
+import LoadingSpinner from '../../common/LoadingSpinner';
 
 const FetchingTrades = () => {
   return (

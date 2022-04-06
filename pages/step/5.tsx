@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
 import Header from '../../components/common/Header';
-import FetchingTrades from '../../components/verify/FetchingTrades';
+import FetchingTrades from '../../components/step/5/FetchingTrades';
 import TradeStatement from '../../components/common/TradeStatement';
 import { trades } from '../../utils';
 import { Trade } from '../../types';
