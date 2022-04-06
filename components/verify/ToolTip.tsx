@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import InfoIcon from '../../public/assets/verify/info-icon.svg';
+import InfoIcon from '../../public/assets/common/info-icon.svg';
 
 const ToolTip = () => {
   return (

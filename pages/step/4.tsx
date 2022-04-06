@@ -44,7 +44,7 @@ const Configure: NextPage = () => {
             </div>
 
             <BottomNavButtons
-              backNavLink="/verify"
+              backNavLink="/step/3"
               continueNavLink="/verify/review"
             />
           </div>
