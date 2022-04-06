@@ -6,7 +6,7 @@ import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import Layout from '../../components/common/Layout';
-import AuroBottomNavButtons from '../../components/auro/AuroBottomNavButtons';
+import AuroBottomNavButtons from '../../components/common/AuroBottomNavButtons';
 import useMinaProvider from '../../hooks/useMinaProvider';
 
 const Faucet: NextPage = () => {

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import TransparentButton from '../common/TransparentButton';
+import TransparentButton from './TransparentButton';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.svg';
-import Button from '../common/Button';
+import Button from './Button';
 
 interface auroBottomNavButtonsPropTypes {
   backNavLink: string;

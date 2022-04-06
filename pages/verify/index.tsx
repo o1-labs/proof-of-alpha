@@ -141,7 +141,7 @@ const Verify: NextPage = () => {
                   onClick={handleButtonClick}
                 />
 
-                <Link href={'/auro/faucet'} passHref>
+                <Link href={'/step/2'} passHref>
                   <TransparentButton
                     buttonStyle="text-center text-xs 2xl:text-base 3xl:text-xl"
                     label="<< &nbsp;BACK"

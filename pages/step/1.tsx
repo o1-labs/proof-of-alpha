@@ -7,7 +7,7 @@ import AuroTestnet from '../../public/assets/step/1/auro-testnet@2x.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
-import AuroBottomNavButtons from '../../components/auro/AuroBottomNavButtons';
+import AuroBottomNavButtons from '../../components/common/AuroBottomNavButtons';
 
 const Auro: NextPage = () => {
   return (
@@ -37,7 +37,7 @@ const Auro: NextPage = () => {
             <AuroBottomNavButtons
               backNavLink="/step/install-auro"
               externalButton={false}
-              continueNavLink="/auro/faucet"
+              continueNavLink="/step/2"
             />
           </div>
         </div>
