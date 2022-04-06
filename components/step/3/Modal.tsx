@@ -2,8 +2,8 @@ import { Fragment, useState, Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import { Dialog, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
-import BinanceModal from '../../public/assets/verify/binance-modal@2x.png';
-import ExportCursor from '../../public/assets/verify/export-cursor.png';
+import BinanceModal from '../../../public/assets/step/3/binance-modal.png';
+import ExportCursor from '../../../public/assets/step/3/export-cursor.png';
 
 interface modalPropTypes {
   isModalOpen: boolean;
@@ -66,6 +66,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                           layout="responsive"
                           src={BinanceModal}
                           alt="binance"
+                          priority
                         />
                         <div className="absolute top-5 left-10 h-8 w-8 2xl:top-8  2xl:left-14 2xl:h-10 2xl:w-10 3xl:top-10 3xl:left-20">
                           <Image

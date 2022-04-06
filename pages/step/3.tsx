@@ -9,9 +9,9 @@ import Button from '../../components/common/Button';
 import TransparentButton from '../../components/common/TransparentButton';
 import Input from '../../components/common/Input';
 import Header from '../../components/common/Header';
-import InfoIcon from '../../public/assets/verify/info-icon.svg';
-import APIsettings from '../../public/assets/verify/api-key-settings.png';
-import Modal from '../../components/verify/Modal';
+import InfoIcon from '../../public/assets/step/3/info-icon.svg';
+import APIsettings from '../../public/assets/step/3/api-key-settings.png';
+import Modal from '../../components/step/3/Modal';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
