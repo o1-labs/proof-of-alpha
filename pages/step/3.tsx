@@ -107,7 +107,7 @@ const Verify: NextPage = () => {
             </button>
             <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
           </div>
-          <div className="mt-7 flex ">
+          <div className="mt-7 flex flex-col ">
             <div className="flex w-1/2 flex-col space-y-2 md:mt-3 2xl:mt-10 2xl:space-y-5">
               <p
                 className={`${
@@ -149,7 +149,7 @@ const Verify: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="absolute right-36 mt-8 w-4/12 md:right-36  2xl:right-20 2xl:mt-20 2xl:w-5/12">
+            <div className=" right-36 mt-8 md:right-36 lg:absolute lg:w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12 ">
               <Image src={APIsettings} alt="API key settings" />
             </div>
           </div>
