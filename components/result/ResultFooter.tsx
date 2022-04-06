@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import MadeOnMinaLogo from '../../public/assets/prove/made-on-mina-logo.svg';
+import MadeOnMinaLogo from '../../public/assets/result/made-on-mina-logo.svg';
 import Button from '../common/Button';
 
 const ProveFooter = () => {

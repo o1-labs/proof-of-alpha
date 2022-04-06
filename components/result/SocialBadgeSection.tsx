@@ -7,9 +7,9 @@ import NavButtonGroup from './NavButtonGroup';
 import ResultFooter from './ResultFooter';
 import TweetButton from './TweetButton';
 import TransparentButton from '../common/TransparentButton';
-import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 import TwitterCardProof from './TwitterCardProof';
-import TopStamp from '../../public/assets/result/prove-stamp.png';
+import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
+import TopStamp from '../../public/assets/common/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
 import { BASE_URL } from '../../utils';
 

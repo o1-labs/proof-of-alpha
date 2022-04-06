@@ -26,7 +26,10 @@ const StatementSection = () => {
           </div>
           <div className=" flex flex-col items-center space-y-7 pl-28 ">
             <p className="tracking-widest">SHARE YOUR STATEMENT</p>
-            <Link href={'/prove/shared'} passHref>
+            <Link
+              href={'/statement/2mzdZn7fSGfnJFQXHhamoCyqs56BS5GJKj'}
+              passHref
+            >
               <ShareButton label="COPY LINK" />
             </Link>
           </div>

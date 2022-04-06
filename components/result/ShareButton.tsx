@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import Image from 'next/image';
-import ShareIcon from '../../public/assets/prove/share-icon.svg';
+import ShareIcon from '../../public/assets/result/share-icon.svg';
 
 interface shareButtonPropTypes {
   shareButtonStyle?: string;

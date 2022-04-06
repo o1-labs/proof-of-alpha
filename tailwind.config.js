@@ -33,8 +33,8 @@ module.exports = {
         'red-background': "url('/assets/common/red-background.png')",
         'start-background': "url('/assets/common/start-background.png')",
         'result-background': "url('/assets/result/result-background.png')",
-        'prove-share-background':
-          "url('/assets/common/prove-share-background.png')"
+        'statement-background':
+          "url('/assets/statement/statement-background.png')"
       },
       borderWidth: {
         '1/2': '.5px',

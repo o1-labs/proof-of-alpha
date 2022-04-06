@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
-import TopStamp from '../../public/assets/prove/prove-stamp.png';
+import TopStamp from '../../public/assets/common/prove-stamp.png';
 import ProofOfAlphaStatement from '../../components/result/ProofOfAlphaStatement';
 import InfoPanel from '../../components/prove/InfoPanel';
 import Container from '../../components/common/Container';
