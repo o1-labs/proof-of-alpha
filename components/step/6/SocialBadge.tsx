@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import TwitterCard from '../../public/assets/verify/finalize/twitter-card-finalize@2x.png';
+import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize@2x.png';
 
 const ReturnsAndTradeBadge = () => {
   return (
