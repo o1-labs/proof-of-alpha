@@ -1,20 +1,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Layout from '../common/Layout';
-import Header from '../../components/common/Header';
-import NavButtonGroup from '../../components/prove/NavButtonGroup';
-import ProveFooter from './ProveFooter';
-import TweetButton from '../../components/prove/TweetButton';
-import TransparentButton from '../../components/common/TransparentButton';
-import ArrowIcon from '../../public/assets/prove/arrow-icon.svg';
+import Header from '../common/Header';
+import NavButtonGroup from './NavButtonGroup';
+import ResultFooter from './ResultFooter';
+import TweetButton from './TweetButton';
+import TransparentButton from '../common/TransparentButton';
+import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 import TwitterCardProof from './TwitterCardProof';
-import TopStamp from '../../public/assets/prove/prove-stamp.png';
+import TopStamp from '../../public/assets/result/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
 import { BASE_URL } from '../../utils';
 
 const SocialBadgeSection = () => {
   const yPosition = useRef(null);
   const [activeButton, setActiveButton] = useState<string>('socialBadge');
+
+  const router = useRouter();
+  const { txid } = router.query;
 
   useEffect(() => {
     const onScroll = () => {
@@ -69,7 +73,7 @@ const SocialBadgeSection = () => {
             <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-4/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"
-                href={`https://twitter.com/intent/tweet?url=${BASE_URL}/prove/shared`}
+                href={`https://twitter.com/intent/tweet?url=${BASE_URL}/statement/${txid}`}
               >
                 <TweetButton label="TWEET IT" buttonStyle="w-full " />
               </a>
@@ -82,7 +86,7 @@ const SocialBadgeSection = () => {
           </div>
         </div>
 
-        <ProveFooter />
+        <ResultFooter />
       </div>
     </Layout>
   );

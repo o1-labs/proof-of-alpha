@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../common/Layout';
-import StatementTopStamp from '../../public/assets/prove/prove-stamp-statment.png';
-import ShareButton from '../../components/prove/ShareButton';
+import StatementTopStamp from '../../public/assets/result/prove-stamp-statment.png';
+import ShareButton from './ShareButton';
 import ProofOfAlphaStatement from './ProofOfAlphaStatement';
 import Container from '../common/Container';
 

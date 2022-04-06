@@ -1,8 +1,8 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import Image from 'next/image';
-import TwitterLogo from '../../public/assets/prove/twitter-logo.svg';
+import TwitterLogo from '../../public/assets/result/twitter-logo.svg';
 
-interface tweetButtonPropTypes {
+interface tweetButtonPropTypes extends ButtonHTMLAttributes<HTMLButtonElement> {
   buttonStyle?: string;
   label: string;
 }

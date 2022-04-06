@@ -21,7 +21,7 @@ const Layout = (props: layoutPropTypes) => {
     blue: 'bg-blue-background',
     red: 'bg-red-background',
     gray: 'bg-prove-share-background',
-    grayGradient: 'bg-prove-background'
+    grayGradient: 'bg-result-background'
   };
 
   return (

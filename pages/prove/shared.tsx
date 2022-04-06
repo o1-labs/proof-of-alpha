@@ -4,7 +4,7 @@ import { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 import TopStamp from '../../public/assets/prove/prove-stamp.png';
-import ProofOfAlphaStatement from '../../components/prove/ProofOfAlphaStatement';
+import ProofOfAlphaStatement from '../../components/result/ProofOfAlphaStatement';
 import InfoPanel from '../../components/prove/InfoPanel';
 import Container from '../../components/common/Container';
 import {
