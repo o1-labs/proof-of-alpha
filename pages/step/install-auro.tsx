@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import type { NextPage } from 'next';
-import AuroChrome from '../../public/assets/auro/auro-home@2x.png';
+import AuroChrome from '../../public/assets/step/auro-install/auro-home@2x.png';
 import Header from '../../components/common/Header';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
