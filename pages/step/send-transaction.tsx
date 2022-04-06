@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
-import ProofGeneratedConfirmation from '../../components/verify/ProofGeneratedConfirmation';
+import ProofGeneratedConfirmation from '../../components/step/send-transaction/ProofGeneratedConfirmation';
 import Button from '../../components/common/Button';
 import LinkIcon from '../../public/assets/common/chain-icon.svg';
 import { trades } from '../../utils';
