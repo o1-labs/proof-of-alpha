@@ -43,10 +43,7 @@ const Configure: NextPage = () => {
               <ToolTip />
             </div>
 
-            <BottomNavButtons
-              backNavLink="/step/3"
-              continueNavLink="/verify/review"
-            />
+            <BottomNavButtons backNavLink="/step/3" continueNavLink="/step/5" />
           </div>
         </div>
       </div>

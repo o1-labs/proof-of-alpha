@@ -105,7 +105,7 @@ const Finalize: NextPage = () => {
           <div className="flex flex-col  xl:pt-90  2xl:space-y-4 3xl:space-y-7 ">
             {renderErrors(errorType)}
             <BottomNavButtons
-              backNavLink="/verify/review"
+              backNavLink="/step/5"
               continueNavLink="/verify/generate"
               disabled={isDisabled}
             />
