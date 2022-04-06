@@ -66,7 +66,7 @@ const Verify: NextPage = () => {
     >
       <Header />
       <div className="flex   flex-col items-center">
-        <div className="container flex  h-screen w-7/12  flex-col  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
+        <div className="container flex h-screen w-7/12 flex-col  py-6  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
           <ProgressBar stage="4th" />
 
           <div className="flex flex-col space-y-6 2xl:space-y-8 3xl:space-y-8">
@@ -74,7 +74,7 @@ const Verify: NextPage = () => {
 
             <HeadLine
               text="Let's Gather Your Trading Data"
-              headLineStyle="py-6"
+              headLineStyle="pb-6"
             />
 
             <p className="font-light  md:text-sm 2xl:text-1.5xl 3xl:text-2xl ">
