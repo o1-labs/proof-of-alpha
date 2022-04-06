@@ -36,7 +36,7 @@ const Faucet: NextPage = () => {
             </div>
 
             <AuroBottomNavButtons
-              backNavLink="/auro/install"
+              backNavLink="/step/1"
               externalButton
               externalButtonNavLink={`https://faucet.minaprotocol.com?address=${minaAccount}`}
               externalButtonLabel="VISIT FAUCET"
