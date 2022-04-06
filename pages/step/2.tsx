@@ -40,7 +40,7 @@ const Faucet: NextPage = () => {
               externalButton
               externalButtonNavLink={`https://faucet.minaprotocol.com?address=${minaAccount}`}
               externalButtonLabel="VISIT FAUCET"
-              continueNavLink="/verify"
+              continueNavLink="/step/3"
             />
           </div>
         </div>
