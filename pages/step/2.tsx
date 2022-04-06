@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { NextPage } from 'next';
 import Header from '../../components/common/Header';
-import MinaFaucet from '../../public/assets/auro/faucet/mina-faucet@2x.png';
+import MinaFaucet from '../../public/assets/step/2/mina-faucet@2x.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
