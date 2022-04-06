@@ -106,7 +106,7 @@ const Finalize: NextPage = () => {
             {renderErrors(errorType)}
             <BottomNavButtons
               backNavLink="/step/5"
-              continueNavLink="/verify/generate"
+              continueNavLink="/step/send-transaction"
               disabled={isDisabled}
             />
           </div>
