@@ -20,8 +20,8 @@ const Layout = (props: layoutPropTypes) => {
     gradient: 'bg-background',
     blue: 'bg-blue-background',
     red: 'bg-red-background',
-    gray: 'bg-prove-share-background',
-    grayGradient: 'bg-prove-background'
+    gray: 'bg-statement-background',
+    grayGradient: 'bg-result-background'
   };
 
   return (

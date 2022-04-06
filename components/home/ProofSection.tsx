@@ -43,7 +43,7 @@ const ProofSection = () => {
 
             <div className="">
               <div className="mx-auto mt-10 flex h-auto flex-col items-center justify-center space-y-4 md:mt-10 md:w-full md:flex-row  md:justify-between md:space-x-10 md:space-y-0">
-                <Link href={'/start'} passHref>
+                <Link href={'/get-started'} passHref>
                   <Button
                     buttonStyle="px-12 3xl:w-64 3xl:h-16 2xl:w-40 2xl:h-12 xl:w-38 w-38 h-10 xl:h-12 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl "
                     label="LAUNCH APP"
