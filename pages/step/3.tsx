@@ -85,7 +85,7 @@ const Verify: NextPage = () => {
               need.
             </p>
             <div>
-              <p className="flex h-9 w-7/12 items-center  justify-center border-1/2  border-[#A8A8A8] bg-[#90909040] text-center font-medium md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12 2xl:text-1.5xl 3xl:h-16 3xl:w-6/12 3xl:text-1.5xl   ">
+              <p className="flex h-9 items-center justify-center  border-1/2 border-[#A8A8A8]  bg-[#90909040] text-center font-medium md:w-7/12 md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12 2xl:text-1.5xl 3xl:h-16 3xl:w-6/12 3xl:text-1.5xl   ">
                 No record of your API keys will ever be saved.
               </p>
             </div>
@@ -149,7 +149,7 @@ const Verify: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className=" right-36 mt-8 md:right-36 lg:absolute lg:w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12 ">
+            <div className=" right-36 mt-8 md:absolute md:right-36 md:w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12 ">
               <Image src={APIsettings} alt="API key settings" />
             </div>
           </div>
