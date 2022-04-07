@@ -62,11 +62,11 @@ const Verify: NextPage = () => {
   return (
     <Layout
       backGroundColor="gradient"
-      layoutStyle="min-w-[1200px] h-1.5*screen relative"
+      layoutStyle="min-w-[500px] h-1.5*screen relative"
     >
       <Header />
       <div className="flex   flex-col items-center">
-        <div className="container flex  h-screen w-7/12  flex-col  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
+        <div className="container flex h-screen w-9/12 flex-col  py-6  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
           <ProgressBar stage="4th" />
 
           <div className="flex flex-col space-y-6 2xl:space-y-8 3xl:space-y-8">
@@ -74,7 +74,7 @@ const Verify: NextPage = () => {
 
             <HeadLine
               text="Let's Gather Your Trading Data"
-              headLineStyle="py-6"
+              headLineStyle="pb-6"
             />
 
             <p className="font-light  md:text-sm 2xl:text-1.5xl 3xl:text-2xl ">
@@ -85,7 +85,7 @@ const Verify: NextPage = () => {
               need.
             </p>
             <div>
-              <p className="flex h-9 w-7/12 items-center  justify-center border-1/2  border-[#A8A8A8] bg-[#90909040] text-center font-medium md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12 2xl:text-1.5xl 3xl:h-16 3xl:w-6/12 3xl:text-1.5xl   ">
+              <p className="flex h-9 items-center justify-center  border-1/2 border-[#A8A8A8]  bg-[#90909040] text-center font-medium md:w-7/12 md:text-sm 2xl:ml-0 2xl:h-14 2xl:w-6/12 2xl:text-1.5xl 3xl:h-16 3xl:w-6/12 3xl:text-1.5xl   ">
                 No record of your API keys will ever be saved.
               </p>
             </div>
@@ -107,8 +107,8 @@ const Verify: NextPage = () => {
             </button>
             <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
           </div>
-          <div className="mt-7 flex ">
-            <div className="flex w-1/2 flex-col space-y-2 md:mt-3 2xl:mt-10 2xl:space-y-5">
+          <div className="mt-7 flex flex-col ">
+            <div className="flex flex-col space-y-2 md:mt-3 md:w-1/2 2xl:mt-10 2xl:space-y-5">
               <p
                 className={`${
                   isError ? 'visible' : 'hidden'
@@ -128,7 +128,7 @@ const Verify: NextPage = () => {
                 API SECRET
               </p>
               <Input
-                inputStyle="md:text-base 2xl:text-xl  "
+                inputStyle="md:text-base 2xl:text-xl "
                 value={binanaceAPIsecret}
                 onChange={handleBinanceAPIsecretChange}
               />
@@ -149,7 +149,7 @@ const Verify: NextPage = () => {
                 </Link>
               </div>
             </div>
-            <div className="absolute right-36 mt-8 w-4/12 md:right-36  2xl:right-20 2xl:mt-20 2xl:w-5/12">
+            <div className=" right-36 mt-8 md:absolute md:right-36 md:w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12 ">
               <Image src={APIsettings} alt="API key settings" />
             </div>
           </div>
