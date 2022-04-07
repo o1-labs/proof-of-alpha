@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import TwitterCardTemplate from '../../public/assets/common/twitter-card-template.png';
+import TwitterCardTemplate from '../../public/assets/common/twitter-card-template@2x.png';
 import { calculateCumulativeProfitLoss, renderDates } from '../../utils';
 
 const TwitterCardProof = () => {
