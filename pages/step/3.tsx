@@ -108,7 +108,7 @@ const Verify: NextPage = () => {
             <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
           </div>
           <div className="mt-7 flex flex-col ">
-            <div className="flex w-1/2 flex-col space-y-2 md:mt-3 2xl:mt-10 2xl:space-y-5">
+            <div className="flex flex-col space-y-2 md:mt-3 md:w-1/2 2xl:mt-10 2xl:space-y-5">
               <p
                 className={`${
                   isError ? 'visible' : 'hidden'
@@ -128,7 +128,7 @@ const Verify: NextPage = () => {
                 API SECRET
               </p>
               <Input
-                inputStyle="md:text-base 2xl:text-xl  "
+                inputStyle="md:text-base 2xl:text-xl "
                 value={binanaceAPIsecret}
                 onChange={handleBinanceAPIsecretChange}
               />
