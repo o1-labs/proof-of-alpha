@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { NextPage } from 'next';
-import TradeTwitter from '../../public/assets/get-started/trade-history-with-twitter@2x.png';
+import TradeTwitter from '../../public/assets/get-started/trade-history-with-twitter.png';
 import Layout from '../../components/common/Layout';
 import Container from '../../components/common/Container';
 import Button from '../../components/common/Button';
