@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import ProofOfAlphaStatement from '../../../public/assets/step/6/proof-of-alpha-statement@2x.png';
-import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize@2x.png';
+import ProofOfAlphaStatement from '../../../public/assets/step/6/proof-of-alpha-statement.png';
+import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize.png';
 
 const ReturnsAndTradeBadge = () => {
   return (
