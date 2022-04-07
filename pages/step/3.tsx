@@ -62,11 +62,11 @@ const Verify: NextPage = () => {
   return (
     <Layout
       backGroundColor="gradient"
-      layoutStyle="min-w-[1200px] h-1.5*screen relative"
+      layoutStyle="min-w-[500px] h-1.5*screen relative"
     >
       <Header />
       <div className="flex   flex-col items-center">
-        <div className="container flex h-screen w-7/12 flex-col  py-6  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
+        <div className="container flex h-screen w-9/12 flex-col  py-6  md:w-6/12  2xl:w-7/12 3xl:w-6/12 ">
           <ProgressBar stage="4th" />
 
           <div className="flex flex-col space-y-6 2xl:space-y-8 3xl:space-y-8">
