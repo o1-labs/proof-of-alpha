@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
 import Image from 'next/image';
-import AuroTestnet from '../../public/assets/step/1/auro-testnet@2x.png';
+import AuroTestnet from '../../public/assets/step/1/auro-devnet.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';

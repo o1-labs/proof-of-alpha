@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import ProofOfAlpha from '../../public/assets/home/proof-of-alpha-home@2x.png';
-import TwitterCard from '../../public/assets/common/twitter-card@2x.png';
+import ProofOfAlpha from '../../public/assets/home/proof-of-alpha-home.png';
+import TwitterCard from '../../public/assets/common/twitter-card.png';
 
 const CardStatmentGroup = () => {
   return (
