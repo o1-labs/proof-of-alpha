@@ -19,11 +19,7 @@ const TwitterCardProof = () => {
   });
   return (
     <div className="relative">
-      <Image
-        className="relative"
-        src={TwitterCardTemplate}
-        alt="Twitter Card Template"
-      />
+      <Image src={TwitterCardTemplate} alt="Twitter Card Template" />
 
       <div className="absolute bottom-[30%] left-[33.5%] text-2xl font-thin tracking-wider text-[#14ff00] lg:text-3xl 2xl:text-5xl 3xl:text-6xl">
         +{calculateCumulativeProfitLoss(trades)}%

@@ -58,21 +58,20 @@ const SocialBadgeSection = ({ txid }) => {
               </div>
             </a>
 
-            <div className="">
-              <div className="ml-[195px] flex w-6/12 md:ml-[210px] lg:ml-[225px] 2xl:ml-0 2xl:w-full  3xl:w-full ">
-                <TwitterCardProof />
-              </div>
-              <NavButtonGroup
-                activeButton={activeButton}
-                setActiveButton={setActiveButton}
-              />
+            <div className="w-6/12  2xl:w-7/12  3xl:w-full ">
+              <TwitterCardProof />
             </div>
-            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-4/12 3xl:mb-14 3xl:w-4/12">
+            <NavButtonGroup
+              activeButton={activeButton}
+              setActiveButton={setActiveButton}
+            />
+            {/* </div> */}
+            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-2/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"
                 href={`https://twitter.com/intent/tweet?url=${BASE_URL}/statement/${txid}`}
               >
-                <TweetButton label="TWEET IT" buttonStyle="w-full " />
+                <TweetButton label="TWEET IT" buttonStyle=" w-full" />
               </a>
             </div>
             <Link href={'/get-started'} passHref>
