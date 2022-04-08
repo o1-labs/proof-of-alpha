@@ -19,7 +19,7 @@ export default () => {
           // Redundate
           setIsAuro(false);
           setStatus('red');
-          setAccountHeaderDisplay('Not Connected');
+          setAccountHeaderDisplay('No Wallet Found');
           return;
         }
 
@@ -27,7 +27,6 @@ export default () => {
 
         // If Auro wallet is installed but not connected to an account this will throw an exception
         minaAccounts = await window.mina.requestAccounts();
-
         // Auro is installed and connected to an account
         // TODO: Handle case when user has multiple accounts.
         if (isMounted) {
@@ -42,6 +41,7 @@ export default () => {
         )}...${minaAccounts[0].slice(-4)}`;
         setAccountHeaderDisplay(display);
       } catch (error) {
+        console.log('rejected', error);
         // If Auro wallet is installed but not connected to an account set display as not connected
         if (isAuro) {
           setStatus('yellow');
