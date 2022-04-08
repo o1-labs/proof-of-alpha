@@ -26,10 +26,10 @@ const ProofOfAlphaStatement = () => {
     // setTrades(TradeData.trades as Trade[]);
   }, []);
   return (
-    <div className="z-10 w-full bg-[#404040E5] px-6 py-8 text-center md:py-16 md:px-20 md:text-left 3xl:px-28 3xl:py-20">
-      <p className="mb-2 text-center text-xl tracking-xlwidest md:text-left md:text-base 3xl:mb-4 3xl:text-2xl">
-        <span className="block  md:inline">PROOF-OF-ALPHA</span>{' '}
-        <span className="block font-extralight md:inline">STATEMENT</span>
+    <div className="z-10 w-full bg-[#404040E5] px-6 py-8 text-center lg:py-16 lg:px-20 lg:text-left 3xl:px-28 3xl:py-20">
+      <p className="mb-2 text-center text-xl tracking-xlwidest md:text-base lg:text-left 3xl:mb-4 3xl:text-2xl">
+        <span className="block  lg:inline">PROOF-OF-ALPHA</span>{' '}
+        <span className="block font-extralight lg:inline">STATEMENT</span>
       </p>
       <p className="mb-10 text-xs text-[.5rem] font-extralight tracking-wider md:tracking-wide 3xl:mb-12 3xl:text-lg">
         CERTIFIED AND VALIDATED ON-CHAIN

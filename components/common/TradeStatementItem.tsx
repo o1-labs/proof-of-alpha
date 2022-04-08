@@ -22,12 +22,12 @@ const TradStatementItem = ({
   };
   return (
     <div
-      className={`flex w-full items-center justify-between px-5 py-3 odd:border-[1px] odd:border-[#676767] md:py-6 md:px-12 3xl:py-7 3xl:px-16   ${
+      className={`flex w-full items-center justify-between px-5 py-3 odd:border-[1px] odd:border-[#676767] lg:px-10 lg:py-6 3xl:py-7 3xl:px-16   ${
         proofStatement ? 'odd:bg-[#303030]' : ' odd:bg-[#33333380]'
       }`}
     >
-      <div className="w-8/12 min-w-fit md:w-7/12">
-        <div className="flex justify-between border-b-1/2 border-[#9E9E9E] pb-2 text-[.5rem] font-light md:text-xs 3xl:pb-4 3xl:text-sm">
+      <div className="w-8/12 min-w-fit lg:w-7/12">
+        <div className="flex justify-between border-b-1/2 border-[#9E9E9E] pb-2 text-[.5rem] font-light  3xl:pb-4 3xl:text-sm">
           <div className="space-x-1 md:space-x-2">
             <span className="">BUY</span>
             <span className="font-extralight">
@@ -37,8 +37,8 @@ const TradStatementItem = ({
           </div>{' '}
           <span> {renderDate(buy.timestamp)}</span>
         </div>
-        <div className="flex justify-between pt-2 text-[.5rem]  font-light md:space-x-6 md:text-xs 3xl:pt-4 3xl:text-sm ">
-          <div className="space-x-1 md:space-x-2">
+        <div className="flex justify-between pt-2 text-[.5rem]  font-light md:space-x-6  3xl:pt-4 3xl:text-sm ">
+          <div className="space-x-1 lg:space-x-2">
             <span className="">SELL</span>
             <span className="font-extralight ">
               {' '}
