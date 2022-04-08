@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../common/Layout';
 import StatementTopStamp from '../../public/assets/result/prove-stamp-statment.png';
-import ShareButton from './ShareButton';
+import CopyButton from './CopyButton';
 import ProofOfAlphaStatement from './ProofOfAlphaStatement';
 import Container from '../common/Container';
 
@@ -25,9 +25,11 @@ const StatementSection = ({ txid }) => {
             </div>
           </div>
           <div className=" mr-18 flex flex-col items-center space-y-7 pl-28 md:mr-0">
-            <p className="tracking-widest">SHARE YOUR STATEMENT</p>
+            <p className="text-sm tracking-widest lg:text-base">
+              SHARE YOUR STATEMENT
+            </p>
             <Link href={`/statement/${txid}`} passHref>
-              <ShareButton label="COPY LINK" />
+              <CopyButton label="COPY LINK" />
             </Link>
           </div>
         </div>
