@@ -4,7 +4,7 @@ import ProofCheckMark from '../../../public/assets/step/send-transaction/proof-c
 
 const ProofGeneratedConfirmation = () => {
   return (
-    <div className=" p relative flex h-[220px] w-[220px] flex-col items-center justify-center rounded-lg bg-custom-gray-spinner-background 2xl:h-[270px] 2xl:w-[270px] ">
+    <div className="p relative flex h-[220px] w-[220px] flex-col items-center justify-center rounded-lg bg-custom-gray-spinner-background 2xl:h-[270px] 2xl:w-[270px] ">
       <div className="w-1/2">
         <Image src={ProofCheckMark} alt="check mark" />
       </div>

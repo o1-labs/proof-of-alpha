@@ -5,7 +5,7 @@ import TransparentButton from '../common/TransparentButton';
 import ShieldIcon from '../../public/assets/statement/shield-icon.svg';
 import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 
-const InfoPanel = () => {
+const InfoPanel = ({ txid }) => {
   return (
     <div className="mt-14  md:mt-64 2xl:mx-auto 3xl:mx-0 3xl:mt-86">
       <div className="mb-20 flex flex-col items-center 2xl:mb-20 3xl:mb-28">
@@ -35,7 +35,10 @@ const InfoPanel = () => {
         <p className="text-[.55em] md:text-xs 2xl:text-sm 3xl:text-base">
           blockchain are considered valid.
         </p>
-        <a target="_blank" href={'https://minaexplorer.com/'}>
+        <a
+          target="_blank"
+          href={`https://minaexplorer.com/transaction/${txid}`}
+        >
           <div className="flex items-center hover:underline">
             <div className="w-2 2xl:w-2 3xl:w-3">
               <Image src={ArrowIcon} alt="arrow icon" />

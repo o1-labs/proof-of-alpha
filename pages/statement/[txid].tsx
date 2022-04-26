@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import { NextPage } from 'next';
+import { useRouter } from 'next/router';
 import Layout from '../../components/common/Layout';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 import TopStamp from '../../public/assets/common/prove-stamp.png';
@@ -18,6 +19,9 @@ import SharedOutFooter from '../../components/statement/SharedOutFooter';
 import SharedOutFooterMobile from '../../components/statement/SharedOutFooterMobile';
 
 const Shared: NextPage = () => {
+  const router = useRouter();
+  const { txid } = router.query;
+
   const getImageUrl = () => {
     const path = addQueryParamsToURL('/api/og-image', [
       {
@@ -52,7 +56,7 @@ const Shared: NextPage = () => {
               <ProofOfAlphaStatement />
             </div>
           </div>
-          <InfoPanel />
+          <InfoPanel txid={txid} />
         </div>
       </Container>
       <SharedOutFooterMobile />
