@@ -5,7 +5,11 @@ import TransparentButton from '../common/TransparentButton';
 import ShieldIcon from '../../public/assets/statement/shield-icon.svg';
 import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 
-const InfoPanel = ({ txid }) => {
+interface infoPanelPropTypes {
+  txid: string;
+}
+
+const InfoPanel = ({ txid }: infoPanelPropTypes) => {
   return (
     <div className="mt-14  md:mt-64 2xl:mx-auto 3xl:mx-0 3xl:mt-86">
       <div className="mb-20 flex flex-col items-center 2xl:mb-20 3xl:mb-28">
