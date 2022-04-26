@@ -6,7 +6,11 @@ import CopyButton from './CopyButton';
 import ProofOfAlphaStatement from './ProofOfAlphaStatement';
 import Container from '../common/Container';
 
-const StatementSection = ({ txid }) => {
+interface statementSectionPropTypes {
+  txid: string;
+}
+
+const StatementSection = ({ txid }: statementSectionPropTypes) => {
   return (
     <Layout
       backGroundColor="grayGradient"
