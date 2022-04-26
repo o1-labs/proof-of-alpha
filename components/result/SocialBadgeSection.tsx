@@ -66,7 +66,7 @@ const SocialBadgeSection = ({ txid }) => {
               setActiveButton={setActiveButton}
             />
             {/* </div> */}
-            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-4/12 3xl:mb-14 3xl:w-4/12">
+            <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-2/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"
                 href={`https://twitter.com/intent/tweet?url=${BASE_URL}/statement/${txid}`}
