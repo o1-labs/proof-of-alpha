@@ -13,7 +13,11 @@ import TopStamp from '../../public/assets/common/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
 import { BASE_URL } from '../../utils';
 
-const SocialBadgeSection = ({ txid }) => {
+interface socialBadgeSectionPropTypes {
+  txid: string;
+}
+
+const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
   const yPosition = useRef(null);
   const [activeButton, setActiveButton] = useState<string>('socialBadge');
 
