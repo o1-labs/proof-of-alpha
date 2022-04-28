@@ -53,7 +53,7 @@ const Shared: NextPage = () => {
               <Image src={ZKLogo} alt="zk logo" />
             </div>
             <div className="mt-20 flex w-11/12 flex-col items-center justify-center md:mt-36 md:w-full 2xl:w-full  3xl:w-full">
-              <ProofOfAlphaStatement />
+              <ProofOfAlphaStatement txid={txid} />
             </div>
           </div>
           <InfoPanel txid={txid} />

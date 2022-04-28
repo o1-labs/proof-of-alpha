@@ -25,7 +25,7 @@ const StatementSection = ({ txid }: statementSectionPropTypes) => {
         <div className="ml-18 flex justify-around md:ml-0 ">
           <div className="flex  flex-col  items-center 3xl:space-y-4 ">
             <div className="relative flex min-w-[320px] flex-col items-center justify-center 3xl:w-full">
-              <ProofOfAlphaStatement />
+              <ProofOfAlphaStatement txid={txid} />
             </div>
           </div>
           <div className=" mr-18 flex flex-col items-center space-y-7 pl-28 md:mr-0">

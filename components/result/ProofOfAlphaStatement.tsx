@@ -3,7 +3,10 @@ import TradeStatement from '../common/TradeStatement';
 import TradeData from '../../trades.json';
 import { Trade } from '../../types';
 
-const ProofOfAlphaStatement = () => {
+interface proofOfAlphaStatemtPropTypes {
+  txid: string | string[];
+}
+const ProofOfAlphaStatement = ({ txid }: proofOfAlphaStatemtPropTypes) => {
   const [trades, setTrades] = useState<Trade[]>([]);
   useEffect(() => {
     // Used to test statement output with 500 transactions
@@ -38,7 +41,7 @@ const ProofOfAlphaStatement = () => {
       <a
         className="hover:underline"
         target="_blank"
-        href={'https://minaprotocol.com/'}
+        href={`https://berkeley.minaexplorer.com/transaction/${txid}`}
       >
         <p className="mt-20 text-center text-[.5rem] font-thin tracking-widest md:text-sm md:font-normal md:tracking-xlwidest 3xl:text-base">
           VALIDATED ON THE MINA BLOCKCHAIN

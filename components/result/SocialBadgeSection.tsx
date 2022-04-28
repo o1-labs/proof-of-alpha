@@ -17,7 +17,7 @@ interface socialBadgeSectionPropTypes {
   txid: string | string[];
 }
 
-const SocialBadgeSection = ({ txid }) => {
+const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
   const yPosition = useRef(null);
   const [activeButton, setActiveButton] = useState<string>('socialBadge');
 
