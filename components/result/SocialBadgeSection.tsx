@@ -50,7 +50,10 @@ const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
             <p className="mb-3 text-xl  2xl:mb-5 2xl:text-3.5xl 3xl:mb-8 3xl:text-4xl">
               Your zk-proof has been submitted to Mina’s chain.
             </p>
-            <a target="_blank" href={'https://minaexplorer.com/'}>
+            <a
+              target="_blank"
+              href={`https://berkeley.minaexplorer.com/transaction/${txid}`}
+            >
               <div className="flex items-center space-x-1 2xl:space-x-0">
                 <div className="w-3">
                   <Image src={ArrowIcon} alt="arrow icon" />
