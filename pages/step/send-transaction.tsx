@@ -83,7 +83,12 @@ const Generate: NextPage = () => {
             {/* Buttton is only visable after a proof is generated 
                 // TODO: Add Auro wallet sign tx & send tx flow with dynamic txid
             */}
-            <Link href={'/result/2mzdZn7fSGfnJFQXHhamoCyqs56BS5GJKj'} passHref>
+            <Link
+              href={
+                '/result/CkpZddP1Qmhgqfv2MNM8C7j1aQQvBFnybpTPiWuLRT79aZMLQ93kL'
+              }
+              passHref
+            >
               <Button
                 buttonStyle="w-10/12 2xl:w-7/12 py-2 3xl:w-6/12 text-sm 2xl:text-base 3xl:text-base"
                 visable={proofConfirmed}

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+
 import Layout from '../common/Layout';
 import Header from '../common/Header';
 import NavButtonGroup from './NavButtonGroup';
@@ -12,12 +12,13 @@ import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 import TopStamp from '../../public/assets/common/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
 import { BASE_URL } from '../../utils';
+import { ParsedUrlQuery } from 'querystring';
 
 interface socialBadgeSectionPropTypes {
-  txid: string;
+  txid: string | string[];
 }
 
-const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
+const SocialBadgeSection = ({ txid }) => {
   const yPosition = useRef(null);
   const [activeButton, setActiveButton] = useState<string>('socialBadge');
 

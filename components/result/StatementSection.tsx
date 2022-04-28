@@ -7,7 +7,7 @@ import ProofOfAlphaStatement from './ProofOfAlphaStatement';
 import Container from '../common/Container';
 
 interface statementSectionPropTypes {
-  txid: string;
+  txid: string | string[];
 }
 
 const StatementSection = ({ txid }: statementSectionPropTypes) => {

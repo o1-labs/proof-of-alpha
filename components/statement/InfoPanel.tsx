@@ -6,7 +6,7 @@ import ShieldIcon from '../../public/assets/statement/shield-icon.svg';
 import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 
 interface infoPanelPropTypes {
-  txid: string;
+  txid: string | string[];
 }
 
 const InfoPanel = ({ txid }: infoPanelPropTypes) => {
