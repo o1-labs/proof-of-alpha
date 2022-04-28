@@ -12,7 +12,6 @@ import ArrowIcon from '../../public/assets/common/arrow-icon.svg';
 import TopStamp from '../../public/assets/common/prove-stamp.png';
 import { useState, useRef, useEffect } from 'react';
 import { BASE_URL } from '../../utils';
-import { ParsedUrlQuery } from 'querystring';
 
 interface socialBadgeSectionPropTypes {
   txid: string | string[];

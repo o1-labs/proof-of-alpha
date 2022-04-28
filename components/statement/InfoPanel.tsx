@@ -41,7 +41,7 @@ const InfoPanel = ({ txid }: infoPanelPropTypes) => {
         </p>
         <a
           target="_blank"
-          href={`https://minaexplorer.com/transaction/${txid}`}
+          href={`https://berkeley.minaexplorer.com/transaction/${txid}`}
         >
           <div className="flex items-center hover:underline">
             <div className="w-2 2xl:w-2 3xl:w-3">

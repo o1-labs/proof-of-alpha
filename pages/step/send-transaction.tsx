@@ -85,7 +85,7 @@ const Generate: NextPage = () => {
             */}
             <Link
               href={
-                '/result/CkpZddP1Qmhgqfv2MNM8C7j1aQQvBFnybpTPiWuLRT79aZMLQ93kL'
+                '/result/Ckpa6UWWwosUtLN7KNQZJypKR93zrN9BDK1sDeAcMKNzbacg3C7Dr'
               }
               passHref
             >
