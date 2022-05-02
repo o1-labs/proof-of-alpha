@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type statusType = 'green' | 'yellow' | 'red' | '';
 

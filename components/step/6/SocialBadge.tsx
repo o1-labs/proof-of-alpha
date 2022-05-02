@@ -4,7 +4,6 @@ import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize@2x.
 const ReturnsAndTradeBadge = () => {
   return (
     <div className="2xl:full flex w-9/12 flex-col items-center justify-center xl:w-11/12 2xl:mt-5">
-      {/* <p className="tracking-2xlwidest mb-14 flex pt-5 text-xs  text-[#BCBCBC] 2xl:mt-6  2xl:text-xl 2xl:tracking-[10px]"> */}
       <p
         className="
  mb-12 mt-6 flex  text-xs tracking-2xlwidest text-[#BCBCBC] 2xl:mt-6 2xl:mr-8  2xl:text-xl 2xl:tracking-2xlwidest 3xl:mr-8"

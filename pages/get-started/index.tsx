@@ -15,9 +15,11 @@ const Start: NextPage = () => {
   const router = useRouter();
 
   const handleButtonClick = (): void => {
+    // This shows a modal to the user if they are on a mobile device to guide them to use a desktop
     if (window.innerWidth < 800) {
       setIsModalOpen(true);
     } else {
+      // Routes user to skip install auro education flow if Auro wallet is already installed
       window?.mina?.isAuro
         ? router.push('/step/1')
         : router.push('/step/install-auro');

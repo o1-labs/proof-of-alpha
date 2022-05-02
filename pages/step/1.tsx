@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';

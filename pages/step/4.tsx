@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
-
 import DateRangeGroup from '../../components/step/4/DateRangeGroup';
 import TokenPairGroup from '../../components/step/4/TokenPairGroup';
 import ToolTip from '../../components/step/4/ToolTip';

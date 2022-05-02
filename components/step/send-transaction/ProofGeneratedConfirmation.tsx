@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import ProofCheckMark from '../../../public/assets/step/send-transaction/proof-check.png';
 
