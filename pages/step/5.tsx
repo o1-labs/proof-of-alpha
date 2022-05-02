@@ -4,7 +4,6 @@ import Header from '../../components/common/Header';
 import FetchingTrades from '../../components/step/5/FetchingTrades';
 import TradeStatement from '../../components/common/TradeStatement';
 import { trades } from '../../utils';
-import { Trade } from '../../types';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
 import HeadLine from '../../components/common/HeadLine';

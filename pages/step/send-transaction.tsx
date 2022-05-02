@@ -9,7 +9,6 @@ import LinkIcon from '../../public/assets/common/chain-icon.svg';
 import { trades } from '../../utils';
 import { calculateCumulativeProfitLoss } from '../../utils';
 import Layout from '../../components/common/Layout';
-import { Router } from 'next/router';
 
 const Generate: NextPage = () => {
   const [proofConfirmed, setProofConfirmed] = useState<boolean>(false);
