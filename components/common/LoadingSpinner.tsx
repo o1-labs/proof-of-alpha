@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface loadingSpinnerPropTypes {
   label: string;
 }
@@ -17,7 +15,7 @@ const LoadingSpinner = ({ label }: loadingSpinnerPropTypes) => {
   };
 
   return (
-    <div className="bg-custom-gray-spinner-background relative flex h-[220px] w-[220px]  flex-col items-center justify-center rounded-md 2xl:h-[270px] 2xl:w-[270px]">
+    <div className="relative flex h-[220px] w-[220px] flex-col  items-center justify-center rounded-md bg-custom-gray-spinner-background 2xl:h-[270px] 2xl:w-[270px]">
       <div className="top-5/12  left-4/12 absolute space-y-[.5px] text-center text-[.6rem] text-[#05ff00] 2xl:space-y-1 ">
         {renderLabel()}
       </div>

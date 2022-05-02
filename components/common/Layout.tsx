@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 
 interface layoutPropTypes {
   backGroundColor: 'gradient' | 'blue' | 'red' | 'gray' | 'grayGradient';

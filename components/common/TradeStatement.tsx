@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import moment from 'moment';
 import TradeStatementItem from './TradeStatementItem';
 import BinanceLogo from '../../public/assets/common/binance-logo.svg';
 import { calculateCumulativeProfitLoss, renderDates } from '../../utils';

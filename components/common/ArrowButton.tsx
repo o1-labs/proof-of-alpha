@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 interface arrowButtonPropTypes {
   arrowDirection: 'left' | 'right';
   arrowButtonStyle?: string;
