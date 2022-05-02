@@ -1,4 +1,3 @@
-import React, { ButtonHTMLAttributes } from 'react';
 import Image from 'next/image';
 import ShareIcon from '../../public/assets/result/share-icon.svg';
 

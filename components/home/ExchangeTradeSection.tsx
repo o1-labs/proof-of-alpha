@@ -9,11 +9,7 @@ import ExchangeTradeSectionCopy from './ExchangeTradeSectionCopy';
 import ChoiceSectionCopy from './ChoiceSectionCopy';
 import DataSectionCopy from './DataSectionCopy';
 import RightStamp from '../../public/assets/home/stamp-right.png';
-
 import { useState } from 'react';
-interface indicatorPropTypes {
-  section: 'first' | 'second' | 'third';
-}
 
 type sectionCopyType = 'exchange' | 'choice' | 'data';
 

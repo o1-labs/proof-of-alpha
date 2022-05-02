@@ -1,4 +1,4 @@
-import react, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import TradeStatement from '../common/TradeStatement';
 import TradeData from '../../trades.json';
 import { Trade } from '../../types';
