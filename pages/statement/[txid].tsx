@@ -15,7 +15,7 @@ import {
   renderDates,
   trades
 } from '../../utils';
-import SharedOutFooter from '../../components/statement/SharedOutFooter';
+import StatementFooter from '../../components/statement/StatementFooter';
 import SharedOutFooterMobile from '../../components/statement/SharedOutFooterMobile';
 
 const Shared: NextPage = () => {
@@ -60,7 +60,7 @@ const Shared: NextPage = () => {
         </div>
       </Container>
       <SharedOutFooterMobile />
-      <SharedOutFooter />
+      <StatementFooter />
     </Layout>
   );
 };
