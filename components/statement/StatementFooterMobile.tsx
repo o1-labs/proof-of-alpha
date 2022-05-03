@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Button from '../common/Button';
 import MinaPrimary from '../../public/assets/statement/mina-icon-primary.svg';
 
-const SharedOutFooterMobile = () => {
+const StatementFooterMobile = () => {
   return (
     <div className="fixed bottom-0 z-40 h-18 w-full bg-[rgba(50,50,50,.6)] md:hidden">
       <div className="flex h-full items-center justify-around">
@@ -35,4 +35,4 @@ const SharedOutFooterMobile = () => {
     </div>
   );
 };
-export default SharedOutFooterMobile;
+export default StatementFooterMobile;

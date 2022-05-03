@@ -16,7 +16,7 @@ import {
   trades
 } from '../../utils';
 import StatementFooter from '../../components/statement/StatementFooter';
-import SharedOutFooterMobile from '../../components/statement/SharedOutFooterMobile';
+import StatementFooterMobile from '../../components/statement/StatementFooterMobile';
 
 const Shared: NextPage = () => {
   const router = useRouter();
@@ -59,7 +59,7 @@ const Shared: NextPage = () => {
           <InfoPanel txid={txid} />
         </div>
       </Container>
-      <SharedOutFooterMobile />
+      <StatementFooterMobile />
       <StatementFooter />
     </Layout>
   );
