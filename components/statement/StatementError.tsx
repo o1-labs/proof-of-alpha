@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 
-const ProveError = () => {
+const StatementError = () => {
   return (
     <div className="flex h-screen bg-background bg-cover bg-no-repeat text-white">
       <div className="flex w-full flex-col items-center space-y-10 ">
@@ -31,4 +31,4 @@ const ProveError = () => {
   );
 };
 
-export default ProveError;
+export default StatementError;
