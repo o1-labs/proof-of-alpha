@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import Layout from '../common/Layout';
 import Header from '../common/Header';
 import NavButtonGroup from './NavButtonGroup';
@@ -72,7 +71,7 @@ const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
               activeButton={activeButton}
               setActiveButton={setActiveButton}
             />
-            {/* </div> */}
+
             <div className="mb-8 w-[180px] lg:w-[210px] 2xl:mb-14 2xl:w-2/12 3xl:mb-14 3xl:w-4/12">
               <a
                 target="_blank"

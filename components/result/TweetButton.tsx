@@ -11,7 +11,6 @@ interface tweetButtonPropTypes extends ButtonHTMLAttributes<HTMLButtonElement> {
  * @param {string} label Button label
  */
 
-// Add icon logo prop
 const TweetButton = (props: tweetButtonPropTypes) => {
   const { buttonStyle, label, ...otherProps } = props;
 
