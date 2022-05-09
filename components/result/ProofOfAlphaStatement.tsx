@@ -1,31 +1,15 @@
 import { useEffect, useState } from 'react';
 import TradeStatement from '../common/TradeStatement';
 import { Trade } from '../../types';
+import { trades } from '../../utils';
 
 interface proofOfAlphaStatemtPropTypes {
   txid: string | string[];
 }
 const ProofOfAlphaStatement = ({ txid }: proofOfAlphaStatemtPropTypes) => {
-  const [trades, setTrades] = useState<Trade[]>([]);
+  // const [trades, setTrades] = useState<Trade[]>([]);
   useEffect(() => {
-    // Used to test statement output with 500 transactions
-    const trades = Array(500).fill({
-      id: 6,
-      pairId: 'BTC/UDST',
-      buy: {
-        timestamp: '1615928190',
-        quantity: '2.780000000',
-        price: '45343'
-      },
-      sell: {
-        timestamp: '1639534876',
-        quantity: '2.650000000',
-        price: '57123'
-      }
-    });
-    setTrades(trades as Trade[]);
-
-    // setTrades(TradeData.trades as Trade[]);
+    // TODO: Fetch trades from binance
   }, []);
   return (
     <div className="z-10 w-full bg-[#404040E5] px-6 py-8 text-center lg:py-16 lg:px-20 lg:text-left 3xl:px-28 3xl:py-20">
