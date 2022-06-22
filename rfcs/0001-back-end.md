@@ -1,14 +1,14 @@
-# Proof of Alpha Backend RFC
+# Proof of Alpha Back-end RFC
 
 ## Summary
 [summary]: #summary
 
-This RFC proposes a back end API for Proof of Alpha.  
+This RFC proposes a back-end API for Proof of Alpha.  
 
 ## Motivation
 [motivation]: #motivation
 
-Proof of Alpha (PoA) offers users a unique value proposition, the ability to prove their crypto trading abilities. Additionally PoA is intended to convey the utility of and generate excitement around zkApps to the Mina and wider crypto communities. While a more extensible back end solution, specifically [Faux zk Oracle](https://github.com/MinaProtocol/mina/blob/rfc/faux-zk-oracle/rfcs/0045-faux-zk-oracle.md), would enable developers to build apps which have O(1) notarize responses for PoA's supported exchange(s)and eventually other data providers, some challenges exist which make this approach impractical at present. The primary challenges are:
+Proof of Alpha (PoA) offers users a unique value proposition, the ability to prove their crypto trading abilities. Additionally PoA is intended to convey the utility of and generate excitement around zkApps to the Mina and wider crypto communities. While a more extensible back-end solution, specifically [Faux zk Oracle](https://github.com/MinaProtocol/mina/blob/rfc/faux-zk-oracle/rfcs/0045-faux-zk-oracle.md), would enable developers to build apps which have O(1) notarize responses for PoA's supported exchange(s)and eventually other data providers, some challenges exist which make this approach impractical at present. The primary challenges are:
 1.  Available time and engineering resources to develop PoA AND Faux zk Oracle in time for testnet are limited
 2.  Functionality which enables parsing of HTTP responses in-SNARK, does not yet exist (array lookups) has questionable performance given the use case ([SnarkyJS `String` type](https://github.com/o1-labs/snarkyjs/pull/155)).
 3. Parsing HTTP responses in-circuit presents a number of significant problems and limitations. Notably: 
@@ -22,7 +22,7 @@ Proof of Alpha (PoA) offers users a unique value proposition, the ability to pro
 
 ## Detailed design
 [detailed-design]: #detailed-design
-Generally the short-term alternative to *Faux zk Oracles* proposed here, is simply a back end API which takes a `cryptoExchange`, `apiToken`,`timeFrame`, and `tradingPair`, all defined by the user in the PoA UI, and performs as follow: 
+Generally the short-term alternative to *Faux zk Oracles* proposed here, is simply a back-end API which takes a `cryptoExchange`, `apiToken`,`timeFrame`, and `tradingPair`, all defined by the user in the PoA UI, and performs as follow: 
 
 1. Given these parameters, the API structures and makes a request to retrieve applicable trades from the `cryptoExchange` API. 
 2. **Given the response to 1), structures and returns a response including at least:
