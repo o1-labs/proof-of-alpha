@@ -82,7 +82,8 @@ export default async function handler(req, res) {
 ## Drawbacks
 [drawbacks]: #drawbacks
 
-- Compared to `Faux zk Oracles`, this approach cannot be used by developers external to O(1). 
+- Compared to `Faux zk Oracles`, this model is not as directly extensible in that it requires a different approach for each use-case.  Implementing this scheme however would provide a model for others to do the same for other data providers. 
+    - While this is true for the back-end, this approach arguably simplifies the front-end circuit which may partially or fully offset any additional cost.
 - The specific approach expressed above does not include the return of all trades during the given time frame, which is currently displayed in the UI. These trades can easily be included in the response for display in the UI however the author believes that revealing their trade size via a discoverable URL is an unacceptable breach of privacy for many traders, and is therefore not necessary.
     - Alternatively a field representing total trade volume over a series of thresholds (ex. volume: <100k, >1M, >10M, etc) could be included in the response and verified by the smart contract circuit. 
 
