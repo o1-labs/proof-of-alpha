@@ -16,6 +16,8 @@ export default async function handler(
     .then((res) => res.json())
     .then((data) => data.serverTime);
 
+  const query = `symbol=ETHUSDT&startTime=${ninetyDaysAgo}&endTime=${startTime}`;
+
   async function getTrades() {
     return [];
   }
