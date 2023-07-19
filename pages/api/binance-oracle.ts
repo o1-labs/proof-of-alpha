@@ -25,6 +25,11 @@ export default async function handler(
 
   const url = `${BINANCE_BASE_URL}/api/v3/myTrades?${query}&signature=${signature}`;
 
+  const trades = await fetch(url, {
+    method: 'GET',
+    headers: { 'X-MBX-APIKEY': apiKey }
+  }).then((res) => res.json());
+
   async function getTrades() {
     return [];
   }
