@@ -23,6 +23,8 @@ export default async function handler(
 
   const signature = jwt.sign(query, secretKey);
 
+  const url = `${BINANCE_BASE_URL}/api/v3/myTrades?${query}&signature=${signature}`;
+
   async function getTrades() {
     return [];
   }
