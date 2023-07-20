@@ -8,13 +8,13 @@ export default async function handler(
   req: IncomingMessage,
   res: ServerResponse
 ) {
-  async function getTrades() {
+  async function getTrades(timeFrame: number) {
     // TODO: use api keys as default if users does not want to use their own.
     const binanceApiKey = process.env.BINANCE_API_KEY;
     const binanceSecretKey = process.env.BINANCE_SECRET_KEY;
     // Timestamp in ms.
     // TODO: calculate trade history start date from option selected in ui.
-    const startTime = Date.now() - 90 * 24 * 60 * 60 * 1000;
+    const startTime = Date.now() - timeFrame * 24 * 60 * 60 * 1000;
 
     const endTime = await fetch(`${BINANCE_BASE_URL}/api/v3/time`)
       .then((res) => res.json())
