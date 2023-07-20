@@ -8,29 +8,29 @@ export default async function handler(
   req: IncomingMessage,
   res: ServerResponse
 ) {
-  // TODO: use api keys as default if users does not want to use their own.
-  const apiKey = process.env.BINANCE_API_KEY;
-  const secretKey = process.env.BINANCE_SECRET_KEY;
-  // Timestamp in ms.
-  // TODO: calculate trade history start date from option selected in ui.
-  const ninetyDaysAgo = Date.now() - 90 * 24 * 60 * 60 * 1000;
-
-  const startTime = await fetch(`${BINANCE_BASE_URL}/api/v3/time`)
-    .then((res) => res.json())
-    .then((data) => data.serverTime);
-
-  const query = `symbol=ETHUSDT&startTime=${ninetyDaysAgo}&endTime=${startTime}`;
-
-  const signature = jwt.sign(query, secretKey);
-
-  const url = `${BINANCE_BASE_URL}/api/v3/myTrades?${query}&signature=${signature}`;
-
-  const trades = await fetch(url, {
-    method: 'GET',
-    headers: { 'X-MBX-APIKEY': apiKey }
-  }).then((res) => res.json());
-
   async function getTrades() {
-    return [];
+    // TODO: use api keys as default if users does not want to use their own.
+    const binanceApiKey = process.env.BINANCE_API_KEY;
+    const binanceSecretKey = process.env.BINANCE_SECRET_KEY;
+    // Timestamp in ms.
+    // TODO: calculate trade history start date from option selected in ui.
+    const startTime = Date.now() - 90 * 24 * 60 * 60 * 1000;
+
+    const endTime = await fetch(`${BINANCE_BASE_URL}/api/v3/time`)
+      .then((res) => res.json())
+      .then((data) => data.serverTime);
+
+    const query = `symbol=ETHUSDT&endTimeTime=${startTime}&endTime=${endTime}`;
+
+    const signature = jwt.sign(query, binanceSecretKey);
+
+    const url = `${BINANCE_BASE_URL}/api/v3/myTrades?${query}&signature=${signature}`;
+
+    const trades = await fetch(url, {
+      method: 'GET',
+      headers: { 'X-MBX-APIKEY': binanceApiKey }
+    }).then((res) => res.json());
+
+    return trades;
   }
 }
