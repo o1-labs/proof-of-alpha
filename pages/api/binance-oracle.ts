@@ -1,6 +1,9 @@
 import { IncomingMessage, ServerResponse } from 'http';
 import { PrivateKey, Field, Signature } from 'snarkyjs';
 import jwt from 'jsonwebtoken';
+import { calculateCumulativeProfitLoss } from '../../utils';
+import { Trade } from '../../types';
+import TradeStatement from '../../components/common/TradeStatement';
 
 const BINANCE_BASE_URL = 'https://api.binance.com';
 
@@ -32,5 +35,9 @@ export default async function handler(
     }).then((res) => res.json());
 
     return trades;
+  }
+
+  function calculateAlpha(trades: Trade[]) {
+    return calculateCumulativeProfitLoss(trades);
   }
 }
