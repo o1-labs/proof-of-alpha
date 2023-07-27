@@ -11,6 +11,13 @@ export default async function handler(
   req: IncomingMessage,
   res: ServerResponse
 ) {
+
+  const url = new URL(req.url || '/', `http://${req.headers.host}`);
+
+  const timeFrame = url.searchParams.get('time-frame');
+  const binanceKey = url.searchParams.get('binance-key');
+  const binanceSecret = url.searchParams.get('binance-secret');
+
   async function getTrades(timeFrame: number) {
     // TODO: use api keys as default if users does not want to use their own.
     const binanceApiKey = process.env.BINANCE_API_KEY;
