@@ -1,7 +1,8 @@
 import { IncomingMessage, ServerResponse } from 'http';
-import { PrivateKey, Field, Signature } from 'snarkyjs';
 import crypto from 'crypto';
+import { PrivateKey, Field, Signature } from 'snarkyjs';
 import { calculateCumulativeProfitLoss } from '../../utils';
+import { parseRequest } from './_lib/parser';
 import { Trade } from '../../types';
 import TradeStatement from '../../components/common/TradeStatement';
 
@@ -12,12 +13,8 @@ export default async function handler(
   res: ServerResponse
 ) {
 
-  const url = new URL(req.url || '/', `http://${req.headers.host}`);
-
-  const timeFrame = url.searchParams.get('time-frame');
-  const binanceKey = url.searchParams.get('binance-key');
-  const binanceSecret = url.searchParams.get('binance-secret');
-
+  const parsedReq = parseRequest(req);
+ 
   async function getTrades(timeFrame: number) {
     // TODO: use api keys as default if users does not want to use their own.
     const binanceApiKey = process.env.BINANCE_API_KEY;
