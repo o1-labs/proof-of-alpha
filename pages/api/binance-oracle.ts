@@ -24,7 +24,7 @@ export default async function handler(
       .then((res) => res.json())
       .then((data) => data.serverTime);
 
-    const query = `symbol=ETHUSDT&endTimeTime=${startTime}&endTime=${endTime}`;
+    const query = `symbol=BTCUSDT&startTime=${startTime}&timestamp=${endTime}`;
 
     const signature = crypto
       .createHmac('sha256', binanceSecretKey)
