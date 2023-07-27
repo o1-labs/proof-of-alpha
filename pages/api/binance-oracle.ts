@@ -1,6 +1,6 @@
 import { IncomingMessage, ServerResponse } from 'http';
 import { PrivateKey, Field, Signature } from 'snarkyjs';
-import jwt from 'jsonwebtoken';
+import crypto from 'crypto';
 import { calculateCumulativeProfitLoss } from '../../utils';
 import { Trade } from '../../types';
 import TradeStatement from '../../components/common/TradeStatement';
@@ -15,6 +15,7 @@ export default async function handler(
     // TODO: use api keys as default if users does not want to use their own.
     const binanceApiKey = process.env.BINANCE_API_KEY;
     const binanceSecretKey = process.env.BINANCE_SECRET_KEY;
+
     // Timestamp in ms.
     // TODO: calculate trade history start date from option selected in ui.
     const startTime = Date.now() - timeFrame * 24 * 60 * 60 * 1000;
@@ -25,7 +26,10 @@ export default async function handler(
 
     const query = `symbol=ETHUSDT&endTimeTime=${startTime}&endTime=${endTime}`;
 
-    const signature = jwt.sign(query, binanceSecretKey);
+    const signature = crypto
+      .createHmac('sha256', binanceSecretKey)
+      .update(query)
+      .digest('hex');
 
     const url = `${BINANCE_BASE_URL}/api/v3/myTrades?${query}&signature=${signature}`;
 
@@ -40,4 +44,8 @@ export default async function handler(
   function calculateAlpha(trades: Trade[]) {
     return calculateCumulativeProfitLoss(trades);
   }
+
+  const trades = await getTrades(90);
+
+  return res.json(trades);
 }
