@@ -5,7 +5,7 @@ export async function getTrades(parsedRequest) {
 
   const BINANCE_BASE_URL = 'https://api.binance.com';
 
-  const { timeFrame, binanceKey, binanceSecret } = parsedRequest;
+  const { tradingPair, timeFrame, binanceKey, binanceSecret } = parsedRequest;
 
   // Timestamp in ms.
   // TODO: calculate trade history start date from option selected in ui.
@@ -15,7 +15,7 @@ export async function getTrades(parsedRequest) {
     .then((res) => res.json())
     .then((data) => data.serverTime);
 
-  const query = `symbol=BTCUSDT&startTime=${startTime}&timestamp=${endTime}`;
+  const query = `symbol=${tradingPair}&startTime=${startTime}&timestamp=${endTime}`;
 
   const signature = crypto
     .createHmac('sha256', binanceSecret)

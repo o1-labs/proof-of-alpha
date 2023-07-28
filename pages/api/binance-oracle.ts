@@ -18,7 +18,7 @@ export default async function handler(
     const parsedRequest = parseRequest(req);
     const trades = await getTrades(parsedRequest);
     console.log('trades in oracle', trades)
-    return res.json(trades);
+    res.json(trades);
 
 
   } catch (e) {
