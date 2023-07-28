@@ -2,8 +2,6 @@ import crypto from 'crypto';
 
 export async function getTrades(parsedRequest) {
   // TODO: use api keys as default if users does not want to use their own.
-  const binanceApiKey = process.env.BINANCE_API_KEY;
-  const binanceSecretKey = process.env.BINANCE_SECRET_KEY;
 
   const BINANCE_BASE_URL = 'https://api.binance.com';
 
@@ -20,7 +18,7 @@ export async function getTrades(parsedRequest) {
   const query = `symbol=BTCUSDT&startTime=${startTime}&timestamp=${endTime}`;
 
   const signature = crypto
-    .createHmac('sha256', binanceSecretKey)
+    .createHmac('sha256', binanceSecret)
     .update(query)
     .digest('hex');
 
@@ -28,7 +26,7 @@ export async function getTrades(parsedRequest) {
 
   const trades = await fetch(url, {
     method: 'GET',
-    headers: { 'X-MBX-APIKEY': binanceApiKey }
+    headers: { 'X-MBX-APIKEY': binanceKey }
   }).then((res) => res.json());
 
   return trades;

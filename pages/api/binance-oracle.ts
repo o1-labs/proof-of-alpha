@@ -2,7 +2,7 @@ import { IncomingMessage, ServerResponse } from 'http';
 
 import { PrivateKey, Field, Signature } from 'snarkyjs';
 import { calculateCumulativeProfitLoss } from '../../utils';
-import { parseRequest } from './_lib/parser';
+import { parseRequest } from './_lib_oracle/parser';
 import { Trade } from '../../types';
 import TradeStatement from '../../components/common/TradeStatement';
 import { getTrades } from './_lib_oracle/getTrades';
@@ -14,10 +14,16 @@ export default async function handler(
   res: ServerResponse
 ) {
 
-  const parsedRequest = parseRequest(req);
+  try {
+    const parsedRequest = parseRequest(req);
+    const trades = await getTrades(parsedRequest);
+    console.log('trades in oracle', trades)
+    return res.json(trades);
 
-  const trades = await getTrades(parseRequest);
- 
+
+  } catch (e) {
+    console.log('error', e)
+  }
   
   function calculateAlpha(trades: Trade[]) {
     return calculateCumulativeProfitLoss(trades);
@@ -25,5 +31,4 @@ export default async function handler(
 
 
 
-  return res.json(trades);
 }
