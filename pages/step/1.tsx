@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
 import Image from 'next/image';
-import AuroTestnet from '../../public/assets/step/1/auro-devnet.png';
+import AuroBerkeley from '../../public/assets/step/1/auro-berkeley@2x.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';
 import SubHeadLine from '../../components/common/SubHeadLine';
@@ -27,7 +27,7 @@ const Auro: NextPage = () => {
 
             <div className="h-auto">
               <Image
-                src={AuroTestnet}
+                src={AuroBerkeley}
                 alt="auro testnet"
                 layout="responsive"
                 priority
