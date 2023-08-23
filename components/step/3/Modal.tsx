@@ -1,7 +1,7 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import { Dialog, Transition } from '@headlessui/react';
-import { XIcon } from '@heroicons/react/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 import BinanceModal from '../../../public/assets/step/3/binance-modal.png';
 import ExportCursor from '../../../public/assets/step/3/export-cursor.png';
 
@@ -88,7 +88,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                       onClick={() => setIsModalOpen(false)}
                     >
                       <span className="sr-only">Close</span>
-                      <XIcon
+                      <XMarkIcon
                         className="absolute h-8 w-8  rounded-full hover:bg-gray-500  2xl:h-10 2xl:w-10 3xl:w-12 "
                         aria-hidden="true"
                       />
