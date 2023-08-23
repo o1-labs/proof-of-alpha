@@ -7,7 +7,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@binance/connector": "^1.7.0",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "marked": "^4.0.10",
@@ -22,8 +21,6 @@
   "devDependencies": {
     "@types/marked": "^4.0.2",
     "@types/node": "16.11.10",
-    "@types/puppeteer": "^5.4.5",
-    "@types/puppeteer-core": "^5.4.0",
     "@types/react": "17.0.37",
     "autoprefixer": "^10.4.2",
     "eslint": "7.32.0",
