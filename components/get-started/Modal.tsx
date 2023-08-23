@@ -1,6 +1,6 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { XIcon } from '@heroicons/react/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 import Button from '../common/Button';
 import Link from 'next/link';
 
@@ -60,7 +60,7 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                 onClick={handleModalClose}
               >
                 <span className="sr-only">Close</span>
-                <XIcon
+                <XMarkIcon
                   className="absolute h-8 w-8  rounded-full hover:bg-gray-500  2xl:h-10 2xl:w-10 3xl:w-12 "
                   aria-hidden="true"
                 />
