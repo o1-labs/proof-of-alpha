@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Layout from '../../components/common/Layout';
 import Header from '../../components/common/Header';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import AuroBerkeley from '../../public/assets/step/1/auro-berkeley@2x.png';
 import ProgressBar from '../../components/common/ProgressBar';
 import HeadLine from '../../components/common/HeadLine';

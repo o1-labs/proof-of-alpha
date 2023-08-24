@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import type { NextPage } from 'next';
 import AuroChrome from '../../public/assets/step/auro-install/auro-install.png';
 import ProgressBar from '../../components/common/ProgressBar';
