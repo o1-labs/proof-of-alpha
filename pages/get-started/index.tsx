@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import type { NextPage } from 'next';
 import TradeTwitter from '../../public/assets/get-started/trade-history-with-twitter.png';
 import Layout from '../../components/common/Layout';

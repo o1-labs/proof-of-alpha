@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import type { NextPage } from 'next';
 import Header from '../../components/common/Header';
 import MinaFaucet from '../../public/assets/step/2/mina-faucet.png';

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ProofGeneratedConfirmation from '../../components/step/send-transaction/ProofGeneratedConfirmation';

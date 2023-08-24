@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { NextPage } from 'next';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Layout from '../../components/common/Layout';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
