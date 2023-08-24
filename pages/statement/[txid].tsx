@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
@@ -44,13 +44,25 @@ const Shared: NextPage = () => {
         <meta name="twitter:title" content="Proof 0f Alpha" />
       </Head>
       <div className=" absolute -top-30 -right-52   md:-top-36  md:right-0  md:w-7/12 2xl:-top-52 2xl:w-6/12 3xl:-top-56 3xl:w-5/12">
-        <Image src={TopStamp} alt="Stamp" />
+        <Image
+          src={TopStamp}
+          alt="Stamp"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <Container containerStyle="">
         <div className="mt-3 flex flex-col justify-between md:mt-0 md:flex-row">
           <div className="flex flex-col items-center space-y-4 md:space-y-8">
             <div className="w-18 pt-4 md:w-20 3xl:w-28">
-              <Image src={ZKLogo} alt="zk logo" />
+              <Image
+                src={ZKLogo}
+                alt="zk logo"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="mt-20 flex w-11/12 flex-col items-center justify-center md:mt-36 md:w-full 2xl:w-full  3xl:w-full">
               <ProofOfAlphaStatement txid={txid} />

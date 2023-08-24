@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import type { NextPage } from 'next';
 import Header from '../../components/common/Header';
 import MinaFaucet from '../../public/assets/step/2/mina-faucet.png';
@@ -30,9 +30,12 @@ const Faucet: NextPage = () => {
               <Image
                 src={MinaFaucet}
                 alt="mina faucet"
-                layout="responsive"
                 priority
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
 
             <AuroBottomNavButtons

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import type { NextPage } from 'next';
 import AuroChrome from '../../public/assets/step/auro-install/auro-install.png';
 import ProgressBar from '../../components/common/ProgressBar';
@@ -13,7 +13,13 @@ const Auro: NextPage = () => {
     <Layout backGroundColor="gradient" layoutStyle="min-container">
       <div className="relative flex items-center justify-center md:py-5 2xl:py-9 ">
         <div className="w-18 md:w-20 2xl:w-28">
-          <Image src={ZKLogo} alt="zk logo" />
+          <Image
+            src={ZKLogo}
+            alt="zk logo"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
       </div>
 
@@ -31,9 +37,12 @@ const Auro: NextPage = () => {
               <Image
                 src={AuroChrome}
                 alt="auro chrome"
-                layout="responsive"
                 priority
-              />
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }} />
             </div>
             <AuroBottomNavButtons
               backNavLink="/get-started"

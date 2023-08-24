@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { NextPage } from 'next';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Layout from '../../components/common/Layout';
 import ProgressBar from '../../components/common/ProgressBar';
 import SubHeadLine from '../../components/common/SubHeadLine';
@@ -98,7 +98,13 @@ const Verify: NextPage = () => {
             <button onClick={() => setIsModalOpen(true)}>
               <div className="flex items-center pt-3  ">
                 <div className="flex w-4 justify-center 2xl:w-5">
-                  <Image src={InfoIcon} alt="info" />
+                  <Image
+                    src={InfoIcon}
+                    alt="info"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
                 <span className="pl-2 underline md:text-xs 2xl:text-base 3xl:text-lg ">
                   How do I find my Binance API keys?
@@ -150,7 +156,13 @@ const Verify: NextPage = () => {
               </div>
             </div>
             <div className=" right-36 mt-8 md:absolute md:right-36 md:w-4/12  2xl:right-20 2xl:mt-20 2xl:w-5/12 ">
-              <Image src={APIsettings} alt="API key settings" />
+              <Image
+                src={APIsettings}
+                alt="API key settings"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </div>

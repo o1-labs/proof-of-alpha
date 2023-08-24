@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link';
 import LoadingSpinner from '../../components/common/LoadingSpinner';
 import ProofGeneratedConfirmation from '../../components/step/send-transaction/ProofGeneratedConfirmation';
@@ -94,7 +94,13 @@ const Generate: NextPage = () => {
                 onClick={handleSendToMinaButtonClick}
               >
                 <div className="flex w-4 items-center">
-                  <Image src={LinkIcon} alt="link icon" />
+                  <Image
+                    src={LinkIcon}
+                    alt="link icon"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
                 <div className="px-4">
                   SEND TO MINA &nbsp;
