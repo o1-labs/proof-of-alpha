@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Layout from '../common/Layout';
 import Button from '../common/Button';
 import CheckmarkItem from './CheckmarkItem';
@@ -33,11 +33,14 @@ const ProofSection = () => {
               </div>
               <div className="hidden h-80 w-80 justify-end md:flex md:flex-col  2xl:h-86 2xl:w-86">
                 <Image
-                  layout="responsive"
                   src={ZKLogo}
                   alt="ZK logo"
                   priority
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               </div>
             </div>
 

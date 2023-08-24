@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import ExclamationIcon from '../../../public/assets/step/6/exclamation-icon.svg';
 import ExternalLinkIcon from '../../../public/assets/common/external-link-icon.svg';
 interface AuroNoTokensErrorPropTypes {
@@ -12,7 +12,13 @@ const AuroNoTokensError = ({ visible }: AuroNoTokensErrorPropTypes) => {
     <div className={`${visible ? 'block' : 'hidden'} `}>
       <div className="flex items-center justify-end">
         <div className="flex w-3 items-center justify-center 2xl:w-4 3xl:w-6">
-          <Image src={ExclamationIcon} alt="info" />
+          <Image
+            src={ExclamationIcon}
+            alt="info"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <span className="ml-2 text-sm leading-loose text-gray-300 2xl:text-xl 3xl:text-3xl ">
           Auro Wallet must have testnet tokens to continue.
@@ -26,7 +32,13 @@ const AuroNoTokensError = ({ visible }: AuroNoTokensErrorPropTypes) => {
         >
           <div className="flex items-center 2xl:mt-2 3xl:mt-3">
             <div className="flex w-5 items-center  justify-center 2xl:w-5 3xl:w-10">
-              <Image src={ExternalLinkIcon} alt="info" />
+              <Image
+                src={ExternalLinkIcon}
+                alt="info"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <span className=" ml-2 text-xs text-gray-300  underline 2xl:text-base 3xl:text-2xl">
               MINA FAUCET

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Layout from '../common/Layout';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
@@ -16,11 +16,24 @@ const TradeHistorySection = () => {
     >
       <header className=""></header>
       <div className="absolute  right-0  hidden  md:block">
-        <Image src={TopStamp} alt="Stamp" priority />
+        <Image
+          src={TopStamp}
+          alt="Stamp"
+          priority
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <Container containerStyle="relative min-h-fit  pb-[320px] md:pb-[375px]  xl:pb-[800px] ">
         <div className="absolute ml-36 mt-5 w-20 items-center md:ml-7  md:mt-5 md:w-24 xl:ml-10  xl:mt-12 xl:h-32 xl:w-auto">
-          <Image src={ZKLogo} alt="zk logo" />
+          <Image
+            src={ZKLogo}
+            alt="zk logo"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className="mx-auto mt-36 flex flex-col items-center justify-center md:mt-24 md:ml-32 md:flex-row xl:ml-44 xl:mt-60 3xl:mt-60">
           <div className="flex  flex-col   space-y-6 text-white md:w-auto  md:space-y-3 xl:space-y-4 2xl:space-y-8 3xl:space-y-10">

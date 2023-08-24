@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link';
 import Layout from '../common/Layout';
 import Header from '../common/Header';
@@ -41,7 +41,13 @@ const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
         <div className="" id="social"></div>
         <Header />
         <div className=" absolute top-0 right-0  w-6/12 2xl:w-7/12 3xl:w-7/12">
-          <Image src={TopStamp} alt="Stamp" />
+          <Image
+            src={TopStamp}
+            alt="Stamp"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
 
         <div className="flex flex-col   items-center 3xl:mt-10 3xl:space-y-4">
@@ -55,7 +61,13 @@ const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
             >
               <div className="flex items-center space-x-1 2xl:space-x-0">
                 <div className="w-3">
-                  <Image src={ArrowIcon} alt="arrow icon" />
+                  <Image
+                    src={ArrowIcon}
+                    alt="arrow icon"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
                 <TransparentButton
                   label="VIEW PROOF ON MINA EXPLORER"

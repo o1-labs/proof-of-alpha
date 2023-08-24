@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link';
 import Layout from '../common/Layout';
 import StatementTopStamp from '../../public/assets/result/prove-stamp-statment.png';
@@ -20,7 +20,14 @@ const StatementSection = ({ txid }: statementSectionPropTypes) => {
 
       <Container containerStyle="pt-32">
         <div className=" absolute top-0 right-0 w-6/12 2xl:w-7/12 3xl:w-7/12">
-          <Image src={StatementTopStamp} alt="Stamp" priority />
+          <Image
+            src={StatementTopStamp}
+            alt="Stamp"
+            priority
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <div className="ml-18 flex justify-around md:ml-0 ">
           <div className="flex  flex-col  items-center 3xl:space-y-4 ">

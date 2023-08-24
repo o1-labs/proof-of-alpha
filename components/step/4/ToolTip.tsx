@@ -1,11 +1,17 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import InfoIcon from '../../../public/assets/common/info-icon.svg';
 
 const ToolTip = () => {
   return (
     <div className="group relative flex flex-col items-center">
       <div className="flex w-4 items-center 2xl:w-6">
-        <Image src={InfoIcon} alt="info" />
+        <Image
+          src={InfoIcon}
+          alt="info"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       <div className="absolute bottom-0 mb-7 flex hidden flex-col items-center group-hover:flex 2xl:mb-11">
         <span className=" whitespace-no-wrap relative z-10 flex w-90 flex-col rounded-xl bg-black p-7 text-sm leading-snug text-white shadow-lg 2xl:w-122 2xl:p-10 2xl:text-2xl ">
