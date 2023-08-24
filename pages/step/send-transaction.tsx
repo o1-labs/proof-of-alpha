@@ -87,7 +87,7 @@ const Generate: NextPage = () => {
                 '/result/Ckpa6UWWwosUtLN7KNQZJypKR93zrN9BDK1sDeAcMKNzbacg3C7Dr'
               }
               passHref
-            >
+              legacyBehavior>
               <Button
                 buttonStyle="w-10/12 2xl:w-7/12 py-2 3xl:w-6/12 text-sm 2xl:text-base 3xl:text-base"
                 visable={proofConfirmed}
