@@ -90,7 +90,7 @@ const ExchangeTradeSection = () => {
                 </div>
 
                 <div className="mt-24 flex flex-col items-center justify-center space-y-9 pr-10 md:mt-40 md:flex-row md:justify-between md:space-y-0">
-                  <Link href={'/get-started'} passHref>
+                  <Link href={'/get-started'} passHref legacyBehavior>
                     <Button
                       buttonStyle="px-20 w-40 h-10 md:w-1/3 xl:h-12 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl 3xl:w-64 3xl:h-16 2xl:w-1/3 2xl:h-12 xl:1/3"
                       label="NEXT"

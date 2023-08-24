@@ -19,7 +19,7 @@ const InfoPanel = ({ txid }: infoPanelPropTypes) => {
         <p className="mb-4 text-[.6em] tracking-widest md:text-xs md:tracking-wide xl:text-sm 2xl:mb-5 3xl:mb-6 3xl:text-lg">
           ALPHA STATMENT
         </p>
-        <Link href={'/get-started'} passHref>
+        <Link href={'/get-started'} passHref legacyBehavior>
           <Button
             label="GENERATE IT NOW"
             buttonStyle="text-[.6em] md:text-[.5em] 3xl:text-xs w-4/12 md:w-8/12  hover:bg-white hover:bg-opacity-10"

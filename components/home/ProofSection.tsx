@@ -46,14 +46,14 @@ const ProofSection = () => {
 
             <div className="">
               <div className="mx-auto mt-10 flex h-auto flex-col items-center justify-center space-y-4 md:mt-10 md:w-full md:flex-row  md:justify-between md:space-x-10 md:space-y-0">
-                <Link href={'/get-started'} passHref>
+                <Link href={'/get-started'} passHref legacyBehavior>
                   <Button
                     buttonStyle="px-12 3xl:w-64 3xl:h-16 2xl:w-40 2xl:h-12 xl:w-38 w-38 h-10 xl:h-12 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl "
                     label="LAUNCH APP"
                   />
                 </Link>
 
-                <Link href={'#exchange'} passHref>
+                <Link href={'#exchange'} passHref legacyBehavior>
                   <TransparentButton
                     buttonStyle="md:-ml-3 md:w-auto px-10 text-xs xl:text-sm 2xl:text-sm 3xl:text-xl hover:underline"
                     label="LEARN MORE"
