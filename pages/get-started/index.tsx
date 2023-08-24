@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import type { NextPage } from 'next';
 import TradeTwitter from '../../public/assets/get-started/trade-history-with-twitter.png';
 import Layout from '../../components/common/Layout';
@@ -60,9 +60,12 @@ const Start: NextPage = () => {
             <Image
               src={TradeTwitter}
               alt="trade history and twitter"
-              layout="responsive"
               priority
-            />
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
