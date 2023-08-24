@@ -92,7 +92,7 @@ const SocialBadgeSection = ({ txid }: socialBadgeSectionPropTypes) => {
                 <TweetButton label="TWEET IT" buttonStyle=" w-full" />
               </a>
             </div>
-            <Link href={'/get-started'} passHref>
+            <Link href={'/get-started'} passHref legacyBehavior>
               <p className="cursor-pointer  text-sm text-[#00FF19] hover:underline">
                 PROVE MORE PROFITS
               </p>

@@ -39,7 +39,7 @@ const StatementSection = ({ txid }: statementSectionPropTypes) => {
             <p className="text-sm tracking-widest lg:text-base">
               SHARE YOUR STATEMENT
             </p>
-            <Link href={`/statement/${txid}`} passHref>
+            <Link href={`/statement/${txid}`} passHref legacyBehavior>
               <CopyButton label="COPY LINK" />
             </Link>
           </div>
