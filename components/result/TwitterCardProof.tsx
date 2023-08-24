@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import TwitterCardTemplate from '../../public/assets/common/twitter-card-template@2x.png';
 import { calculateCumulativeProfitLoss, renderDates } from '../../utils';
 
@@ -19,7 +19,13 @@ const TwitterCardProof = () => {
   });
   return (
     <div className="relative">
-      <Image src={TwitterCardTemplate} alt="Twitter Card Template" />
+      <Image
+        src={TwitterCardTemplate}
+        alt="Twitter Card Template"
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
 
       <div className="absolute bottom-[30%] left-[33.5%] text-2xl font-thin tracking-wider text-[#14ff00] lg:text-3xl 2xl:text-5xl 3xl:text-6xl">
         +{calculateCumulativeProfitLoss(trades)}%

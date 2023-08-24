@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize@2x.png';
 
 const ReturnsAndTradeBadge = () => {
@@ -14,7 +14,14 @@ const ReturnsAndTradeBadge = () => {
         SOCIAL BADGE
       </div>
       <div className="w-full xl:w-full  2xl:mb-24 2xl:-mt-2 2xl:w-full 3xl:mb-30 3xl:w-10/12 ">
-        <Image src={TwitterCard} alt="twitter card" priority />
+        <Image
+          src={TwitterCard}
+          alt="twitter card"
+          priority
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
     </div>
   );

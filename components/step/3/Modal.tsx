@@ -1,5 +1,5 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import BinanceModal from '../../../public/assets/step/3/binance-modal.png';
@@ -63,18 +63,24 @@ const Modal = ({ isModalOpen, setIsModalOpen }: modalPropTypes) => {
                         <div className="absolute -top-3 left-4 z-10 h-20 w-20 rounded-full border-[6px] border-[#00B4BF] bg-transparent 2xl:-top-5 2xl:left-4 2xl:h-32 2xl:w-32 2xl:border-[10px] 3xl:left-9 3xl:h-36  3xl:w-36 "></div>
 
                         <Image
-                          layout="responsive"
                           src={BinanceModal}
                           alt="binance"
                           priority
-                        />
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto"
+                          }} />
                         <div className="absolute top-5 left-10 h-8 w-8 2xl:top-8  2xl:left-14 2xl:h-10 2xl:w-10 3xl:top-10 3xl:left-20">
                           <Image
-                            layout="responsive"
                             src={ExportCursor}
                             alt="export cursor"
                             priority
-                          />
+                            sizes="100vw"
+                            style={{
+                              width: "100%",
+                              height: "auto"
+                            }} />
                         </div>
                         <div className="absolute bottom-14 left-6 z-10 h-8 w-9/12 border-[6px] border-[#00B4BF] bg-transparent 2xl:bottom-20 2xl:left-11 2xl:h-12 2xl:border-[10px] 3xl:bottom-24 3xl:left-14 3xl:h-16 "></div>
                       </div>

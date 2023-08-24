@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import ProofOfAlphaStatement from '../../../public/assets/step/6/proof-of-alpha-statement.png';
 import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize.png';
 
@@ -21,7 +21,10 @@ const ReturnsAndTradeBadge = () => {
               src={ProofOfAlphaStatement}
               alt="proof of alpha statement"
               priority
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
 
@@ -30,7 +33,14 @@ const ReturnsAndTradeBadge = () => {
             SOCIAL BADGE
           </div>
           <div className="mt-3 -ml-12 w-[320px]  xl:mt-0 xl:-ml-24 xl:w-[400px] 2xl:mt-0 2xl:-ml-16 2xl:w-[500px] 3xl:-mt-3 3xl:-ml-20 3xl:w-[530px]">
-            <Image src={TwitterCard} alt="twitter card" priority />
+            <Image
+              src={TwitterCard}
+              alt="twitter card"
+              priority
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
       </div>

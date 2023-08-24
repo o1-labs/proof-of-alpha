@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import TradeStatementItem from './TradeStatementItem';
 import BinanceLogo from '../../public/assets/common/binance-logo.svg';
 import { calculateCumulativeProfitLoss, renderDates } from '../../utils';
@@ -38,7 +38,13 @@ const TradeStatement = ({
           {/* logo with date section */}
           <div className="flex  w-auto justify-center space-x-2 md:w-10/12  md:justify-start  xl:space-x-2 3xl:space-x-4">
             <div className="3xl:h- h-5 w-5 md:h-4 md:w-4 3xl:w-9">
-              <Image src={BinanceLogo} alt="Binance logo" />
+              <Image
+                src={BinanceLogo}
+                alt="Binance logo"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="flex flex-col items-start  ">
               <h2 className="text-xs font-medium tracking-xlwidest lg:text-sm 3xl:text-lg">

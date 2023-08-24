@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import TransparentButton from './TransparentButton';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.svg';
 import Button from './Button';
@@ -50,7 +50,13 @@ const AuroBottomNavButtons = (props: auroBottomNavButtonsPropTypes) => {
         <a target="_blank" href={externalButtonNavLink}>
           <Button buttonStyle="w-auto lg:w-52 2xl:w-60 3xl:w-72 px-2 text-xs 2xl:text-base 3xl:text-xl py-3">
             <div className="flex w-5 items-center  2xl:h-8 2xl:w-7   3xl:w-9 ">
-              <Image src={ExternalLinkIcon} alt="external link icon" />
+              <Image
+                src={ExternalLinkIcon}
+                alt="external link icon"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <div className="px-2">{externalButtonLabel}</div>
           </Button>

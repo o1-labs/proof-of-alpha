@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import TwitterLogo from '../../public/assets/result/twitter-logo.svg';
 
 interface tweetButtonPropTypes extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -25,7 +25,13 @@ const TweetButton = (props: tweetButtonPropTypes) => {
         className="absolute right-7 top-3 w-4  lg:w-5 2xl:right-11 2xl:w-6 3xl:w-7"
         aria-hidden="true"
       >
-        <Image src={TwitterLogo} alt="twitter logo" />
+        <Image
+          src={TwitterLogo}
+          alt="twitter logo"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
     </button>
   );

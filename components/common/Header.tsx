@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import useMinaProvider from '../../hooks/useMinaProvider';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 
@@ -36,7 +36,13 @@ const Header = () => {
     <header className="">
       <div className="relative flex items-center justify-center md:py-5 2xl:py-9 ">
         <div className="w-18 md:w-20 2xl:w-28">
-          <Image src={ZKLogo} alt="zk logo" />
+          <Image
+            src={ZKLogo}
+            alt="zk logo"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
 
         <div className="z-50 flex flex-col justify-end">

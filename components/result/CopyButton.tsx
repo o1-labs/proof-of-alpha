@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import ShareIcon from '../../public/assets/result/share-icon.svg';
 
 interface copyButtonPropTypes {
@@ -30,7 +30,13 @@ const CopyButton = (props: copyButtonPropTypes) => {
         className=" absolute right-3 top-3 w-5 lg:w-6  2xl:right-4 2xl:w-7 3xl:right-5  "
         aria-hidden="true"
       >
-        <Image src={ShareIcon} alt="share icon" />
+        <Image
+          src={ShareIcon}
+          alt="share icon"
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
     </button>
   );
