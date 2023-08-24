@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Checkmark from '../../public/assets/common/checkmark.svg';
 
 interface checkMarkItemPropTypes {

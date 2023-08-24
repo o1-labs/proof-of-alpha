@@ -1,5 +1,5 @@
 import { Fragment, Dispatch, SetStateAction } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import BinanceModal from '../../../public/assets/step/3/binance-modal.png';

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import ExclamationIcon from '../../../public/assets/step/6/exclamation-icon.svg';
 import ExternalLinkIcon from '../../../public/assets/common/external-link-icon.svg';
 

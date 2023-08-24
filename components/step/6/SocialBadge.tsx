@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import TwitterCard from '../../../public/assets/step/6/twitter-card-finalize@2x.png';
 
 const ReturnsAndTradeBadge = () => {

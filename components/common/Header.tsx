@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import useMinaProvider from '../../hooks/useMinaProvider';
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 

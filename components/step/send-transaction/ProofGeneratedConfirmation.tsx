@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import ProofCheckMark from '../../../public/assets/step/send-transaction/proof-check.png';
 
 const ProofGeneratedConfirmation = () => {

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import TwitterCardTemplate from '../../public/assets/common/twitter-card-template@2x.png';
 import { calculateCumulativeProfitLoss, renderDates } from '../../utils';
 

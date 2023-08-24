@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import InfoIcon from '../../../public/assets/common/info-icon.svg';
 
 const ToolTip = () => {

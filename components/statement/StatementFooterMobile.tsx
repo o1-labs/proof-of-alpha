@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Button from '../common/Button';
 import MinaPrimary from '../../public/assets/statement/mina-icon-primary.svg';
 
