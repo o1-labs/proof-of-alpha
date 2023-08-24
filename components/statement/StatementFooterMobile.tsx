@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Button from '../common/Button';
 import MinaPrimary from '../../public/assets/statement/mina-icon-primary.svg';
 
@@ -8,7 +8,13 @@ const StatementFooterMobile = () => {
       <div className="flex h-full items-center justify-around">
         <div className="flex space-x-1">
           <div className="flex w-9">
-            <Image src={MinaPrimary} alt="mina logo" />
+            <Image
+              src={MinaPrimary}
+              alt="mina logo"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="flex flex-col space-y-1  text-center text-[.25rem] tracking-xlwidest text-[#FF603B]">
             <p className="mt-[.3rem]">MADE</p>

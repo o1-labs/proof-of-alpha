@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from 'next/link';
 import Button from '../common/Button';
 import TransparentButton from '../common/TransparentButton';
@@ -28,7 +28,13 @@ const InfoPanel = ({ txid }: infoPanelPropTypes) => {
       </div>
       <div className="flex flex-col items-center space-y-2 2xl:space-y-1 3xl:space-y-3 ">
         <div className="w-8 lg:w-8 2xl:w-10">
-          <Image src={ShieldIcon} alt="shield icon" />
+          <Image
+            src={ShieldIcon}
+            alt="shield icon"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
         <p className="text-[.65em] font-medium md:text-xs 2xl:text-base  3xl:text-lg">
           How do you know this proof is valid?
@@ -45,7 +51,13 @@ const InfoPanel = ({ txid }: infoPanelPropTypes) => {
         >
           <div className="flex items-center hover:underline">
             <div className="w-2 2xl:w-2 3xl:w-3">
-              <Image src={ArrowIcon} alt="arrow icon" />
+              <Image
+                src={ArrowIcon}
+                alt="arrow icon"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
             <TransparentButton
               label="VIEW PROOF ON MINA EXPLORER"

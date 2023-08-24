@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 
 const StatementError = () => {
@@ -7,7 +7,13 @@ const StatementError = () => {
       <div className="flex w-full flex-col items-center space-y-10 ">
         <div className="flex w-3/6 flex-col items-center justify-center">
           <div className="mt-36 ">
-            <Image src={ZKLogo} alt=" zk logo" />
+            <Image
+              src={ZKLogo}
+              alt=" zk logo"
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="mt-10 flex flex-col items-center ">
             <p className="text-3.5xl font-bold leading-11">
