@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import ShareIcon from '../../public/assets/result/share-icon.svg';
 
 interface copyButtonPropTypes {

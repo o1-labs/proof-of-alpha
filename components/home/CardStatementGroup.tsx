@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import ProofOfAlpha from '../../public/assets/home/proof-of-alpha-home.png';
 import TwitterCard from '../../public/assets/common/twitter-card.png';
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import TransparentButton from './TransparentButton';
 import ExternalLinkIcon from '../../public/assets/common/external-link-icon.svg';
 import Button from './Button';

@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import TwitterLogo from '../../public/assets/result/twitter-logo.svg';
 
 interface tweetButtonPropTypes extends ButtonHTMLAttributes<HTMLButtonElement> {

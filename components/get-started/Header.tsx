@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import ZKLogo from '../../public/assets/common/zk-logo.svg';
 
 const Header = () => {

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import Layout from '../common/Layout';
 import StatementTopStamp from '../../public/assets/result/prove-stamp-statment.png';
