@@ -1,5 +1,6 @@
+'use client';
 import { useState } from 'react';
-import Image from "next/image";
+import Image from 'next/image';
 import type { NextPage } from 'next';
 import TradeTwitter from '../../public/assets/get-started/trade-history-with-twitter.png';
 import Layout from '../../components/common/Layout';
@@ -8,7 +9,7 @@ import Button from '../../components/common/Button';
 import Header from '../../components/get-started/Header';
 import Modal from '../../components/get-started/Modal';
 import CardGroupStart from '../../components/get-started/CardGroupStart';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const Start: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -63,9 +64,10 @@ const Start: NextPage = () => {
               priority
               sizes="100vw"
               style={{
-                width: "100%",
-                height: "auto"
-              }} />
+                width: '100%',
+                height: 'auto'
+              }}
+            />
           </div>
         </div>
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
