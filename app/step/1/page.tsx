@@ -1,12 +1,13 @@
+'use client';
 import type { NextPage } from 'next';
-import Layout from '../../components/common/Layout';
-import Header from '../../components/common/Header';
-import Image from "next/image";
-import AuroBerkeley from '../../public/assets/step/1/auro-berkeley@2x.png';
-import ProgressBar from '../../components/common/ProgressBar';
-import HeadLine from '../../components/common/HeadLine';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import AuroBottomNavButtons from '../../components/common/AuroBottomNavButtons';
+import Layout from '../../../components/common/Layout';
+import Header from '../../../components/common/Header';
+import Image from 'next/image';
+import AuroBerkeley from '../../../public/assets/step/1/auro-berkeley@2x.png';
+import ProgressBar from '../../../components/common/ProgressBar';
+import HeadLine from '../../../components/common/HeadLine';
+import SubHeadLine from '../../../components/common/SubHeadLine';
+import AuroBottomNavButtons from '../../../components/common/AuroBottomNavButtons';
 
 const Auro: NextPage = () => {
   return (
@@ -32,9 +33,10 @@ const Auro: NextPage = () => {
                 priority
                 sizes="100vw"
                 style={{
-                  width: "100%",
-                  height: "auto"
-                }} />
+                  width: '100%',
+                  height: 'auto'
+                }}
+              />
             </div>
             <AuroBottomNavButtons
               backNavLink="/step/install-auro"
