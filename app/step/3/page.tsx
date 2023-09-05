@@ -14,7 +14,7 @@ import InfoIcon from '../../../public/assets/common/info-icon.svg';
 import APIsettings from '../../../public/assets/step/3/api-key-settings.png';
 import Modal from '../../../components/step/3/Modal';
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
