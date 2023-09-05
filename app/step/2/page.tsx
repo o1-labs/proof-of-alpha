@@ -1,13 +1,14 @@
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
 import type { NextPage } from 'next';
-import Header from '../../components/common/Header';
-import MinaFaucet from '../../public/assets/step/2/mina-faucet.png';
-import ProgressBar from '../../components/common/ProgressBar';
-import HeadLine from '../../components/common/HeadLine';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import Layout from '../../components/common/Layout';
-import AuroBottomNavButtons from '../../components/common/AuroBottomNavButtons';
-import useMinaProvider from '../../hooks/useMinaProvider';
+import Header from '../../../components/common/Header';
+import MinaFaucet from '../../../public/assets/step/2/mina-faucet.png';
+import ProgressBar from '../../../components/common/ProgressBar';
+import HeadLine from '../../../components/common/HeadLine';
+import SubHeadLine from '../../../components/common/SubHeadLine';
+import Layout from '../../../components/common/Layout';
+import AuroBottomNavButtons from '../../../components/common/AuroBottomNavButtons';
+import useMinaProvider from '../../../hooks/useMinaProvider';
 
 const Faucet: NextPage = () => {
   const { minaAccount } = useMinaProvider();
@@ -33,9 +34,10 @@ const Faucet: NextPage = () => {
                 priority
                 sizes="100vw"
                 style={{
-                  width: "100%",
-                  height: "auto"
-                }} />
+                  width: '100%',
+                  height: 'auto'
+                }}
+              />
             </div>
 
             <AuroBottomNavButtons
