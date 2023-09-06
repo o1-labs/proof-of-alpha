@@ -1,6 +1,5 @@
 'use client';
 import type { NextPage } from 'next';
-import { useRouter } from 'next/navigation';
 import SocialBadgeSection from '../../../components/result/SocialBadgeSection';
 import StatementSection from '../../../components/result/StatementSection';
 
