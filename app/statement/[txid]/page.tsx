@@ -19,9 +19,12 @@ import {
 import StatementFooter from '../../../components/statement/StatementFooter';
 import StatementFooterMobile from '../../../components/statement/StatementFooterMobile';
 
-const Shared: NextPage = () => {
-  const router = useRouter();
-  const { txid } = router.query;
+interface sharePropTypes {
+  params: { txid: string };
+}
+
+const Shared: NextPage<sharePropTypes> = ({ params }) => {
+  const { txid } = params;
 
   const getImageUrl = () => {
     const path = addQueryParamsToURL('/api/og-image', [
