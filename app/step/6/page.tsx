@@ -1,17 +1,18 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
-import Header from '../../components/common/Header';
-import LightButton from '../../components/common/LightButton';
-import ReturnsAndTradeBadge from '../../components/step/6/ReturnsAndTradeBadge';
-import SocialBadge from '../../components/step/6/SocialBadge';
-import AuroNoWalletError from '../../components/step/6/AuroNoWalletError';
-import AuroNoTestnetError from '../../components/step/6/AuroNoTestnetError';
-import AuroNoTokensError from '../../components/step/6/AuroNoTokensError';
-import ProgressBar from '../../components/common/ProgressBar';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import HeadLine from '../../components/common/HeadLine';
-import Layout from '../../components/common/Layout';
-import VerifyBottomNavButtons from '../../components/common/VerifyBottomNavButtons';
+import Header from '../../../components/common/Header';
+import LightButton from '../../../components/common/LightButton';
+import ReturnsAndTradeBadge from '../../../components/step/6/ReturnsAndTradeBadge';
+import SocialBadge from '../../../components/step/6/SocialBadge';
+import AuroNoWalletError from '../../../components/step/6/AuroNoWalletError';
+import AuroNoTestnetError from '../../../components/step/6/AuroNoTestnetError';
+import AuroNoTokensError from '../../../components/step/6/AuroNoTokensError';
+import ProgressBar from '../../../components/common/ProgressBar';
+import SubHeadLine from '../../../components/common/SubHeadLine';
+import HeadLine from '../../../components/common/HeadLine';
+import Layout from '../../../components/common/Layout';
+import VerifyBottomNavButtons from '../../../components/common/VerifyBottomNavButtons';
 
 const Finalize: NextPage = () => {
   const [activeButton, setActiveButton] = useState<string>('returnsAndHistory');

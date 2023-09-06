@@ -1,3 +1,4 @@
+'use client';
 import type { NextPage } from 'next';
 import TradeHistorySection from '../components/home/TradeHistorySection';
 import ProofSection from '../components/home/ProofSection';

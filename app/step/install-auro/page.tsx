@@ -1,12 +1,13 @@
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
 import type { NextPage } from 'next';
-import AuroChrome from '../../public/assets/step/auro-install/auro-install.png';
-import ProgressBar from '../../components/common/ProgressBar';
-import HeadLine from '../../components/common/HeadLine';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import Layout from '../../components/common/Layout';
-import AuroBottomNavButtons from '../../components/common/AuroBottomNavButtons';
-import ZKLogo from '../../public/assets/common/zk-logo.svg';
+import AuroChrome from '../../../public/assets/step/auro-install/auro-install.png';
+import ProgressBar from '../../../components/common/ProgressBar';
+import HeadLine from '../../../components/common/HeadLine';
+import SubHeadLine from '../../../components/common/SubHeadLine';
+import Layout from '../../../components/common/Layout';
+import AuroBottomNavButtons from '../../../components/common/AuroBottomNavButtons';
+import ZKLogo from '../../../public/assets/common/zk-logo.svg';
 
 const Auro: NextPage = () => {
   return (
@@ -17,9 +18,10 @@ const Auro: NextPage = () => {
             src={ZKLogo}
             alt="zk logo"
             style={{
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+              maxWidth: '100%',
+              height: 'auto'
+            }}
+          />
         </div>
       </div>
 
@@ -40,9 +42,10 @@ const Auro: NextPage = () => {
                 priority
                 sizes="100vw"
                 style={{
-                  width: "100%",
-                  height: "auto"
-                }} />
+                  width: '100%',
+                  height: 'auto'
+                }}
+              />
             </div>
             <AuroBottomNavButtons
               backNavLink="/get-started"

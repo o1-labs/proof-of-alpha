@@ -1,19 +1,20 @@
+'use client';
 import Link from 'next/link';
 import type { NextPage } from 'next';
-import Image from "next/image";
-import Layout from '../../components/common/Layout';
-import ProgressBar from '../../components/common/ProgressBar';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import HeadLine from '../../components/common/HeadLine';
-import Button from '../../components/common/Button';
-import TransparentButton from '../../components/common/TransparentButton';
-import Input from '../../components/common/Input';
-import Header from '../../components/common/Header';
-import InfoIcon from '../../public/assets/common/info-icon.svg';
-import APIsettings from '../../public/assets/step/3/api-key-settings.png';
-import Modal from '../../components/step/3/Modal';
+import Image from 'next/image';
+import Layout from '../../../components/common/Layout';
+import ProgressBar from '../../../components/common/ProgressBar';
+import SubHeadLine from '../../../components/common/SubHeadLine';
+import HeadLine from '../../../components/common/HeadLine';
+import Button from '../../../components/common/Button';
+import TransparentButton from '../../../components/common/TransparentButton';
+import Input from '../../../components/common/Input';
+import Header from '../../../components/common/Header';
+import InfoIcon from '../../../public/assets/common/info-icon.svg';
+import APIsettings from '../../../public/assets/step/3/api-key-settings.png';
+import Modal from '../../../components/step/3/Modal';
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 const Verify: NextPage = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -102,9 +103,10 @@ const Verify: NextPage = () => {
                     src={InfoIcon}
                     alt="info"
                     style={{
-                      maxWidth: "100%",
-                      height: "auto"
-                    }} />
+                      maxWidth: '100%',
+                      height: 'auto'
+                    }}
+                  />
                 </div>
                 <span className="pl-2 underline md:text-xs 2xl:text-base 3xl:text-lg ">
                   How do I find my Binance API keys?
@@ -160,9 +162,10 @@ const Verify: NextPage = () => {
                 src={APIsettings}
                 alt="API key settings"
                 style={{
-                  maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  maxWidth: '100%',
+                  height: 'auto'
+                }}
+              />
             </div>
           </div>
         </div>

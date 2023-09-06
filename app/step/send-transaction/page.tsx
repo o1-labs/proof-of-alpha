@@ -1,14 +1,15 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
-import Image from "next/image";
+import Image from 'next/image';
 import Link from 'next/link';
-import LoadingSpinner from '../../components/common/LoadingSpinner';
-import ProofGeneratedConfirmation from '../../components/step/send-transaction/ProofGeneratedConfirmation';
-import Button from '../../components/common/Button';
-import LinkIcon from '../../public/assets/common/chain-icon.svg';
-import { trades } from '../../utils';
-import { calculateCumulativeProfitLoss } from '../../utils';
-import Layout from '../../components/common/Layout';
+import LoadingSpinner from '../../../components/common/LoadingSpinner';
+import ProofGeneratedConfirmation from '../../../components/step/send-transaction/ProofGeneratedConfirmation';
+import Button from '../../../components/common/Button';
+import LinkIcon from '../../../public/assets/common/chain-icon.svg';
+import { trades } from '../../../utils';
+import { calculateCumulativeProfitLoss } from '../../../utils';
+import Layout from '../../../components/common/Layout';
 
 const Generate: NextPage = () => {
   const [proofConfirmed, setProofConfirmed] = useState<boolean>(false);
@@ -87,7 +88,8 @@ const Generate: NextPage = () => {
                 '/result/Ckpa6UWWwosUtLN7KNQZJypKR93zrN9BDK1sDeAcMKNzbacg3C7Dr'
               }
               passHref
-              legacyBehavior>
+              legacyBehavior
+            >
               <Button
                 buttonStyle="w-10/12 2xl:w-7/12 py-2 3xl:w-6/12 text-sm 2xl:text-base 3xl:text-base"
                 visable={proofConfirmed}
@@ -98,9 +100,10 @@ const Generate: NextPage = () => {
                     src={LinkIcon}
                     alt="link icon"
                     style={{
-                      maxWidth: "100%",
-                      height: "auto"
-                    }} />
+                      maxWidth: '100%',
+                      height: 'auto'
+                    }}
+                  />
                 </div>
                 <div className="px-4">
                   SEND TO MINA &nbsp;

@@ -1,14 +1,15 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import type { NextPage } from 'next';
-import Header from '../../components/common/Header';
-import FetchingTrades from '../../components/step/5/FetchingTrades';
-import TradeStatement from '../../components/common/TradeStatement';
-import { trades } from '../../utils';
-import ProgressBar from '../../components/common/ProgressBar';
-import SubHeadLine from '../../components/common/SubHeadLine';
-import HeadLine from '../../components/common/HeadLine';
-import Layout from '../../components/common/Layout';
-import VerifyBottomNavButtons from '../../components/common/VerifyBottomNavButtons';
+import Header from '../../../components/common/Header';
+import FetchingTrades from '../../../components/step/5/FetchingTrades';
+import TradeStatement from '../../../components/common/TradeStatement';
+import { trades } from '../../../utils';
+import ProgressBar from '../../../components/common/ProgressBar';
+import SubHeadLine from '../../../components/common/SubHeadLine';
+import HeadLine from '../../../components/common/HeadLine';
+import Layout from '../../../components/common/Layout';
+import VerifyBottomNavButtons from '../../../components/common/VerifyBottomNavButtons';
 
 const Review: NextPage = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);

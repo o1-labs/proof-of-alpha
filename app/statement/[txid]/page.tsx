@@ -1,26 +1,30 @@
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
 import Head from 'next/head';
 import { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import Layout from '../../components/common/Layout';
-import ZKLogo from '../../public/assets/common/zk-logo.svg';
-import TopStamp from '../../public/assets/common/prove-stamp.png';
-import ProofOfAlphaStatement from '../../components/result/ProofOfAlphaStatement';
-import InfoPanel from '../../components/statement/InfoPanel';
-import Container from '../../components/common/Container';
+import Layout from '../../../components/common/Layout';
+import ZKLogo from '../../../public/assets/common/zk-logo.svg';
+import TopStamp from '../../../public/assets/common/prove-stamp.png';
+import ProofOfAlphaStatement from '../../../components/result/ProofOfAlphaStatement';
+import InfoPanel from '../../../components/statement/InfoPanel';
+import Container from '../../../components/common/Container';
 import {
   addQueryParamsToURL,
   BASE_URL,
   calculateCumulativeProfitLoss,
   renderDates,
   trades
-} from '../../utils';
-import StatementFooter from '../../components/statement/StatementFooter';
-import StatementFooterMobile from '../../components/statement/StatementFooterMobile';
+} from '../../../utils';
+import StatementFooter from '../../../components/statement/StatementFooter';
+import StatementFooterMobile from '../../../components/statement/StatementFooterMobile';
 
-const Shared: NextPage = () => {
-  const router = useRouter();
-  const { txid } = router.query;
+interface sharePropTypes {
+  params: { txid: string };
+}
+
+const Shared: NextPage<sharePropTypes> = ({ params }) => {
+  const { txid } = params;
 
   const getImageUrl = () => {
     const path = addQueryParamsToURL('/api/og-image', [
@@ -48,9 +52,10 @@ const Shared: NextPage = () => {
           src={TopStamp}
           alt="Stamp"
           style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+            maxWidth: '100%',
+            height: 'auto'
+          }}
+        />
       </div>
       <Container containerStyle="">
         <div className="mt-3 flex flex-col justify-between md:mt-0 md:flex-row">
@@ -60,9 +65,10 @@ const Shared: NextPage = () => {
                 src={ZKLogo}
                 alt="zk logo"
                 style={{
-                  maxWidth: "100%",
-                  height: "auto"
-                }} />
+                  maxWidth: '100%',
+                  height: 'auto'
+                }}
+              />
             </div>
             <div className="mt-20 flex w-11/12 flex-col items-center justify-center md:mt-36 md:w-full 2xl:w-full  3xl:w-full">
               <ProofOfAlphaStatement txid={txid} />
