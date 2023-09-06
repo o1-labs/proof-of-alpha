@@ -4,9 +4,12 @@ import { useRouter } from 'next/navigation';
 import SocialBadgeSection from '../../../components/result/SocialBadgeSection';
 import StatementSection from '../../../components/result/StatementSection';
 
-const Prove: NextPage = () => {
-  const router = useRouter();
-  const { txid } = router.query;
+interface resultPropTypes {
+  params: { txid: string };
+}
+
+const Prove: NextPage<resultPropTypes> = ({ params }) => {
+  const { txid } = params;
   return (
     <>
       <SocialBadgeSection txid={txid} />
